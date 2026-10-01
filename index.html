@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>BSKang_SW — 프로그램 다운로드</title>
+  <meta name="description" content="BSKang_SW 프로그램 설치 파일 다운로드 페이지">
+  <style>
+    :root { --bg: #f8fafc; --card: #fff; --text: #0f172a; --muted: #64748b; --accent: #2563eb; --border: #e2e8f0; }
+    * { box-sizing: border-box; }
+    body { margin: 0; font-family: "Segoe UI", "Malgun Gothic", sans-serif; background: var(--bg); color: var(--text); }
+    header { padding: 28px 20px 16px; max-width: 920px; margin: 0 auto; }
+    h1 { margin: 0 0 4px; font-size: 24px; }
+    header p { margin: 0; color: var(--muted); }
+    main { max-width: 920px; margin: 0 auto; padding: 0 20px 40px; display: grid; gap: 14px; }
+    .card { background: var(--card); border: 1px solid var(--border); border-radius: 12px; padding: 18px 20px; display: grid; grid-template-columns: 56px 1fr auto; gap: 16px; align-items: center; }
+    .card img { width: 56px; height: 56px; border-radius: 10px; }
+    .card h2 { margin: 0 0 2px; font-size: 17px; }
+    .card .desc { color: var(--muted); font-size: 13.5px; margin: 0 0 6px; }
+    .card .meta { font-size: 12.5px; color: var(--muted); }
+    .btns { display: flex; flex-direction: column; gap: 6px; align-items: stretch; }
+    .btn { display: inline-block; padding: 9px 16px; border-radius: 8px; background: var(--accent); color: #fff; text-decoration: none; font-weight: 600; text-align: center; white-space: nowrap; }
+    .btn.sub { background: #e2e8f0; color: var(--text); font-weight: 500; font-size: 13px; padding: 6px 12px; }
+    .empty { color: var(--muted); padding: 30px; text-align: center; }
+    .note { font-size: 12.5px; color: var(--muted); max-width: 920px; margin: 0 auto; padding: 0 20px 30px; line-height: 1.6; }
+    .note b { color: var(--text); }
+    @media (max-width: 600px) { .card { grid-template-columns: 44px 1fr; } .btns { grid-column: 1 / -1; flex-direction: row; } .btn { flex: 1; } }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>BSKang_SW</h1>
+    <p>프로그램 설치 파일 다운로드. 설치하면 <b>C:\BSKang_SW\</b> 아래에 들어가고, 이후 업데이트는 프로그램 안의 "⬆ 업데이트" 버튼으로 받습니다.</p>
+  </header>
+  <main id="list"><div class="empty">목록을 불러오는 중…</div></main>
+  <div class="note">
+    <b>처음 설치할 때 Windows 경고가 뜨면</b> "추가 정보 → 실행"을 누르세요 (서명이 없는 설치 파일이라 처음 한 번 뜹니다).<br>
+    설치에는 관리자 권한이 필요 없습니다. 제거는 Windows "앱 및 기능"에서 할 수 있습니다.
+  </div>
+  <script>
+    (async () => {
+      const list = document.getElementById('list');
+      const fmt = n => (n >= 1048576 ? (n / 1048576).toFixed(1) + ' MB' : Math.round(n / 1024) + ' KB');
+      const esc = s => String(s == null ? '' : s).replace(/[&<>"]/g, c => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;' }[c]));
+      try {
+        const r = await fetch('programs.json', { cache: 'no-store' });
+        const data = await r.json();
+        const ps = (data && data.programs) || [];
+        if (!ps.length) { list.innerHTML = '<div class="empty">아직 올라온 프로그램이 없습니다.</div>'; return; }
+        list.innerHTML = ps.map(p => `
+          <div class="card">
+            <img src="${esc(p.app)}/${esc(p.icon || 'icon-64.png')}" alt="" onerror="this.style.visibility='hidden'">
+            <div>
+              <h2>${esc(p.name)} <small style="color:#64748b;font-weight:500">v${esc(p.version)}</small></h2>
+              <p class="desc">${esc(p.description || '')}</p>
+              <div class="meta">${esc(p.date || '')} · 설치 파일 ${p.setup ? fmt(p.setup.size) : ''}${p.prerelease ? ` · 시험판 v${esc(p.prerelease.version)} 있음` : ''}</div>
+            </div>
+            <div class="btns">
+              <a class="btn" href="${esc(p.setup && p.setup.url)}">⬇ 설치 파일 받기</a>
+              ${p.zip ? `<a class="btn sub" href="${esc(p.zip.url)}">ZIP (설치 없이 압축 풀기)</a>` : ''}
+              ${p.page ? `<a class="btn sub" href="${esc(p.page)}" target="_blank" rel="noopener">바뀐 내용 보기</a>` : ''}
+            </div>
+          </div>`).join('');
+      } catch (e) {
+        list.innerHTML = '<div class="empty">목록을 불러오지 못했습니다.</div>';
+      }
+    })();
+  </script>
+</body>
+</html>
