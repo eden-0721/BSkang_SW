@@ -110,7 +110,15 @@
     "sha256": "8cc9dcec220b78834bc3e8455568e791ef02873cdf855f4e1a38292aed45b579"
    },
    "page": "https://github.com/eden-0721/test_reports/releases/tag/testreport-v2.0.1",
-   "source": "https://github.com/eden-0721/test_reports"
+   "source": "https://github.com/eden-0721/test_reports",
+   "extras": [
+    {
+     "label": "구글 로그인 인증 파일",
+     "private": true,
+     "title": "받은 client_secrets.json 을 설치 폴더(C:\\BSKang_SW\\TestReport)의 data 폴더에 넣은 뒤 앱에서 구글 로그인",
+     "url": "https://github.com/login?return_to=/eden-0721/test_reports/releases/download/testreport-auth/client_secrets.json"
+    }
+   ]
   }
  ]
 }
