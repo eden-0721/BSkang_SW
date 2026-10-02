@@ -30,12 +30,13 @@
 <body>
   <header>
     <h1>BSKang_SW</h1>
-    <p>프로그램 설치 파일 다운로드. 설치하면 <b>C:\BSKang_SW\</b> 아래에 들어가고, 이후 업데이트는 프로그램 안의 "⬆ 업데이트" 버튼으로 받습니다.</p>
+    <p>프로그램 설치 파일 다운로드. 설치하면 <b>C:\BSKang_SW\</b> 아래에 들어가고, 이후 업데이트는 프로그램 안의 "⬆ 업데이트" 버튼으로 받습니다.<br><b>설치 파일은 비공개 저장소에 있습니다</b> — 버튼을 누르면 GitHub 로그인 화면이 나오고, 허용된 계정만 받을 수 있습니다.</p>
   </header>
   <main id="list"><div class="empty">목록을 불러오는 중…</div></main>
   <div class="note">
     <b>처음 설치할 때 Windows 경고가 뜨면</b> "추가 정보 → 실행"을 누르세요 (서명이 없는 설치 파일이라 처음 한 번 뜹니다).<br>
-    설치에는 관리자 권한이 필요 없습니다. 제거는 Windows "앱 및 기능"에서 할 수 있습니다.
+    설치에는 관리자 권한이 필요 없습니다. 제거는 Windows "앱 및 기능"에서 할 수 있습니다.<br>
+    🔒 표시가 있는 파일은 GitHub 에 로그인한 허용 계정만 받을 수 있습니다. 현장 PC 는 프로그램 안에 "업데이트 키"를 넣어 두면 그 뒤로는 자동으로 받습니다.
   </div>
   <script>
     (async () => {
@@ -56,8 +57,9 @@
               <div class="meta">${esc(p.date || '')} · 설치 파일 ${p.setup ? fmt(p.setup.size) : ''}${p.prerelease ? ` · 시험판 v${esc(p.prerelease.version)} 있음` : ''}</div>
             </div>
             <div class="btns">
-              <a class="btn" href="${esc(p.setup && p.setup.url)}">⬇ 설치 파일 받기</a>
-              ${p.zip ? `<a class="btn sub" href="${esc(p.zip.url)}">ZIP (설치 없이 압축 풀기)</a>` : ''}
+              <a class="btn" href="${esc(p.setup && p.setup.url)}" title="${p.private ? 'GitHub 로그인이 필요합니다 (허용된 계정만)' : ''}">⬇ 설치 파일 받기${p.private ? ' 🔒' : ''}</a>
+              ${p.zip ? `<a class="btn sub" href="${esc(p.zip.url)}">ZIP (설치 없이 압축 풀기)${p.private ? ' 🔒' : ''}</a>` : ''}
+              ${p.source ? `<a class="btn sub" href="${esc(p.source)}" target="_blank" rel="noopener" title="소스 저장소 (비공개 — 개발자만)">개발용 소스 🔒</a>` : ''}
               ${p.page ? `<a class="btn sub" href="${esc(p.page)}" target="_blank" rel="noopener">바뀐 내용 보기</a>` : ''}
             </div>
           </div>`).join('');
