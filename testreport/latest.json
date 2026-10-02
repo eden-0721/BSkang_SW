@@ -1,19 +1,26 @@
 {
  "app": "testreport",
  "name": "시험성적서 워크벤치",
- "version": "2.0.0",
+ "version": "2.0.1",
  "date": "2026-10-02",
  "channel": "release",
- "tag": "testreport-v2.0.0",
+ "tag": "testreport-v2.0.1",
  "private": true,
  "filesRepo": "eden-0721/test_reports",
  "setup": {
-  "file": "TestReport_Setup_v2.0.0.exe",
-  "url": "https://github.com/eden-0721/test_reports/releases/download/testreport-v2.0.0/TestReport_Setup_v2.0.0.exe",
-  "sha256": "2e0e7e5adc7cac03cd43f40ee37ef42194259ff2c81748eb7e25c16d3035fea5",
-  "size": 3678953
+  "file": "TestReport_Setup_v2.0.1.exe",
+  "url": "https://github.com/eden-0721/test_reports/releases/download/testreport-v2.0.1/TestReport_Setup_v2.0.1.exe",
+  "sha256": "8cc9dcec220b78834bc3e8455568e791ef02873cdf855f4e1a38292aed45b579",
+  "size": 3681623
  },
  "notes": [
+  {
+   "v": "2.0.1",
+   "date": "2026-10-02",
+   "items": [
+    "다른 PC 에서 처음 설치할 때 실행 환경 준비가 'setuptools.build_meta' 오류로 멈추던 문제 수정 (완성본이 없는 패키지를 설치 파일에 미리 넣고, 설치 때는 빌드하지 않음)"
+   ]
+  },
   {
    "v": "2.0.0",
    "date": "2026-10-02",
