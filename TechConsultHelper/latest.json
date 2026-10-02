@@ -1,27 +1,26 @@
 {
     "app":  "TechConsultHelper",
     "name":  "기술지도 스마트 도우미",
-    "version":  "1.0.0",
-    "tag":  "techconsulthelper-v1.0.0",
+    "version":  "1.0.1",
+    "tag":  "techconsulthelper-v1.0.1",
     "date":  "2026-10-02",
+    "private":  true,
+    "page":  "https://github.com/eden-0721/TechConsultHelper/releases/tag/techconsulthelper-v1.0.1",
     "setup":  {
-                  "file":  "TechConsultHelper_Setup_v1.0.0.exe",
-                  "url":  "https://github.com/eden-0721/BSkang_SW/releases/download/techconsulthelper-v1.0.0/TechConsultHelper_Setup_v1.0.0.exe",
-                  "size":  2225333,
-                  "sha256":  "f56cd67bb103899f3eef5e0d449d46636b38818cc56bd0e0feb833621e7ef0ed"
+                  "file":  "TechConsultHelper_Setup_v1.0.1.exe",
+                  "url":  "https://github.com/eden-0721/TechConsultHelper/releases/download/techconsulthelper-v1.0.1/TechConsultHelper_Setup_v1.0.1.exe",
+                  "size":  2226015,
+                  "sha256":  "c7c4479d5c70c4004024cf86d34bfaba76b0ded81c4073c0914a9c094003fead"
               },
     "zip":  {
-                "file":  "TechConsultHelper_v1.0.0.zip",
-                "url":  "https://github.com/eden-0721/BSkang_SW/releases/download/techconsulthelper-v1.0.0/TechConsultHelper_v1.0.0.zip",
-                "size":  136921,
-                "sha256":  "a05c863d5f546afc04dcd1b3eec4b157fe44897a6f0b3fa301ed237f3584f76a"
+                "file":  "TechConsultHelper_v1.0.1.zip",
+                "url":  "https://github.com/eden-0721/TechConsultHelper/releases/download/techconsulthelper-v1.0.1/TechConsultHelper_v1.0.1.zip",
+                "size":  137867,
+                "sha256":  "87fa8a2d743b1d95f52893338d0fa434c21170127083eaee6ba212cef2914090"
             },
     "notes":  [
-                  "최초 배포판",
-                  "S315 기술지도등록 화면 자동 입력 (조회 항목은 순서대로, 업체정보 검색 창 자동 선택)",
-                  "AI 없이 쓰는 문장 조합 엔진 (분야·항목별 용어, 이력과 중복되지 않는 조합)",
-                  "거래처 DB, 프로젝트별 1~8단계 이력, 연간 실적 현황, CSV 내보내기",
-                  "구글 드라이브 자동 동기화, 백업 저장/복원"
+                  "배포 방식 변경: 설치 파일은 비공개 저장소에 두고, 다운로드 페이지와 업데이트 안내는 GitHub 로그인 후 받도록 변경",
+                  "업데이트 배지 클릭 시 설치 파일 페이지를 새 탭으로 열어 안내"
               ],
-    "publishedAt":  "2026-10-02T02:11:57Z"
+    "publishedAt":  "2026-10-02T02:41:21Z"
 }
