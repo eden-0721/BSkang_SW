@@ -1,23 +1,34 @@
 {
  "app": "micromeasurepro",
  "name": "MicroMeasure Pro",
- "version": "2.4.0",
+ "version": "2.4.2",
  "date": "2026-10-02",
  "channel": "release",
- "tag": "micromeasurepro-v2.4.0",
+ "tag": "micromeasurepro-v2.4.2",
  "setup": {
-  "file": "MicroMeasurePro_Setup_v2.4.0.exe",
-  "url": "https://github.com/eden-0721/BSkang_SW/releases/download/micromeasurepro-v2.4.0/MicroMeasurePro_Setup_v2.4.0.exe",
-  "sha256": "a6118e1cecfff07da58a09a82fe68f58a1261d50a4ea025adeb8755a5501c21b",
-  "size": 12681440
+  "file": "MicroMeasurePro_Setup_v2.4.2.exe",
+  "url": "https://github.com/eden-0721/MicroMeasurePro/releases/download/micromeasurepro-v2.4.2/MicroMeasurePro_Setup_v2.4.2.exe",
+  "sha256": "d6ac20fb6eb0180ed0f430e6fe0cd9655ecf7b14f42292e8a9cb5bc6e6eb1999",
+  "size": 12682664
  },
  "zip": {
-  "file": "MicroMeasurePro_v2.4.0.zip",
-  "url": "https://github.com/eden-0721/BSkang_SW/releases/download/micromeasurepro-v2.4.0/MicroMeasurePro_v2.4.0.zip",
-  "sha256": "188628d1e32bbae97895dbb2a50af4435fa7734564489fd2411ffd9344bc486e",
-  "size": 13414833
+  "file": "MicroMeasurePro_v2.4.2.zip",
+  "url": "https://github.com/eden-0721/MicroMeasurePro/releases/download/micromeasurepro-v2.4.2/MicroMeasurePro_v2.4.2.zip",
+  "sha256": "0dcba92481ea39cc4bec29ab3a3b6b00570314bb16c3efb44fe677ee75d14a29",
+  "size": 13420302
  },
  "notes": [
+  {
+   "v": "2.4.2",
+   "date": "2026-10-02",
+   "title": "비공개 배포 · 업데이트 키",
+   "items": [
+    "설치 파일이 **비공개 저장소**로 옮겨짐 — 다운로드 페이지의 버튼은 GitHub 에 로그인한 개발자만 받을 수 있음",
+    "현장 PC 는 **업데이트 키**(읽기 전용)를 한 번 붙여넣으면 지금처럼 원클릭 업데이트, 키가 없으면 \"새 버전 있음\" 알림만",
+    "키는 업데이트 창 또는 명령 팔레트 \"업데이트 키 입력\"에서 넣고 지울 수 있음 (이 PC 의 data 폴더에만 저장)",
+    "고침: 새 버전이 없어도 상단에 **\"⬆ 업데이트 있음\"** 배지가 늘 보이던 문제 (숨김 속성이 버튼 스타일에 밀림)"
+   ]
+  },
   {
    "v": "2.4.0",
    "date": "2026-10-02",
@@ -68,5 +79,19 @@
    ]
   }
  ],
- "page": "https://github.com/eden-0721/BSkang_SW/releases/tag/micromeasurepro-v2.4.0"
+ "page": "https://github.com/eden-0721/MicroMeasurePro/releases/tag/micromeasurepro-v2.4.2",
+ "private": true,
+ "filesRepo": "eden-0721/MicroMeasurePro",
+ "source": "https://github.com/eden-0721/MicroMeasurePro",
+ "previous": {
+  "version": "2.4.0",
+  "setup": {
+   "file": "MicroMeasurePro_Setup_v2.4.0.exe",
+   "url": "https://github.com/eden-0721/BSkang_SW/releases/download/micromeasurepro-v2.4.0/MicroMeasurePro_Setup_v2.4.0.exe",
+   "sha256": "a6118e1cecfff07da58a09a82fe68f58a1261d50a4ea025adeb8755a5501c21b",
+   "size": 12681440
+  },
+  "tag": "micromeasurepro-v2.4.0",
+  "filesRepo": null
+ }
 }
