@@ -8,6 +8,11 @@ name: promote
 on:
   release:
     types: [released]   # pre-release → release 로 바뀔 때 (또는 처음부터 정식으로 올릴 때)
+  workflow_dispatch:    # 실패했거나 수동으로 반영할 때: Actions → promote → Run workflow → 태그 입력
+    inputs:
+      tag:
+        description: "반영할 Release 태그 (예: techconsulthelper-v1.0.0)"
+        required: true
 
 permissions:
   contents: write
@@ -17,12 +22,14 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
+        with:
+          ref: main   # release 이벤트는 태그(detached HEAD)로 체크아웃되므로 main 을 명시
 
       - name: Release 의 latest.json 받기
         env:
           GH_TOKEN: ${{ github.token }}
         run: |
-          gh release download "${{ github.event.release.tag_name }}" -p latest.json -D /tmp/rel
+          gh release download "${{ github.event.release.tag_name || inputs.tag }}" -p latest.json -D /tmp/rel
           test -f /tmp/rel/latest.json
 
       - name: <app>/latest.json 과 programs.json 갱신
@@ -55,5 +62,5 @@ jobs:
           git config user.name "release-bot"
           git config user.email "release-bot@users.noreply.github.com"
           git add -A
-          git commit -m "${{ github.event.release.tag_name }} 정식 반영" || echo "변경 없음"
-          git push
+          git commit -m "${{ github.event.release.tag_name || inputs.tag }} 정식 반영" || echo "변경 없음"
+          git push origin HEAD:main
