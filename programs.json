@@ -119,6 +119,24 @@
      "url": "https://github.com/login?return_to=/eden-0721/test_reports/releases/download/testreport-auth/client_secrets.json"
     }
    ]
+  },
+  {
+   "app": "ledger",
+   "name": "천안중앙교회 토요학교 회계",
+   "description": "종이 금전출납부를 사진으로 옮기고, 교회 양식 그대로 월 회계보고·기수 전체 보고를 만드는 토요학교 회계장부",
+   "icon": "icon-64.png",
+   "kind": "web",
+   "private": true,
+   "version": "0.9.1",
+   "date": "2026-09-28",
+   "web": {
+    "url": "https://ledger.badboysbk.workers.dev"
+   },
+   "zip": {
+    "url": "https://github.com/eden-0721/ledger/archive/refs/heads/main.zip"
+   },
+   "source": "https://github.com/eden-0721/ledger",
+   "notes": true
   }
  ]
 }
