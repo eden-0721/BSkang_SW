@@ -38,6 +38,23 @@
    "page": "https://github.com/eden-0721/TechConsultHelper/releases/tag/techconsulthelper-v1.0.1",
    "icon": "icon-64.png",
    "private": true
+  },
+  {
+   "app": "testreport",
+   "name": "시험성적서 워크벤치",
+   "description": "시험성적서 작성·발행 (비공개)",
+   "icon": "icon-64.png",
+   "private": true,
+   "version": "2.0.0",
+   "date": "2026-10-02",
+   "setup": {
+    "file": "TestReport_Setup_v2.0.0.exe",
+    "url": "https://github.com/login?return_to=/eden-0721/test_reports/releases/download/testreport-v2.0.0/TestReport_Setup_v2.0.0.exe",
+    "size": 3678953,
+    "sha256": "2e0e7e5adc7cac03cd43f40ee37ef42194259ff2c81748eb7e25c16d3035fea5"
+   },
+   "page": "https://github.com/eden-0721/test_reports/releases/tag/testreport-v2.0.0",
+   "source": "https://github.com/eden-0721/test_reports"
   }
  ]
 }
