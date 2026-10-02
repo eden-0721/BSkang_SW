@@ -24,6 +24,8 @@
     .empty { color: var(--muted); padding: 30px; text-align: center; }
     .note { font-size: 12.5px; color: var(--muted); max-width: 920px; margin: 0 auto; padding: 0 20px 30px; line-height: 1.6; }
     .note b { color: var(--text); }
+    .notes { grid-column: 1 / -1; border-top: 1px solid var(--border); padding-top: 10px; font-size: 13.5px; }
+    .notes .note { margin-bottom: 10px; } .notes .note span { color: var(--muted); font-size: 12.5px; margin-left: 6px; } .notes ul { margin: 4px 0 0; padding-left: 18px; }
     @media (max-width: 600px) { .card { grid-template-columns: 44px 1fr; } .btns { grid-column: 1 / -1; flex-direction: row; } .btn { flex: 1; } }
   </style>
 </head>
@@ -54,16 +56,30 @@
             <div>
               <h2>${esc(p.name)} <small style="color:#64748b;font-weight:500">v${esc(p.version)}</small></h2>
               <p class="desc">${esc(p.description || '')}</p>
-              <div class="meta">${esc(p.date || '')} · 설치 파일 ${p.setup ? fmt(p.setup.size) : ''}${p.prerelease ? ` · 시험판 v${esc(p.prerelease.version)} 있음` : ''}</div>
+              <div class="meta">${esc(p.date || '')} · ${p.kind === 'web' ? '웹 앱 (설치 파일 없음 — 폰은 홈 화면에 추가)' : '설치 파일 ' + (p.setup ? fmt(p.setup.size) : '')}${p.prerelease ? ` · 시험판 v${esc(p.prerelease.version)} 있음` : ''}</div>
             </div>
             <div class="btns">
-              <a class="btn" href="${esc(p.setup && p.setup.url)}" title="${p.private ? 'GitHub 로그인이 필요합니다 (허용된 계정만)' : ''}">⬇ 설치 파일 받기${p.private ? ' 🔒' : ''}</a>
+              ${p.kind === 'web' ? `<a class="btn" href="${esc(p.web && p.web.url)}" target="_blank" rel="noopener" title="가입된 사람만 쓸 수 있습니다">🌐 앱 열기</a>`
+                : `<a class="btn" href="${esc(p.setup && p.setup.url)}" title="${p.private ? 'GitHub 로그인이 필요합니다 (허용된 계정만)' : ''}">⬇ 설치 파일 받기${p.private ? ' 🔒' : ''}</a>`}
               ${p.prerelease && p.prerelease.url ? `<a class="btn sub" href="${esc(p.prerelease.url)}" title="시험판 — 개발자 확인용${p.private ? ' (GitHub 로그인 필요)' : ''}">⬇ 개발판(시험판) v${esc(p.prerelease.version)} 받기${p.private ? ' 🔒' : ''}</a>` : ''}
-              ${p.zip ? `<a class="btn sub" href="${esc(p.zip.url)}">ZIP (설치 없이 압축 풀기)${p.private ? ' 🔒' : ''}</a>` : ''}
+              ${p.zip ? `<a class="btn sub" href="${esc(p.zip.url)}">${p.kind === 'web' ? '소스 ZIP 받기 (다른 PC에서 개발)' : 'ZIP (설치 없이 압축 풀기)'}${p.private ? ' 🔒' : ''}</a>` : ''}
               ${p.source ? `<a class="btn sub" href="${esc(p.source)}" target="_blank" rel="noopener" title="소스 저장소 (비공개 — 개발자만)">개발용 소스 🔒</a>` : ''}
-              ${p.page ? `<a class="btn sub" href="${esc(p.page)}" target="_blank" rel="noopener">바뀐 내용 보기</a>` : ''}
+              ${p.page ? `<a class="btn sub" href="${esc(p.page)}" target="_blank" rel="noopener">바뀐 내용 보기</a>` : p.notes ? `<button class="btn sub" type="button" data-notes="${esc(p.app)}">바뀐 내용 보기</button>` : ''}
             </div>
-          </div>`).join('');
+          </div>
+          ${p.notes ? `<div class="notes" id="notes-${esc(p.app)}" hidden></div>` : ''}`).join('');
+        // 바뀐 내용 (notes.json) — 누르면 카드 아래에 펼친다
+        for (const b of list.querySelectorAll('[data-notes]')) b.addEventListener('click', async () => {
+          const box = document.getElementById('notes-' + b.dataset.notes);
+          if (!box.hidden) { box.hidden = true; return; }
+          if (!box.childElementCount) {
+            try {
+              const n = await (await fetch(b.dataset.notes + '/notes.json', { cache: 'no-store' })).json();
+              box.innerHTML = (n.notes || []).map(x => `<div class="note"><b>v${esc(x.v)}</b> <span>${esc(x.date)} · ${esc(x.title || '')}</span><ul>${(x.items || []).map(i => `<li>${esc(i)}</li>`).join('')}</ul></div>`).join('') || '<div class="empty">아직 적힌 내용이 없습니다.</div>';
+            } catch { box.innerHTML = '<div class="empty">바뀐 내용을 불러오지 못했습니다.</div>'; }
+          }
+          box.hidden = false;
+        });
       } catch (e) {
         list.innerHTML = '<div class="empty">목록을 불러오지 못했습니다.</div>';
       }

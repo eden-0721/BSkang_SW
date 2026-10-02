@@ -57,6 +57,24 @@
    },
    "page": "https://github.com/eden-0721/test_reports/releases/tag/testreport-v2.0.0",
    "source": "https://github.com/eden-0721/test_reports"
+  },
+  {
+   "app": "learn-eng",
+   "name": "영어 배우기",
+   "description": "아이부터 어른까지, 하루 몇 분 만화와 이야기로 배우는 가족·반 영어 공부 앱",
+   "icon": "icon-64.png",
+   "kind": "web",
+   "private": true,
+   "version": "0.10.21",
+   "date": "2026-10-02",
+   "web": {
+    "url": "https://learn-eng.badboysbk.workers.dev"
+   },
+   "zip": {
+    "url": "https://github.com/eden-0721/learn_eng/archive/refs/heads/main.zip"
+   },
+   "source": "https://github.com/eden-0721/learn_eng",
+   "notes": true
   }
  ]
 }
