@@ -1,0 +1,27 @@
+{
+    "app":  "TechConsultHelper",
+    "name":  "기술지도 스마트 도우미",
+    "version":  "1.0.0",
+    "tag":  "techconsulthelper-v1.0.0",
+    "date":  "2026-10-02",
+    "setup":  {
+                  "file":  "TechConsultHelper_Setup_v1.0.0.exe",
+                  "url":  "https://github.com/eden-0721/BSkang_SW/releases/download/techconsulthelper-v1.0.0/TechConsultHelper_Setup_v1.0.0.exe",
+                  "size":  2225333,
+                  "sha256":  "f56cd67bb103899f3eef5e0d449d46636b38818cc56bd0e0feb833621e7ef0ed"
+              },
+    "zip":  {
+                "file":  "TechConsultHelper_v1.0.0.zip",
+                "url":  "https://github.com/eden-0721/BSkang_SW/releases/download/techconsulthelper-v1.0.0/TechConsultHelper_v1.0.0.zip",
+                "size":  136921,
+                "sha256":  "a05c863d5f546afc04dcd1b3eec4b157fe44897a6f0b3fa301ed237f3584f76a"
+            },
+    "notes":  [
+                  "최초 배포판",
+                  "S315 기술지도등록 화면 자동 입력 (조회 항목은 순서대로, 업체정보 검색 창 자동 선택)",
+                  "AI 없이 쓰는 문장 조합 엔진 (분야·항목별 용어, 이력과 중복되지 않는 조합)",
+                  "거래처 DB, 프로젝트별 1~8단계 이력, 연간 실적 현황, CSV 내보내기",
+                  "구글 드라이브 자동 동기화, 백업 저장/복원"
+              ],
+    "publishedAt":  "2026-10-02T02:11:57Z"
+}
