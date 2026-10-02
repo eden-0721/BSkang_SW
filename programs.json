@@ -1,3 +1,26 @@
 {
- "programs": []
+ "programs": [
+  {
+   "app": "micromeasurepro",
+   "name": "MicroMeasure Pro",
+   "description": "현미경 단면 정밀 계측 + 공정 통계 분석",
+   "icon": "icon-64.png",
+   "channel": "release",
+   "version": "2.4.0",
+   "date": "2026-10-02",
+   "setup": {
+    "file": "MicroMeasurePro_Setup_v2.4.0.exe",
+    "url": "https://github.com/eden-0721/BSkang_SW/releases/download/micromeasurepro-v2.4.0/MicroMeasurePro_Setup_v2.4.0.exe",
+    "sha256": "a6118e1cecfff07da58a09a82fe68f58a1261d50a4ea025adeb8755a5501c21b",
+    "size": 12681440
+   },
+   "zip": {
+    "file": "MicroMeasurePro_v2.4.0.zip",
+    "url": "https://github.com/eden-0721/BSkang_SW/releases/download/micromeasurepro-v2.4.0/MicroMeasurePro_v2.4.0.zip",
+    "sha256": "188628d1e32bbae97895dbb2a50af4435fa7734564489fd2411ffd9344bc486e",
+    "size": 13414833
+   },
+   "page": "https://github.com/eden-0721/BSkang_SW/releases/tag/micromeasurepro-v2.4.0"
+  }
+ ]
 }
