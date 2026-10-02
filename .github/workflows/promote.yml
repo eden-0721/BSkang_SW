@@ -1,0 +1,59 @@
+# 공개 선반 저장소(eden-0721/BSkang_SW)에 넣을 워크플로 — .github/workflows/promote.yml
+# 모든 프로그램이 공유한다 (한 번만 넣으면 됨).
+# 선반 Release 에서 사람이 "pre-release" 를 해제해 정식(released)으로 바꾸면:
+#   Release 에 첨부된 latest.json 을 <app>/latest.json 으로 복사하고 programs.json(다운로드 페이지 목록)을 갱신한다.
+# 태그 규칙: <app소문자>-vX.Y.Z  (예: techconsulthelper-v1.0.0)
+name: promote
+
+on:
+  release:
+    types: [released]   # pre-release → release 로 바뀔 때 (또는 처음부터 정식으로 올릴 때)
+
+permissions:
+  contents: write
+
+jobs:
+  promote:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Release 의 latest.json 받기
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          gh release download "${{ github.event.release.tag_name }}" -p latest.json -D /tmp/rel
+          test -f /tmp/rel/latest.json
+
+      - name: <app>/latest.json 과 programs.json 갱신
+        run: |
+          APP=$(node -e "console.log(require('/tmp/rel/latest.json').app)")
+          mkdir -p "$APP"
+          cp /tmp/rel/latest.json "$APP/latest.json"
+          rm -f "$APP/prerelease.json"
+          node -e '
+            const fs = require("fs");
+            const l = require("/tmp/rel/latest.json");
+            const f = "programs.json";
+            const data = fs.existsSync(f) ? JSON.parse(fs.readFileSync(f, "utf8")) : { programs: [] };
+            const entry = {
+              app: l.app, name: l.name || l.app, version: l.version, date: l.date || "",
+              description: (l.description || ""),
+              setup: { url: l.setup.url, size: l.setup.size },
+              zip: l.zip ? { url: l.zip.url } : undefined,
+              page: "https://github.com/eden-0721/BSkang_SW/releases/tag/" + l.tag,
+              icon: "icon-64.png"
+            };
+            const i = data.programs.findIndex(p => p.app === l.app);
+            if (i >= 0) data.programs[i] = { ...data.programs[i], ...entry, prerelease: undefined };
+            else data.programs.push(entry);
+            fs.writeFileSync(f, JSON.stringify(data, null, 1) + "\n");
+          '
+
+      - name: 커밋
+        run: |
+          git config user.name "release-bot"
+          git config user.email "release-bot@users.noreply.github.com"
+          git add -A
+          git commit -m "${{ github.event.release.tag_name }} 정식 반영" || echo "변경 없음"
+          git push
