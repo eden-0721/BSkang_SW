@@ -96,23 +96,6 @@
    "notes": true
   },
   {
-   "app": "testreport",
-   "name": "시험성적서 워크벤치",
-   "description": "시험성적서 작성·발행 (비공개)",
-   "icon": "icon-64.png",
-   "private": true,
-   "version": "2.0.1",
-   "date": "2026-10-02",
-   "setup": {
-    "file": "TestReport_Setup_v2.0.1.exe",
-    "url": "https://github.com/login?return_to=/eden-0721/test_reports/releases/download/testreport-v2.0.1/TestReport_Setup_v2.0.1.exe",
-    "size": 3681623,
-    "sha256": "8cc9dcec220b78834bc3e8455568e791ef02873cdf855f4e1a38292aed45b579"
-   },
-   "page": "https://github.com/eden-0721/test_reports/releases/tag/testreport-v2.0.1",
-   "source": "https://github.com/eden-0721/test_reports"
-  },
-  {
    "app": "ledger",
    "name": "천안중앙교회 토요학교 회계",
    "description": "종이 금전출납부를 사진으로 옮기고, 교회 양식 그대로 월 회계보고·기수 전체 보고를 만드는 토요학교 회계장부",
@@ -129,6 +112,23 @@
    },
    "source": "https://github.com/eden-0721/ledger",
    "notes": true
+  },
+  {
+   "app": "testreport",
+   "name": "시험성적서 워크벤치",
+   "description": "시험성적서 작성·발행 (비공개)",
+   "icon": "icon-64.png",
+   "private": true,
+   "version": "2.0.2",
+   "date": "2026-10-02",
+   "setup": {
+    "file": "TestReport_Setup_v2.0.2.exe",
+    "url": "https://github.com/login?return_to=/eden-0721/test_reports/releases/download/testreport-v2.0.2/TestReport_Setup_v2.0.2.exe",
+    "size": 3681972,
+    "sha256": "404b4d4cc86e0ce85aa0b2f950d7f1c520cbbc42b4cbc5d798b9ea9be4045f6e"
+   },
+   "page": "https://github.com/eden-0721/test_reports/releases/tag/testreport-v2.0.2",
+   "source": "https://github.com/eden-0721/test_reports"
   }
  ],
  "shared": [
