@@ -21,6 +21,22 @@
     "size": 13414833
    },
    "page": "https://github.com/eden-0721/BSkang_SW/releases/tag/micromeasurepro-v2.4.0"
+  },
+  {
+   "app": "TechConsultHelper",
+   "name": "기술지도 스마트 도우미",
+   "version": "1.0.0",
+   "date": "2026-10-02",
+   "description": "",
+   "setup": {
+    "url": "https://github.com/eden-0721/BSkang_SW/releases/download/techconsulthelper-v1.0.0/TechConsultHelper_Setup_v1.0.0.exe",
+    "size": 2225333
+   },
+   "zip": {
+    "url": "https://github.com/eden-0721/BSkang_SW/releases/download/techconsulthelper-v1.0.0/TechConsultHelper_v1.0.0.zip"
+   },
+   "page": "https://github.com/eden-0721/BSkang_SW/releases/tag/techconsulthelper-v1.0.0",
+   "icon": "icon-64.png"
   }
  ]
 }
