@@ -1,19 +1,26 @@
 {
  "app": "testreport",
  "name": "시험성적서 워크벤치",
- "version": "2.0.1",
+ "version": "2.0.2",
  "date": "2026-10-02",
  "channel": "release",
- "tag": "testreport-v2.0.1",
+ "tag": "testreport-v2.0.2",
  "private": true,
  "filesRepo": "eden-0721/test_reports",
  "setup": {
-  "file": "TestReport_Setup_v2.0.1.exe",
-  "url": "https://github.com/eden-0721/test_reports/releases/download/testreport-v2.0.1/TestReport_Setup_v2.0.1.exe",
-  "sha256": "8cc9dcec220b78834bc3e8455568e791ef02873cdf855f4e1a38292aed45b579",
-  "size": 3681623
+  "file": "TestReport_Setup_v2.0.2.exe",
+  "url": "https://github.com/eden-0721/test_reports/releases/download/testreport-v2.0.2/TestReport_Setup_v2.0.2.exe",
+  "sha256": "404b4d4cc86e0ce85aa0b2f950d7f1c520cbbc42b4cbc5d798b9ea9be4045f6e",
+  "size": 3681972
  },
  "notes": [
+  {
+   "v": "2.0.2",
+   "date": "2026-10-02",
+   "items": [
+    "구글 드라이브에 같은 이름의 폴더(bs_software)가 둘 생겼을 때 빈 새 폴더를 골라 '클라우드에 아직 파일 없음'으로 보이던 문제 수정 (가장 먼저 만든 폴더를 씀)"
+   ]
+  },
   {
    "v": "2.0.1",
    "date": "2026-10-02",
