@@ -13,26 +13,27 @@
     h1 { margin: 0 0 4px; font-size: 24px; }
     header p { margin: 0; color: var(--muted); }
     main { max-width: 920px; margin: 0 auto; padding: 0 20px 40px; display: grid; gap: 14px; }
-    .card { background: var(--card); border: 1px solid var(--border); border-radius: 12px; padding: 18px 20px; display: grid; grid-template-columns: 56px 1fr auto; gap: 16px; align-items: center; }
+    .card { background: var(--card); border: 1px solid var(--border); border-radius: 12px; padding: 18px 20px; display: grid; grid-template-columns: 56px 1fr 200px; gap: 16px; align-items: center; }
     .card img { width: 56px; height: 56px; border-radius: 10px; }
     .card h2 { margin: 0 0 2px; font-size: 17px; }
     .card .desc { color: var(--muted); font-size: 13.5px; margin: 0 0 6px; }
     .card .meta { font-size: 12.5px; color: var(--muted); }
     .btns { display: flex; flex-direction: column; gap: 6px; align-items: stretch; }
     .btn { display: inline-block; padding: 9px 16px; border-radius: 8px; background: var(--accent); color: #fff; text-decoration: none; font-weight: 600; text-align: center; white-space: nowrap; }
-    .btn.sub { background: #e2e8f0; color: var(--text); font-weight: 500; font-size: 13px; padding: 6px 12px; }
+    .btn.sub { background: #e2e8f0; color: var(--text); font-weight: 500; font-size: 13px; padding: 7px 12px; }
+    .btn, .btn.sub { overflow: hidden; text-overflow: ellipsis; }
     .empty { color: var(--muted); padding: 30px; text-align: center; }
     .note { font-size: 12.5px; color: var(--muted); max-width: 920px; margin: 0 auto; padding: 0 20px 30px; line-height: 1.6; }
     .note b { color: var(--text); }
     .notes { grid-column: 1 / -1; border-top: 1px solid var(--border); padding-top: 10px; font-size: 13.5px; }
     .notes .note { margin-bottom: 10px; } .notes .note span { color: var(--muted); font-size: 12.5px; margin-left: 6px; } .notes ul { margin: 4px 0 0; padding-left: 18px; }
-    @media (max-width: 600px) { .card { grid-template-columns: 44px 1fr; } .btns { grid-column: 1 / -1; flex-direction: row; } .btn { flex: 1; } }
+    @media (max-width: 600px) { .card { grid-template-columns: 44px 1fr; } .btns { grid-column: 1 / -1; flex-direction: row; flex-wrap: wrap; } .btn { flex: 1 1 45%; } .btn:not(.sub) { flex-basis: 100%; } }
   </style>
 </head>
 <body>
   <header>
     <h1>BSKang_SW</h1>
-    <p>프로그램 설치 파일 다운로드. 설치하면 <b>C:\BSKang_SW\</b> 아래에 들어가고, 이후 업데이트는 프로그램 안의 "⬆ 업데이트" 버튼으로 받습니다.<br><b>설치 파일은 비공개 저장소에 있습니다</b> — 버튼을 누르면 GitHub 로그인 화면이 나오고, 허용된 계정만 받을 수 있습니다.</p>
+    <p>프로그램 설치 파일과 웹 앱 주소. 설치형은 <b>C:\BSKang_SW\</b> 아래에 들어가고 이후 업데이트는 프로그램 안의 "⬆ 업데이트" 버튼으로, 웹 앱은 "앱 열기"로 바로 씁니다(폰은 홈 화면에 추가).<br><b>🔒 파일은 비공개 저장소에 있습니다</b> — 누르면 GitHub 로그인 화면이 나오고, 허용된 계정만 받을 수 있습니다.</p>
   </header>
   <main id="list"><div class="empty">목록을 불러오는 중…</div></main>
   <div class="note">
@@ -60,9 +61,9 @@
             </div>
             <div class="btns">
               ${p.kind === 'web' ? `<a class="btn" href="${esc(p.web && p.web.url)}" target="_blank" rel="noopener" title="가입된 사람만 쓸 수 있습니다">🌐 앱 열기</a>`
-                : `<a class="btn" href="${esc(p.setup && p.setup.url)}" title="${p.private ? 'GitHub 로그인이 필요합니다 (허용된 계정만)' : ''}">⬇ 설치 파일 받기${p.private ? ' 🔒' : ''}</a>`}
-              ${p.prerelease && p.prerelease.url ? `<a class="btn sub" href="${esc(p.prerelease.url)}" title="시험판 — 개발자 확인용${p.private ? ' (GitHub 로그인 필요)' : ''}">⬇ 개발판(시험판) v${esc(p.prerelease.version)} 받기${p.private ? ' 🔒' : ''}</a>` : ''}
-              ${p.zip ? `<a class="btn sub" href="${esc(p.zip.url)}">${p.kind === 'web' ? '소스 ZIP 받기 (다른 PC에서 개발)' : 'ZIP (설치 없이 압축 풀기)'}${p.private ? ' 🔒' : ''}</a>` : ''}
+                : `<a class="btn" href="${esc(p.setup && p.setup.url)}" title="${p.private ? 'GitHub 로그인이 필요합니다 (허용된 계정만)' : ''}">⬇ 설치 파일${p.private ? ' 🔒' : ''}</a>`}
+              ${p.prerelease && p.prerelease.url ? `<a class="btn sub" href="${esc(p.prerelease.url)}" title="시험판 — 개발자 확인용${p.private ? ' (GitHub 로그인 필요)' : ''}">⬇ 시험판 v${esc(p.prerelease.version)}${p.private ? ' 🔒' : ''}</a>` : ''}
+              ${p.zip ? `<a class="btn sub" href="${esc(p.zip.url)}">${p.kind === 'web' ? '소스 ZIP (최신)' : 'ZIP (설치 없이)'}${p.private ? ' 🔒' : ''}</a>` : ''}
               ${p.source ? `<a class="btn sub" href="${esc(p.source)}" target="_blank" rel="noopener" title="소스 저장소 (비공개 — 개발자만)">개발용 소스 🔒</a>` : ''}
               ${p.page ? `<a class="btn sub" href="${esc(p.page)}" target="_blank" rel="noopener">바뀐 내용 보기</a>` : p.notes ? `<button class="btn sub" type="button" data-notes="${esc(p.app)}">바뀐 내용 보기</button>` : ''}
             </div>
