@@ -9,24 +9,29 @@
     :root { --bg: #f8fafc; --card: #fff; --text: #0f172a; --muted: #64748b; --accent: #2563eb; --border: #e2e8f0; }
     * { box-sizing: border-box; }
     body { margin: 0; font-family: "Segoe UI", "Malgun Gothic", sans-serif; background: var(--bg); color: var(--text); }
-    header { padding: 28px 20px 16px; max-width: 920px; margin: 0 auto; }
+    header { padding: 28px 20px 16px; max-width: 1240px; margin: 0 auto; }
     h1 { margin: 0 0 4px; font-size: 24px; }
     header p { margin: 0; color: var(--muted); }
-    main { max-width: 920px; margin: 0 auto; padding: 0 20px 40px; display: grid; gap: 14px; }
-    .card { background: var(--card); border: 1px solid var(--border); border-radius: 12px; padding: 18px 20px; display: grid; grid-template-columns: 56px 1fr 200px; gap: 16px; align-items: center; }
+    main { max-width: 1240px; margin: 0 auto; padding: 0 20px 40px; display: grid; grid-template-columns: 1fr 1fr; gap: 20px; align-items: start; }
+    .col { display: grid; gap: 14px; align-content: start; min-width: 0; }
+    .col > h3 { margin: 4px 2px 0; font-size: 14px; color: var(--muted); font-weight: 600; letter-spacing: 0.2px; }
+    .card { background: var(--card); border: 1px solid var(--border); border-radius: 12px; padding: 18px 20px; display: grid; grid-template-columns: 56px 1fr 180px; gap: 16px; align-items: center; min-width: 0; }
+    .card > div { min-width: 0; }
     .card img { width: 56px; height: 56px; border-radius: 10px; }
     .card h2 { margin: 0 0 2px; font-size: 17px; }
     .card .desc { color: var(--muted); font-size: 13.5px; margin: 0 0 6px; }
     .card .meta { font-size: 12.5px; color: var(--muted); }
     .btns { display: flex; flex-direction: column; gap: 6px; align-items: stretch; }
-    .btn { display: inline-block; padding: 9px 16px; border-radius: 8px; background: var(--accent); color: #fff; text-decoration: none; font-weight: 600; text-align: center; white-space: nowrap; }
+    .btn { display: inline-block; padding: 9px 16px; border-radius: 8px; background: var(--accent); color: #fff; text-decoration: none; font-weight: 600; text-align: center; white-space: nowrap; border: 0; font: inherit; font-weight: 600; cursor: pointer; }
     .btn.sub { background: #e2e8f0; color: var(--text); font-weight: 500; font-size: 13px; padding: 7px 12px; }
     .btn, .btn.sub { overflow: hidden; text-overflow: ellipsis; }
     .empty { color: var(--muted); padding: 30px; text-align: center; }
-    .note { font-size: 12.5px; color: var(--muted); max-width: 920px; margin: 0 auto; padding: 0 20px 30px; line-height: 1.6; }
+    .note { font-size: 12.5px; color: var(--muted); max-width: 1240px; margin: 0 auto; padding: 0 20px 30px; line-height: 1.6; }
     .note b { color: var(--text); }
     .notes { grid-column: 1 / -1; border-top: 1px solid var(--border); padding-top: 10px; font-size: 13.5px; }
-    .notes .note { margin-bottom: 10px; } .notes .note span { color: var(--muted); font-size: 12.5px; margin-left: 6px; } .notes ul { margin: 4px 0 0; padding-left: 18px; }
+    .notes .note { margin: 0 0 10px; padding: 0; max-width: none; color: var(--text); font-size: 13.5px; } .notes .note span { color: var(--muted); font-size: 12.5px; margin-left: 6px; } .notes ul { margin: 4px 0 0; padding-left: 18px; }
+    .notes .empty { padding: 8px; }
+    @media (max-width: 1000px) { main { grid-template-columns: 1fr; } }
     @media (max-width: 600px) { .card { grid-template-columns: 44px 1fr; } .btns { grid-column: 1 / -1; flex-direction: row; flex-wrap: wrap; } .btn { flex: 1 1 45%; } .btn:not(.sub) { flex-basis: 100%; } }
   </style>
 </head>
@@ -46,12 +51,7 @@
       const list = document.getElementById('list');
       const fmt = n => (n >= 1048576 ? (n / 1048576).toFixed(1) + ' MB' : Math.round(n / 1024) + ' KB');
       const esc = s => String(s == null ? '' : s).replace(/[&<>"]/g, c => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;' }[c]));
-      try {
-        const r = await fetch('programs.json', { cache: 'no-store' });
-        const data = await r.json();
-        const ps = (data && data.programs) || [];
-        if (!ps.length) { list.innerHTML = '<div class="empty">아직 올라온 프로그램이 없습니다.</div>'; return; }
-        list.innerHTML = ps.map(p => `
+      const card = p => `
           <div class="card">
             <img src="${esc(p.app)}/${esc(p.icon || 'icon-64.png')}" alt="" onerror="this.style.visibility='hidden'">
             <div>
@@ -66,21 +66,40 @@
               ${p.zip ? `<a class="btn sub" href="${esc(p.zip.url)}">${p.kind === 'web' ? '소스 ZIP (최신)' : 'ZIP (설치 없이)'}${p.private ? ' 🔒' : ''}</a>` : ''}
               ${p.source ? `<a class="btn sub" href="${esc(p.source)}" target="_blank" rel="noopener" title="소스 저장소 (비공개 — 개발자만)">개발용 소스 🔒</a>` : ''}
               ${(p.extras || []).map(x => `<a class="btn sub" href="${esc(x.url)}" title="${esc(x.title || '')}">${esc(x.label)}${x.private ? ' 🔒' : ''}</a>`).join('')}
-              ${p.page ? `<a class="btn sub" href="${esc(p.page)}" target="_blank" rel="noopener">바뀐 내용 보기</a>` : p.notes ? `<button class="btn sub" type="button" data-notes="${esc(p.app)}">바뀐 내용 보기</button>` : ''}
+              <button class="btn sub" type="button" data-notes="${esc(p.app)}">바뀐 내용 보기 ▾</button>
             </div>
-          </div>
-          ${p.notes ? `<div class="notes" id="notes-${esc(p.app)}" hidden></div>` : ''}`).join('');
-        // 바뀐 내용 (notes.json) — 누르면 카드 아래에 펼친다
+            <div class="notes" id="notes-${esc(p.app)}" hidden></div>
+          </div>`;
+      try {
+        const r = await fetch('programs.json', { cache: 'no-store' });
+        const data = await r.json();
+        const ps = (data && data.programs) || [];
+        if (!ps.length) { list.innerHTML = '<div class="empty">아직 올라온 프로그램이 없습니다.</div>'; return; }
+        // 왼쪽 열 = 설치 프로그램, 오른쪽 열 = 웹 앱 (좁은 화면에서는 위아래)
+        const inst = ps.filter(p => p.kind !== 'web'), web = ps.filter(p => p.kind === 'web');
+        const col = (title, items) => `<section class="col"><h3>${title}</h3>${items.length ? items.map(card).join('') : '<div class="empty">없음</div>'}</section>`;
+        list.innerHTML = col('설치 프로그램', inst) + col('웹 앱', web);
+        // 바뀐 내용 — 모든 카드가 같은 방식: 누르면 카드 아래에 펼친다 ({app}/notes.json, 없으면 {app}/latest.json 의 notes)
+        const loadNotes = async app => {
+          for (const f of ['notes.json', 'latest.json']) {
+            try {
+              const res = await fetch(app + '/' + f, { cache: 'no-store' });
+              if (!res.ok) continue;
+              const n = await res.json();
+              if (n.notes && n.notes.length) return n.notes;
+            } catch { /* 다음 파일 */ }
+          }
+          return null;
+        };
         for (const b of list.querySelectorAll('[data-notes]')) b.addEventListener('click', async () => {
           const box = document.getElementById('notes-' + b.dataset.notes);
-          if (!box.hidden) { box.hidden = true; return; }
+          if (!box.hidden) { box.hidden = true; b.textContent = '바뀐 내용 보기 ▾'; return; }
           if (!box.childElementCount) {
-            try {
-              const n = await (await fetch(b.dataset.notes + '/notes.json', { cache: 'no-store' })).json();
-              box.innerHTML = (n.notes || []).map(x => `<div class="note"><b>v${esc(x.v)}</b> <span>${esc(x.date)} · ${esc(x.title || '')}</span><ul>${(x.items || []).map(i => `<li>${esc(i)}</li>`).join('')}</ul></div>`).join('') || '<div class="empty">아직 적힌 내용이 없습니다.</div>';
-            } catch { box.innerHTML = '<div class="empty">바뀐 내용을 불러오지 못했습니다.</div>'; }
+            const notes = await loadNotes(b.dataset.notes);
+            box.innerHTML = notes ? notes.map(x => `<div class="note"><b>v${esc(x.v || x.version)}</b> <span>${esc(x.date || '')}${x.title ? ' · ' + esc(x.title) : ''}</span><ul>${(x.items || []).map(i => `<li>${esc(i)}</li>`).join('')}</ul></div>`).join('')
+              : '<div class="empty">아직 적힌 내용이 없습니다.</div>';
           }
-          box.hidden = false;
+          box.hidden = false; b.textContent = '바뀐 내용 닫기 ▴';
         });
       } catch (e) {
         list.innerHTML = '<div class="empty">목록을 불러오지 못했습니다.</div>';
