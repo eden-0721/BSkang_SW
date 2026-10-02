@@ -93,6 +93,24 @@
    },
    "source": "https://github.com/eden-0721/secretary-app",
    "notes": true
+  },
+  {
+   "app": "via",
+   "name": "VIA",
+   "description": "실제 관광 데이터로 짜는 AI 국내 여행 코스, 맛집·경비 기록까지",
+   "icon": "icon-64.png",
+   "kind": "web",
+   "private": true,
+   "version": "0.43.1",
+   "date": "2026-10-02",
+   "web": {
+    "url": "https://via.badboysbk.workers.dev"
+   },
+   "zip": {
+    "url": "https://github.com/eden-0721/via/archive/refs/heads/main.zip"
+   },
+   "source": "https://github.com/eden-0721/via",
+   "notes": true
   }
  ]
 }
