@@ -1,19 +1,27 @@
 {
  "app": "testreport",
  "name": "시험성적서 워크벤치",
- "version": "2.0.2",
+ "version": "2.0.3",
  "date": "2026-10-02",
  "channel": "release",
- "tag": "testreport-v2.0.2",
+ "tag": "testreport-v2.0.3",
  "private": true,
  "filesRepo": "eden-0721/test_reports",
  "setup": {
-  "file": "TestReport_Setup_v2.0.2.exe",
-  "url": "https://github.com/eden-0721/test_reports/releases/download/testreport-v2.0.2/TestReport_Setup_v2.0.2.exe",
-  "sha256": "404b4d4cc86e0ce85aa0b2f950d7f1c520cbbc42b4cbc5d798b9ea9be4045f6e",
-  "size": 3681972
+  "file": "TestReport_Setup_v2.0.3.exe",
+  "url": "https://github.com/eden-0721/test_reports/releases/download/testreport-v2.0.3/TestReport_Setup_v2.0.3.exe",
+  "sha256": "59a87c819e2958970860222f6923fb48f18694e0f6b8dc7a8b22701d4b1969fe",
+  "size": 3685050
  },
  "notes": [
+  {
+   "v": "2.0.3",
+   "date": "2026-10-02",
+   "items": [
+    "구글 드라이브 동기화: 두 PC 가 한 번씩 동기화하면 양쪽 모두 '동기화됨'으로 보입니다 (내용이 같으면 올리지 않음 — 예전에는 서로 번갈아 '동기화 필요'였음)",
+    "동기화할 때 DB 의 빈 공간을 정리해 크기를 줄이고(예: 22 MB → 11 MB), 지운 성적서의 남은 사진 기록도 정리합니다"
+   ]
+  },
   {
    "v": "2.0.2",
    "date": "2026-10-02",
