@@ -160,7 +160,7 @@
    "icon": "icon-64.png",
    "kind": "web",
    "private": true,
-   "version": "0.4.1",
+   "version": "0.4.2",
    "date": "2026-10-04",
    "web": {
     "url": "https://manageapi.badboysbk.workers.dev"
