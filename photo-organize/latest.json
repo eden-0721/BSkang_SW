@@ -1,25 +1,35 @@
 {
  "app": "photo-organize",
  "name": "사진 정리",
- "version": "0.27.0",
+ "version": "0.28.0",
  "date": "2026-10-04",
  "channel": "release",
- "tag": "photo-organize-v0.27.0",
+ "tag": "photo-organize-v0.28.0",
  "private": true,
  "filesRepo": "eden-0721/photo_organize",
  "setup": {
-  "file": "PhotoOrganize_Setup_v0.27.0.exe",
-  "url": "https://github.com/eden-0721/photo_organize/releases/download/photo-organize-v0.27.0/PhotoOrganize_Setup_v0.27.0.exe",
-  "sha256": "a6af435f53216b79a8434188e4afea58b2dac7a2364d292d092d384120e375e5",
-  "size": 2879077
+  "file": "PhotoOrganize_Setup_v0.28.0.exe",
+  "url": "https://github.com/eden-0721/photo_organize/releases/download/photo-organize-v0.28.0/PhotoOrganize_Setup_v0.28.0.exe",
+  "sha256": "fb07efeb535827b37b1bc9d5e1569be3d98e0edb95b293ad10836c584c242f45",
+  "size": 2880950
  },
  "zip": {
-  "file": "PhotoOrganize_v0.27.0.zip",
-  "url": "https://github.com/eden-0721/photo_organize/releases/download/photo-organize-v0.27.0/PhotoOrganize_v0.27.0.zip",
-  "sha256": "79049320d6199bc843217e26624cb9ef882dc03b2d2008e904a7e7d7255424dd",
-  "size": 754869
+  "file": "PhotoOrganize_v0.28.0.zip",
+  "url": "https://github.com/eden-0721/photo_organize/releases/download/photo-organize-v0.28.0/PhotoOrganize_v0.28.0.zip",
+  "sha256": "9feeebdffb4efc08f2b5ed2eda4da02de8f92dbfb6a006ee4f04fa410e228c57",
+  "size": 757601
  },
  "notes": [
+  {
+   "v": "0.28.0",
+   "date": "2026-10-04",
+   "title": "사진 안에 날짜 쓰기 훨씬 빠르게",
+   "items": [
+    "이미 날짜가 들어 있는 사진은 앞부분만 읽고 바로 넘어가요. 여러 개를 동시에 확인해요",
+    "동영상 형식 바꾸기는 맨 마지막에 그래픽카드로 빠르게 해요",
+    "하는 동안에도 넣음·원래 있음·실패 수와 남은 시간을 보여 줘요"
+   ]
+  },
   {
    "v": "0.27.0",
    "date": "2026-10-04",
