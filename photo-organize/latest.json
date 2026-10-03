@@ -1,25 +1,35 @@
 {
  "app": "photo-organize",
  "name": "사진 정리",
- "version": "0.24.0",
+ "version": "0.25.0",
  "date": "2026-10-04",
  "channel": "release",
- "tag": "photo-organize-v0.24.0",
+ "tag": "photo-organize-v0.25.0",
  "private": true,
  "filesRepo": "eden-0721/photo_organize",
  "setup": {
-  "file": "PhotoOrganize_Setup_v0.24.0.exe",
-  "url": "https://github.com/eden-0721/photo_organize/releases/download/photo-organize-v0.24.0/PhotoOrganize_Setup_v0.24.0.exe",
-  "sha256": "8c6c7dc56152ab50a0582d72255ed5064533a972117c9212f03d18e13c87927b",
-  "size": 2870647
+  "file": "PhotoOrganize_Setup_v0.25.0.exe",
+  "url": "https://github.com/eden-0721/photo_organize/releases/download/photo-organize-v0.25.0/PhotoOrganize_Setup_v0.25.0.exe",
+  "sha256": "ab7032a4621776c2c63fae4aca79cd635326fad8fb90cd18a0832f1b1991418f",
+  "size": 2874439
  },
  "zip": {
-  "file": "PhotoOrganize_v0.24.0.zip",
-  "url": "https://github.com/eden-0721/photo_organize/releases/download/photo-organize-v0.24.0/PhotoOrganize_v0.24.0.zip",
-  "sha256": "646b9122a7fb98acfec68ae826d8d1b63d5feb343378de996be86d59a0d93f38",
-  "size": 739408
+  "file": "PhotoOrganize_v0.25.0.zip",
+  "url": "https://github.com/eden-0721/photo_organize/releases/download/photo-organize-v0.25.0/PhotoOrganize_v0.25.0.zip",
+  "sha256": "98fd7154dc23d6299129deb5dd95d208226c47579777acd69b142538d6304a21",
+  "size": 746512
  },
  "notes": [
+  {
+   "v": "0.25.0",
+   "date": "2026-10-04",
+   "title": "날짜를 넣을 수 없는 형식은 바꿔서 넣기",
+   "items": [
+    "BMP와 움직이지 않는 GIF는 그림 그대로 PNG로 바꿔서 날짜를 넣어요",
+    "AVI·WMV·MPG·MKV·MTS 동영상과 움직이는 GIF는 MP4로 바꿔서 날짜를 넣어요. 가능하면 화질 그대로 바꿔요",
+    "원본은 따로 보관하고, 되돌릴 수 있어요"
+   ]
+  },
   {
    "v": "0.24.0",
    "date": "2026-10-04",
