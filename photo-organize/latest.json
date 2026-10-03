@@ -1,25 +1,35 @@
 {
  "app": "photo-organize",
  "name": "사진 정리",
- "version": "0.20.0",
+ "version": "0.21.0",
  "date": "2026-10-03",
  "channel": "release",
- "tag": "photo-organize-v0.20.0",
+ "tag": "photo-organize-v0.21.0",
  "private": true,
  "filesRepo": "eden-0721/photo_organize",
  "setup": {
-  "file": "PhotoOrganize_Setup_v0.20.0.exe",
-  "url": "https://github.com/eden-0721/photo_organize/releases/download/photo-organize-v0.20.0/PhotoOrganize_Setup_v0.20.0.exe",
-  "sha256": "d3f9b9645afe1dcdfe06d2ff3b956bd19a517ab9e642b694b926d1a70f16d2c4",
-  "size": 2255347
+  "file": "PhotoOrganize_Setup_v0.21.0.exe",
+  "url": "https://github.com/eden-0721/photo_organize/releases/download/photo-organize-v0.21.0/PhotoOrganize_Setup_v0.21.0.exe",
+  "sha256": "361400bc72d0dc5d925ae4ffa60bdbbbcaebf88beaff02734803a1f114551afc",
+  "size": 2851084
  },
  "zip": {
-  "file": "PhotoOrganize_v0.20.0.zip",
-  "url": "https://github.com/eden-0721/photo_organize/releases/download/photo-organize-v0.20.0/PhotoOrganize_v0.20.0.zip",
-  "sha256": "9507df61d6e3e5658764eb609305560660cab153e4a0ff881fa873a9ee50809c",
-  "size": 268362
+  "file": "PhotoOrganize_v0.21.0.zip",
+  "url": "https://github.com/eden-0721/photo_organize/releases/download/photo-organize-v0.21.0/PhotoOrganize_v0.21.0.zip",
+  "sha256": "f15d32c6a11f4f8ba77bd1c1427cb6d39733a586ac9185c5751b44e8d758e21c",
+  "size": 704411
  },
  "notes": [
+  {
+   "v": "0.21.0",
+   "date": "2026-10-03",
+   "title": "새 버전 알림",
+   "items": [
+    "새 버전이 나오면 첫 화면 위에 알려 줘요. [보기]를 누르면 바뀐 내용과 [설치 파일 받기]가 나와요",
+    "[설정]의 '프로그램 버전'에서 지금 버전을 보고 바로 확인할 수 있어요",
+    "아이콘이 새 그림으로 바뀌었어요"
+   ]
+  },
   {
    "v": "0.20.0",
    "date": "2026-10-03",
