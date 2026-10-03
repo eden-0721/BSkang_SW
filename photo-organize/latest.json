@@ -1,25 +1,36 @@
 {
  "app": "photo-organize",
  "name": "사진 정리",
- "version": "0.26.0",
+ "version": "0.27.0",
  "date": "2026-10-04",
  "channel": "release",
- "tag": "photo-organize-v0.26.0",
+ "tag": "photo-organize-v0.27.0",
  "private": true,
  "filesRepo": "eden-0721/photo_organize",
  "setup": {
-  "file": "PhotoOrganize_Setup_v0.26.0.exe",
-  "url": "https://github.com/eden-0721/photo_organize/releases/download/photo-organize-v0.26.0/PhotoOrganize_Setup_v0.26.0.exe",
-  "sha256": "dce0a5e6149dfd652a9433bb9c7ba6ba7990bc4955cf8bca87fdc7ba529ae868",
-  "size": 2876547
+  "file": "PhotoOrganize_Setup_v0.27.0.exe",
+  "url": "https://github.com/eden-0721/photo_organize/releases/download/photo-organize-v0.27.0/PhotoOrganize_Setup_v0.27.0.exe",
+  "sha256": "a6af435f53216b79a8434188e4afea58b2dac7a2364d292d092d384120e375e5",
+  "size": 2879077
  },
  "zip": {
-  "file": "PhotoOrganize_v0.26.0.zip",
-  "url": "https://github.com/eden-0721/photo_organize/releases/download/photo-organize-v0.26.0/PhotoOrganize_v0.26.0.zip",
-  "sha256": "b913bdae5829df6278618d1413485aac9b797c04e5b73b25cbec87dbaefac1dc",
-  "size": 751362
+  "file": "PhotoOrganize_v0.27.0.zip",
+  "url": "https://github.com/eden-0721/photo_organize/releases/download/photo-organize-v0.27.0/PhotoOrganize_v0.27.0.zip",
+  "sha256": "79049320d6199bc843217e26624cb9ef882dc03b2d2008e904a7e7d7255424dd",
+  "size": 754869
  },
  "notes": [
+  {
+   "v": "0.27.0",
+   "date": "2026-10-04",
+   "title": "날짜 쓰기 실패 다시 시도",
+   "items": [
+    "날짜 쓰기가 중간에 멈추던 문제를 고쳤어요",
+    "실패한 것을 이유별로 보고, [다시 시도]로 그것만 다시 할 수 있어요",
+    "사진 안 정보가 깨진 옛 카메라 사진, 이름과 속이 다른 파일, 날짜 칸이 없는 동영상에도 날짜를 넣어요",
+    "NAS가 잠깐 안 보이면 실패로 적지 않고 멈춰요. 다시 누르면 이어서 해요"
+   ]
+  },
   {
    "v": "0.26.0",
    "date": "2026-10-04",
