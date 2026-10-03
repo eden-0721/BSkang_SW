@@ -152,6 +152,24 @@
    },
    "page": "https://github.com/eden-0721/test_reports/releases/tag/testreport-v2.0.4",
    "source": "https://github.com/eden-0721/test_reports"
+  },
+  {
+   "app": "manageapi",
+   "name": "API 키 금고",
+   "description": "API 키를 내 기기 안에서 암호화해 보관하고 어디서든 꺼내 쓰는 개인 금고",
+   "icon": "icon-64.png",
+   "kind": "web",
+   "private": true,
+   "version": "0.2.1",
+   "date": "2026-10-04",
+   "web": {
+    "url": "https://manageapi.badboysbk.workers.dev"
+   },
+   "zip": {
+    "url": "https://github.com/eden-0721/ManageAPI/archive/refs/heads/main.zip"
+   },
+   "source": "https://github.com/eden-0721/ManageAPI",
+   "notes": true
   }
  ],
  "shared": [
