@@ -27,25 +27,19 @@
   {
    "app": "TechConsultHelper",
    "name": "기술지도 스마트 도우미",
-   "version": "1.0.2",
+   "version": "1.0.3",
    "date": "2026-10-03",
    "description": "",
    "setup": {
-    "url": "https://github.com/eden-0721/TechConsultHelper/releases/download/techconsulthelper-v1.0.2/TechConsultHelper_Setup_v1.0.2.exe",
-    "size": 2226587
+    "url": "https://github.com/eden-0721/TechConsultHelper/releases/download/techconsulthelper-v1.0.3/TechConsultHelper_Setup_v1.0.3.exe",
+    "size": 2226869
    },
    "zip": {
-    "url": "https://github.com/eden-0721/TechConsultHelper/releases/download/techconsulthelper-v1.0.2/TechConsultHelper_v1.0.2.zip"
+    "url": "https://github.com/eden-0721/TechConsultHelper/releases/download/techconsulthelper-v1.0.3/TechConsultHelper_v1.0.3.zip"
    },
-   "page": "https://github.com/eden-0721/TechConsultHelper/releases/tag/techconsulthelper-v1.0.2",
+   "page": "https://github.com/eden-0721/TechConsultHelper/releases/tag/techconsulthelper-v1.0.3",
    "icon": "icon-64.png",
-   "private": true,
-   "prerelease": {
-    "version": "1.0.3",
-    "url": "https://github.com/eden-0721/TechConsultHelper/releases/download/techconsulthelper-v1.0.3/TechConsultHelper_Setup_v1.0.3.exe",
-    "zip": "https://github.com/eden-0721/TechConsultHelper/releases/download/techconsulthelper-v1.0.3/TechConsultHelper_v1.0.3.zip",
-    "page": "https://github.com/eden-0721/TechConsultHelper/releases/tag/techconsulthelper-v1.0.3"
-   }
+   "private": true
   },
   {
    "app": "learn-eng",

@@ -1,28 +1,25 @@
 {
     "app":  "TechConsultHelper",
     "name":  "기술지도 스마트 도우미",
-    "version":  "1.0.2",
-    "tag":  "techconsulthelper-v1.0.2",
+    "version":  "1.0.3",
+    "tag":  "techconsulthelper-v1.0.3",
     "date":  "2026-10-03",
     "private":  true,
-    "page":  "https://github.com/eden-0721/TechConsultHelper/releases/tag/techconsulthelper-v1.0.2",
+    "page":  "https://github.com/eden-0721/TechConsultHelper/releases/tag/techconsulthelper-v1.0.3",
     "setup":  {
-                  "file":  "TechConsultHelper_Setup_v1.0.2.exe",
-                  "url":  "https://github.com/eden-0721/TechConsultHelper/releases/download/techconsulthelper-v1.0.2/TechConsultHelper_Setup_v1.0.2.exe",
-                  "size":  2226587,
-                  "sha256":  "477b427cf171f862422fb4baad569d0462c6fe29c746864effbe51e52b784be8"
+                  "file":  "TechConsultHelper_Setup_v1.0.3.exe",
+                  "url":  "https://github.com/eden-0721/TechConsultHelper/releases/download/techconsulthelper-v1.0.3/TechConsultHelper_Setup_v1.0.3.exe",
+                  "size":  2226869,
+                  "sha256":  "58e7f6dc1269d1c0ad7a616f21560af60137b73cd0ff97e5777a04005583a3ac"
               },
     "zip":  {
-                "file":  "TechConsultHelper_v1.0.2.zip",
-                "url":  "https://github.com/eden-0721/TechConsultHelper/releases/download/techconsulthelper-v1.0.2/TechConsultHelper_v1.0.2.zip",
-                "size":  138874,
-                "sha256":  "9c7b2f2cb93329bf46fd45ddbed497ced9a9b8e55699ccdee3bdb9ead748a8e1"
+                "file":  "TechConsultHelper_v1.0.3.zip",
+                "url":  "https://github.com/eden-0721/TechConsultHelper/releases/download/techconsulthelper-v1.0.3/TechConsultHelper_v1.0.3.zip",
+                "size":  139275,
+                "sha256":  "bdf31b07d41997406e83eb71b3172d5f2cf49a855795b0bd51dfe28fe0ac836e"
             },
     "notes":  [
-                  "구글 드라이브 동기화 위치 변경: 내 드라이브 \u003e BSkang_SW \u003e TechConsultHelper",
-                  "동기화 파일을 폴더 경로가 아닌 파일 이름으로 찾음 (드라이브에서 옮겨도 계속 동기화)",
-                  "상위 폴더(bs_software 등)를 새로 만들지 않음 - 중복 폴더 \u0027(1)\u0027 생성 문제 해결",
-                  "LM Studio 가 꺼져 있을 때 확장 오류 목록에 경고가 남지 않도록 변경 (오프라인 모드 전환은 그대로)"
+                  "헤더 겹침 수정: 업데이트 배지가 있을 때 AI 상태는 점(●)만 표시 (마우스를 올리면 전체 문구)"
               ],
-    "publishedAt":  "2026-10-03T13:43:04Z"
+    "publishedAt":  "2026-10-03T13:57:32Z"
 }
