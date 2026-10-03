@@ -1,19 +1,26 @@
 {
  "app": "testreport",
  "name": "시험성적서 워크벤치",
- "version": "2.0.3",
- "date": "2026-10-02",
+ "version": "2.0.4",
+ "date": "2026-10-03",
  "channel": "release",
- "tag": "testreport-v2.0.3",
+ "tag": "testreport-v2.0.4",
  "private": true,
  "filesRepo": "eden-0721/test_reports",
  "setup": {
-  "file": "TestReport_Setup_v2.0.3.exe",
-  "url": "https://github.com/eden-0721/test_reports/releases/download/testreport-v2.0.3/TestReport_Setup_v2.0.3.exe",
-  "sha256": "59a87c819e2958970860222f6923fb48f18694e0f6b8dc7a8b22701d4b1969fe",
-  "size": 3685050
+  "file": "TestReport_Setup_v2.0.4.exe",
+  "url": "https://github.com/eden-0721/test_reports/releases/download/testreport-v2.0.4/TestReport_Setup_v2.0.4.exe",
+  "sha256": "995a1b5c81815cc609bd17b45fed7cef8823cde71d11d9fa5867c747e9b14ae0",
+  "size": 3685745
  },
  "notes": [
+  {
+   "v": "2.0.4",
+   "date": "2026-10-03",
+   "items": [
+    "구글 드라이브 동기화 위치를 '내 드라이브 > BSkang_SW > TestReport' 로 바꿨습니다. 처음 동기화할 때 예전 위치(bs_software > test_report)의 폴더를 그대로 옮기고 이름만 바꿉니다 (DB·원본 파일 그대로, 복사본 없음)"
+   ]
+  },
   {
    "v": "2.0.3",
    "date": "2026-10-02",
