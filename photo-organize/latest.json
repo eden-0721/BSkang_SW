@@ -1,25 +1,34 @@
 {
  "app": "photo-organize",
  "name": "사진 정리",
- "version": "0.25.0",
+ "version": "0.26.0",
  "date": "2026-10-04",
  "channel": "release",
- "tag": "photo-organize-v0.25.0",
+ "tag": "photo-organize-v0.26.0",
  "private": true,
  "filesRepo": "eden-0721/photo_organize",
  "setup": {
-  "file": "PhotoOrganize_Setup_v0.25.0.exe",
-  "url": "https://github.com/eden-0721/photo_organize/releases/download/photo-organize-v0.25.0/PhotoOrganize_Setup_v0.25.0.exe",
-  "sha256": "ab7032a4621776c2c63fae4aca79cd635326fad8fb90cd18a0832f1b1991418f",
-  "size": 2874439
+  "file": "PhotoOrganize_Setup_v0.26.0.exe",
+  "url": "https://github.com/eden-0721/photo_organize/releases/download/photo-organize-v0.26.0/PhotoOrganize_Setup_v0.26.0.exe",
+  "sha256": "dce0a5e6149dfd652a9433bb9c7ba6ba7990bc4955cf8bca87fdc7ba529ae868",
+  "size": 2876547
  },
  "zip": {
-  "file": "PhotoOrganize_v0.25.0.zip",
-  "url": "https://github.com/eden-0721/photo_organize/releases/download/photo-organize-v0.25.0/PhotoOrganize_v0.25.0.zip",
-  "sha256": "98fd7154dc23d6299129deb5dd95d208226c47579777acd69b142538d6304a21",
-  "size": 746512
+  "file": "PhotoOrganize_v0.26.0.zip",
+  "url": "https://github.com/eden-0721/photo_organize/releases/download/photo-organize-v0.26.0/PhotoOrganize_v0.26.0.zip",
+  "sha256": "b913bdae5829df6278618d1413485aac9b797c04e5b73b25cbec87dbaefac1dc",
+  "size": 751362
  },
  "notes": [
+  {
+   "v": "0.26.0",
+   "date": "2026-10-04",
+   "title": "첫 화면에 '바로 하기'",
+   "items": [
+    "정리 뒤에 할 일을 첫 화면에 순서대로 모았어요: 날짜 없는 사진에 날짜 넣기, 사진 안에 날짜 쓰기, 구글 포토로 올리기, 다른 곳 지우기",
+    "누르면 그 자리에서 바로 하고, 할 것이 남았는지·다 했는지 보여요"
+   ]
+  },
   {
    "v": "0.25.0",
    "date": "2026-10-04",
