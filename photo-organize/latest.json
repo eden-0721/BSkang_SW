@@ -1,25 +1,56 @@
 {
  "app": "photo-organize",
  "name": "사진 정리",
- "version": "0.21.0",
- "date": "2026-10-03",
+ "version": "0.24.0",
+ "date": "2026-10-04",
  "channel": "release",
- "tag": "photo-organize-v0.21.0",
+ "tag": "photo-organize-v0.24.0",
  "private": true,
  "filesRepo": "eden-0721/photo_organize",
  "setup": {
-  "file": "PhotoOrganize_Setup_v0.21.0.exe",
-  "url": "https://github.com/eden-0721/photo_organize/releases/download/photo-organize-v0.21.0/PhotoOrganize_Setup_v0.21.0.exe",
-  "sha256": "361400bc72d0dc5d925ae4ffa60bdbbbcaebf88beaff02734803a1f114551afc",
-  "size": 2851084
+  "file": "PhotoOrganize_Setup_v0.24.0.exe",
+  "url": "https://github.com/eden-0721/photo_organize/releases/download/photo-organize-v0.24.0/PhotoOrganize_Setup_v0.24.0.exe",
+  "sha256": "8c6c7dc56152ab50a0582d72255ed5064533a972117c9212f03d18e13c87927b",
+  "size": 2870647
  },
  "zip": {
-  "file": "PhotoOrganize_v0.21.0.zip",
-  "url": "https://github.com/eden-0721/photo_organize/releases/download/photo-organize-v0.21.0/PhotoOrganize_v0.21.0.zip",
-  "sha256": "f15d32c6a11f4f8ba77bd1c1427cb6d39733a586ac9185c5751b44e8d758e21c",
-  "size": 704411
+  "file": "PhotoOrganize_v0.24.0.zip",
+  "url": "https://github.com/eden-0721/photo_organize/releases/download/photo-organize-v0.24.0/PhotoOrganize_v0.24.0.zip",
+  "sha256": "646b9122a7fb98acfec68ae826d8d1b63d5feb343378de996be86d59a0d93f38",
+  "size": 739408
  },
  "notes": [
+  {
+   "v": "0.24.0",
+   "date": "2026-10-04",
+   "title": "구글 포토로 올리기",
+   "items": [
+    "NAS 사진 폴더의 사진을 구글 포토에 올려요. 같은 사진은 한 번만 올려요",
+    "[설정 → 구글 포토로 올리기]에서 구글을 연결하고 [10개만 올려 보기]로 먼저 확인할 수 있어요",
+    "하루에 올릴 수 있는 양을 다 쓰면 다음 날 저절로 이어서 올려요",
+    "날짜를 모르는 사진은 '날짜 모르는 사진' 앨범에도 넣어요"
+   ]
+  },
+  {
+   "v": "0.23.0",
+   "date": "2026-10-04",
+   "title": "지우기 버튼",
+   "items": [
+    "[확인]에서 NAS에 같은 사진이 있는 파일만 한 번에 지울 수 있어요",
+    "PC·구글 드라이브 폴더는 휴지통으로, NAS 폴더는 빼 둔 폴더로 옮겨 둬서 되살릴 수 있어요",
+    "이미 직접 지운 폴더는 목록에서 뺄 수 있어요"
+   ]
+  },
+  {
+   "v": "0.22.0",
+   "date": "2026-10-04",
+   "title": "사진 안에 찍은 날짜 써 넣기",
+   "items": [
+    "찾아 둔 찍은 날짜를 사진·동영상 파일 안에 써 넣어요. 어느 프로그램으로 봐도 같은 날짜로 보여요",
+    "이미 날짜가 들어 있는 사진은 건드리지 않고, 사진 그림은 다시 압축하지 않아요",
+    "[10개만 해 보기]로 먼저 확인하고 [모두 하기]를 누를 수 있어요. 마지막 묶음은 되돌릴 수 있어요"
+   ]
+  },
   {
    "v": "0.21.0",
    "date": "2026-10-03",
