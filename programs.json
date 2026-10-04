@@ -48,7 +48,7 @@
    "icon": "icon-64.png",
    "kind": "web",
    "private": true,
-   "version": "0.10.27",
+   "version": "0.10.28",
    "date": "2026-10-04",
    "web": {
     "url": "https://learn-eng.badboysbk.workers.dev"
