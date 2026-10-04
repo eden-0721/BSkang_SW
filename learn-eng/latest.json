@@ -3,7 +3,7 @@
  "name": "영어 배우기",
  "description": "아이부터 어른까지, 하루 몇 분 만화와 이야기로 배우는 가족·반 영어 공부 앱",
  "kind": "web",
- "version": "0.10.29",
+ "version": "0.10.30",
  "date": "2026-10-04",
  "channel": "release",
  "web": {
@@ -15,6 +15,14 @@
  "source": "https://github.com/eden-0721/learn_eng",
  "private": true,
  "notes": [
+  {
+   "v": "0.10.30",
+   "date": "2026-10-04",
+   "title": "자동 점검 정리",
+   "items": [
+    "자동 점검이 돌 때마다 뜨던 안내 문구를 없앴어요 (앱 사용에는 변화 없음)"
+   ]
+  },
   {
    "v": "0.10.29",
    "date": "2026-10-04",
