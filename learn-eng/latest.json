@@ -1,10 +1,11 @@
 {
  "app": "learn-eng",
  "name": "영어 배우기",
- "version": "0.10.28",
+ "description": "아이부터 어른까지, 하루 몇 분 만화와 이야기로 배우는 가족·반 영어 공부 앱",
+ "kind": "web",
+ "version": "0.10.29",
  "date": "2026-10-04",
  "channel": "release",
- "kind": "web",
  "web": {
   "url": "https://learn-eng.badboysbk.workers.dev"
  },
@@ -12,7 +13,18 @@
   "url": "https://github.com/eden-0721/learn_eng/archive/refs/heads/main.zip"
  },
  "source": "https://github.com/eden-0721/learn_eng",
+ "private": true,
  "notes": [
+  {
+   "v": "0.10.29",
+   "date": "2026-10-04",
+   "title": "앱 바탕 업데이트",
+   "items": [
+    "보안 규칙만 바뀌어도 폰에 바로 새로 들어가요",
+    "넓은 화면에서 메뉴가 없을 때 왼쪽이 비던 것 고침",
+    "공개 다운로드 페이지 카드를 표준 방식으로 갱신"
+   ]
+  },
   {
    "v": "0.10.28",
    "date": "2026-10-04",
