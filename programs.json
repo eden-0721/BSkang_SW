@@ -1,6 +1,24 @@
 {
  "programs": [
   {
+   "app": "manageapi",
+   "name": "API 키 금고",
+   "description": "API 키를 내 기기 안에서 암호화해 보관하고 어디서든 꺼내 쓰는 개인 금고",
+   "icon": "icon-64.png",
+   "kind": "web",
+   "private": true,
+   "version": "0.4.3",
+   "date": "2026-10-04",
+   "web": {
+    "url": "https://manageapi.badboysbk.workers.dev"
+   },
+   "zip": {
+    "url": "https://github.com/eden-0721/ManageAPI/archive/refs/heads/main.zip"
+   },
+   "source": "https://github.com/eden-0721/ManageAPI",
+   "notes": true
+  },
+  {
    "app": "micromeasurepro",
    "name": "MicroMeasure Pro",
    "description": "현미경 단면 정밀 계측 + 공정 통계 분석",
@@ -25,57 +43,21 @@
    "source": "https://github.com/eden-0721/MicroMeasurePro"
   },
   {
-   "app": "TechConsultHelper",
-   "name": "기술지도 스마트 도우미",
-   "version": "1.0.3",
-   "date": "2026-10-03",
-   "description": "",
-   "setup": {
-    "url": "https://github.com/eden-0721/TechConsultHelper/releases/download/techconsulthelper-v1.0.3/TechConsultHelper_Setup_v1.0.3.exe",
-    "size": 2226869
-   },
-   "zip": {
-    "url": "https://github.com/eden-0721/TechConsultHelper/releases/download/techconsulthelper-v1.0.3/TechConsultHelper_v1.0.3.zip"
-   },
-   "page": "https://github.com/eden-0721/TechConsultHelper/releases/tag/techconsulthelper-v1.0.3",
+   "app": "papermaster",
+   "name": "PaperMaster",
+   "description": "연구자가 넣은 자료만으로 논문을 쓰는 로컬 앱 (파싱·근거 검색·집필·검증)",
    "icon": "icon-64.png",
-   "private": true
-  },
-  {
-   "app": "learn-eng",
-   "name": "영어 배우기",
-   "description": "아이부터 어른까지, 하루 몇 분 만화와 이야기로 배우는 가족·반 영어 공부 앱",
-   "icon": "icon-64.png",
-   "kind": "web",
-   "private": true,
-   "version": "0.10.37",
+   "version": "3.22.1",
    "date": "2026-10-04",
-   "web": {
-    "url": "https://learn-eng.badboysbk.workers.dev"
+   "setup": {
+    "file": "PaperMaster_Setup_v3.22.1.exe",
+    "url": "https://github.com/eden-0721/papermaster/releases/download/papermaster-v3.22.1/PaperMaster_Setup_v3.22.1.exe",
+    "sha256": "7dd59def90628fbcf2795a826619ad8db99df5ad0cd7d51c32bb889ac838ea2c",
+    "size": 227194771
    },
-   "zip": {
-    "url": "https://github.com/eden-0721/learn_eng/archive/refs/heads/main.zip"
-   },
-   "source": "https://github.com/eden-0721/learn_eng",
-   "notes": true
-  },
-  {
-   "app": "secretary-app",
-   "name": "총무의 정석",
-   "description": "모임 정산 · 총무 도우미 (PWA)",
-   "icon": "icon-64.png",
-   "kind": "web",
+   "page": "https://github.com/eden-0721/papermaster/releases/tag/papermaster-v3.22.1",
    "private": true,
-   "version": "1.11.2",
-   "date": "2026-10-02",
-   "web": {
-    "url": "https://secretary-app.badboysbk.workers.dev"
-   },
-   "zip": {
-    "url": "https://github.com/eden-0721/secretary-app/archive/refs/heads/main.zip"
-   },
-   "source": "https://github.com/eden-0721/secretary-app",
-   "notes": true
+   "source": "https://github.com/eden-0721/papermaster"
   },
   {
    "app": "via",
@@ -96,22 +78,21 @@
    "notes": true
   },
   {
-   "app": "ledger",
-   "name": "천안중앙교회 토요학교 회계",
-   "description": "종이 금전출납부를 사진으로 옮기고, 교회 양식 그대로 월 회계보고·기수 전체 보고를 만드는 토요학교 회계장부",
-   "icon": "icon-64.png",
-   "kind": "web",
-   "private": true,
-   "version": "0.9.1",
-   "date": "2026-09-28",
-   "web": {
-    "url": "https://ledger.badboysbk.workers.dev"
+   "app": "TechConsultHelper",
+   "name": "기술지도 스마트 도우미",
+   "version": "1.0.3",
+   "date": "2026-10-03",
+   "description": "",
+   "setup": {
+    "url": "https://github.com/eden-0721/TechConsultHelper/releases/download/techconsulthelper-v1.0.3/TechConsultHelper_Setup_v1.0.3.exe",
+    "size": 2226869
    },
    "zip": {
-    "url": "https://github.com/eden-0721/ledger/archive/refs/heads/main.zip"
+    "url": "https://github.com/eden-0721/TechConsultHelper/releases/download/techconsulthelper-v1.0.3/TechConsultHelper_v1.0.3.zip"
    },
-   "source": "https://github.com/eden-0721/ledger",
-   "notes": true
+   "page": "https://github.com/eden-0721/TechConsultHelper/releases/tag/techconsulthelper-v1.0.3",
+   "icon": "icon-64.png",
+   "private": true
   },
   {
    "app": "photo-organize",
@@ -154,21 +135,57 @@
    "source": "https://github.com/eden-0721/test_reports"
   },
   {
-   "app": "manageapi",
-   "name": "API 키 금고",
-   "description": "API 키를 내 기기 안에서 암호화해 보관하고 어디서든 꺼내 쓰는 개인 금고",
+   "app": "learn-eng",
+   "name": "영어 배우기",
+   "description": "아이부터 어른까지, 하루 몇 분 만화와 이야기로 배우는 가족·반 영어 공부 앱",
    "icon": "icon-64.png",
    "kind": "web",
    "private": true,
-   "version": "0.4.3",
+   "version": "0.10.37",
    "date": "2026-10-04",
    "web": {
-    "url": "https://manageapi.badboysbk.workers.dev"
+    "url": "https://learn-eng.badboysbk.workers.dev"
    },
    "zip": {
-    "url": "https://github.com/eden-0721/ManageAPI/archive/refs/heads/main.zip"
+    "url": "https://github.com/eden-0721/learn_eng/archive/refs/heads/main.zip"
    },
-   "source": "https://github.com/eden-0721/ManageAPI",
+   "source": "https://github.com/eden-0721/learn_eng",
+   "notes": true
+  },
+  {
+   "app": "ledger",
+   "name": "천안중앙교회 토요학교 회계",
+   "description": "종이 금전출납부를 사진으로 옮기고, 교회 양식 그대로 월 회계보고·기수 전체 보고를 만드는 토요학교 회계장부",
+   "icon": "icon-64.png",
+   "kind": "web",
+   "private": true,
+   "version": "0.9.1",
+   "date": "2026-09-28",
+   "web": {
+    "url": "https://ledger.badboysbk.workers.dev"
+   },
+   "zip": {
+    "url": "https://github.com/eden-0721/ledger/archive/refs/heads/main.zip"
+   },
+   "source": "https://github.com/eden-0721/ledger",
+   "notes": true
+  },
+  {
+   "app": "secretary-app",
+   "name": "총무의 정석",
+   "description": "모임 정산 · 총무 도우미 (PWA)",
+   "icon": "icon-64.png",
+   "kind": "web",
+   "private": true,
+   "version": "1.11.2",
+   "date": "2026-10-02",
+   "web": {
+    "url": "https://secretary-app.badboysbk.workers.dev"
+   },
+   "zip": {
+    "url": "https://github.com/eden-0721/secretary-app/archive/refs/heads/main.zip"
+   },
+   "source": "https://github.com/eden-0721/secretary-app",
    "notes": true
   }
  ],
