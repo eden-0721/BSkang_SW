@@ -2,17 +2,35 @@
  "app": "papermaster",
  "name": "PaperMaster",
  "description": "연구자가 넣은 자료만으로 논문을 쓰는 로컬 앱 (파싱·근거 검색·집필·검증)",
- "version": "3.23.4",
- "date": "2026-10-06",
+ "version": "3.23.5",
+ "date": "2026-10-07",
  "channel": "release",
- "tag": "papermaster-v3.23.4",
+ "tag": "papermaster-v3.23.5",
  "setup": {
-  "file": "PaperMaster_Setup_v3.23.4.exe",
-  "url": "https://github.com/eden-0721/papermaster/releases/download/papermaster-v3.23.4/PaperMaster_Setup_v3.23.4.exe",
-  "sha256": "d3cc6803eb8e0b0c86e0386262fb0e088251b92e9e8027dfc2edb95cb454ea7f",
-  "size": 25832870
+  "file": "PaperMaster_Setup_v3.23.5.exe",
+  "url": "https://github.com/eden-0721/papermaster/releases/download/papermaster-v3.23.5/PaperMaster_Setup_v3.23.5.exe",
+  "sha256": "4698fb0a52ed0bfb5b74b0c34621f91b63c354e5ac3edd4802410c10b9ab6bf8",
+  "size": 25839628
  },
  "notes": [
+  {
+   "v": "3.23.5",
+   "date": "2026-10-07",
+   "title": "고침",
+   "items": [
+    "**회전된 쪽(/Rotate 90·270)의 그림·표 좌표** — 글 좌표와 보이는 좌표를 섞어 써서 회전 쪽에서 그림을 엉뚱하게 자르거나 빈 그림이 나오고, 세로 글을 여백 잡음으로 버리던 것 → 좌표계 변환을 한곳에 두고 자르기·표 찾기·단 나누기·여백 판정에 모두 적용 (G-48 3차, G-46과 겹침)",
+    "파싱: 한 쪽에서 글자 읽기가 실패하면 문서 전체가 실패하던 것 → 그 쪽만 건너뛰고 `parse_stats.errors`에 쪽·단계·오류를 기록(모든 쪽이 실패하면 지금처럼 실패). 표·그림·수식·OCR의 쪽별 실패도 같은 곳에 기록 (G-48 3차)",
+    "PDF 엔진: 아주 큰 그림 요청은 5천만 화소로 비율을 지켜 줄임, 단정밀도 넘침(`inf`) 처리, CID 글자표 지연 채움의 스레드 안전 (G-48 3차)",
+    "논문 PDF 생성: 표 칸·캡션·차트 대체 표의 `<`·`&`가 뒷글을 지우던 것 → 이스케이프. 차트가 실패하면 그림 객체가 남던 것 → Figure+Canvas로 바꾸고 항상 닫음 (G-48 3차)",
+    "데이터 보존: 대화·메시지 삭제, 옛 추천 정리, 절 일괄 저장이 줄을 진짜 지우던 것 → 소프트 삭제(절 이력이 고아가 되지 않음). 문서 조회 27곳·메모 수정/승격·대화 소스 조회에 삭제 필터 추가 (G-48 3차)",
+    "작업 큐: 취소를 `UPDATE … WHERE status='pending'` 결과로 판정(시작된 작업과의 경쟁 제거), 끝난 작업은 취소·삭제하지 않고 409, 서버 재시작 때 \"처리 중\"으로 남은 소스도 실패로 되돌림, 절 되돌리기의 판 기록 2중 제거 (G-48 3차)",
+    "RAG: 재색인이 파싱 중 방금 넣은 벡터를 고아로 잘못 지우던 경쟁 → 지우기 직전 DB 재확인. 관련도 점수를 거리 종류(코사인/L2)에 맞게, 조각 종류 필터 키 불일치, 소스 복사의 벡터 형식 불일치 → 재임베딩 재사용 (G-48 3차)",
+    "API: 서지 동기화가 AI 호출 동안 DB 연결을 쥐고 있던 것, 없는 소스가 500이던 것 → 404, 외부 논문 저장·집필 작업의 ID 누락 → 400, 소스 조각 읽기 실패가 200으로 오던 것 → 404/502(MCP `read_source`도 실패 문구), 문서 목록이 예외를 빈 목록으로 숨기던 것 → 500 (G-48 3차)",
+    "AI 공급자 오류 문구에 API 키가 섞여 나올 수 있던 것 → 키 패턴 마스킹·300자 자르기. 조용히 넘기던 `except: pass` 6곳 → 종류만 debug 로그 (G-48 3차)",
+    "설치본: 업데이트의 조용한 설치가 실패하면 반쯤 지워진 채 켜지던 것 → 설치 창을 열어 다시 시도하고, 그래도 실패하면 기록을 남기고 켜지 않음(배치 파일은 자기 삭제). 설치 검증 스크립트가 이 PC의 설치본을 덮어쓰지 않게 레지스트리 확인(`--force`). `PaperMaster.bat`의 불필요한 지연 확장 제거(경로에 `!`가 있으면 깨지던 것). `reparse.py`가 `PM_PORT`를 따름 (G-48 3차)",
+    "화면: 최근 논문 열기·문헌 검색이 400ms 대기·폴링으로 모듈을 기다리던 것 → 지연 로딩 완료를 기다림. 작업 대기열·인용 팝오버의 바깥 클릭 리스너가 열 때마다 쌓이던 것 (G-48 3차)"
+   ]
+  },
   {
    "v": "3.23.4",
    "date": "2026-10-06",
@@ -57,31 +75,21 @@
    "items": [
     "배포 빌드 시간 16분 → 약 5분: 검사·시험은 `publish.bat`이 개발 PC에서 이미 돌리므로 GitHub에서 되풀이하지 않고, 처음 켤 때 받는 패키지는 한 번만 받아(캐시) 설치 시험에 그대로 씀 (A-12)"
    ]
-  },
-  {
-   "v": "3.23.0",
-   "date": "2026-10-06",
-   "title": "변경",
-   "items": [
-    "**설치 파일을 작게** — 파이썬 패키지(약 200MB, 182개)를 설치 파일에 넣지 않고 **처음 켤 때** 검은 창이 PyPI에서 받아 설치합니다(5~10분, 인터넷 필요). 설치 파일 203MB → 약 25MB. 코드만 바뀐 업데이트는 패키지를 다시 받지 않고, 패키지 목록이 바뀐 버전만 다시 받습니다 (A-12)",
-    "업데이트 때 받아 둔 패키지 폴더(`python\\`)를 지우지 않음. 저작권 고지에는 받게 될 패키지들도 그대로 실음 (A-12)",
-    "배포는 시험판 없이 늘 정식으로 (`publish.bat`) (A-12)"
-   ]
   }
  ],
- "page": "https://github.com/eden-0721/papermaster/releases/tag/papermaster-v3.23.4",
+ "page": "https://github.com/eden-0721/papermaster/releases/tag/papermaster-v3.23.5",
  "private": true,
  "filesRepo": "eden-0721/papermaster",
  "source": "https://github.com/eden-0721/papermaster",
  "previous": {
-  "version": "3.23.3",
+  "version": "3.23.4",
   "setup": {
-   "file": "PaperMaster_Setup_v3.23.3.exe",
-   "url": "https://github.com/eden-0721/papermaster/releases/download/papermaster-v3.23.3/PaperMaster_Setup_v3.23.3.exe",
-   "sha256": "6e442da055102fc6047b4099a87c292a3387a98b90694f987199d170db5d47cf",
-   "size": 25829678
+   "file": "PaperMaster_Setup_v3.23.4.exe",
+   "url": "https://github.com/eden-0721/papermaster/releases/download/papermaster-v3.23.4/PaperMaster_Setup_v3.23.4.exe",
+   "sha256": "d3cc6803eb8e0b0c86e0386262fb0e088251b92e9e8027dfc2edb95cb454ea7f",
+   "size": 25832870
   },
-  "tag": "papermaster-v3.23.3",
+  "tag": "papermaster-v3.23.4",
   "filesRepo": "eden-0721/papermaster"
  }
 }
