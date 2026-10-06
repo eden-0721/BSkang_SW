@@ -1,19 +1,26 @@
 {
  "app": "testreport",
  "name": "시험성적서 워크벤치",
- "version": "2.2.1",
+ "version": "2.2.2",
  "date": "2026-10-06",
  "channel": "release",
- "tag": "testreport-v2.2.1",
+ "tag": "testreport-v2.2.2",
  "private": true,
  "filesRepo": "eden-0721/test_reports",
  "setup": {
-  "file": "TestReport_Setup_v2.2.1.exe",
-  "url": "https://github.com/eden-0721/test_reports/releases/download/testreport-v2.2.1/TestReport_Setup_v2.2.1.exe",
-  "sha256": "76c6ca4649458c7c0177be9a9840f9fb10bca4927182c3b8c4600c57e7d1b863",
-  "size": 3731795
+  "file": "TestReport_Setup_v2.2.2.exe",
+  "url": "https://github.com/eden-0721/test_reports/releases/download/testreport-v2.2.2/TestReport_Setup_v2.2.2.exe",
+  "sha256": "69bf5f415fd73ad69b259125019ad71752900ae9b66e2ac3c63425507933d006",
+  "size": 3732308
  },
  "notes": [
+  {
+   "v": "2.2.2",
+   "date": "2026-10-06",
+   "items": [
+    "동기화할 때마다 DB 백업(병합 직전, 11 MB)이 쌓이던 문제 수정: 다른 PC 의 DB 를 실제로 합칠 때만, 직전 백업과 내용이 다를 때만 만듭니다 ('이미 최신'·최근 작업만 맞출 때는 만들지 않음)"
+   ]
+  },
   {
    "v": "2.2.1",
    "date": "2026-10-06",
