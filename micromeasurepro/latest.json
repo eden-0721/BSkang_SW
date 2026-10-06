@@ -1,23 +1,33 @@
 {
  "app": "micromeasurepro",
  "name": "MicroMeasure Pro",
- "version": "2.5.9",
+ "version": "2.5.10",
  "date": "2026-10-06",
  "channel": "release",
- "tag": "micromeasurepro-v2.5.9",
+ "tag": "micromeasurepro-v2.5.10",
  "setup": {
-  "file": "MicroMeasurePro_Setup_v2.5.9.exe",
-  "url": "https://github.com/eden-0721/MicroMeasurePro/releases/download/micromeasurepro-v2.5.9/MicroMeasurePro_Setup_v2.5.9.exe",
-  "sha256": "d08150f42e671e2e3ee8b11d34d6bd31d526297ed6694d4ce8ebdc3274700d15",
-  "size": 16425819
+  "file": "MicroMeasurePro_Setup_v2.5.10.exe",
+  "url": "https://github.com/eden-0721/MicroMeasurePro/releases/download/micromeasurepro-v2.5.10/MicroMeasurePro_Setup_v2.5.10.exe",
+  "sha256": "d12402989e4ec699b694d87c44280ae8a698b143f851ff1c182a696eb0a2e9e7",
+  "size": 16429349
  },
  "zip": {
-  "file": "MicroMeasurePro_v2.5.9.zip",
-  "url": "https://github.com/eden-0721/MicroMeasurePro/releases/download/micromeasurepro-v2.5.9/MicroMeasurePro_v2.5.9.zip",
-  "sha256": "66dd1ce6438d6c1f9f57db963a618a1dbb90c880fddb4e8c7b9c2c0fbee371d2",
-  "size": 18536115
+  "file": "MicroMeasurePro_v2.5.10.zip",
+  "url": "https://github.com/eden-0721/MicroMeasurePro/releases/download/micromeasurepro-v2.5.10/MicroMeasurePro_v2.5.10.zip",
+  "sha256": "824b22b019ffc981023ec1f32342ff6d4e7da6a87100e3bcfc5f564d3c919e01",
+  "size": 18536524
  },
  "notes": [
+  {
+   "v": "2.5.10",
+   "date": "2026-10-06",
+   "title": "자동 잡기: 영상 위 번호 상자 · 조각 미리보기",
+   "items": [
+    "자동 잡기 후보 상자가 영상 위에 안 그려지던 버그 수정 (돋보기 쪽에 잘못 들어가 있었음) — 이제 번호 붙은 상자가 보이고, 선택된 것은 실선(주황·LED 는 초록), 고정 후보는 회색 점선",
+    "목록마다 **조각 미리보기**를 붙여 번호와 표시기를 바로 맞춰 볼 수 있습니다. 목록에 마우스를 올리면 영상의 상자가 굵어집니다",
+    "동그란 표시등·밸브처럼 네모에 가깝고 값(색)이 바뀌는 후보는 종류를 **램프**로 추정합니다"
+   ]
+  },
   {
    "v": "2.5.9",
    "date": "2026-10-06",
@@ -67,32 +77,21 @@
     "플레이어 **Ctrl+휠 확대/축소**(커서 기준), 가운데 버튼·Space 드래그로 이동, [맞춤]/[1:1], **원본 보기(V)**, ROI·모서리를 그릴 때 **커서 옆 4× 돋보기**",
     "LED 확대 배율 자동 3~4×, ROI 목록에 \"칸 ✓/학습 필요\" 표시"
    ]
-  },
-  {
-   "v": "2.5.4",
-   "date": "2026-10-06",
-   "title": "영상 타임라인 편집 — 드래그 선택 · 잘라내기/분할/삭제 · 핸들 · 좌우 이동 · 내보내기",
-   "items": [
-    "타임라인을 **드래그해 범위 선택** → **X** 잘라내기 (겹치면 합침), 재생 위치에서 **S** 분할(구간·잘라낸 범위, 띠 더블클릭도), 선택한 띠 **Del** 삭제/복원",
-    "구간·잘라낸 띠의 **양끝 핸들을 끌어 길이 조절**",
-    "확대 상태에서 **좌우 이동**: Shift+휠 · 눈금 드래그 · 아래 스크롤바, 눈금 더블클릭으로 전체 보기 (전에는 움직일 방법이 없었음)",
-    "[구간] 탭 **🎞 잘라낸 결과 영상으로 내보내기** — 남는 구간만 이어 새 파일(_cut.mp4), ffmpeg 필요"
-   ]
   }
  ],
- "page": "https://github.com/eden-0721/MicroMeasurePro/releases/tag/micromeasurepro-v2.5.9",
+ "page": "https://github.com/eden-0721/MicroMeasurePro/releases/tag/micromeasurepro-v2.5.10",
  "private": true,
  "filesRepo": "eden-0721/MicroMeasurePro",
  "source": "https://github.com/eden-0721/MicroMeasurePro",
  "previous": {
-  "version": "2.5.8",
+  "version": "2.5.9",
   "setup": {
-   "file": "MicroMeasurePro_Setup_v2.5.8.exe",
-   "url": "https://github.com/eden-0721/MicroMeasurePro/releases/download/micromeasurepro-v2.5.8/MicroMeasurePro_Setup_v2.5.8.exe",
-   "sha256": "a557f2265a01e5964b3e9df14cc7c47b39be306f78357a2f78dbbf4c7f8b5fd0",
-   "size": 16419751
+   "file": "MicroMeasurePro_Setup_v2.5.9.exe",
+   "url": "https://github.com/eden-0721/MicroMeasurePro/releases/download/micromeasurepro-v2.5.9/MicroMeasurePro_Setup_v2.5.9.exe",
+   "sha256": "d08150f42e671e2e3ee8b11d34d6bd31d526297ed6694d4ce8ebdc3274700d15",
+   "size": 16425819
   },
-  "tag": "micromeasurepro-v2.5.8",
+  "tag": "micromeasurepro-v2.5.9",
   "filesRepo": "eden-0721/MicroMeasurePro"
  }
 }
