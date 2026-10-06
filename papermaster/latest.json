@@ -1,0 +1,74 @@
+{
+ "app": "papermaster",
+ "name": "PaperMaster",
+ "description": "연구자가 넣은 자료만으로 논문을 쓰는 로컬 앱 (파싱·근거 검색·집필·검증)",
+ "version": "3.23.0",
+ "date": "2026-10-06",
+ "channel": "release",
+ "tag": "papermaster-v3.23.0",
+ "setup": {
+  "file": "PaperMaster_Setup_v3.23.0.exe",
+  "url": "https://github.com/eden-0721/papermaster/releases/download/papermaster-v3.23.0/PaperMaster_Setup_v3.23.0.exe",
+  "sha256": "12fa1de58b25b27be79689db58bf3a50031b7bf948050c225eecacdefd42a7f7",
+  "size": 25833287
+ },
+ "notes": [
+  {
+   "v": "3.23.0",
+   "date": "2026-10-06",
+   "title": "변경",
+   "items": [
+    "**설치 파일을 작게** — 파이썬 패키지(약 200MB, 182개)를 설치 파일에 넣지 않고 **처음 켤 때** 검은 창이 PyPI에서 받아 설치합니다(5~10분, 인터넷 필요). 설치 파일 203MB → 약 25MB. 코드만 바뀐 업데이트는 패키지를 다시 받지 않고, 패키지 목록이 바뀐 버전만 다시 받습니다 (A-12)",
+    "업데이트 때 받아 둔 패키지 폴더(`python\\`)를 지우지 않음. 저작권 고지에는 받게 될 패키지들도 그대로 실음 (A-12)",
+    "배포는 시험판 없이 늘 정식으로 (`publish.bat`) (A-12)"
+   ]
+  },
+  {
+   "v": "3.22.1",
+   "date": "2026-10-04",
+   "title": "고침 · 추가",
+   "items": [
+    "설치 파일이 패키지 안의 `data` 폴더(2,146개 파일 — 학술 검색·AWS·OpenCV 자료 등)까지 빼던 것: 맨 위 `data\\`만 빼도록 (A-12 시험 빌드에서 발견)",
+    "조용한 제거·업데이트 때 \"data 폴더도 지울까요?\" 창이 떠서 멈추던 것: 조용한 모드에서는 묻지 않고 남김 (A-12)",
+    "개발본과 설치본이 같은 백업 폴더를 써서 하루 한 번 백업이 서로 막던 것: 개발본은 `C:\\BSKang_SW\\Backup\\PaperMaster_dev` (A-12)",
+    "배포 빌드의 **설치 시험** — 만든 설치 파일을 임시 폴더에 조용히 설치해 빠진 파일·불러오기·조용한 제거를 확인하고, 실패하면 배포하지 않음 (A-12)"
+   ]
+  },
+  {
+   "v": "3.22.0",
+   "date": "2026-10-04",
+   "title": "추가 · 변경 · 고침",
+   "items": [
+    "**설치 파일 배포** — 파이썬이 들어 있는 `PaperMaster_Setup_vX.Y.Z.exe` 하나로 `C:\\BSKang_SW\\PaperMaster`에 설치(관리자 권한 없음, 바탕화면 아이콘). 설치 파일은 비공개 저장소 Release에, 공개 다운로드 페이지에는 버전·변경 노트만 (A-12)",
+    "**설치본 업데이트** — 새 버전이 있으면 머리줄 배지 → 변경 노트 → 업데이트 키로 받기 → 지문 확인 → 데이터를 드라이브에 올린 뒤 조용히 설치·다시 켜기. 이전 버전으로 되돌리기, 2주 넘게 미루면 빨간 배지 (A-12)",
+    "**수정된 설치 감지** — 설치본의 프로그램 파일이 설치 때와 다르면 배지와 복구, **개발본 배지** — git 폴더에서 실행 중이면 고친 파일·안 올린 커밋·마지막 push (A-12)",
+    "**데이터 백업** — 끌 때 하루 한 번 DB 자동(30일치), 머리줄 보관함 아이콘으로 전체(DB + 연구실 파일, 3개). 위치 `C:\\BSKang_SW\\Backup\\PaperMaster` (A-12)",
+    "배포 버튼 `publish.bat` (개발 PC, 누를 때만) — 확인·검사·시험 → 시험판/정식 태그 → GitHub Actions가 설치 파일을 만들어 올림. 절차는 `docs/DEPLOY.md` (A-12)",
+    "서버 포트는 `PM_PORT` 하나(개발본 8000, 설치본 8010)만 허용 — 두 개가 함께 켜져도 부딪치지 않음 (A-12)",
+    "논문 PDF의 차트에서 한글 제목·축이 네모로 나오던 것 (G-47)"
+   ]
+  },
+  {
+   "v": "3.21.0",
+   "date": "2026-10-04",
+   "title": "변경 · 고침",
+   "items": [
+    "**PDF 엔진 교체: PyMuPDF(AGPL) → pdfplumber·pdfminer.six(MIT) + pypdfium2(Apache/BSD) + reportlab(BSD)** — 설치 파일로 나눠 줘도 라이선스 문제가 없게 (A-14)",
+    "패키지: `pymupdf` 빠짐, `pdfplumber`·`pdfminer.six`·`pypdfium2`(판 고정)·`reportlab` 들어옴 → 각 PC의 `PaperMaster.bat`이 다음 실행 때 패키지를 맞출지 묻습니다",
+    "글꼴이 포함 안 된 한·중·일 PDF(ToUnicode 없는 CID 글꼴)의 글자를 Adobe 공식 표로 읽음 — 드문 한자·기호가 엉뚱한 글자로 나오던 것 (G-45)"
+   ]
+  },
+  {
+   "v": "3.20.1",
+   "date": "2026-10-02",
+   "title": "변경",
+   "items": [
+    "개발용 설치 기본 폴더 `C:\\BSkang_SW\\dev\\PaperMaster` (배포용은 `C:\\BSkang_SW\\PaperMaster`), 구글 드라이브 동기화 폴더 `BSkang_SW/PaperMaster` — 정리된 데이터로 새로 시작, 옛 폴더 `bs_software/paper_master`는 그대로 남김 (A-11)"
+   ]
+  }
+ ],
+ "page": "https://github.com/eden-0721/papermaster/releases/tag/papermaster-v3.23.0",
+ "private": true,
+ "filesRepo": "eden-0721/papermaster",
+ "source": "https://github.com/eden-0721/papermaster"
+}
