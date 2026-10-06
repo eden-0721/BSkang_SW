@@ -1,23 +1,34 @@
 {
  "app": "micromeasurepro",
  "name": "MicroMeasure Pro",
- "version": "2.5.2",
+ "version": "2.5.3",
  "date": "2026-10-06",
  "channel": "release",
- "tag": "micromeasurepro-v2.5.2",
+ "tag": "micromeasurepro-v2.5.3",
  "setup": {
-  "file": "MicroMeasurePro_Setup_v2.5.2.exe",
-  "url": "https://github.com/eden-0721/MicroMeasurePro/releases/download/micromeasurepro-v2.5.2/MicroMeasurePro_Setup_v2.5.2.exe",
-  "sha256": "8c5e08eca00ae605ab223ecdd1df59547bfad3d20722e22d02f4204c8c26336c",
-  "size": 16397320
+  "file": "MicroMeasurePro_Setup_v2.5.3.exe",
+  "url": "https://github.com/eden-0721/MicroMeasurePro/releases/download/micromeasurepro-v2.5.3/MicroMeasurePro_Setup_v2.5.3.exe",
+  "sha256": "85f0484a789f93dfb05dea0347e085ce4734e89bc5e63b420dd3a4540a875a57",
+  "size": 16401313
  },
  "zip": {
-  "file": "MicroMeasurePro_v2.5.2.zip",
-  "url": "https://github.com/eden-0721/MicroMeasurePro/releases/download/micromeasurepro-v2.5.2/MicroMeasurePro_v2.5.2.zip",
-  "sha256": "e596b8b481b4a9ef7be5a0989b85717b1473fd5133e44bcc0ffbfc2e6714e75e",
-  "size": 18491180
+  "file": "MicroMeasurePro_v2.5.3.zip",
+  "url": "https://github.com/eden-0721/MicroMeasurePro/releases/download/micromeasurepro-v2.5.3/MicroMeasurePro_v2.5.3.zip",
+  "sha256": "d06b38f3dc21e588039ebcb63dd76db28cf44082dd88b515f6c88a8218c3b7f7",
+  "size": 18497927
  },
  "notes": [
+  {
+   "v": "2.5.3",
+   "date": "2026-10-06",
+   "title": "영상 분석 — 실제 휴대폰 영상(720p HMI)으로 판독기 튜닝",
+   "items": [
+    "**글자 칸 고정 판독**: 첫 학습 때 글자 칸 배치를 정하고 이후 프레임은 같은 칸으로 읽음 (흔들림·흐림에 글자 분리가 흔들리던 문제 해결)",
+    "프레임마다 ROI 를 기준 조각에 **미세 정렬**(±4px), 표시기 테두리·틀 자동 제거, 붙은 숫자는 투영 골짜기에서 분할, 7세그먼트 LED 도 한 글자로",
+    "글자색은 ROI 가장자리(배경)로 판단, 확대 배율 자동(글자 높이 40px 기준), 흐림에 관대한 유사도, 고정 소수점은 안 보여도 유지 (19.00 → 1900 사고 방지)",
+    "학습 창에서 글자 수가 안 맞아도 **입력한 값의 글자 수대로 칸**을 만들어 학습 가능"
+   ]
+  },
   {
    "v": "2.5.2",
    "date": "2026-10-06",
@@ -69,34 +80,21 @@
     "**연속 측정**(ROI 도구 유지), **현장 보기**(큰 글씨·고대비), NG 배지 클릭 시 해당 측정으로 이동",
     "일괄 계측 후 **CSV 자동 저장** 옵션"
    ]
-  },
-  {
-   "v": "2.2",
-   "date": "2026-09-23",
-   "title": "정확도 · 성능 · 화면 정리",
-   "items": [
-    "Cp/Cpk 는 군내 σ(MR̄/1.128), Pp/Ppk 는 전체 σ 로 **정식 분리** (이전에는 사실상 같은 값이었습니다)",
-    "연속 자동 계측을 **폴더 일괄 계측으로 통합** ([🖼 열린 이미지 전체])",
-    "전처리 필터가 ROI 자동측정·자석에도 동일 적용, 외부 글꼴 요청 제거(완전 오프라인)",
-    "메모리 절약(불필요 사본 제거·자동 저장 분리), 통계 캐시로 반응 속도 개선",
-    "차트 탭 정리([관리도 ▾]), [⬇ 내보내기 ▾], 리본·도크 접기, 설정 백업(.mmset)",
-    "포트 충돌 시 자동으로 다음 포트 사용 — 다른 프로그램과 동시에 켤 수 있습니다"
-   ]
   }
  ],
- "page": "https://github.com/eden-0721/MicroMeasurePro/releases/tag/micromeasurepro-v2.5.2",
+ "page": "https://github.com/eden-0721/MicroMeasurePro/releases/tag/micromeasurepro-v2.5.3",
  "private": true,
  "filesRepo": "eden-0721/MicroMeasurePro",
  "source": "https://github.com/eden-0721/MicroMeasurePro",
  "previous": {
-  "version": "2.5.1",
+  "version": "2.5.2",
   "setup": {
-   "file": "MicroMeasurePro_Setup_v2.5.1.exe",
-   "url": "https://github.com/eden-0721/MicroMeasurePro/releases/download/micromeasurepro-v2.5.1/MicroMeasurePro_Setup_v2.5.1.exe",
-   "sha256": "0f01b6d85d352b58c3ed23ce54d15b27d42774b93604e846bbc0ec12d0d3b78f",
-   "size": 16391363
+   "file": "MicroMeasurePro_Setup_v2.5.2.exe",
+   "url": "https://github.com/eden-0721/MicroMeasurePro/releases/download/micromeasurepro-v2.5.2/MicroMeasurePro_Setup_v2.5.2.exe",
+   "sha256": "8c5e08eca00ae605ab223ecdd1df59547bfad3d20722e22d02f4204c8c26336c",
+   "size": 16397320
   },
-  "tag": "micromeasurepro-v2.5.1",
+  "tag": "micromeasurepro-v2.5.2",
   "filesRepo": "eden-0721/MicroMeasurePro"
  }
 }
