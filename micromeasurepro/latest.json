@@ -1,23 +1,34 @@
 {
  "app": "micromeasurepro",
  "name": "MicroMeasure Pro",
- "version": "2.5.12",
+ "version": "2.5.13",
  "date": "2026-10-06",
  "channel": "release",
- "tag": "micromeasurepro-v2.5.12",
+ "tag": "micromeasurepro-v2.5.13",
  "setup": {
-  "file": "MicroMeasurePro_Setup_v2.5.12.exe",
-  "url": "https://github.com/eden-0721/MicroMeasurePro/releases/download/micromeasurepro-v2.5.12/MicroMeasurePro_Setup_v2.5.12.exe",
-  "sha256": "42a7897c698021a121905083bd2d761b49e0cfe0330cdfd17337c575bdd6df0d",
-  "size": 16433127
+  "file": "MicroMeasurePro_Setup_v2.5.13.exe",
+  "url": "https://github.com/eden-0721/MicroMeasurePro/releases/download/micromeasurepro-v2.5.13/MicroMeasurePro_Setup_v2.5.13.exe",
+  "sha256": "f3eb70f6be95411cdb6cd4ed3bb75d3d326596e87df98d3e98b60eee67090516",
+  "size": 16439112
  },
  "zip": {
-  "file": "MicroMeasurePro_v2.5.12.zip",
-  "url": "https://github.com/eden-0721/MicroMeasurePro/releases/download/micromeasurepro-v2.5.12/MicroMeasurePro_v2.5.12.zip",
-  "sha256": "f461bfc853ff6353d2c96c7b07a57f79d85edeaa8fe9d1969a9a92d3c8546674",
-  "size": 18546269
+  "file": "MicroMeasurePro_v2.5.13.zip",
+  "url": "https://github.com/eden-0721/MicroMeasurePro/releases/download/micromeasurepro-v2.5.13/MicroMeasurePro_v2.5.13.zip",
+  "sha256": "babe57deeb384d9edf4c16388d4907f351b31fcf012b23d822481556cdcd4a0c",
+  "size": 18549831
  },
  "notes": [
+  {
+   "v": "2.5.13",
+   "date": "2026-10-06",
+   "title": "내보내기 옵션 — 수치 자막 굽기 · 오디오 · 디졸브 (편집 3단계)",
+   "items": [
+    "[구간] 탭 **내보내기 옵션**: **수치 자막 굽기**(분석한 표시기 값과 구간 이름을 그 시각에 영상 위에 새김, 위/아래) · **오디오** 유지/제거 · **클립 사이** 바로 붙임/디졸브 0.3·0.5·1 s",
+    "자막은 값이 바뀔 때마다 한 줄(\"[구간 1]  ·  부하율 55.1 %  ·  RPM 1560\")로, 클립 순서와 출력 시각에 맞춰 들어갑니다(의심값은 뺌). 트랙 이어 붙이기에서는 영상 이름이 앞에 붙습니다. 글꼴은 Windows 한글 글꼴(맑은 고딕)",
+    "디졸브는 클립이 겹치는 만큼 전체 길이가 짧아져 분석 시각과 어긋나므로 계측 기록용이면 \"바로 붙임\"을 권합니다. ffmpeg 필요(winget install Gyan.FFmpeg). 옵션은 프로젝트에 저장",
+    "이것으로 편집 3단계(권장 범위)가 끝났습니다: 클립 레인 → 여러 영상·트랙 → 내보내기 옵션"
+   ]
+  },
   {
    "v": "2.5.12",
    "date": "2026-10-06",
@@ -58,35 +69,21 @@
     "어떤 HMI 도 가정하지 않습니다: 여러 밝기 문턱으로 글자 덩어리를 모아 줄로 묶고, 줄마다 판독기와 같은 방법으로 글자를 나눠 종류(숫자·시계·LED)를 추정하고, 추적기로 따라가며 값이 바뀌는지 봅니다. 단위(RPM·Hz·%)는 바로 옆 글자를 읽어 붙입니다",
     "한계: 후보에 라벨·아이콘이 섞일 수 있고(체크 안 하면 그만), 영상 내내 값이 같은 표시기는 고정 후보에만 있습니다. 흐린 휴대폰 영상에서는 표시기의 절반쯤만 후보로 잡힙니다(실영상: 13개 중 6개, 그중 값이 바뀌는 2개 자동 선택) — 못 잡은 것은 [ROI 그리기]로 직접. 합성 영상에서는 표시기 5개를 모두 골랐습니다"
    ]
-  },
-  {
-   "v": "2.5.8",
-   "date": "2026-10-06",
-   "title": "판독 정확도 — 실영상 표시기 13개 전수 점검",
-   "items": [
-    "사용자 실영상의 표시기 **13개(Speed S.V/P.V/부하율 ×2, RPM, 무게, 온도, LED Bar/% , 시계)** 를 프레임 전체에서 점검 → 학습 안 한 프레임 **94% 정확**, 확신 오답 0 (틀린 것은 모두 \"의심\"으로 표시)",
-    "**글자색(밝은/어두운) 자동 판정 개선 + 학습 때 고정** — 반사·노출로 프레임마다 뒤집혀 19.00 이 01.99 로 읽히던 문제 해결",
-    "**문턱 보정 자동** — 첫 학습 때 글자가 흐려 서로 붙거나(시계 02↔03) 끊기는 표시기의 보정값을 자동으로 고릅니다 (슬라이더는 그대로 수동 조절 가능)",
-    "**상자 테두리·그림자 제거 강화** — ROI 에 들어온 테두리 선·굵은 세로 막대가 숫자로 읽히거나(0.0 → 40.0) 글자들을 한 덩어리로 잇던 문제",
-    "**가운데 정렬 표시기**(RPM \"0\", \"60\" 처럼 짧은 수가 가운데 오는 것) — 글자 위치에 맞춰 칸을 옮겨 읽고 학습",
-    "학습 때 글자 수가 맞으면 **숫자 덩어리 위치로 칸**을 만들고(기호 분류가 틀려도 안전), 작은 얼룩은 빈 칸으로, 음수 부호는 세로 가운데에 있을 때만",
-    "테스트: 실영상 정확도 검사 `test/p19_real_video.mjs` (영상 없으면 SKIP)"
-   ]
   }
  ],
- "page": "https://github.com/eden-0721/MicroMeasurePro/releases/tag/micromeasurepro-v2.5.12",
+ "page": "https://github.com/eden-0721/MicroMeasurePro/releases/tag/micromeasurepro-v2.5.13",
  "private": true,
  "filesRepo": "eden-0721/MicroMeasurePro",
  "source": "https://github.com/eden-0721/MicroMeasurePro",
  "previous": {
-  "version": "2.5.11",
+  "version": "2.5.12",
   "setup": {
-   "file": "MicroMeasurePro_Setup_v2.5.11.exe",
-   "url": "https://github.com/eden-0721/MicroMeasurePro/releases/download/micromeasurepro-v2.5.11/MicroMeasurePro_Setup_v2.5.11.exe",
-   "sha256": "7a6535209a3b4ae9866d49e6366bda0fb1b0612ee972fffad62a5676102df0cc",
-   "size": 16428746
+   "file": "MicroMeasurePro_Setup_v2.5.12.exe",
+   "url": "https://github.com/eden-0721/MicroMeasurePro/releases/download/micromeasurepro-v2.5.12/MicroMeasurePro_Setup_v2.5.12.exe",
+   "sha256": "42a7897c698021a121905083bd2d761b49e0cfe0330cdfd17337c575bdd6df0d",
+   "size": 16433127
   },
-  "tag": "micromeasurepro-v2.5.11",
+  "tag": "micromeasurepro-v2.5.12",
   "filesRepo": "eden-0721/MicroMeasurePro"
  }
 }
