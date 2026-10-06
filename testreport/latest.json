@@ -1,19 +1,28 @@
 {
  "app": "testreport",
  "name": "시험성적서 워크벤치",
- "version": "2.2.4",
+ "version": "2.2.5",
  "date": "2026-10-06",
  "channel": "release",
- "tag": "testreport-v2.2.4",
+ "tag": "testreport-v2.2.5",
  "private": true,
  "filesRepo": "eden-0721/test_reports",
  "setup": {
-  "file": "TestReport_Setup_v2.2.4.exe",
-  "url": "https://github.com/eden-0721/test_reports/releases/download/testreport-v2.2.4/TestReport_Setup_v2.2.4.exe",
-  "sha256": "d1ceffb74916635e45e9073bfe7cb15543d4b9879aa74647117178a1f1d845b9",
-  "size": 3735567
+  "file": "TestReport_Setup_v2.2.5.exe",
+  "url": "https://github.com/eden-0721/test_reports/releases/download/testreport-v2.2.5/TestReport_Setup_v2.2.5.exe",
+  "sha256": "c70067e013b019f132765aa921f55f053f2af66de445f12b490071d0a8bb8409",
+  "size": 3743604
  },
  "notes": [
+  {
+   "v": "2.2.5",
+   "date": "2026-10-06",
+   "items": [
+    "Claude 채팅으로 장비 DB 정리: 장비 이름·제조사·모델·분류·메모 고치기(update_equipment), 같은 장비 합치기(merge_equipment). 표기 규칙으로만 저장되어 과거 성적서 원문은 그대로, [목록 정리 → 내가 정한 것]에서 되돌림",
+    "장비 분류에 '분석'(입도·수분·플레이트 리더) 추가, 고친 장비에 메모 표시",
+    "장비 리스트 창: 분류별로 접히는 목록으로 바꿈 (항목에서 열면 '이 항목에 맞는 장비'·'최근 쓴 장비'가 맨 위에, 검색하면 전부 펼침). 목록 정리 창의 '내가 정한 것'은 종류별 표 + 검색 + '확인 필요'만 필터"
+   ]
+  },
   {
    "v": "2.2.4",
    "date": "2026-10-06",
