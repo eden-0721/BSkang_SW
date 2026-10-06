@@ -1,23 +1,35 @@
 {
  "app": "micromeasurepro",
  "name": "MicroMeasure Pro",
- "version": "2.5.4",
+ "version": "2.5.5",
  "date": "2026-10-06",
  "channel": "release",
- "tag": "micromeasurepro-v2.5.4",
+ "tag": "micromeasurepro-v2.5.5",
  "setup": {
-  "file": "MicroMeasurePro_Setup_v2.5.4.exe",
-  "url": "https://github.com/eden-0721/MicroMeasurePro/releases/download/micromeasurepro-v2.5.4/MicroMeasurePro_Setup_v2.5.4.exe",
-  "sha256": "1f66a63e32b2e972a61c8ab4039aa65c8a0971968c4e0d8ca32b43fed12cb279",
-  "size": 16404168
+  "file": "MicroMeasurePro_Setup_v2.5.5.exe",
+  "url": "https://github.com/eden-0721/MicroMeasurePro/releases/download/micromeasurepro-v2.5.5/MicroMeasurePro_Setup_v2.5.5.exe",
+  "sha256": "73c27a0e52c22558390de43ff3ac9ae686f06428d9330b6293f794f638b8f5e2",
+  "size": 16412559
  },
  "zip": {
-  "file": "MicroMeasurePro_v2.5.4.zip",
-  "url": "https://github.com/eden-0721/MicroMeasurePro/releases/download/micromeasurepro-v2.5.4/MicroMeasurePro_v2.5.4.zip",
-  "sha256": "287775bf222cc87d4f98071580b786c285fa715ba0f518219bcc034d520134f8",
-  "size": 18502868
+  "file": "MicroMeasurePro_v2.5.5.zip",
+  "url": "https://github.com/eden-0721/MicroMeasurePro/releases/download/micromeasurepro-v2.5.5/MicroMeasurePro_v2.5.5.zip",
+  "sha256": "6013c923cd46ffc688923bae5847903ae5f084fae9807ce9ce805d101acbbccb",
+  "size": 18513539
  },
  "notes": [
+  {
+   "v": "2.5.5",
+   "date": "2026-10-06",
+   "title": "LED(7세그먼트) 표시기 모드 · 학습 창 개선 · 영상 확대/돋보기",
+   "items": [
+    "ROI 종류 **LED 숫자(7세그먼트)** 추가 — 색으로 켜진 획만 남기고 꺼진 유령 획을 밝기 문턱으로 지운 뒤, 고정 자리(슬롯)마다 숫자 견본 + 7획 특징으로 읽음. 배우지 않은 숫자는 비슷한 숫자로 넘기지 않고 의심 처리",
+    "학습 창: 조각마다 **기계가 보는 것(이진화+칸)**을 같이 표시, **학습됨 ✓ / 실패 사유**, 학습 직후 **다시 읽은 값**과 일치 여부, [모두 학습] 요약(성공·실패·값 없음)",
+    "견본·칸 없이 [분석]을 누르면 확인창 대신 **학습 창으로 안내** ([설정]에서 \"학습 없이 분석 허용\" 가능)",
+    "플레이어 **Ctrl+휠 확대/축소**(커서 기준), 가운데 버튼·Space 드래그로 이동, [맞춤]/[1:1], **원본 보기(V)**, ROI·모서리를 그릴 때 **커서 옆 4× 돋보기**",
+    "LED 확대 배율 자동 3~4×, ROI 목록에 \"칸 ✓/학습 필요\" 표시"
+   ]
+  },
   {
    "v": "2.5.4",
    "date": "2026-10-06",
@@ -65,33 +77,21 @@
     "키는 업데이트 창 또는 명령 팔레트 \"업데이트 키 입력\"에서 넣고 지울 수 있음 (이 PC 의 data 폴더에만 저장)",
     "고침: 새 버전이 없어도 상단에 **\"⬆ 업데이트 있음\"** 배지가 늘 보이던 문제 (숨김 속성이 버튼 스타일에 밀림)"
    ]
-  },
-  {
-   "v": "2.4.0",
-   "date": "2026-10-02",
-   "title": "자동 업데이트 · 설치 파일 · 개발본 배지",
-   "items": [
-    "화면 위 **⬆ 업데이트 있음** 배지 — 누르면 바뀐 내용을 보고 한 번에 설치·재시작 (설정·이력은 그대로)",
-    "**설치 파일(Setup.exe)** 로 설치 — C:\\BSKang_SW\\MicroMeasurePro, 바탕화면 아이콘, 파이썬이 없는 PC 도 그대로 동작(내장)",
-    "내려받은 파일의 **지문(SHA-256) 확인** 후에만 설치, **수정된 설치 감지**와 복구·이전 버전 되돌리기",
-    "개발본에는 **🛠 개발본 · 올리지 않은 변경** 배지, 배포는 `publish.bat` 한 번",
-    "설정 파일 위치가 `data\\settings.json` 으로 바뀜 (업데이트·제거 때 보존)"
-   ]
   }
  ],
- "page": "https://github.com/eden-0721/MicroMeasurePro/releases/tag/micromeasurepro-v2.5.4",
+ "page": "https://github.com/eden-0721/MicroMeasurePro/releases/tag/micromeasurepro-v2.5.5",
  "private": true,
  "filesRepo": "eden-0721/MicroMeasurePro",
  "source": "https://github.com/eden-0721/MicroMeasurePro",
  "previous": {
-  "version": "2.5.3",
+  "version": "2.5.4",
   "setup": {
-   "file": "MicroMeasurePro_Setup_v2.5.3.exe",
-   "url": "https://github.com/eden-0721/MicroMeasurePro/releases/download/micromeasurepro-v2.5.3/MicroMeasurePro_Setup_v2.5.3.exe",
-   "sha256": "85f0484a789f93dfb05dea0347e085ce4734e89bc5e63b420dd3a4540a875a57",
-   "size": 16401313
+   "file": "MicroMeasurePro_Setup_v2.5.4.exe",
+   "url": "https://github.com/eden-0721/MicroMeasurePro/releases/download/micromeasurepro-v2.5.4/MicroMeasurePro_Setup_v2.5.4.exe",
+   "sha256": "1f66a63e32b2e972a61c8ab4039aa65c8a0971968c4e0d8ca32b43fed12cb279",
+   "size": 16404168
   },
-  "tag": "micromeasurepro-v2.5.3",
+  "tag": "micromeasurepro-v2.5.4",
   "filesRepo": "eden-0721/MicroMeasurePro"
  }
 }
