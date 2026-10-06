@@ -1,19 +1,29 @@
 {
  "app": "testreport",
  "name": "시험성적서 워크벤치",
- "version": "2.2.0",
+ "version": "2.2.1",
  "date": "2026-10-06",
  "channel": "release",
- "tag": "testreport-v2.2.0",
+ "tag": "testreport-v2.2.1",
  "private": true,
  "filesRepo": "eden-0721/test_reports",
  "setup": {
-  "file": "TestReport_Setup_v2.2.0.exe",
-  "url": "https://github.com/eden-0721/test_reports/releases/download/testreport-v2.2.0/TestReport_Setup_v2.2.0.exe",
-  "sha256": "3e763b8b873589c6f9217e3fb289abbbb77819e4672ce9a11f458f6aabd399af",
-  "size": 3730198
+  "file": "TestReport_Setup_v2.2.1.exe",
+  "url": "https://github.com/eden-0721/test_reports/releases/download/testreport-v2.2.1/TestReport_Setup_v2.2.1.exe",
+  "sha256": "76c6ca4649458c7c0177be9a9840f9fb10bca4927182c3b8c4600c57e7d1b863",
+  "size": 3731795
  },
  "notes": [
+  {
+   "v": "2.2.1",
+   "date": "2026-10-06",
+   "items": [
+    "공통 시험 장비를 지워도 [AI 초안 생성]이나 항목 장비 수정 때 다시 들어오던 문제 수정: 지운 장비는 작업마다 기억하고, 쓰는 항목이 있으면 항목에서도 지울지 묻습니다",
+    "장비 리스트 창에서 장비를 목록에서 빼기 (과거 성적서 원문은 그대로, [목록 정리 → 내가 정한 것]에서 되돌림)",
+    "항목 장비 칸에 장비를 여러 개 쓰면 공통 장비에 한 줄로 합쳐 들어가던 문제 수정",
+    "Claude 채팅 연결: 공통 장비 빼기, 항목 장비 지우기"
+   ]
+  },
   {
    "v": "2.2.0",
    "date": "2026-10-06",
