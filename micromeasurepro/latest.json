@@ -1,23 +1,34 @@
 {
  "app": "micromeasurepro",
  "name": "MicroMeasure Pro",
- "version": "2.5.3",
+ "version": "2.5.4",
  "date": "2026-10-06",
  "channel": "release",
- "tag": "micromeasurepro-v2.5.3",
+ "tag": "micromeasurepro-v2.5.4",
  "setup": {
-  "file": "MicroMeasurePro_Setup_v2.5.3.exe",
-  "url": "https://github.com/eden-0721/MicroMeasurePro/releases/download/micromeasurepro-v2.5.3/MicroMeasurePro_Setup_v2.5.3.exe",
-  "sha256": "85f0484a789f93dfb05dea0347e085ce4734e89bc5e63b420dd3a4540a875a57",
-  "size": 16401313
+  "file": "MicroMeasurePro_Setup_v2.5.4.exe",
+  "url": "https://github.com/eden-0721/MicroMeasurePro/releases/download/micromeasurepro-v2.5.4/MicroMeasurePro_Setup_v2.5.4.exe",
+  "sha256": "1f66a63e32b2e972a61c8ab4039aa65c8a0971968c4e0d8ca32b43fed12cb279",
+  "size": 16404168
  },
  "zip": {
-  "file": "MicroMeasurePro_v2.5.3.zip",
-  "url": "https://github.com/eden-0721/MicroMeasurePro/releases/download/micromeasurepro-v2.5.3/MicroMeasurePro_v2.5.3.zip",
-  "sha256": "d06b38f3dc21e588039ebcb63dd76db28cf44082dd88b515f6c88a8218c3b7f7",
-  "size": 18497927
+  "file": "MicroMeasurePro_v2.5.4.zip",
+  "url": "https://github.com/eden-0721/MicroMeasurePro/releases/download/micromeasurepro-v2.5.4/MicroMeasurePro_v2.5.4.zip",
+  "sha256": "287775bf222cc87d4f98071580b786c285fa715ba0f518219bcc034d520134f8",
+  "size": 18502868
  },
  "notes": [
+  {
+   "v": "2.5.4",
+   "date": "2026-10-06",
+   "title": "영상 타임라인 편집 — 드래그 선택 · 잘라내기/분할/삭제 · 핸들 · 좌우 이동 · 내보내기",
+   "items": [
+    "타임라인을 **드래그해 범위 선택** → **X** 잘라내기 (겹치면 합침), 재생 위치에서 **S** 분할(구간·잘라낸 범위, 띠 더블클릭도), 선택한 띠 **Del** 삭제/복원",
+    "구간·잘라낸 띠의 **양끝 핸들을 끌어 길이 조절**",
+    "확대 상태에서 **좌우 이동**: Shift+휠 · 눈금 드래그 · 아래 스크롤바, 눈금 더블클릭으로 전체 보기 (전에는 움직일 방법이 없었음)",
+    "[구간] 탭 **🎞 잘라낸 결과 영상으로 내보내기** — 남는 구간만 이어 새 파일(_cut.mp4), ffmpeg 필요"
+   ]
+  },
   {
    "v": "2.5.3",
    "date": "2026-10-06",
@@ -66,35 +77,21 @@
     "개발본에는 **🛠 개발본 · 올리지 않은 변경** 배지, 배포는 `publish.bat` 한 번",
     "설정 파일 위치가 `data\\settings.json` 으로 바뀜 (업데이트·제거 때 보존)"
    ]
-  },
-  {
-   "v": "2.3",
-   "date": "2026-09-28",
-   "title": "관리한계 고정 · 성적서 강화 · 추적성",
-   "items": [
-    "관리도 **관리한계 고정(Phase II)** — 안정된 기간으로 한 번 정해 두면 이후 데이터는 그 한계로 판정합니다",
-    "성적서에 **NG 확대 사진**이 자동으로 들어가고, **회사 양식**(로고·꼬리말·서명란)을 저장할 수 있습니다",
-    "**기간 리포트** — 이력 DB 를 주간·월간으로 요약 (항목별 Ppk·NG·추이·경고)",
-    "**표준 시편 검증**(정확도·반복성)과 **수정 이력**(누가 언제 값을 고쳤나) — 품질 심사 대응",
-    "스케일 프리셋에 **교정일·유효기간** — 기한이 지나면 경고",
-    "**연속 측정**(ROI 도구 유지), **현장 보기**(큰 글씨·고대비), NG 배지 클릭 시 해당 측정으로 이동",
-    "일괄 계측 후 **CSV 자동 저장** 옵션"
-   ]
   }
  ],
- "page": "https://github.com/eden-0721/MicroMeasurePro/releases/tag/micromeasurepro-v2.5.3",
+ "page": "https://github.com/eden-0721/MicroMeasurePro/releases/tag/micromeasurepro-v2.5.4",
  "private": true,
  "filesRepo": "eden-0721/MicroMeasurePro",
  "source": "https://github.com/eden-0721/MicroMeasurePro",
  "previous": {
-  "version": "2.5.2",
+  "version": "2.5.3",
   "setup": {
-   "file": "MicroMeasurePro_Setup_v2.5.2.exe",
-   "url": "https://github.com/eden-0721/MicroMeasurePro/releases/download/micromeasurepro-v2.5.2/MicroMeasurePro_Setup_v2.5.2.exe",
-   "sha256": "8c5e08eca00ae605ab223ecdd1df59547bfad3d20722e22d02f4204c8c26336c",
-   "size": 16397320
+   "file": "MicroMeasurePro_Setup_v2.5.3.exe",
+   "url": "https://github.com/eden-0721/MicroMeasurePro/releases/download/micromeasurepro-v2.5.3/MicroMeasurePro_Setup_v2.5.3.exe",
+   "sha256": "85f0484a789f93dfb05dea0347e085ce4734e89bc5e63b420dd3a4540a875a57",
+   "size": 16401313
   },
-  "tag": "micromeasurepro-v2.5.2",
+  "tag": "micromeasurepro-v2.5.3",
   "filesRepo": "eden-0721/MicroMeasurePro"
  }
 }
