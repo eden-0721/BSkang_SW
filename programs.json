@@ -43,23 +43,6 @@
    "source": "https://github.com/eden-0721/MicroMeasurePro"
   },
   {
-   "app": "papermaster",
-   "name": "PaperMaster",
-   "description": "연구자가 넣은 자료만으로 논문을 쓰는 로컬 앱 (파싱·근거 검색·집필·검증)",
-   "icon": "icon-64.png",
-   "version": "3.22.1",
-   "date": "2026-10-04",
-   "setup": {
-    "file": "PaperMaster_Setup_v3.22.1.exe",
-    "url": "https://github.com/eden-0721/papermaster/releases/download/papermaster-v3.22.1/PaperMaster_Setup_v3.22.1.exe",
-    "sha256": "7dd59def90628fbcf2795a826619ad8db99df5ad0cd7d51c32bb889ac838ea2c",
-    "size": 227194771
-   },
-   "page": "https://github.com/eden-0721/papermaster/releases/tag/papermaster-v3.22.1",
-   "private": true,
-   "source": "https://github.com/eden-0721/papermaster"
-  },
-  {
    "app": "via",
    "name": "VIA",
    "description": "실제 관광 데이터로 짜는 AI 국내 여행 코스, 맛집·경비 기록까지",
