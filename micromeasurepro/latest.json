@@ -1,28 +1,29 @@
 {
  "app": "micromeasurepro",
  "name": "MicroMeasure Pro",
- "version": "2.5.1",
+ "version": "2.5.2",
  "date": "2026-10-06",
  "channel": "release",
- "tag": "micromeasurepro-v2.5.1",
+ "tag": "micromeasurepro-v2.5.2",
  "setup": {
-  "file": "MicroMeasurePro_Setup_v2.5.1.exe",
-  "url": "https://github.com/eden-0721/MicroMeasurePro/releases/download/micromeasurepro-v2.5.1/MicroMeasurePro_Setup_v2.5.1.exe",
-  "sha256": "0f01b6d85d352b58c3ed23ce54d15b27d42774b93604e846bbc0ec12d0d3b78f",
-  "size": 16391363
+  "file": "MicroMeasurePro_Setup_v2.5.2.exe",
+  "url": "https://github.com/eden-0721/MicroMeasurePro/releases/download/micromeasurepro-v2.5.2/MicroMeasurePro_Setup_v2.5.2.exe",
+  "sha256": "8c5e08eca00ae605ab223ecdd1df59547bfad3d20722e22d02f4204c8c26336c",
+  "size": 16397320
  },
  "zip": {
-  "file": "MicroMeasurePro_v2.5.1.zip",
-  "url": "https://github.com/eden-0721/MicroMeasurePro/releases/download/micromeasurepro-v2.5.1/MicroMeasurePro_v2.5.1.zip",
-  "sha256": "fc6323cac6b413f358dd1a38ab3389f6cfd7207c42116bf5e0cbaf428c45494d",
-  "size": 18489974
+  "file": "MicroMeasurePro_v2.5.2.zip",
+  "url": "https://github.com/eden-0721/MicroMeasurePro/releases/download/micromeasurepro-v2.5.2/MicroMeasurePro_v2.5.2.zip",
+  "sha256": "e596b8b481b4a9ef7be5a0989b85717b1473fd5133e44bcc0ffbfc2e6714e75e",
+  "size": 18491180
  },
  "notes": [
   {
-   "v": "2.5.1",
+   "v": "2.5.2",
    "date": "2026-10-06",
    "title": "🎬 영상 분석 탭 (표시기 숫자·램프 시계열 · 구간 소요 시간)",
    "items": [
+    "고침: 업데이트 뒤 화면이 **옛 버전 파일(캐시)** 로 남아 \"업데이트 있음\"이 계속 뜨던 문제 — 서버가 캐시 재검증을 강제하고, 화면·서버 버전이 다르면 자동으로 다시 불러옴",
     "상단 **🎬 영상 분석** — 휴대폰·카메라로 찍은 설비 화면(PLC HMI) 영상에서 **표시기 숫자·램프를 프레임마다 읽어 시계열**로 기록",
     "**패널 모서리 4점 추적**으로 손떨림·기울기에도 ROI 가 같은 자리를 읽음, 표시기별 **숫자 견본 학습**(첫 추정은 OCR) → 신뢰도·의심 표시·검수 창",
     "타임라인: 프레임↔시각 전환, 확대/축소, **I/O 구간 → 소요 시간표**(합계·평균·σ), 램프·문턱 기반 **자동 구간**, 잘라내기(원본 보존)",
@@ -83,19 +84,19 @@
    ]
   }
  ],
- "page": "https://github.com/eden-0721/MicroMeasurePro/releases/tag/micromeasurepro-v2.5.1",
+ "page": "https://github.com/eden-0721/MicroMeasurePro/releases/tag/micromeasurepro-v2.5.2",
  "private": true,
  "filesRepo": "eden-0721/MicroMeasurePro",
  "source": "https://github.com/eden-0721/MicroMeasurePro",
  "previous": {
-  "version": "2.4.2",
+  "version": "2.5.1",
   "setup": {
-   "file": "MicroMeasurePro_Setup_v2.4.2.exe",
-   "url": "https://github.com/eden-0721/MicroMeasurePro/releases/download/micromeasurepro-v2.4.2/MicroMeasurePro_Setup_v2.4.2.exe",
-   "sha256": "d6ac20fb6eb0180ed0f430e6fe0cd9655ecf7b14f42292e8a9cb5bc6e6eb1999",
-   "size": 12682664
+   "file": "MicroMeasurePro_Setup_v2.5.1.exe",
+   "url": "https://github.com/eden-0721/MicroMeasurePro/releases/download/micromeasurepro-v2.5.1/MicroMeasurePro_Setup_v2.5.1.exe",
+   "sha256": "0f01b6d85d352b58c3ed23ce54d15b27d42774b93604e846bbc0ec12d0d3b78f",
+   "size": 16391363
   },
-  "tag": "micromeasurepro-v2.4.2",
+  "tag": "micromeasurepro-v2.5.1",
   "filesRepo": "eden-0721/MicroMeasurePro"
  }
 }
