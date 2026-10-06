@@ -1,19 +1,28 @@
 {
  "app": "testreport",
  "name": "시험성적서 워크벤치",
- "version": "2.1.0",
+ "version": "2.1.1",
  "date": "2026-10-06",
  "channel": "release",
- "tag": "testreport-v2.1.0",
+ "tag": "testreport-v2.1.1",
  "private": true,
  "filesRepo": "eden-0721/test_reports",
  "setup": {
-  "file": "TestReport_Setup_v2.1.0.exe",
-  "url": "https://github.com/eden-0721/test_reports/releases/download/testreport-v2.1.0/TestReport_Setup_v2.1.0.exe",
-  "sha256": "6a9e4d64f6d0f4976ce62761b5bd1f484c4cb42c80998dd1b7d7e426be978fef",
-  "size": 3711387
+  "file": "TestReport_Setup_v2.1.1.exe",
+  "url": "https://github.com/eden-0721/test_reports/releases/download/testreport-v2.1.1/TestReport_Setup_v2.1.1.exe",
+  "sha256": "c3b942cbc018690fc22b189917c4cda063a6fcfabfff59550c22df74132e1097",
+  "size": 3714199
  },
  "notes": [
+  {
+   "v": "2.1.1",
+   "date": "2026-10-06",
+   "items": [
+    "맨 위 작업 이름을 누르면 작업 메뉴: 파일로 저장 · 다른 이름으로 저장 · 작업 파일 열기 · 새 성적서 · 최근 작업 (접수·작성 어느 화면에서든). 작성 탭 [더보기]에는 발행 관련만",
+    "단축키: Ctrl+S 같은 파일에 바로 저장, Ctrl+Shift+S 다른 이름으로, Ctrl+O 열기, Ctrl+N 새 성적서, Ctrl+F 찾기(입력 칸 안 글자도), Esc 닫기. 앱 창에서 F5 새로고침은 막음",
+    "환경 설정 구글 드라이브 카드가 위쪽 동기화 단추와 같은 상태를 보여 줍니다: 이 PC·드라이브 각각 성적서 DB와 최근 작업, [지금 동기화]는 DB + 작업을 함께"
+   ]
+  },
   {
    "v": "2.1.0",
    "date": "2026-10-06",
