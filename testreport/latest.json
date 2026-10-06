@@ -1,19 +1,26 @@
 {
  "app": "testreport",
  "name": "시험성적서 워크벤치",
- "version": "2.2.6",
+ "version": "2.2.7",
  "date": "2026-10-06",
  "channel": "release",
- "tag": "testreport-v2.2.6",
+ "tag": "testreport-v2.2.7",
  "private": true,
  "filesRepo": "eden-0721/test_reports",
  "setup": {
-  "file": "TestReport_Setup_v2.2.6.exe",
-  "url": "https://github.com/eden-0721/test_reports/releases/download/testreport-v2.2.6/TestReport_Setup_v2.2.6.exe",
-  "sha256": "b5287742e9705e0fb1c5d031e1afab2634fabe7dd250a7e9bda844989c20f355",
-  "size": 3749300
+  "file": "TestReport_Setup_v2.2.7.exe",
+  "url": "https://github.com/eden-0721/test_reports/releases/download/testreport-v2.2.7/TestReport_Setup_v2.2.7.exe",
+  "sha256": "83c3e573ba136dad197ca2c7438271461a40fa49ca98bf5656bfff3091682a1c",
+  "size": 3749284
  },
  "notes": [
+  {
+   "v": "2.2.7",
+   "date": "2026-10-06",
+   "items": [
+    "최종 조판에서 글을 고칠 때 입력 칸 바탕이 회색으로 바뀌어 마우스 커서·글자 커서가 안 보이던 문제 수정 (흰 바탕 + 테두리)"
+   ]
+  },
   {
    "v": "2.2.6",
    "date": "2026-10-06",
