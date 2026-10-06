@@ -1,25 +1,37 @@
 {
  "app": "photo-organize",
  "name": "사진 정리",
- "version": "0.28.0",
- "date": "2026-10-04",
+ "version": "0.29.0",
+ "date": "2026-10-07",
  "channel": "release",
- "tag": "photo-organize-v0.28.0",
+ "tag": "photo-organize-v0.29.0",
  "private": true,
  "filesRepo": "eden-0721/photo_organize",
  "setup": {
-  "file": "PhotoOrganize_Setup_v0.28.0.exe",
-  "url": "https://github.com/eden-0721/photo_organize/releases/download/photo-organize-v0.28.0/PhotoOrganize_Setup_v0.28.0.exe",
-  "sha256": "fb07efeb535827b37b1bc9d5e1569be3d98e0edb95b293ad10836c584c242f45",
-  "size": 2880950
+  "file": "PhotoOrganize_Setup_v0.29.0.exe",
+  "url": "https://github.com/eden-0721/photo_organize/releases/download/photo-organize-v0.29.0/PhotoOrganize_Setup_v0.29.0.exe",
+  "sha256": "ef0245422fda53c31b181bbfb07dd43a1a7bc0cc0d27474794f3b1fca8f0bf8f",
+  "size": 2884022
  },
  "zip": {
-  "file": "PhotoOrganize_v0.28.0.zip",
-  "url": "https://github.com/eden-0721/photo_organize/releases/download/photo-organize-v0.28.0/PhotoOrganize_v0.28.0.zip",
-  "sha256": "9feeebdffb4efc08f2b5ed2eda4da02de8f92dbfb6a006ee4f04fa410e228c57",
-  "size": 757601
+  "file": "PhotoOrganize_v0.29.0.zip",
+  "url": "https://github.com/eden-0721/photo_organize/releases/download/photo-organize-v0.29.0/PhotoOrganize_v0.29.0.zip",
+  "sha256": "0432077b11c95e14b10fdd3a91d992d195af7f8410517c18b19d98e8c8529531",
+  "size": 762464
  },
  "notes": [
+  {
+   "v": "0.29.0",
+   "date": "2026-10-07",
+   "title": "전체 점검: 빠르게, 버그 고침, 화면 정돈",
+   "items": [
+    "첫 화면이 훨씬 빨리 열려요. 바뀐 게 없으면 다시 계산하지 않아요",
+    "구글 로그인 창 열기 링크가 금방 사라지던 것을 고쳤어요",
+    "NAS나 드라이브가 잠깐 끊겼을 때 지우기·날짜 쓰기가 기록을 잘못 지우거나 멈추지 않게 했어요",
+    "형식을 바꾼 동영상 되돌리기가 더 안전해졌어요(백업을 확인한 뒤에만)",
+    "버튼 크기·카드 모양·진행 막대를 모든 화면에서 똑같이 맞췄어요"
+   ]
+  },
   {
    "v": "0.28.0",
    "date": "2026-10-04",
