@@ -2,17 +2,29 @@
  "app": "papermaster",
  "name": "PaperMaster",
  "description": "연구자가 넣은 자료만으로 논문을 쓰는 로컬 앱 (파싱·근거 검색·집필·검증)",
- "version": "3.23.3",
+ "version": "3.23.4",
  "date": "2026-10-06",
  "channel": "release",
- "tag": "papermaster-v3.23.3",
+ "tag": "papermaster-v3.23.4",
  "setup": {
-  "file": "PaperMaster_Setup_v3.23.3.exe",
-  "url": "https://github.com/eden-0721/papermaster/releases/download/papermaster-v3.23.3/PaperMaster_Setup_v3.23.3.exe",
-  "sha256": "6e442da055102fc6047b4099a87c292a3387a98b90694f987199d170db5d47cf",
-  "size": 25829678
+  "file": "PaperMaster_Setup_v3.23.4.exe",
+  "url": "https://github.com/eden-0721/papermaster/releases/download/papermaster-v3.23.4/PaperMaster_Setup_v3.23.4.exe",
+  "sha256": "d3cc6803eb8e0b0c86e0386262fb0e088251b92e9e8027dfc2edb95cb454ea7f",
+  "size": 25832870
  },
  "notes": [
+  {
+   "v": "3.23.4",
+   "date": "2026-10-06",
+   "title": "변경 · 고침",
+   "items": [
+    "성능 (G-48 2차, 개발 PC 측정): 소스 목록(3초 폴링)은 SQL에서 필요한 칸만 읽음(18개 소스 108KB, 17→15ms) / 설정·연구실 관리자의 표 초기화를 프로세스당 1회로(설정 50회 336→127ms, 연구실 관리자 50회 160→12ms) / 1·2·4비트 그림 화소 풀기를 numpy로 / 60쪽 넘는 PDF는 다 읽은 쪽의 캐시를 버려 256쪽 논문 최대 메모리 1,664→428MB(시간 12→24초) / 화면 폴링은 진행 로그·시각만 바뀐 소스를 다시 그리지 않음 / 대화 수식은 메시지마다가 아니라 한 번에 렌더",
+    "이벤트 루프를 막던 곳: 집필 작업 루프·영문 번역 스트림의 SQLite 호출을 스레드로, 외부 논문 검색은 스레드풀 라우트로",
+    "화면 출력 규칙(G-48 2차, 약 60곳): 소스·논문·연구실 제목, 메모 본문, AI 결과, 외부 자료를 innerHTML에 넣을 때 모두 이스케이프하고, 버튼 onclick에는 글 대신 id만 넘김(제목에 `'`·`<`가 있으면 버튼이 깨지거나 스크립트가 실행될 수 있던 것)",
+    "서버 요청이 실패해도 \"완료\"라고 알리던 화면 6곳(연구실 이름 변경·삭제, 소스 역할 변경·일괄 삭제·복사, 논문 이름 변경·삭제) → 실패·부분 성공을 그대로 표시",
+    "영문 번역 중 연결이 끊기면 전체 화면 모달에서 나올 수 없던 것 → 닫기 버튼·오류 줄 표시. 소스 상세의 그림·용어 탭이 두 번 그려지던 것"
+   ]
+  },
   {
    "v": "3.23.3",
    "date": "2026-10-06",
@@ -55,32 +67,21 @@
     "업데이트 때 받아 둔 패키지 폴더(`python\\`)를 지우지 않음. 저작권 고지에는 받게 될 패키지들도 그대로 실음 (A-12)",
     "배포는 시험판 없이 늘 정식으로 (`publish.bat`) (A-12)"
    ]
-  },
-  {
-   "v": "3.22.1",
-   "date": "2026-10-04",
-   "title": "고침 · 추가",
-   "items": [
-    "설치 파일이 패키지 안의 `data` 폴더(2,146개 파일 — 학술 검색·AWS·OpenCV 자료 등)까지 빼던 것: 맨 위 `data\\`만 빼도록 (A-12 시험 빌드에서 발견)",
-    "조용한 제거·업데이트 때 \"data 폴더도 지울까요?\" 창이 떠서 멈추던 것: 조용한 모드에서는 묻지 않고 남김 (A-12)",
-    "개발본과 설치본이 같은 백업 폴더를 써서 하루 한 번 백업이 서로 막던 것: 개발본은 `C:\\BSKang_SW\\Backup\\PaperMaster_dev` (A-12)",
-    "배포 빌드의 **설치 시험** — 만든 설치 파일을 임시 폴더에 조용히 설치해 빠진 파일·불러오기·조용한 제거를 확인하고, 실패하면 배포하지 않음 (A-12)"
-   ]
   }
  ],
- "page": "https://github.com/eden-0721/papermaster/releases/tag/papermaster-v3.23.3",
+ "page": "https://github.com/eden-0721/papermaster/releases/tag/papermaster-v3.23.4",
  "private": true,
  "filesRepo": "eden-0721/papermaster",
  "source": "https://github.com/eden-0721/papermaster",
  "previous": {
-  "version": "3.23.2",
+  "version": "3.23.3",
   "setup": {
-   "file": "PaperMaster_Setup_v3.23.2.exe",
-   "url": "https://github.com/eden-0721/papermaster/releases/download/papermaster-v3.23.2/PaperMaster_Setup_v3.23.2.exe",
-   "sha256": "e8c673fcf9554454cfa95b05962306855f9564b6f534de4ea7b716ddd285cbd1",
-   "size": 25828338
+   "file": "PaperMaster_Setup_v3.23.3.exe",
+   "url": "https://github.com/eden-0721/papermaster/releases/download/papermaster-v3.23.3/PaperMaster_Setup_v3.23.3.exe",
+   "sha256": "6e442da055102fc6047b4099a87c292a3387a98b90694f987199d170db5d47cf",
+   "size": 25829678
   },
-  "tag": "papermaster-v3.23.2",
+  "tag": "papermaster-v3.23.3",
   "filesRepo": "eden-0721/papermaster"
  }
 }
