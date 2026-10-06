@@ -1,23 +1,33 @@
 {
  "app": "micromeasurepro",
  "name": "MicroMeasure Pro",
- "version": "2.5.8",
+ "version": "2.5.9",
  "date": "2026-10-06",
  "channel": "release",
- "tag": "micromeasurepro-v2.5.8",
+ "tag": "micromeasurepro-v2.5.9",
  "setup": {
-  "file": "MicroMeasurePro_Setup_v2.5.8.exe",
-  "url": "https://github.com/eden-0721/MicroMeasurePro/releases/download/micromeasurepro-v2.5.8/MicroMeasurePro_Setup_v2.5.8.exe",
-  "sha256": "a557f2265a01e5964b3e9df14cc7c47b39be306f78357a2f78dbbf4c7f8b5fd0",
-  "size": 16419751
+  "file": "MicroMeasurePro_Setup_v2.5.9.exe",
+  "url": "https://github.com/eden-0721/MicroMeasurePro/releases/download/micromeasurepro-v2.5.9/MicroMeasurePro_Setup_v2.5.9.exe",
+  "sha256": "d08150f42e671e2e3ee8b11d34d6bd31d526297ed6694d4ce8ebdc3274700d15",
+  "size": 16425819
  },
  "zip": {
-  "file": "MicroMeasurePro_v2.5.8.zip",
-  "url": "https://github.com/eden-0721/MicroMeasurePro/releases/download/micromeasurepro-v2.5.8/MicroMeasurePro_v2.5.8.zip",
-  "sha256": "eec88cc0d5a55ea6956e6a8ede5434d6b9617eafbc0b6cec5830929f03c5faee",
-  "size": 18522654
+  "file": "MicroMeasurePro_v2.5.9.zip",
+  "url": "https://github.com/eden-0721/MicroMeasurePro/releases/download/micromeasurepro-v2.5.9/MicroMeasurePro_v2.5.9.zip",
+  "sha256": "66dd1ce6438d6c1f9f57db963a618a1dbb90c880fddb4e8c7b9c2c0fbee371d2",
+  "size": 18536115
  },
  "notes": [
+  {
+   "v": "2.5.9",
+   "date": "2026-10-06",
+   "title": "ROI 자동 잡기 (범용)",
+   "items": [
+    "[ROI] 탭 **✨ 자동 잡기** — 현재 프레임에서 숫자 표시기처럼 보이는 곳을 찾아 번호 붙은 후보로 보여 줍니다. **영상 곳곳에서 값이 바뀌는 곳과 LED 는 미리 선택**되고, 라벨처럼 안 바뀌는 글자는 \"고정 후보\"로 목록에 남아 체크해서 넣습니다(설정값처럼 영상 내내 같은 숫자일 수 있어서). [선택 추가]/[모두 추가]/[취소], 목록에 마우스를 올리면 영상의 상자가 굵어집니다",
+    "어떤 HMI 도 가정하지 않습니다: 여러 밝기 문턱으로 글자 덩어리를 모아 줄로 묶고, 줄마다 판독기와 같은 방법으로 글자를 나눠 종류(숫자·시계·LED)를 추정하고, 추적기로 따라가며 값이 바뀌는지 봅니다. 단위(RPM·Hz·%)는 바로 옆 글자를 읽어 붙입니다",
+    "한계: 후보에 라벨·아이콘이 섞일 수 있고(체크 안 하면 그만), 영상 내내 값이 같은 표시기는 고정 후보에만 있습니다. 흐린 휴대폰 영상에서는 표시기의 절반쯤만 후보로 잡힙니다(실영상: 13개 중 6개, 그중 값이 바뀌는 2개 자동 선택) — 못 잡은 것은 [ROI 그리기]로 직접. 합성 영상에서는 표시기 5개를 모두 골랐습니다"
+   ]
+  },
   {
    "v": "2.5.8",
    "date": "2026-10-06",
@@ -68,32 +78,21 @@
     "확대 상태에서 **좌우 이동**: Shift+휠 · 눈금 드래그 · 아래 스크롤바, 눈금 더블클릭으로 전체 보기 (전에는 움직일 방법이 없었음)",
     "[구간] 탭 **🎞 잘라낸 결과 영상으로 내보내기** — 남는 구간만 이어 새 파일(_cut.mp4), ffmpeg 필요"
    ]
-  },
-  {
-   "v": "2.5.3",
-   "date": "2026-10-06",
-   "title": "영상 분석 — 실제 휴대폰 영상(720p HMI)으로 판독기 튜닝",
-   "items": [
-    "**글자 칸 고정 판독**: 첫 학습 때 글자 칸 배치를 정하고 이후 프레임은 같은 칸으로 읽음 (흔들림·흐림에 글자 분리가 흔들리던 문제 해결)",
-    "프레임마다 ROI 를 기준 조각에 **미세 정렬**(±4px), 표시기 테두리·틀 자동 제거, 붙은 숫자는 투영 골짜기에서 분할, 7세그먼트 LED 도 한 글자로",
-    "글자색은 ROI 가장자리(배경)로 판단, 확대 배율 자동(글자 높이 40px 기준), 흐림에 관대한 유사도, 고정 소수점은 안 보여도 유지 (19.00 → 1900 사고 방지)",
-    "학습 창에서 글자 수가 안 맞아도 **입력한 값의 글자 수대로 칸**을 만들어 학습 가능"
-   ]
   }
  ],
- "page": "https://github.com/eden-0721/MicroMeasurePro/releases/tag/micromeasurepro-v2.5.8",
+ "page": "https://github.com/eden-0721/MicroMeasurePro/releases/tag/micromeasurepro-v2.5.9",
  "private": true,
  "filesRepo": "eden-0721/MicroMeasurePro",
  "source": "https://github.com/eden-0721/MicroMeasurePro",
  "previous": {
-  "version": "2.5.6",
+  "version": "2.5.8",
   "setup": {
-   "file": "MicroMeasurePro_Setup_v2.5.6.exe",
-   "url": "https://github.com/eden-0721/MicroMeasurePro/releases/download/micromeasurepro-v2.5.6/MicroMeasurePro_Setup_v2.5.6.exe",
-   "sha256": "7d4e864a2fe5e9d9942f57b8142a891bc1d6a89ca821107e82a54c9d82ef4977",
-   "size": 16416943
+   "file": "MicroMeasurePro_Setup_v2.5.8.exe",
+   "url": "https://github.com/eden-0721/MicroMeasurePro/releases/download/micromeasurepro-v2.5.8/MicroMeasurePro_Setup_v2.5.8.exe",
+   "sha256": "a557f2265a01e5964b3e9df14cc7c47b39be306f78357a2f78dbbf4c7f8b5fd0",
+   "size": 16419751
   },
-  "tag": "micromeasurepro-v2.5.6",
+  "tag": "micromeasurepro-v2.5.8",
   "filesRepo": "eden-0721/MicroMeasurePro"
  }
 }
