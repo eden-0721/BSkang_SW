@@ -1,23 +1,37 @@
 {
  "app": "micromeasurepro",
  "name": "MicroMeasure Pro",
- "version": "2.5.6",
+ "version": "2.5.8",
  "date": "2026-10-06",
  "channel": "release",
- "tag": "micromeasurepro-v2.5.6",
+ "tag": "micromeasurepro-v2.5.8",
  "setup": {
-  "file": "MicroMeasurePro_Setup_v2.5.6.exe",
-  "url": "https://github.com/eden-0721/MicroMeasurePro/releases/download/micromeasurepro-v2.5.6/MicroMeasurePro_Setup_v2.5.6.exe",
-  "sha256": "7d4e864a2fe5e9d9942f57b8142a891bc1d6a89ca821107e82a54c9d82ef4977",
-  "size": 16416943
+  "file": "MicroMeasurePro_Setup_v2.5.8.exe",
+  "url": "https://github.com/eden-0721/MicroMeasurePro/releases/download/micromeasurepro-v2.5.8/MicroMeasurePro_Setup_v2.5.8.exe",
+  "sha256": "a557f2265a01e5964b3e9df14cc7c47b39be306f78357a2f78dbbf4c7f8b5fd0",
+  "size": 16419751
  },
  "zip": {
-  "file": "MicroMeasurePro_v2.5.6.zip",
-  "url": "https://github.com/eden-0721/MicroMeasurePro/releases/download/micromeasurepro-v2.5.6/MicroMeasurePro_v2.5.6.zip",
-  "sha256": "4e2e6d0ec5e083ff29fe44b4f42824e36a5d46814c50939acc9d3bd412d65f95",
-  "size": 18517824
+  "file": "MicroMeasurePro_v2.5.8.zip",
+  "url": "https://github.com/eden-0721/MicroMeasurePro/releases/download/micromeasurepro-v2.5.8/MicroMeasurePro_v2.5.8.zip",
+  "sha256": "eec88cc0d5a55ea6956e6a8ede5434d6b9617eafbc0b6cec5830929f03c5faee",
+  "size": 18522654
  },
  "notes": [
+  {
+   "v": "2.5.8",
+   "date": "2026-10-06",
+   "title": "판독 정확도 — 실영상 표시기 13개 전수 점검",
+   "items": [
+    "사용자 실영상의 표시기 **13개(Speed S.V/P.V/부하율 ×2, RPM, 무게, 온도, LED Bar/% , 시계)** 를 프레임 전체에서 점검 → 학습 안 한 프레임 **94% 정확**, 확신 오답 0 (틀린 것은 모두 \"의심\"으로 표시)",
+    "**글자색(밝은/어두운) 자동 판정 개선 + 학습 때 고정** — 반사·노출로 프레임마다 뒤집혀 19.00 이 01.99 로 읽히던 문제 해결",
+    "**문턱 보정 자동** — 첫 학습 때 글자가 흐려 서로 붙거나(시계 02↔03) 끊기는 표시기의 보정값을 자동으로 고릅니다 (슬라이더는 그대로 수동 조절 가능)",
+    "**상자 테두리·그림자 제거 강화** — ROI 에 들어온 테두리 선·굵은 세로 막대가 숫자로 읽히거나(0.0 → 40.0) 글자들을 한 덩어리로 잇던 문제",
+    "**가운데 정렬 표시기**(RPM \"0\", \"60\" 처럼 짧은 수가 가운데 오는 것) — 글자 위치에 맞춰 칸을 옮겨 읽고 학습",
+    "학습 때 글자 수가 맞으면 **숫자 덩어리 위치로 칸**을 만들고(기호 분류가 틀려도 안전), 작은 얼룩은 빈 칸으로, 음수 부호는 세로 가운데에 있을 때만",
+    "테스트: 실영상 정확도 검사 `test/p19_real_video.mjs` (영상 없으면 SKIP)"
+   ]
+  },
   {
    "v": "2.5.6",
    "date": "2026-10-06",
@@ -65,36 +79,21 @@
     "글자색은 ROI 가장자리(배경)로 판단, 확대 배율 자동(글자 높이 40px 기준), 흐림에 관대한 유사도, 고정 소수점은 안 보여도 유지 (19.00 → 1900 사고 방지)",
     "학습 창에서 글자 수가 안 맞아도 **입력한 값의 글자 수대로 칸**을 만들어 학습 가능"
    ]
-  },
-  {
-   "v": "2.5.2",
-   "date": "2026-10-06",
-   "title": "🎬 영상 분석 탭 (표시기 숫자·램프 시계열 · 구간 소요 시간)",
-   "items": [
-    "고침: 업데이트 뒤 화면이 **옛 버전 파일(캐시)** 로 남아 \"업데이트 있음\"이 계속 뜨던 문제 — 서버가 캐시 재검증을 강제하고, 화면·서버 버전이 다르면 자동으로 다시 불러옴",
-    "상단 **🎬 영상 분석** — 휴대폰·카메라로 찍은 설비 화면(PLC HMI) 영상에서 **표시기 숫자·램프를 프레임마다 읽어 시계열**로 기록",
-    "**패널 모서리 4점 추적**으로 손떨림·기울기에도 ROI 가 같은 자리를 읽음, 표시기별 **숫자 견본 학습**(첫 추정은 OCR) → 신뢰도·의심 표시·검수 창",
-    "타임라인: 프레임↔시각 전환, 확대/축소, **I/O 구간 → 소요 시간표**(합계·평균·σ), 램프·문턱 기반 **자동 구간**, 잘라내기(원본 보존)",
-    "화면 속 **시계 ROI** 로 실제 시각 역산, 가변 프레임레이트 영상도 타임스탬프 기준으로 정확",
-    "결과: 재생 동기 시계열 차트, 값 변화 목록/전체 시계열, **CSV · 통계 스튜디오로 보내기**, 영상 옆 **.mmvid 프로젝트** 자동 복원, 표시기 **프로필** 재사용",
-    "HEVC 등 못 여는 영상은 ffmpeg 로 **정보 보존 변환**(재포장/H.264), 영상 열기는 Windows 파일 선택창(서버), Range 스트리밍",
-    "가이드 5편(열기·ROI·판독·구간·결과) + 촬영 가이드. 모든 처리는 PC 안에서만"
-   ]
   }
  ],
- "page": "https://github.com/eden-0721/MicroMeasurePro/releases/tag/micromeasurepro-v2.5.6",
+ "page": "https://github.com/eden-0721/MicroMeasurePro/releases/tag/micromeasurepro-v2.5.8",
  "private": true,
  "filesRepo": "eden-0721/MicroMeasurePro",
  "source": "https://github.com/eden-0721/MicroMeasurePro",
  "previous": {
-  "version": "2.5.5",
+  "version": "2.5.6",
   "setup": {
-   "file": "MicroMeasurePro_Setup_v2.5.5.exe",
-   "url": "https://github.com/eden-0721/MicroMeasurePro/releases/download/micromeasurepro-v2.5.5/MicroMeasurePro_Setup_v2.5.5.exe",
-   "sha256": "73c27a0e52c22558390de43ff3ac9ae686f06428d9330b6293f794f638b8f5e2",
-   "size": 16412559
+   "file": "MicroMeasurePro_Setup_v2.5.6.exe",
+   "url": "https://github.com/eden-0721/MicroMeasurePro/releases/download/micromeasurepro-v2.5.6/MicroMeasurePro_Setup_v2.5.6.exe",
+   "sha256": "7d4e864a2fe5e9d9942f57b8142a891bc1d6a89ca821107e82a54c9d82ef4977",
+   "size": 16416943
   },
-  "tag": "micromeasurepro-v2.5.5",
+  "tag": "micromeasurepro-v2.5.6",
   "filesRepo": "eden-0721/MicroMeasurePro"
  }
 }
