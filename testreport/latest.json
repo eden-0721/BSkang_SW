@@ -1,19 +1,26 @@
 {
  "app": "testreport",
  "name": "시험성적서 워크벤치",
- "version": "2.2.3",
+ "version": "2.2.4",
  "date": "2026-10-06",
  "channel": "release",
- "tag": "testreport-v2.2.3",
+ "tag": "testreport-v2.2.4",
  "private": true,
  "filesRepo": "eden-0721/test_reports",
  "setup": {
-  "file": "TestReport_Setup_v2.2.3.exe",
-  "url": "https://github.com/eden-0721/test_reports/releases/download/testreport-v2.2.3/TestReport_Setup_v2.2.3.exe",
-  "sha256": "f689c2c203942d3b998f16d53ac9f534475d99c29ee0ba15b9a6f3c217e6922c",
-  "size": 3734131
+  "file": "TestReport_Setup_v2.2.4.exe",
+  "url": "https://github.com/eden-0721/test_reports/releases/download/testreport-v2.2.4/TestReport_Setup_v2.2.4.exe",
+  "sha256": "d1ceffb74916635e45e9073bfe7cb15543d4b9879aa74647117178a1f1d845b9",
+  "size": 3735567
  },
  "notes": [
+  {
+   "v": "2.2.4",
+   "date": "2026-10-06",
+   "items": [
+    "설치본도 로그 창(검은 글자 창)이 앱 창과 함께 뜹니다 — 진행 상황·오류를 바로 볼 수 있습니다. 프로그램은 앱 창의 X 로 닫으세요 (로그 창은 닫기 단추가 없고 앱과 함께 닫힙니다). 혹시 로그 창이 먼저 닫히면 작업을 자동 저장하고 끝납니다"
+   ]
+  },
   {
    "v": "2.2.3",
    "date": "2026-10-06",
