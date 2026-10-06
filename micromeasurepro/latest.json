@@ -1,23 +1,32 @@
 {
  "app": "micromeasurepro",
  "name": "MicroMeasure Pro",
- "version": "2.5.13",
- "date": "2026-10-06",
+ "version": "2.5.14",
+ "date": "2026-10-07",
  "channel": "release",
- "tag": "micromeasurepro-v2.5.13",
+ "tag": "micromeasurepro-v2.5.14",
  "setup": {
-  "file": "MicroMeasurePro_Setup_v2.5.13.exe",
-  "url": "https://github.com/eden-0721/MicroMeasurePro/releases/download/micromeasurepro-v2.5.13/MicroMeasurePro_Setup_v2.5.13.exe",
-  "sha256": "f3eb70f6be95411cdb6cd4ed3bb75d3d326596e87df98d3e98b60eee67090516",
-  "size": 16439112
+  "file": "MicroMeasurePro_Setup_v2.5.14.exe",
+  "url": "https://github.com/eden-0721/MicroMeasurePro/releases/download/micromeasurepro-v2.5.14/MicroMeasurePro_Setup_v2.5.14.exe",
+  "sha256": "dd14be3baa92c2418281155fd25eb9c52e1f273e069ede6927b81dde6484c1a8",
+  "size": 16440727
  },
  "zip": {
-  "file": "MicroMeasurePro_v2.5.13.zip",
-  "url": "https://github.com/eden-0721/MicroMeasurePro/releases/download/micromeasurepro-v2.5.13/MicroMeasurePro_v2.5.13.zip",
-  "sha256": "babe57deeb384d9edf4c16388d4907f351b31fcf012b23d822481556cdcd4a0c",
-  "size": 18549831
+  "file": "MicroMeasurePro_v2.5.14.zip",
+  "url": "https://github.com/eden-0721/MicroMeasurePro/releases/download/micromeasurepro-v2.5.14/MicroMeasurePro_v2.5.14.zip",
+  "sha256": "73fa3681268f1f1d7e9e0806397cde382b9dbdcd0e8f71538e8a2f7b85d6399b",
+  "size": 18552046
  },
  "notes": [
+  {
+   "v": "2.5.14",
+   "date": "2026-10-07",
+   "title": "자동 잡기: 표시등(램프) 찾기 · 후보 상자가 화면을 따라감",
+   "items": [
+    "자동 잡기 옆 선택 상자로 **숫자 표시기 / 표시등(램프) / 둘 다**를 고릅니다. 표시등은 진한 색의 네모·동그란 조각 중 영상 곳곳에서 **색이 바뀌는 것**만 골라 \"램프\" 종류로 미리 선택합니다(배관·아이콘처럼 색이 안 바뀌는 것은 버림)",
+    "후보 상자는 잡은 프레임 좌표라 손떨림 영상에서 재생 위치를 옮기면 어긋나 보였습니다 → 이제 화면 이동량만큼 상자를 옮겨 그리고, 검토 블록의 **[잡은 프레임으로]**로 돌아갈 수 있습니다"
+   ]
+  },
   {
    "v": "2.5.13",
    "date": "2026-10-06",
@@ -59,31 +68,21 @@
     "목록마다 **조각 미리보기**를 붙여 번호와 표시기를 바로 맞춰 볼 수 있습니다. 목록에 마우스를 올리면 영상의 상자가 굵어집니다",
     "동그란 표시등·밸브처럼 네모에 가깝고 값(색)이 바뀌는 후보는 종류를 **램프**로 추정합니다"
    ]
-  },
-  {
-   "v": "2.5.9",
-   "date": "2026-10-06",
-   "title": "ROI 자동 잡기 (범용)",
-   "items": [
-    "[ROI] 탭 **✨ 자동 잡기** — 현재 프레임에서 숫자 표시기처럼 보이는 곳을 찾아 번호 붙은 후보로 보여 줍니다. **영상 곳곳에서 값이 바뀌는 곳과 LED 는 미리 선택**되고, 라벨처럼 안 바뀌는 글자는 \"고정 후보\"로 목록에 남아 체크해서 넣습니다(설정값처럼 영상 내내 같은 숫자일 수 있어서). [선택 추가]/[모두 추가]/[취소], 목록에 마우스를 올리면 영상의 상자가 굵어집니다",
-    "어떤 HMI 도 가정하지 않습니다: 여러 밝기 문턱으로 글자 덩어리를 모아 줄로 묶고, 줄마다 판독기와 같은 방법으로 글자를 나눠 종류(숫자·시계·LED)를 추정하고, 추적기로 따라가며 값이 바뀌는지 봅니다. 단위(RPM·Hz·%)는 바로 옆 글자를 읽어 붙입니다",
-    "한계: 후보에 라벨·아이콘이 섞일 수 있고(체크 안 하면 그만), 영상 내내 값이 같은 표시기는 고정 후보에만 있습니다. 흐린 휴대폰 영상에서는 표시기의 절반쯤만 후보로 잡힙니다(실영상: 13개 중 6개, 그중 값이 바뀌는 2개 자동 선택) — 못 잡은 것은 [ROI 그리기]로 직접. 합성 영상에서는 표시기 5개를 모두 골랐습니다"
-   ]
   }
  ],
- "page": "https://github.com/eden-0721/MicroMeasurePro/releases/tag/micromeasurepro-v2.5.13",
+ "page": "https://github.com/eden-0721/MicroMeasurePro/releases/tag/micromeasurepro-v2.5.14",
  "private": true,
  "filesRepo": "eden-0721/MicroMeasurePro",
  "source": "https://github.com/eden-0721/MicroMeasurePro",
  "previous": {
-  "version": "2.5.12",
+  "version": "2.5.13",
   "setup": {
-   "file": "MicroMeasurePro_Setup_v2.5.12.exe",
-   "url": "https://github.com/eden-0721/MicroMeasurePro/releases/download/micromeasurepro-v2.5.12/MicroMeasurePro_Setup_v2.5.12.exe",
-   "sha256": "42a7897c698021a121905083bd2d761b49e0cfe0330cdfd17337c575bdd6df0d",
-   "size": 16433127
+   "file": "MicroMeasurePro_Setup_v2.5.13.exe",
+   "url": "https://github.com/eden-0721/MicroMeasurePro/releases/download/micromeasurepro-v2.5.13/MicroMeasurePro_Setup_v2.5.13.exe",
+   "sha256": "f3eb70f6be95411cdb6cd4ed3bb75d3d326596e87df98d3e98b60eee67090516",
+   "size": 16439112
   },
-  "tag": "micromeasurepro-v2.5.12",
+  "tag": "micromeasurepro-v2.5.13",
   "filesRepo": "eden-0721/MicroMeasurePro"
  }
 }
