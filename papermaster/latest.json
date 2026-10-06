@@ -2,17 +2,33 @@
  "app": "papermaster",
  "name": "PaperMaster",
  "description": "연구자가 넣은 자료만으로 논문을 쓰는 로컬 앱 (파싱·근거 검색·집필·검증)",
- "version": "3.23.0",
+ "version": "3.23.2",
  "date": "2026-10-06",
  "channel": "release",
- "tag": "papermaster-v3.23.0",
+ "tag": "papermaster-v3.23.2",
  "setup": {
-  "file": "PaperMaster_Setup_v3.23.0.exe",
-  "url": "https://github.com/eden-0721/papermaster/releases/download/papermaster-v3.23.0/PaperMaster_Setup_v3.23.0.exe",
-  "sha256": "12fa1de58b25b27be79689db58bf3a50031b7bf948050c225eecacdefd42a7f7",
-  "size": 25833287
+  "file": "PaperMaster_Setup_v3.23.2.exe",
+  "url": "https://github.com/eden-0721/papermaster/releases/download/papermaster-v3.23.2/PaperMaster_Setup_v3.23.2.exe",
+  "sha256": "e8c673fcf9554454cfa95b05962306855f9564b6f534de4ea7b716ddd285cbd1",
+  "size": 25828338
  },
  "notes": [
+  {
+   "v": "3.23.2",
+   "date": "2026-10-06",
+   "title": "고침",
+   "items": [
+    "배포 빌드가 설치 파일을 올린 뒤 다운로드 페이지 갱신에서 멈추던 것 (아이콘을 만들 Pillow가 빌드 컴퓨터에 없음 → 아이콘을 저장소에 둠). 처음 켤 때 휠 없는 패키지(bibtexparser)를 설치하지 못하던 것 (A-12)"
+   ]
+  },
+  {
+   "v": "3.23.1",
+   "date": "2026-10-06",
+   "title": "변경",
+   "items": [
+    "배포 빌드 시간 16분 → 약 5분: 검사·시험은 `publish.bat`이 개발 PC에서 이미 돌리므로 GitHub에서 되풀이하지 않고, 처음 켤 때 받는 패키지는 한 번만 받아(캐시) 설치 시험에 그대로 씀 (A-12)"
+   ]
+  },
   {
    "v": "3.23.0",
    "date": "2026-10-06",
@@ -47,28 +63,21 @@
     "서버 포트는 `PM_PORT` 하나(개발본 8000, 설치본 8010)만 허용 — 두 개가 함께 켜져도 부딪치지 않음 (A-12)",
     "논문 PDF의 차트에서 한글 제목·축이 네모로 나오던 것 (G-47)"
    ]
-  },
-  {
-   "v": "3.21.0",
-   "date": "2026-10-04",
-   "title": "변경 · 고침",
-   "items": [
-    "**PDF 엔진 교체: PyMuPDF(AGPL) → pdfplumber·pdfminer.six(MIT) + pypdfium2(Apache/BSD) + reportlab(BSD)** — 설치 파일로 나눠 줘도 라이선스 문제가 없게 (A-14)",
-    "패키지: `pymupdf` 빠짐, `pdfplumber`·`pdfminer.six`·`pypdfium2`(판 고정)·`reportlab` 들어옴 → 각 PC의 `PaperMaster.bat`이 다음 실행 때 패키지를 맞출지 묻습니다",
-    "글꼴이 포함 안 된 한·중·일 PDF(ToUnicode 없는 CID 글꼴)의 글자를 Adobe 공식 표로 읽음 — 드문 한자·기호가 엉뚱한 글자로 나오던 것 (G-45)"
-   ]
-  },
-  {
-   "v": "3.20.1",
-   "date": "2026-10-02",
-   "title": "변경",
-   "items": [
-    "개발용 설치 기본 폴더 `C:\\BSkang_SW\\dev\\PaperMaster` (배포용은 `C:\\BSkang_SW\\PaperMaster`), 구글 드라이브 동기화 폴더 `BSkang_SW/PaperMaster` — 정리된 데이터로 새로 시작, 옛 폴더 `bs_software/paper_master`는 그대로 남김 (A-11)"
-   ]
   }
  ],
- "page": "https://github.com/eden-0721/papermaster/releases/tag/papermaster-v3.23.0",
+ "page": "https://github.com/eden-0721/papermaster/releases/tag/papermaster-v3.23.2",
  "private": true,
  "filesRepo": "eden-0721/papermaster",
- "source": "https://github.com/eden-0721/papermaster"
+ "source": "https://github.com/eden-0721/papermaster",
+ "previous": {
+  "version": "3.23.0",
+  "setup": {
+   "file": "PaperMaster_Setup_v3.23.0.exe",
+   "url": "https://github.com/eden-0721/papermaster/releases/download/papermaster-v3.23.0/PaperMaster_Setup_v3.23.0.exe",
+   "sha256": "12fa1de58b25b27be79689db58bf3a50031b7bf948050c225eecacdefd42a7f7",
+   "size": 25833287
+  },
+  "tag": "papermaster-v3.23.0",
+  "filesRepo": "eden-0721/papermaster"
+ }
 }
