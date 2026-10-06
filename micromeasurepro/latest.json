@@ -1,23 +1,33 @@
 {
  "app": "micromeasurepro",
  "name": "MicroMeasure Pro",
- "version": "2.5.11",
+ "version": "2.5.12",
  "date": "2026-10-06",
  "channel": "release",
- "tag": "micromeasurepro-v2.5.11",
+ "tag": "micromeasurepro-v2.5.12",
  "setup": {
-  "file": "MicroMeasurePro_Setup_v2.5.11.exe",
-  "url": "https://github.com/eden-0721/MicroMeasurePro/releases/download/micromeasurepro-v2.5.11/MicroMeasurePro_Setup_v2.5.11.exe",
-  "sha256": "7a6535209a3b4ae9866d49e6366bda0fb1b0612ee972fffad62a5676102df0cc",
-  "size": 16428746
+  "file": "MicroMeasurePro_Setup_v2.5.12.exe",
+  "url": "https://github.com/eden-0721/MicroMeasurePro/releases/download/micromeasurepro-v2.5.12/MicroMeasurePro_Setup_v2.5.12.exe",
+  "sha256": "42a7897c698021a121905083bd2d761b49e0cfe0330cdfd17337c575bdd6df0d",
+  "size": 16433127
  },
  "zip": {
-  "file": "MicroMeasurePro_v2.5.11.zip",
-  "url": "https://github.com/eden-0721/MicroMeasurePro/releases/download/micromeasurepro-v2.5.11/MicroMeasurePro_v2.5.11.zip",
-  "sha256": "92109183c175c406a217ffc5a3283ac1aeb359a08afa4c9dc528dd8631a4497b",
-  "size": 18540742
+  "file": "MicroMeasurePro_v2.5.12.zip",
+  "url": "https://github.com/eden-0721/MicroMeasurePro/releases/download/micromeasurepro-v2.5.12/MicroMeasurePro_v2.5.12.zip",
+  "sha256": "f461bfc853ff6353d2c96c7b07a57f79d85edeaa8fe9d1969a9a92d3c8546674",
+  "size": 18546269
  },
  "notes": [
+  {
+   "v": "2.5.12",
+   "date": "2026-10-06",
+   "title": "여러 영상 · 트랙 (편집 2단계)",
+   "items": [
+    "툴바 **➕ 영상 추가** — 영상을 하나 더 열어 아래 트랙으로 붙입니다. 트랙마다 ROI·학습·분석·클립이 따로이고, 클립 레인이 트랙 수만큼 쌓입니다(다른 트랙 줄을 클릭하면 전환, 전환할 때 자동 저장)",
+    "[구간] 탭 **트랙** 목록: ▲▼ 순서, ✕ 시퀀스에서 빼기(파일·분석은 그대로). **📊 모든 트랙 결과 → 스튜디오**/**⬇ 모든 트랙 CSV**: 트랙·영상 내 시각·이어진 시각·표시기(이름으로 합침) 한 표. **🎞 트랙 이어 붙여 내보내기**: 트랙 순서대로 모든 영상의 클립을 한 파일로(첫 영상 크기·프레임레이트에 맞춤)",
+    "시퀀스 구성은 각 영상의 .mmvid 에 함께 저장되어, 구성원 영상 하나를 열면 트랙이 복원됩니다"
+   ]
+  },
   {
    "v": "2.5.11",
    "date": "2026-10-06",
@@ -62,35 +72,21 @@
     "학습 때 글자 수가 맞으면 **숫자 덩어리 위치로 칸**을 만들고(기호 분류가 틀려도 안전), 작은 얼룩은 빈 칸으로, 음수 부호는 세로 가운데에 있을 때만",
     "테스트: 실영상 정확도 검사 `test/p19_real_video.mjs` (영상 없으면 SKIP)"
    ]
-  },
-  {
-   "v": "2.5.6",
-   "date": "2026-10-06",
-   "title": "영상 분석 — 추적 강화 · 수동 영상 처리 · 타임라인 피드백 · 되돌리기/단축키",
-   "items": [
-    "**추적**: 패널 모서리를 안 찍어도 ROI **주변 네 귀퉁이(바뀌지 않는 배경)**를 기준점으로 따라가고, 프레임 전체 **전역 이동량**을 먼저 맞춰 손으로 든 긴 영상의 큰 움직임도 따라붙음 (전에는 글자 자체를 기준으로 삼아 ROI 가 미끄러졌음)",
-    "**수동 영상 처리**: [ROI] 탭에 스무딩·문턱 보정(일반 글꼴)/밝기 문턱(LED) 슬라이더 — 미리보기 \"기계가 보는 것\"을 보며 글자만 또렷이 남게 조절, [기본값]",
-    "**타임라인**: 잘라낸 범위에 빗금·\"✂ n s 제외\" 라벨·경계선, 띠를 클릭하면 선택 + 그 시작으로 이동, 선택한 띠는 흰 핸들",
-    "**되돌리기/다시 실행** (Ctrl+Z / Ctrl+Y, 툴바 ↶↷) — ROI·모서리·구간·잘라내기·견본 편집 60단계, **Ctrl+S** 저장, **Ctrl+O** 영상 열기",
-    "[영상 열기]를 연타하면 파일 선택창이 여러 개 뜨던 문제 — 한 번에 하나만(서버 잠금 + 버튼 잠금), 선택창은 화면 가운데·맨 앞으로",
-    "툴바 오른쪽 \"? 가이드\" 버튼이 잘리던 문제, 하단 재생·구간·편집 버튼 묶음 정렬(세 묶음, 줄바꿈 깔끔하게)",
-    "배율 표시가 [맞춤] 버튼과 겹쳐 보이던 것 → 항상 % 로 표시"
-   ]
   }
  ],
- "page": "https://github.com/eden-0721/MicroMeasurePro/releases/tag/micromeasurepro-v2.5.11",
+ "page": "https://github.com/eden-0721/MicroMeasurePro/releases/tag/micromeasurepro-v2.5.12",
  "private": true,
  "filesRepo": "eden-0721/MicroMeasurePro",
  "source": "https://github.com/eden-0721/MicroMeasurePro",
  "previous": {
-  "version": "2.5.10",
+  "version": "2.5.11",
   "setup": {
-   "file": "MicroMeasurePro_Setup_v2.5.10.exe",
-   "url": "https://github.com/eden-0721/MicroMeasurePro/releases/download/micromeasurepro-v2.5.10/MicroMeasurePro_Setup_v2.5.10.exe",
-   "sha256": "d12402989e4ec699b694d87c44280ae8a698b143f851ff1c182a696eb0a2e9e7",
-   "size": 16429349
+   "file": "MicroMeasurePro_Setup_v2.5.11.exe",
+   "url": "https://github.com/eden-0721/MicroMeasurePro/releases/download/micromeasurepro-v2.5.11/MicroMeasurePro_Setup_v2.5.11.exe",
+   "sha256": "7a6535209a3b4ae9866d49e6366bda0fb1b0612ee972fffad62a5676102df0cc",
+   "size": 16428746
   },
-  "tag": "micromeasurepro-v2.5.10",
+  "tag": "micromeasurepro-v2.5.11",
   "filesRepo": "eden-0721/MicroMeasurePro"
  }
 }
