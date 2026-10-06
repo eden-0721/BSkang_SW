@@ -1,23 +1,34 @@
 {
  "app": "micromeasurepro",
  "name": "MicroMeasure Pro",
- "version": "2.5.10",
+ "version": "2.5.11",
  "date": "2026-10-06",
  "channel": "release",
- "tag": "micromeasurepro-v2.5.10",
+ "tag": "micromeasurepro-v2.5.11",
  "setup": {
-  "file": "MicroMeasurePro_Setup_v2.5.10.exe",
-  "url": "https://github.com/eden-0721/MicroMeasurePro/releases/download/micromeasurepro-v2.5.10/MicroMeasurePro_Setup_v2.5.10.exe",
-  "sha256": "d12402989e4ec699b694d87c44280ae8a698b143f851ff1c182a696eb0a2e9e7",
-  "size": 16429349
+  "file": "MicroMeasurePro_Setup_v2.5.11.exe",
+  "url": "https://github.com/eden-0721/MicroMeasurePro/releases/download/micromeasurepro-v2.5.11/MicroMeasurePro_Setup_v2.5.11.exe",
+  "sha256": "7a6535209a3b4ae9866d49e6366bda0fb1b0612ee972fffad62a5676102df0cc",
+  "size": 16428746
  },
  "zip": {
-  "file": "MicroMeasurePro_v2.5.10.zip",
-  "url": "https://github.com/eden-0721/MicroMeasurePro/releases/download/micromeasurepro-v2.5.10/MicroMeasurePro_v2.5.10.zip",
-  "sha256": "824b22b019ffc981023ec1f32342ff6d4e7da6a87100e3bcfc5f564d3c919e01",
-  "size": 18536524
+  "file": "MicroMeasurePro_v2.5.11.zip",
+  "url": "https://github.com/eden-0721/MicroMeasurePro/releases/download/micromeasurepro-v2.5.11/MicroMeasurePro_v2.5.11.zip",
+  "sha256": "92109183c175c406a217ffc5a3283ac1aeb359a08afa4c9dc528dd8631a4497b",
+  "size": 18540742
  },
  "notes": [
+  {
+   "v": "2.5.11",
+   "date": "2026-10-06",
+   "title": "클립 레인 — 잘라낸 조각을 드래그로 순서 바꾸기",
+   "items": [
+    "타임라인 아래 **클립 레인**: 잘라낸 범위 사이의 조각(클립)이 재생·내보내기 순서대로 늘어섭니다. **드래그로 순서 바꾸기**, 클릭 = 그 시작으로 이동, 더블클릭·**S** = 나누기, 선택 후 **Del** = 잘라내기",
+    "[구간] 탭에 클립 목록(▲▼ 로 순서, ↺ 원래 순서로). 순서를 바꾸면 **재생이 그 순서를 따르고**(클립 끝에서 다음 클립으로 건너뜀) **🎞 내보내기**도 그 순서로 이어 붙입니다. 잘라낸 범위가 없어도 순서만 바꿨으면 내보낼 수 있습니다",
+    "분석 결과·구간·시각은 원본 영상 시각 그대로입니다 (편집은 보기와 내보내기에만). 클립 길이는 위 타임라인의 잘라낸 범위 핸들로 조절합니다. 프로젝트(.mmvid)·되돌리기에 포함",
+    "다음 단계 예고: 여러 영상·트랙, 수치 자막을 구워 넣은 내보내기"
+   ]
+  },
   {
    "v": "2.5.10",
    "date": "2026-10-06",
@@ -65,33 +76,21 @@
     "툴바 오른쪽 \"? 가이드\" 버튼이 잘리던 문제, 하단 재생·구간·편집 버튼 묶음 정렬(세 묶음, 줄바꿈 깔끔하게)",
     "배율 표시가 [맞춤] 버튼과 겹쳐 보이던 것 → 항상 % 로 표시"
    ]
-  },
-  {
-   "v": "2.5.5",
-   "date": "2026-10-06",
-   "title": "LED(7세그먼트) 표시기 모드 · 학습 창 개선 · 영상 확대/돋보기",
-   "items": [
-    "ROI 종류 **LED 숫자(7세그먼트)** 추가 — 색으로 켜진 획만 남기고 꺼진 유령 획을 밝기 문턱으로 지운 뒤, 고정 자리(슬롯)마다 숫자 견본 + 7획 특징으로 읽음. 배우지 않은 숫자는 비슷한 숫자로 넘기지 않고 의심 처리",
-    "학습 창: 조각마다 **기계가 보는 것(이진화+칸)**을 같이 표시, **학습됨 ✓ / 실패 사유**, 학습 직후 **다시 읽은 값**과 일치 여부, [모두 학습] 요약(성공·실패·값 없음)",
-    "견본·칸 없이 [분석]을 누르면 확인창 대신 **학습 창으로 안내** ([설정]에서 \"학습 없이 분석 허용\" 가능)",
-    "플레이어 **Ctrl+휠 확대/축소**(커서 기준), 가운데 버튼·Space 드래그로 이동, [맞춤]/[1:1], **원본 보기(V)**, ROI·모서리를 그릴 때 **커서 옆 4× 돋보기**",
-    "LED 확대 배율 자동 3~4×, ROI 목록에 \"칸 ✓/학습 필요\" 표시"
-   ]
   }
  ],
- "page": "https://github.com/eden-0721/MicroMeasurePro/releases/tag/micromeasurepro-v2.5.10",
+ "page": "https://github.com/eden-0721/MicroMeasurePro/releases/tag/micromeasurepro-v2.5.11",
  "private": true,
  "filesRepo": "eden-0721/MicroMeasurePro",
  "source": "https://github.com/eden-0721/MicroMeasurePro",
  "previous": {
-  "version": "2.5.9",
+  "version": "2.5.10",
   "setup": {
-   "file": "MicroMeasurePro_Setup_v2.5.9.exe",
-   "url": "https://github.com/eden-0721/MicroMeasurePro/releases/download/micromeasurepro-v2.5.9/MicroMeasurePro_Setup_v2.5.9.exe",
-   "sha256": "d08150f42e671e2e3ee8b11d34d6bd31d526297ed6694d4ce8ebdc3274700d15",
-   "size": 16425819
+   "file": "MicroMeasurePro_Setup_v2.5.10.exe",
+   "url": "https://github.com/eden-0721/MicroMeasurePro/releases/download/micromeasurepro-v2.5.10/MicroMeasurePro_Setup_v2.5.10.exe",
+   "sha256": "d12402989e4ec699b694d87c44280ae8a698b143f851ff1c182a696eb0a2e9e7",
+   "size": 16429349
   },
-  "tag": "micromeasurepro-v2.5.9",
+  "tag": "micromeasurepro-v2.5.10",
   "filesRepo": "eden-0721/MicroMeasurePro"
  }
 }
