@@ -118,23 +118,6 @@
    "source": "https://github.com/eden-0721/photo_organize"
   },
   {
-   "app": "testreport",
-   "name": "시험성적서 워크벤치",
-   "description": "시험성적서 작성·발행 (비공개)",
-   "icon": "icon-64.png",
-   "private": true,
-   "version": "2.2.7",
-   "date": "2026-10-06",
-   "setup": {
-    "file": "TestReport_Setup_v2.2.7.exe",
-    "url": "https://github.com/login?return_to=/eden-0721/test_reports/releases/download/testreport-v2.2.7/TestReport_Setup_v2.2.7.exe",
-    "size": 3749284,
-    "sha256": "83c3e573ba136dad197ca2c7438271461a40fa49ca98bf5656bfff3091682a1c"
-   },
-   "page": "https://github.com/eden-0721/test_reports/releases/tag/testreport-v2.2.7",
-   "source": "https://github.com/eden-0721/test_reports"
-  },
-  {
    "app": "learn-eng",
    "name": "영어 배우기",
    "description": "아이부터 어른까지, 하루 몇 분 만화와 이야기로 배우는 가족·반 영어 공부 앱",
@@ -187,6 +170,23 @@
    },
    "source": "https://github.com/eden-0721/secretary-app",
    "notes": true
+  },
+  {
+   "app": "testreport",
+   "name": "시험성적서 워크벤치",
+   "description": "시험성적서 작성·발행 (비공개)",
+   "icon": "icon-64.png",
+   "private": true,
+   "version": "2.2.8",
+   "date": "2026-10-07",
+   "setup": {
+    "file": "TestReport_Setup_v2.2.8.exe",
+    "url": "https://github.com/login?return_to=/eden-0721/test_reports/releases/download/testreport-v2.2.8/TestReport_Setup_v2.2.8.exe",
+    "size": 3749596,
+    "sha256": "4bed219a6550368d2d47e754d411313085c22d1b6bc0b38249148201818c6000"
+   },
+   "page": "https://github.com/eden-0721/test_reports/releases/tag/testreport-v2.2.8",
+   "source": "https://github.com/eden-0721/test_reports"
   }
  ],
  "shared": [
