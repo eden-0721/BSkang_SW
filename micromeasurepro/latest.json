@@ -1,23 +1,37 @@
 {
  "app": "micromeasurepro",
  "name": "MicroMeasure Pro",
- "version": "2.4.2",
- "date": "2026-10-02",
+ "version": "2.5.1",
+ "date": "2026-10-06",
  "channel": "release",
- "tag": "micromeasurepro-v2.4.2",
+ "tag": "micromeasurepro-v2.5.1",
  "setup": {
-  "file": "MicroMeasurePro_Setup_v2.4.2.exe",
-  "url": "https://github.com/eden-0721/MicroMeasurePro/releases/download/micromeasurepro-v2.4.2/MicroMeasurePro_Setup_v2.4.2.exe",
-  "sha256": "d6ac20fb6eb0180ed0f430e6fe0cd9655ecf7b14f42292e8a9cb5bc6e6eb1999",
-  "size": 12682664
+  "file": "MicroMeasurePro_Setup_v2.5.1.exe",
+  "url": "https://github.com/eden-0721/MicroMeasurePro/releases/download/micromeasurepro-v2.5.1/MicroMeasurePro_Setup_v2.5.1.exe",
+  "sha256": "0f01b6d85d352b58c3ed23ce54d15b27d42774b93604e846bbc0ec12d0d3b78f",
+  "size": 16391363
  },
  "zip": {
-  "file": "MicroMeasurePro_v2.4.2.zip",
-  "url": "https://github.com/eden-0721/MicroMeasurePro/releases/download/micromeasurepro-v2.4.2/MicroMeasurePro_v2.4.2.zip",
-  "sha256": "0dcba92481ea39cc4bec29ab3a3b6b00570314bb16c3efb44fe677ee75d14a29",
-  "size": 13420302
+  "file": "MicroMeasurePro_v2.5.1.zip",
+  "url": "https://github.com/eden-0721/MicroMeasurePro/releases/download/micromeasurepro-v2.5.1/MicroMeasurePro_v2.5.1.zip",
+  "sha256": "fc6323cac6b413f358dd1a38ab3389f6cfd7207c42116bf5e0cbaf428c45494d",
+  "size": 18489974
  },
  "notes": [
+  {
+   "v": "2.5.1",
+   "date": "2026-10-06",
+   "title": "🎬 영상 분석 탭 (표시기 숫자·램프 시계열 · 구간 소요 시간)",
+   "items": [
+    "상단 **🎬 영상 분석** — 휴대폰·카메라로 찍은 설비 화면(PLC HMI) 영상에서 **표시기 숫자·램프를 프레임마다 읽어 시계열**로 기록",
+    "**패널 모서리 4점 추적**으로 손떨림·기울기에도 ROI 가 같은 자리를 읽음, 표시기별 **숫자 견본 학습**(첫 추정은 OCR) → 신뢰도·의심 표시·검수 창",
+    "타임라인: 프레임↔시각 전환, 확대/축소, **I/O 구간 → 소요 시간표**(합계·평균·σ), 램프·문턱 기반 **자동 구간**, 잘라내기(원본 보존)",
+    "화면 속 **시계 ROI** 로 실제 시각 역산, 가변 프레임레이트 영상도 타임스탬프 기준으로 정확",
+    "결과: 재생 동기 시계열 차트, 값 변화 목록/전체 시계열, **CSV · 통계 스튜디오로 보내기**, 영상 옆 **.mmvid 프로젝트** 자동 복원, 표시기 **프로필** 재사용",
+    "HEVC 등 못 여는 영상은 ffmpeg 로 **정보 보존 변환**(재포장/H.264), 영상 열기는 Windows 파일 선택창(서버), Range 스트리밍",
+    "가이드 5편(열기·ROI·판독·구간·결과) + 촬영 가이드. 모든 처리는 PC 안에서만"
+   ]
+  },
   {
    "v": "2.4.2",
    "date": "2026-10-02",
@@ -67,31 +81,21 @@
     "차트 탭 정리([관리도 ▾]), [⬇ 내보내기 ▾], 리본·도크 접기, 설정 백업(.mmset)",
     "포트 충돌 시 자동으로 다음 포트 사용 — 다른 프로그램과 동시에 켤 수 있습니다"
    ]
-  },
-  {
-   "v": "2.1",
-   "date": "2026-09-17",
-   "title": "시료 그룹 · 추천 · 튜토리얼",
-   "items": [
-    "시편/로트별로 **그래프 나누기**, 그룹별 통계와 ANOVA",
-    "데이터를 보고 먼저 제안하는 **추천 줄**, 마스킹 사유와 되살리기",
-    "전 기능 **가이드**(초급/중급/고급)와 따라하기 투어"
-   ]
   }
  ],
- "page": "https://github.com/eden-0721/MicroMeasurePro/releases/tag/micromeasurepro-v2.4.2",
+ "page": "https://github.com/eden-0721/MicroMeasurePro/releases/tag/micromeasurepro-v2.5.1",
  "private": true,
  "filesRepo": "eden-0721/MicroMeasurePro",
  "source": "https://github.com/eden-0721/MicroMeasurePro",
  "previous": {
-  "version": "2.4.0",
+  "version": "2.4.2",
   "setup": {
-   "file": "MicroMeasurePro_Setup_v2.4.0.exe",
-   "url": "https://github.com/eden-0721/BSkang_SW/releases/download/micromeasurepro-v2.4.0/MicroMeasurePro_Setup_v2.4.0.exe",
-   "sha256": "a6118e1cecfff07da58a09a82fe68f58a1261d50a4ea025adeb8755a5501c21b",
-   "size": 12681440
+   "file": "MicroMeasurePro_Setup_v2.4.2.exe",
+   "url": "https://github.com/eden-0721/MicroMeasurePro/releases/download/micromeasurepro-v2.4.2/MicroMeasurePro_Setup_v2.4.2.exe",
+   "sha256": "d6ac20fb6eb0180ed0f430e6fe0cd9655ecf7b14f42292e8a9cb5bc6e6eb1999",
+   "size": 12682664
   },
-  "tag": "micromeasurepro-v2.4.0",
-  "filesRepo": null
+  "tag": "micromeasurepro-v2.4.2",
+  "filesRepo": "eden-0721/MicroMeasurePro"
  }
 }
