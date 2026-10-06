@@ -1,23 +1,37 @@
 {
  "app": "micromeasurepro",
  "name": "MicroMeasure Pro",
- "version": "2.5.5",
+ "version": "2.5.6",
  "date": "2026-10-06",
  "channel": "release",
- "tag": "micromeasurepro-v2.5.5",
+ "tag": "micromeasurepro-v2.5.6",
  "setup": {
-  "file": "MicroMeasurePro_Setup_v2.5.5.exe",
-  "url": "https://github.com/eden-0721/MicroMeasurePro/releases/download/micromeasurepro-v2.5.5/MicroMeasurePro_Setup_v2.5.5.exe",
-  "sha256": "73c27a0e52c22558390de43ff3ac9ae686f06428d9330b6293f794f638b8f5e2",
-  "size": 16412559
+  "file": "MicroMeasurePro_Setup_v2.5.6.exe",
+  "url": "https://github.com/eden-0721/MicroMeasurePro/releases/download/micromeasurepro-v2.5.6/MicroMeasurePro_Setup_v2.5.6.exe",
+  "sha256": "7d4e864a2fe5e9d9942f57b8142a891bc1d6a89ca821107e82a54c9d82ef4977",
+  "size": 16416943
  },
  "zip": {
-  "file": "MicroMeasurePro_v2.5.5.zip",
-  "url": "https://github.com/eden-0721/MicroMeasurePro/releases/download/micromeasurepro-v2.5.5/MicroMeasurePro_v2.5.5.zip",
-  "sha256": "6013c923cd46ffc688923bae5847903ae5f084fae9807ce9ce805d101acbbccb",
-  "size": 18513539
+  "file": "MicroMeasurePro_v2.5.6.zip",
+  "url": "https://github.com/eden-0721/MicroMeasurePro/releases/download/micromeasurepro-v2.5.6/MicroMeasurePro_v2.5.6.zip",
+  "sha256": "4e2e6d0ec5e083ff29fe44b4f42824e36a5d46814c50939acc9d3bd412d65f95",
+  "size": 18517824
  },
  "notes": [
+  {
+   "v": "2.5.6",
+   "date": "2026-10-06",
+   "title": "영상 분석 — 추적 강화 · 수동 영상 처리 · 타임라인 피드백 · 되돌리기/단축키",
+   "items": [
+    "**추적**: 패널 모서리를 안 찍어도 ROI **주변 네 귀퉁이(바뀌지 않는 배경)**를 기준점으로 따라가고, 프레임 전체 **전역 이동량**을 먼저 맞춰 손으로 든 긴 영상의 큰 움직임도 따라붙음 (전에는 글자 자체를 기준으로 삼아 ROI 가 미끄러졌음)",
+    "**수동 영상 처리**: [ROI] 탭에 스무딩·문턱 보정(일반 글꼴)/밝기 문턱(LED) 슬라이더 — 미리보기 \"기계가 보는 것\"을 보며 글자만 또렷이 남게 조절, [기본값]",
+    "**타임라인**: 잘라낸 범위에 빗금·\"✂ n s 제외\" 라벨·경계선, 띠를 클릭하면 선택 + 그 시작으로 이동, 선택한 띠는 흰 핸들",
+    "**되돌리기/다시 실행** (Ctrl+Z / Ctrl+Y, 툴바 ↶↷) — ROI·모서리·구간·잘라내기·견본 편집 60단계, **Ctrl+S** 저장, **Ctrl+O** 영상 열기",
+    "[영상 열기]를 연타하면 파일 선택창이 여러 개 뜨던 문제 — 한 번에 하나만(서버 잠금 + 버튼 잠금), 선택창은 화면 가운데·맨 앞으로",
+    "툴바 오른쪽 \"? 가이드\" 버튼이 잘리던 문제, 하단 재생·구간·편집 버튼 묶음 정렬(세 묶음, 줄바꿈 깔끔하게)",
+    "배율 표시가 [맞춤] 버튼과 겹쳐 보이던 것 → 항상 % 로 표시"
+   ]
+  },
   {
    "v": "2.5.5",
    "date": "2026-10-06",
@@ -66,32 +80,21 @@
     "HEVC 등 못 여는 영상은 ffmpeg 로 **정보 보존 변환**(재포장/H.264), 영상 열기는 Windows 파일 선택창(서버), Range 스트리밍",
     "가이드 5편(열기·ROI·판독·구간·결과) + 촬영 가이드. 모든 처리는 PC 안에서만"
    ]
-  },
-  {
-   "v": "2.4.2",
-   "date": "2026-10-02",
-   "title": "비공개 배포 · 업데이트 키",
-   "items": [
-    "설치 파일이 **비공개 저장소**로 옮겨짐 — 다운로드 페이지의 버튼은 GitHub 에 로그인한 개발자만 받을 수 있음",
-    "현장 PC 는 **업데이트 키**(읽기 전용)를 한 번 붙여넣으면 지금처럼 원클릭 업데이트, 키가 없으면 \"새 버전 있음\" 알림만",
-    "키는 업데이트 창 또는 명령 팔레트 \"업데이트 키 입력\"에서 넣고 지울 수 있음 (이 PC 의 data 폴더에만 저장)",
-    "고침: 새 버전이 없어도 상단에 **\"⬆ 업데이트 있음\"** 배지가 늘 보이던 문제 (숨김 속성이 버튼 스타일에 밀림)"
-   ]
   }
  ],
- "page": "https://github.com/eden-0721/MicroMeasurePro/releases/tag/micromeasurepro-v2.5.5",
+ "page": "https://github.com/eden-0721/MicroMeasurePro/releases/tag/micromeasurepro-v2.5.6",
  "private": true,
  "filesRepo": "eden-0721/MicroMeasurePro",
  "source": "https://github.com/eden-0721/MicroMeasurePro",
  "previous": {
-  "version": "2.5.4",
+  "version": "2.5.5",
   "setup": {
-   "file": "MicroMeasurePro_Setup_v2.5.4.exe",
-   "url": "https://github.com/eden-0721/MicroMeasurePro/releases/download/micromeasurepro-v2.5.4/MicroMeasurePro_Setup_v2.5.4.exe",
-   "sha256": "1f66a63e32b2e972a61c8ab4039aa65c8a0971968c4e0d8ca32b43fed12cb279",
-   "size": 16404168
+   "file": "MicroMeasurePro_Setup_v2.5.5.exe",
+   "url": "https://github.com/eden-0721/MicroMeasurePro/releases/download/micromeasurepro-v2.5.5/MicroMeasurePro_Setup_v2.5.5.exe",
+   "sha256": "73c27a0e52c22558390de43ff3ac9ae686f06428d9330b6293f794f638b8f5e2",
+   "size": 16412559
   },
-  "tag": "micromeasurepro-v2.5.4",
+  "tag": "micromeasurepro-v2.5.5",
   "filesRepo": "eden-0721/MicroMeasurePro"
  }
 }
