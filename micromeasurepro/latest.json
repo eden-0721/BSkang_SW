@@ -1,23 +1,36 @@
 {
  "app": "micromeasurepro",
  "name": "MicroMeasure Pro",
- "version": "2.5.17",
+ "version": "2.5.18",
  "date": "2026-10-07",
  "channel": "release",
- "tag": "micromeasurepro-v2.5.17",
+ "tag": "micromeasurepro-v2.5.18",
  "setup": {
-  "file": "MicroMeasurePro_Setup_v2.5.17.exe",
-  "url": "https://github.com/eden-0721/MicroMeasurePro/releases/download/micromeasurepro-v2.5.17/MicroMeasurePro_Setup_v2.5.17.exe",
-  "sha256": "8d22d06efce57e409e3e4b1d744671b4d6ce06bf9573c258a6b8109336880c74",
-  "size": 16454307
+  "file": "MicroMeasurePro_Setup_v2.5.18.exe",
+  "url": "https://github.com/eden-0721/MicroMeasurePro/releases/download/micromeasurepro-v2.5.18/MicroMeasurePro_Setup_v2.5.18.exe",
+  "sha256": "80070294eed4fbf63e7a344d0b26717cbee613ded7925cd7438ac4bb011673c1",
+  "size": 16455680
  },
  "zip": {
-  "file": "MicroMeasurePro_v2.5.17.zip",
-  "url": "https://github.com/eden-0721/MicroMeasurePro/releases/download/micromeasurepro-v2.5.17/MicroMeasurePro_v2.5.17.zip",
-  "sha256": "a3156dc8374cfefdd00e61f5318005c0412e33e5cef1f2fd3a4625bfbf8e57a1",
-  "size": 18571020
+  "file": "MicroMeasurePro_v2.5.18.zip",
+  "url": "https://github.com/eden-0721/MicroMeasurePro/releases/download/micromeasurepro-v2.5.18/MicroMeasurePro_v2.5.18.zip",
+  "sha256": "fb2d6b1cbec187fc2ba4e726c0f8febc670776fa2da9a16aa9ab2f88f6c68339",
+  "size": 18577292
  },
  "notes": [
+  {
+   "v": "2.5.18",
+   "date": "2026-10-07",
+   "title": "구간 스톱워치 · 개요 카드 · 이동 단위",
+   "items": [
+    "**구간 스톱워치** — I/O 로 찍은 구간마다 영상 위에 스톱워치가 뜹니다. 구간 시작 전에는 숨고, 구간 안에서는 흐른 시간(MM:SS.mmm)이 올라가며, 끝나면 **총 소요**로 멈춰 계속 보입니다. 여러 구간을 동시에, 구간 색으로",
+    "**📋 개요 카드** — 영상 길이·프레임 수·fps, 구간마다 시작·종료(시각과 프레임 번호)·프레임 수·소요, 둘 이상이면 합계·평균",
+    "스톱워치와 개요 카드는 영상 위에서 **끌어 아무 데나** 두고(프로젝트에 저장), 스톱워치를 **더블클릭**하면 그 구간 시작으로 갑니다. [구간] 탭에서 전체 보이기/숨기기, 구간마다 ⏱ 켜고 끄기, 위치 초기화. 구간 표에 프레임 수 열",
+    "**내보내기에 새기기** — [구간] 탭 내보내기 옵션 \"⏱ 스톱워치 새기기 · 📋 개요 카드 새기기\": 화면에 둔 위치·색 그대로, 잘라낸 범위·클립 순서를 따라가며 흐른 시간은 원본 기준(ffmpeg 이 프레임마다 계산)",
+    "**이동 단위** — 재생 막대에서 1·5·10·30·60 프레임을 고르면 ◀ ▶ 버튼과 ←/→ 가 그만큼, Shift 는 10배로 움직입니다(다음에 열 때도 유지). **⌨** 버튼으로 단축키 안내",
+    "자막·스톱워치만 새기고 잘라낸 범위가 없을 때 내보내기가 \"그대로가 원본입니다\"로 거절되던 결함 수정"
+   ]
+  },
   {
    "v": "2.5.17",
    "date": "2026-10-07",
@@ -67,32 +80,21 @@
     "자동 잡기 옆 선택 상자로 **숫자 표시기 / 표시등(램프) / 둘 다**를 고릅니다. 표시등은 진한 색의 네모·동그란 조각 중 영상 곳곳에서 **색이 바뀌는 것**만 골라 \"램프\" 종류로 미리 선택합니다(배관·아이콘처럼 색이 안 바뀌는 것은 버림)",
     "후보 상자는 잡은 프레임 좌표라 손떨림 영상에서 재생 위치를 옮기면 어긋나 보였습니다 → 이제 화면 이동량만큼 상자를 옮겨 그리고, 검토 블록의 **[잡은 프레임으로]**로 돌아갈 수 있습니다"
    ]
-  },
-  {
-   "v": "2.5.13",
-   "date": "2026-10-06",
-   "title": "내보내기 옵션 — 수치 자막 굽기 · 오디오 · 디졸브 (편집 3단계)",
-   "items": [
-    "[구간] 탭 **내보내기 옵션**: **수치 자막 굽기**(분석한 표시기 값과 구간 이름을 그 시각에 영상 위에 새김, 위/아래) · **오디오** 유지/제거 · **클립 사이** 바로 붙임/디졸브 0.3·0.5·1 s",
-    "자막은 값이 바뀔 때마다 한 줄(\"[구간 1]  ·  부하율 55.1 %  ·  RPM 1560\")로, 클립 순서와 출력 시각에 맞춰 들어갑니다(의심값은 뺌). 트랙 이어 붙이기에서는 영상 이름이 앞에 붙습니다. 글꼴은 Windows 한글 글꼴(맑은 고딕)",
-    "디졸브는 클립이 겹치는 만큼 전체 길이가 짧아져 분석 시각과 어긋나므로 계측 기록용이면 \"바로 붙임\"을 권합니다. ffmpeg 필요(winget install Gyan.FFmpeg). 옵션은 프로젝트에 저장",
-    "이것으로 편집 3단계(권장 범위)가 끝났습니다: 클립 레인 → 여러 영상·트랙 → 내보내기 옵션"
-   ]
   }
  ],
- "page": "https://github.com/eden-0721/MicroMeasurePro/releases/tag/micromeasurepro-v2.5.17",
+ "page": "https://github.com/eden-0721/MicroMeasurePro/releases/tag/micromeasurepro-v2.5.18",
  "private": true,
  "filesRepo": "eden-0721/MicroMeasurePro",
  "source": "https://github.com/eden-0721/MicroMeasurePro",
  "previous": {
-  "version": "2.5.16",
+  "version": "2.5.17",
   "setup": {
-   "file": "MicroMeasurePro_Setup_v2.5.16.exe",
-   "url": "https://github.com/eden-0721/MicroMeasurePro/releases/download/micromeasurepro-v2.5.16/MicroMeasurePro_Setup_v2.5.16.exe",
-   "sha256": "e675160c390089c87fc90a44084d8928b84f59f98977df9e4bff7517b464cf35",
-   "size": 16448501
+   "file": "MicroMeasurePro_Setup_v2.5.17.exe",
+   "url": "https://github.com/eden-0721/MicroMeasurePro/releases/download/micromeasurepro-v2.5.17/MicroMeasurePro_Setup_v2.5.17.exe",
+   "sha256": "8d22d06efce57e409e3e4b1d744671b4d6ce06bf9573c258a6b8109336880c74",
+   "size": 16454307
   },
-  "tag": "micromeasurepro-v2.5.16",
+  "tag": "micromeasurepro-v2.5.17",
   "filesRepo": "eden-0721/MicroMeasurePro"
  }
 }
