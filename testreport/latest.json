@@ -1,19 +1,26 @@
 {
  "app": "testreport",
  "name": "시험성적서 워크벤치",
- "version": "2.3.3",
- "date": "2026-10-07",
+ "version": "2.3.4",
+ "date": "2026-10-08",
  "channel": "release",
- "tag": "testreport-v2.3.3",
+ "tag": "testreport-v2.3.4",
  "private": true,
  "filesRepo": "eden-0721/test_reports",
  "setup": {
-  "file": "TestReport_Setup_v2.3.3.exe",
-  "url": "https://github.com/eden-0721/test_reports/releases/download/testreport-v2.3.3/TestReport_Setup_v2.3.3.exe",
-  "sha256": "ee1d43a4c13b22c985ed9573161785808c48bd0ba5423f565f30ab2ece290740",
-  "size": 3759064
+  "file": "TestReport_Setup_v2.3.4.exe",
+  "url": "https://github.com/eden-0721/test_reports/releases/download/testreport-v2.3.4/TestReport_Setup_v2.3.4.exe",
+  "sha256": "93c3da9482879787c68b6257eaefa512de2269293ce7c52f2d316f2cd8721325",
+  "size": 3759712
  },
  "notes": [
+  {
+   "v": "2.3.4",
+   "date": "2026-10-08",
+   "items": [
+    "최종 조판에서 블록 사이(첫 문장 아래·결과 줄 앞뒤 포함)에 마우스를 올리면 ＋가 나타나고, 누르면 문단·표·차트·그림 등을 그 자리에 바로 넣습니다 (예전엔 절 끝에 넣은 뒤 끌어 옮겨야 했음)"
+   ]
+  },
   {
    "v": "2.3.3",
    "date": "2026-10-07",
