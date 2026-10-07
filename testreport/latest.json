@@ -1,19 +1,28 @@
 {
  "app": "testreport",
  "name": "시험성적서 워크벤치",
- "version": "2.3.1",
+ "version": "2.3.2",
  "date": "2026-10-07",
  "channel": "release",
- "tag": "testreport-v2.3.1",
+ "tag": "testreport-v2.3.2",
  "private": true,
  "filesRepo": "eden-0721/test_reports",
  "setup": {
-  "file": "TestReport_Setup_v2.3.1.exe",
-  "url": "https://github.com/eden-0721/test_reports/releases/download/testreport-v2.3.1/TestReport_Setup_v2.3.1.exe",
-  "sha256": "2fa808ff3ccc374b4a0bc03345719622693b6b9c400c94e3b151edea25ae5e6d",
-  "size": 3754241
+  "file": "TestReport_Setup_v2.3.2.exe",
+  "url": "https://github.com/eden-0721/test_reports/releases/download/testreport-v2.3.2/TestReport_Setup_v2.3.2.exe",
+  "sha256": "a3afcbd12a12bda65c0ad918d0a1a4898b4816582f98b8bfd51722f7f2903185",
+  "size": 3757862
  },
  "notes": [
+  {
+   "v": "2.3.2",
+   "date": "2026-10-07",
+   "items": [
+    "Claude 채팅이 최종 조판에 표·그래프·그림을 넣을 수 있습니다 (항목 절의 결과 줄 앞): 표는 평균·표준편차 같은 계산 행을 앱이 계산, 그래프는 수치만 주면 앱이 꺾은선·막대로 그림, 그림은 이 PC 의 PNG·JPG 파일",
+    "채팅이 작업을 읽을 때 항목마다 조판에 이미 든 표·그림 목록(종류·캡션)도 봅니다 — 앱의 그림 자체는 보내지 않습니다",
+    "채팅으로 넣은 것도 알림·작업 메뉴의 [되돌리기]로 되돌릴 수 있습니다"
+   ]
+  },
   {
    "v": "2.3.1",
    "date": "2026-10-07",
