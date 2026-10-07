@@ -1,19 +1,27 @@
 {
  "app": "testreport",
  "name": "시험성적서 워크벤치",
- "version": "2.3.2",
+ "version": "2.3.3",
  "date": "2026-10-07",
  "channel": "release",
- "tag": "testreport-v2.3.2",
+ "tag": "testreport-v2.3.3",
  "private": true,
  "filesRepo": "eden-0721/test_reports",
  "setup": {
-  "file": "TestReport_Setup_v2.3.2.exe",
-  "url": "https://github.com/eden-0721/test_reports/releases/download/testreport-v2.3.2/TestReport_Setup_v2.3.2.exe",
-  "sha256": "a3afcbd12a12bda65c0ad918d0a1a4898b4816582f98b8bfd51722f7f2903185",
-  "size": 3757862
+  "file": "TestReport_Setup_v2.3.3.exe",
+  "url": "https://github.com/eden-0721/test_reports/releases/download/testreport-v2.3.3/TestReport_Setup_v2.3.3.exe",
+  "sha256": "ee1d43a4c13b22c985ed9573161785808c48bd0ba5423f565f30ab2ece290740",
+  "size": 3759064
  },
  "notes": [
+  {
+   "v": "2.3.3",
+   "date": "2026-10-07",
+   "items": [
+    "Claude 채팅이 최종 조판의 표·그림·차트를 지울 수 있습니다: 하나씩(번호 또는 캡션) 또는 한 항목의 것을 한 번에 — 결과 줄과 본문 글은 남깁니다, [되돌리기]로 복구",
+    "차트의 데이터 표는 편집 화면에서만 보이고, 화면을 인쇄해도 그래프만 나옵니다 (발행본·PDF 에는 원래 그래프만 들어갑니다)"
+   ]
+  },
   {
    "v": "2.3.2",
    "date": "2026-10-07",
