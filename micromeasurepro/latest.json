@@ -1,23 +1,33 @@
 {
  "app": "micromeasurepro",
  "name": "MicroMeasure Pro",
- "version": "2.5.20",
+ "version": "2.5.21",
  "date": "2026-10-07",
  "channel": "release",
- "tag": "micromeasurepro-v2.5.20",
+ "tag": "micromeasurepro-v2.5.21",
  "setup": {
-  "file": "MicroMeasurePro_Setup_v2.5.20.exe",
-  "url": "https://github.com/eden-0721/MicroMeasurePro/releases/download/micromeasurepro-v2.5.20/MicroMeasurePro_Setup_v2.5.20.exe",
-  "sha256": "1d50f91c15d009d4215d6a8660570a3eed6872a009301041f7e04296de7615e0",
-  "size": 16465355
+  "file": "MicroMeasurePro_Setup_v2.5.21.exe",
+  "url": "https://github.com/eden-0721/MicroMeasurePro/releases/download/micromeasurepro-v2.5.21/MicroMeasurePro_Setup_v2.5.21.exe",
+  "sha256": "6075f12bdceb9c79d8b2246bb0e9acd178505542490332b38f60b01cce85a8ee",
+  "size": 16465766
  },
  "zip": {
-  "file": "MicroMeasurePro_v2.5.20.zip",
-  "url": "https://github.com/eden-0721/MicroMeasurePro/releases/download/micromeasurepro-v2.5.20/MicroMeasurePro_v2.5.20.zip",
-  "sha256": "e639d2d8656448fcf2e538a6ef248c111199edb0b9627e096092df2609a62135",
-  "size": 18584282
+  "file": "MicroMeasurePro_v2.5.21.zip",
+  "url": "https://github.com/eden-0721/MicroMeasurePro/releases/download/micromeasurepro-v2.5.21/MicroMeasurePro_v2.5.21.zip",
+  "sha256": "e4c1d0872e05d249591fec6a9803b93b9b53e0eff13eb98d0756f4693d90226f",
+  "size": 18588067
  },
  "notes": [
+  {
+   "v": "2.5.21",
+   "date": "2026-10-07",
+   "title": "의심값 넘겨보기 · 같은 값 묶음 확인",
+   "items": [
+    "**넘겨보기**: 결과표에서 의심 칸을 더블클릭하면 학습 창에 **◀ 이전 의심 · n / N · 다음 의심 ▶** 줄이 생깁니다. 값이 맞으면 **Enter**, 틀리면 고쳐서 Enter — 학습·확정하고 바로 다음 의심 칸으로. ←/→ 로 넘기기, Esc 로 닫기. 학습으로 확신이 된 칸은 자동으로 건너뜁니다",
+    "분석 때 보관한 조각을 쓰므로 영상을 찾아가지 않고 **즉시** 넘어갑니다(화면은 뒤에서 그 프레임으로). 학습 한 번(다른 의심 다시 읽기 포함) 약 0.5초 — 시계열 차트는 잠깐 멈췄을 때 한 번만 다시 그립니다",
+    "**같은 값 묶음 확인** (🔍 의심값 검수): 의심 칸을 읽힌 값이 같은 것끼리 묶어 묶음마다 조각 16개를 고르게 보여 줍니다. 다 그 값이면 **✓ 이 값으로 확정** 한 번 — 보이는 조각이 학습·확정되고 다른 의심 칸이 새 견본으로 다시 읽혀 묶음이 줄어듭니다. 틀린 조각은 눌러서 빼고, 더블클릭하면 그 칸만 넘겨보기로. 합성 시험: 조각 11개 확정으로 의심 207 → 50칸"
+   ]
+  },
   {
    "v": "2.5.20",
    "date": "2026-10-07",
@@ -68,35 +78,21 @@
     "자동 잡기 후보를 추가할 때 잡은 프레임과 기준 프레임이 다르면 위치가 어긋나던 결함 수정 · LED ROI 가 맨 앞 자리를 잘랐으면 학습 때 안내",
     "실영상(손으로 든 12분, 표시기 14개, 학습 10 프레임, 학습 안 한 656칸): 52.0% → **83.2%** (확신 오답 85 → 10). 표시기마다 의심 칸 3개를 더블클릭 학습하면 **91.3%**. 전체 분석 83.5%(21,822 프레임 17분, 추적 놓침 0). 기존 정지 영상 98.8%(워커 99.2%)"
    ]
-  },
-  {
-   "v": "2.5.16",
-   "date": "2026-10-07",
-   "title": "분석 정확도 — 학습 때는 되는데 분석하면 틀리던 결함 셋 수정 · 결과표에서 바로 학습",
-   "items": [
-    "**화면과 분석이 7프레임 다른 곳을 보던 결함**: 폰 영상은 첫 프레임 시각이 0 이 아닌 경우가 많은데(0.23초), 화면 플레이어는 첫 프레임을 0 으로 세고 분석은 파일 시각을 그대로 썼습니다. 그래서 학습 조각(화면)과 분석 결과(워커)가 다른 프레임이었고, 값이 빠르게 바뀌는 표시기는 \"결과가 화면과 다르다\"로 보였습니다. 이제 모두 첫 프레임을 0 으로 셉니다(잘라내기·내보내기 구간도 정확해짐)",
-    "**분석 워커에 ROI 기준 프레임이 전달되지 않던 결함**: 워커는 옛 방식(전체 기준 프레임 하나)으로 따라가다 어긋났습니다 — 이제 학습·미리보기와 같은 추적을 씁니다",
-    "**ROI 추적기 재작성**: 프레임 전체(1/16) → ROI 둘레 거친 조각(1/4, 글자 부분은 가림) → ROI 둘레 **고리**(원본) 순으로 좁혀 갑니다. 전에 쓰던 네 귀퉁이 조각은 평탄한 배경에 놓이면 어디나 만점으로 맞아 엉뚱한 이동량을 냈고, 옆 표시기의 숫자·막대가 바뀌면 어긋났습니다. 화면은 한 덩어리로 움직이니 전역 이동량에서 멀어질수록 벌점을 줘 닮은 표시기가 반복되는 화면에서도 뛰지 않습니다. 직전 프레임 결과를 쓰지 않아 한 프레임이 틀려도 번지지 않습니다",
-    "전역 이동량이 반 칸(8px) 치우치던 결함 수정",
-    "실영상(표시기 13개·학습 안 한 245칸) 정확도: 화면 경로 95.9% → **98.4%**(확신 오답 1), 분석 워커 경로 82% → **98.8%(화면 읽기와 다른 칸 0)** · 전체 2,666 프레임 분석 155초(약 17 fps)",
-    "**결과표 셀을 더블클릭**하면 그 프레임 조각으로 학습 창이 열립니다 — 값을 입력해 [학습]하면 견본이 늘고 그 프레임 값이 확정됩니다(의심값을 고치는 가장 빠른 길)",
-    "조각 뽑기가 비슷한 조각만 뽑던 것 개선: 후보를 3배 읽어 **서로 다른 값·낮은 신뢰도**를 먼저, 시간이 몰리지 않게, 이미 학습한 프레임은 제외"
-   ]
   }
  ],
- "page": "https://github.com/eden-0721/MicroMeasurePro/releases/tag/micromeasurepro-v2.5.20",
+ "page": "https://github.com/eden-0721/MicroMeasurePro/releases/tag/micromeasurepro-v2.5.21",
  "private": true,
  "filesRepo": "eden-0721/MicroMeasurePro",
  "source": "https://github.com/eden-0721/MicroMeasurePro",
  "previous": {
-  "version": "2.5.19",
+  "version": "2.5.20",
   "setup": {
-   "file": "MicroMeasurePro_Setup_v2.5.19.exe",
-   "url": "https://github.com/eden-0721/MicroMeasurePro/releases/download/micromeasurepro-v2.5.19/MicroMeasurePro_Setup_v2.5.19.exe",
-   "sha256": "e7f98b66ac319c6186ae3f67eff8c43f166a1d5328ed5c5a8d44146c7bf1ce31",
-   "size": 16461857
+   "file": "MicroMeasurePro_Setup_v2.5.20.exe",
+   "url": "https://github.com/eden-0721/MicroMeasurePro/releases/download/micromeasurepro-v2.5.20/MicroMeasurePro_Setup_v2.5.20.exe",
+   "sha256": "1d50f91c15d009d4215d6a8660570a3eed6872a009301041f7e04296de7615e0",
+   "size": 16465355
   },
-  "tag": "micromeasurepro-v2.5.19",
+  "tag": "micromeasurepro-v2.5.20",
   "filesRepo": "eden-0721/MicroMeasurePro"
  }
 }
