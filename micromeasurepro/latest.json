@@ -1,23 +1,34 @@
 {
  "app": "micromeasurepro",
  "name": "MicroMeasure Pro",
- "version": "2.5.25",
+ "version": "2.5.26",
  "date": "2026-10-07",
  "channel": "release",
- "tag": "micromeasurepro-v2.5.25",
+ "tag": "micromeasurepro-v2.5.26",
  "setup": {
-  "file": "MicroMeasurePro_Setup_v2.5.25.exe",
-  "url": "https://github.com/eden-0721/MicroMeasurePro/releases/download/micromeasurepro-v2.5.25/MicroMeasurePro_Setup_v2.5.25.exe",
-  "sha256": "effd28932a8798e3a50b347967dbad8d3048b5404ddd706fac6065b24c941d30",
-  "size": 16498961
+  "file": "MicroMeasurePro_Setup_v2.5.26.exe",
+  "url": "https://github.com/eden-0721/MicroMeasurePro/releases/download/micromeasurepro-v2.5.26/MicroMeasurePro_Setup_v2.5.26.exe",
+  "sha256": "71a81e6a30f127e0fa63fd545afcabea71e7c8bf91e89c50e37fc1b6687afd54",
+  "size": 16505235
  },
  "zip": {
-  "file": "MicroMeasurePro_v2.5.25.zip",
-  "url": "https://github.com/eden-0721/MicroMeasurePro/releases/download/micromeasurepro-v2.5.25/MicroMeasurePro_v2.5.25.zip",
-  "sha256": "c57f295991eadec4d13b97aa1b40d6208631fb1dbe3a6c47b6eab75a2dd74774",
-  "size": 18637576
+  "file": "MicroMeasurePro_v2.5.26.zip",
+  "url": "https://github.com/eden-0721/MicroMeasurePro/releases/download/micromeasurepro-v2.5.26/MicroMeasurePro_v2.5.26.zip",
+  "sha256": "2d3ed09727675a457170ef4607a8134df92af736e1f8d0842c4f6710f79a1edb",
+  "size": 18643558
  },
  "notes": [
+  {
+   "v": "2.5.26",
+   "date": "2026-10-07",
+   "title": "AI 에게 맡기기 (MCP) · LED 화면 정리",
+   "items": [
+    "**영상 판독 MCP 서버** (개발 PC 의 Claude Code 용, tools/xs-build/mcp/mmp-video-mcp.mjs · .mcp.json): Claude 가 앱을 직접 조작 — 영상 열기, ROI 잡기, 표시기 조각 그림을 보고 값을 읽어 학습, 분석, 의심 칸 그림을 보고 확정·버림, CSV·프로젝트 저장. 도구 22개, 크롬은 보이지 않게(MMP_MCP_SHOW=1 이면 보임)",
+    "**LED 미리보기**: ROI 설정의 \"기계가 보는 것\" 이 예전 이진화(검게 뭉개짐) 대신 학습 전에는 LED 색다움(켜진 획만 밝게), 학습 뒤에는 찾은 획(초록 켜짐·회색 꺼짐)",
+    "LED 색 자동 고르기를 ROI 안쪽에서 (밝은 회색 테두리 때문에 \"흰색\" 이 되던 것), 스포이드로 찍은 LED 색이 LED 색 선택에도 반영, LED 는 바탕 색 안내 안 함, 획 판독 중에는 밝기 문턱 줄을 숨김",
+    "분석 준비 점검이 획 판독만 학습한 LED 를 \"학습 안 됨\" 으로 막던 것 수정"
+   ]
+  },
   {
    "v": "2.5.25",
    "date": "2026-10-07",
@@ -67,31 +78,21 @@
     "**⏱ 응답 분석** (분석 ▾): 그래프마다 시작값·안정값·10% 지점·90% 도달·상승 시간(10→90%)·오버슈트(값·%)·정착 시간(± 범위) — 가장 빠른/느린 채널, 오버슈트 최대, 정착 안 됨을 한 줄로. 정렬·복사·CSV",
     "**선 강조**: 선·범례·값 카드·구간 HUD 표·응답 분석 표 줄에 마우스 → 그 그래프만 진하게. **오른쪽 Y축**: 축 ▾ 에서 그래프를 골라 단위가 다른 값(압력 등)을 오른쪽 축에, 보조선도 그 축 기준. 보기 ▾ **패널 간 X축 확대 범위 연동**"
    ]
-  },
-  {
-   "v": "2.5.21",
-   "date": "2026-10-07",
-   "title": "의심값 넘겨보기 · 같은 값 묶음 확인",
-   "items": [
-    "**넘겨보기**: 결과표에서 의심 칸을 더블클릭하면 학습 창에 **◀ 이전 의심 · n / N · 다음 의심 ▶** 줄이 생깁니다. 값이 맞으면 **Enter**, 틀리면 고쳐서 Enter — 학습·확정하고 바로 다음 의심 칸으로. ←/→ 로 넘기기, Esc 로 닫기. 학습으로 확신이 된 칸은 자동으로 건너뜁니다",
-    "분석 때 보관한 조각을 쓰므로 영상을 찾아가지 않고 **즉시** 넘어갑니다(화면은 뒤에서 그 프레임으로). 학습 한 번(다른 의심 다시 읽기 포함) 약 0.5초 — 시계열 차트는 잠깐 멈췄을 때 한 번만 다시 그립니다",
-    "**같은 값 묶음 확인** (🔍 의심값 검수): 의심 칸을 읽힌 값이 같은 것끼리 묶어 묶음마다 조각 16개를 고르게 보여 줍니다. 다 그 값이면 **✓ 이 값으로 확정** 한 번 — 보이는 조각이 학습·확정되고 다른 의심 칸이 새 견본으로 다시 읽혀 묶음이 줄어듭니다. 틀린 조각은 눌러서 빼고, 더블클릭하면 그 칸만 넘겨보기로. 합성 시험: 조각 11개 확정으로 의심 207 → 50칸"
-   ]
   }
  ],
- "page": "https://github.com/eden-0721/MicroMeasurePro/releases/tag/micromeasurepro-v2.5.25",
+ "page": "https://github.com/eden-0721/MicroMeasurePro/releases/tag/micromeasurepro-v2.5.26",
  "private": true,
  "filesRepo": "eden-0721/MicroMeasurePro",
  "source": "https://github.com/eden-0721/MicroMeasurePro",
  "previous": {
-  "version": "2.5.24",
+  "version": "2.5.25",
   "setup": {
-   "file": "MicroMeasurePro_Setup_v2.5.24.exe",
-   "url": "https://github.com/eden-0721/MicroMeasurePro/releases/download/micromeasurepro-v2.5.24/MicroMeasurePro_Setup_v2.5.24.exe",
-   "sha256": "d0a98a7231951c1697185442d32ebcc1991813b47ab9cc97d6d5c76aec407b4f",
-   "size": 16499325
+   "file": "MicroMeasurePro_Setup_v2.5.25.exe",
+   "url": "https://github.com/eden-0721/MicroMeasurePro/releases/download/micromeasurepro-v2.5.25/MicroMeasurePro_Setup_v2.5.25.exe",
+   "sha256": "effd28932a8798e3a50b347967dbad8d3048b5404ddd706fac6065b24c941d30",
+   "size": 16498961
   },
-  "tag": "micromeasurepro-v2.5.24",
+  "tag": "micromeasurepro-v2.5.25",
   "filesRepo": "eden-0721/MicroMeasurePro"
  }
 }
