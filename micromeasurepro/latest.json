@@ -1,23 +1,34 @@
 {
  "app": "micromeasurepro",
  "name": "MicroMeasure Pro",
- "version": "2.5.24",
+ "version": "2.5.25",
  "date": "2026-10-07",
  "channel": "release",
- "tag": "micromeasurepro-v2.5.24",
+ "tag": "micromeasurepro-v2.5.25",
  "setup": {
-  "file": "MicroMeasurePro_Setup_v2.5.24.exe",
-  "url": "https://github.com/eden-0721/MicroMeasurePro/releases/download/micromeasurepro-v2.5.24/MicroMeasurePro_Setup_v2.5.24.exe",
-  "sha256": "d0a98a7231951c1697185442d32ebcc1991813b47ab9cc97d6d5c76aec407b4f",
-  "size": 16499325
+  "file": "MicroMeasurePro_Setup_v2.5.25.exe",
+  "url": "https://github.com/eden-0721/MicroMeasurePro/releases/download/micromeasurepro-v2.5.25/MicroMeasurePro_Setup_v2.5.25.exe",
+  "sha256": "effd28932a8798e3a50b347967dbad8d3048b5404ddd706fac6065b24c941d30",
+  "size": 16498961
  },
  "zip": {
-  "file": "MicroMeasurePro_v2.5.24.zip",
-  "url": "https://github.com/eden-0721/MicroMeasurePro/releases/download/micromeasurepro-v2.5.24/MicroMeasurePro_v2.5.24.zip",
-  "sha256": "990291d23584fb518cc0d1d48f72cdc458c77dafe2d52767de87d94cd1620e29",
-  "size": 18635860
+  "file": "MicroMeasurePro_v2.5.25.zip",
+  "url": "https://github.com/eden-0721/MicroMeasurePro/releases/download/micromeasurepro-v2.5.25/MicroMeasurePro_v2.5.25.zip",
+  "sha256": "c57f295991eadec4d13b97aa1b40d6208631fb1dbe3a6c47b6eab75a2dd74774",
+  "size": 18637576
  },
  "notes": [
+  {
+   "v": "2.5.25",
+   "date": "2026-10-07",
+   "title": "학습 창 입력칸 자동 채움 · 스포이드로 LED 전환",
+   "items": [
+    "**학습 창 입력칸**: 판독기가 읽은 값(학습한 뒤에는 \"다시 읽음\" 값)을 미리 넣습니다 — 잘 읽혔으면 [학습]·Enter·[모두 학습] 만 누르면 되고 틀린 칸만 고치면 됩니다. 예전엔 OCR 추정(0.35 를 39 로)이 들어가 다 다시 쳐야 했습니다. 직접 고친 값은 다시 그려도 그대로",
+    "**스포이드로 LED 전환**: 일반 숫자로 그린 표시기에 LED 색(초록·빨강·파랑·주황)을 찍으면 종류가 \"LED 숫자 (7세그먼트)\" 로 바뀌고, LED 는 찍은 색 이름으로 획을 잽니다(2색 지도는 흐린 맨 오른쪽 자리를 지워 오히려 안 보였다). 2색 지도(글자·바탕)는 일반 숫자·흰 글자용",
+    "LED 로 보이는데 일반 글꼴인 표시기는 ROI 설정에 ⚠ 안내와 [LED 로 바꾸기] 버튼",
+    "학습 때 늘 숫자가 있던 자리는 빈 칸으로 덜 읽게 (흐린 맨 오른쪽 자리가 빠져 0.31 이 0.3 으로)"
+   ]
+  },
   {
    "v": "2.5.24",
    "date": "2026-10-07",
@@ -66,32 +77,21 @@
     "분석 때 보관한 조각을 쓰므로 영상을 찾아가지 않고 **즉시** 넘어갑니다(화면은 뒤에서 그 프레임으로). 학습 한 번(다른 의심 다시 읽기 포함) 약 0.5초 — 시계열 차트는 잠깐 멈췄을 때 한 번만 다시 그립니다",
     "**같은 값 묶음 확인** (🔍 의심값 검수): 의심 칸을 읽힌 값이 같은 것끼리 묶어 묶음마다 조각 16개를 고르게 보여 줍니다. 다 그 값이면 **✓ 이 값으로 확정** 한 번 — 보이는 조각이 학습·확정되고 다른 의심 칸이 새 견본으로 다시 읽혀 묶음이 줄어듭니다. 틀린 조각은 눌러서 빼고, 더블클릭하면 그 칸만 넘겨보기로. 합성 시험: 조각 11개 확정으로 의심 207 → 50칸"
    ]
-  },
-  {
-   "v": "2.5.20",
-   "date": "2026-10-07",
-   "title": "구간 분석 — 그래프 여러 개를 함께: 전체 요약 · 비교 표",
-   "items": [
-    "**전체 요약** (그래프 2개 이상): 구간 HUD 맨 위에 모든 그래프의 구간 값을 합친 n·평균·σ·최소/최대(어느 그래프의 몇 번 시료인지)·범위",
-    "**그래프 간 편차**: 그래프별 평균의 최고·최저·차이·σ 를 그래프 안 흔들림(각 그래프 σ)과 나란히 — 그래프끼리 차이가 흔들림보다 크면 \"채널·센서·시편마다 치우침\" 안내",
-    "**비교 표** (그래프 5개 이상): 카드 대신 한 줄에 그래프 하나(평균·σ·최소·최대·범위·Cpk — 표시 항목 설정을 따름). 열 제목을 누르면 정렬, 열마다 최고 빨강·최저 파랑, 맨 아래 \"전체\" 줄. 표가 다 보이게 HUD 폭을 맞춥니다",
-    "HUD 머리의 **⧉ 복사**(엑셀에 붙여넣기) · **⬇ CSV**. ⚙ HUD 표시에서 전체 요약·비교 표를 끌 수 있습니다. 4개 이하는 지금처럼 카드"
-   ]
   }
  ],
- "page": "https://github.com/eden-0721/MicroMeasurePro/releases/tag/micromeasurepro-v2.5.24",
+ "page": "https://github.com/eden-0721/MicroMeasurePro/releases/tag/micromeasurepro-v2.5.25",
  "private": true,
  "filesRepo": "eden-0721/MicroMeasurePro",
  "source": "https://github.com/eden-0721/MicroMeasurePro",
  "previous": {
-  "version": "2.5.22",
+  "version": "2.5.24",
   "setup": {
-   "file": "MicroMeasurePro_Setup_v2.5.22.exe",
-   "url": "https://github.com/eden-0721/MicroMeasurePro/releases/download/micromeasurepro-v2.5.22/MicroMeasurePro_Setup_v2.5.22.exe",
-   "sha256": "d54de8fae08395b936151fe83f271cb729f07af27f4c6140baf6083f89d71317",
-   "size": 16485906
+   "file": "MicroMeasurePro_Setup_v2.5.24.exe",
+   "url": "https://github.com/eden-0721/MicroMeasurePro/releases/download/micromeasurepro-v2.5.24/MicroMeasurePro_Setup_v2.5.24.exe",
+   "sha256": "d0a98a7231951c1697185442d32ebcc1991813b47ab9cc97d6d5c76aec407b4f",
+   "size": 16499325
   },
-  "tag": "micromeasurepro-v2.5.22",
+  "tag": "micromeasurepro-v2.5.24",
   "filesRepo": "eden-0721/MicroMeasurePro"
  }
 }
