@@ -1,19 +1,26 @@
 {
  "app": "testreport",
  "name": "시험성적서 워크벤치",
- "version": "2.3.6",
+ "version": "2.3.7",
  "date": "2026-10-08",
  "channel": "release",
- "tag": "testreport-v2.3.6",
+ "tag": "testreport-v2.3.7",
  "private": true,
  "filesRepo": "eden-0721/test_reports",
  "setup": {
-  "file": "TestReport_Setup_v2.3.6.exe",
-  "url": "https://github.com/eden-0721/test_reports/releases/download/testreport-v2.3.6/TestReport_Setup_v2.3.6.exe",
-  "sha256": "62601a55fc21b9dd11a468499b8cbc579b5c28b0fbf2a9c8a42a14858a00d229",
-  "size": 3761300
+  "file": "TestReport_Setup_v2.3.7.exe",
+  "url": "https://github.com/eden-0721/test_reports/releases/download/testreport-v2.3.7/TestReport_Setup_v2.3.7.exe",
+  "sha256": "17e5ed5818a889ba24f88dd2b0f039d1d9aa8b97843f8217069706da7a403c4c",
+  "size": 3761389
  },
  "notes": [
+  {
+   "v": "2.3.7",
+   "date": "2026-10-08",
+   "items": [
+    "조판: '빈 줄'을 추가 메뉴 맨 앞으로, 블록 사이 점선을 두 번 누르면 메뉴 없이 바로 빈 줄이 들어갑니다"
+   ]
+  },
   {
    "v": "2.3.6",
    "date": "2026-10-08",
