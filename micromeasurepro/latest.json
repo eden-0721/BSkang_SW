@@ -1,23 +1,33 @@
 {
  "app": "micromeasurepro",
  "name": "MicroMeasure Pro",
- "version": "2.5.27",
- "date": "2026-10-07",
+ "version": "2.5.28",
+ "date": "2026-10-08",
  "channel": "release",
- "tag": "micromeasurepro-v2.5.27",
+ "tag": "micromeasurepro-v2.5.28",
  "setup": {
-  "file": "MicroMeasurePro_Setup_v2.5.27.exe",
-  "url": "https://github.com/eden-0721/MicroMeasurePro/releases/download/micromeasurepro-v2.5.27/MicroMeasurePro_Setup_v2.5.27.exe",
-  "sha256": "f8ca4221029bdac5ab0294cc2e2ae02e94e2ca242672ad1566f2370732b01c59",
-  "size": 16506493
+  "file": "MicroMeasurePro_Setup_v2.5.28.exe",
+  "url": "https://github.com/eden-0721/MicroMeasurePro/releases/download/micromeasurepro-v2.5.28/MicroMeasurePro_Setup_v2.5.28.exe",
+  "sha256": "74ff245b9a0c6a964dc62903ff5d01ae2126a91f68f715a5aa3127ab0cd8c7b6",
+  "size": 16511500
  },
  "zip": {
-  "file": "MicroMeasurePro_v2.5.27.zip",
-  "url": "https://github.com/eden-0721/MicroMeasurePro/releases/download/micromeasurepro-v2.5.27/MicroMeasurePro_v2.5.27.zip",
-  "sha256": "3e87be5bbe8b8e64b95c983cf7f88c044a5fb0bc66f7e328d871c623e86a5bf6",
-  "size": 18646781
+  "file": "MicroMeasurePro_v2.5.28.zip",
+  "url": "https://github.com/eden-0721/MicroMeasurePro/releases/download/micromeasurepro-v2.5.28/MicroMeasurePro_v2.5.28.zip",
+  "sha256": "187452c4f2891517e5c8ce560e96225ddd36f95780a067cf6fde53a383e83932",
+  "size": 18657970
  },
  "notes": [
+  {
+   "v": "2.5.28",
+   "date": "2026-10-08",
+   "title": "AI 에게 맡기기 — 설치본에서도",
+   "items": [
+    "영상 판독 MCP 서버를 **파이썬(표준 라이브러리만)**으로 다시 만들어 설치본의 내장 파이썬으로 돕니다 — node·개발 폴더가 없어도 크롬(또는 엣지)만 있으면 됨. 배포 패키지에 tools/mcp 포함",
+    "[설정] 탭의 [Claude 데스크톱에 연결]·[Claude Code 에 연결] 이 설치본에서도 동작 (내장 python.exe 로 등록). 크롬은 원격 디버깅으로 보이지 않게 띄움",
+    "Claude 데스크톱 확장 파일(tools/mcp/micromeasure-video.mcpb)도 설치 폴더 기본값으로"
+   ]
+  },
   {
    "v": "2.5.27",
    "date": "2026-10-07",
@@ -64,32 +74,21 @@
     "**형식 확정 = 한꺼번에**: 소수 자릿수가 다른 칸(예: 보통 1자리인데 2자리)을 맞다고 확정하면 그 자릿수를 이 표시기의 정상 형식으로 등록해 같은 형식의 의심이 모두 빠집니다 (프로젝트에 저장)",
     "**의심 이유 보이기**: 학습 창에 \"확신\" 옆에 \"의심: 소수 자릿수가 다름 / 앞뒤 값과 동떨어짐 / 범위 밖\" — 글자는 잘 읽혔는데 왜 나왔는지. 결과표 풍선말·의심값 검수에도 같은 글"
    ]
-  },
-  {
-   "v": "2.5.23",
-   "date": "2026-10-07",
-   "title": "열이 많아도 빠르게 · 점 모양 · 축 더블클릭 · 저장 이미지 글 겹침",
-   "items": [
-    "**빨라짐**: 열 32개 × 2,000행(점 6만 4천 개)이 확대·호버마다 거의 멈추던 것 — 점(마커)을 SVG 로 6만 개 그리던 탓. 점이 3,000개를 넘으면 자동으로 선만 그려 그리기 1.1초 → 0.14초, 확대 0.9초 → 0.03초, 선 강조 0.33초 → 0.01초 (같은 PC)",
-    "**[점 ▾]** (차트 막대): 자동 · 끄기(선만) · 모양(● ■ ◆ ▲ ▼ ✕ ✚ ★, 그래프마다 다른 모양). 🎨 차트 스타일에도 마커 표시·모양",
-    "**축 더블클릭**: X·Y(·오른쪽 Y) 축 숫자 위를 더블클릭하면 그 축 범위 창 — 지금 보이는 최소·최대가 들어 있고 고쳐서 Enter. 간격·소수·단위·로그, [자동]. 플롯 안 더블클릭 = 처음(설정한) 범위로",
-    "**저장 이미지 글 겹침**: 그래프가 9개 이상이면 범례를 차트 아래에 칸 맞춰 놓고(제목과 안 겹침), 제목은 \"No1, No2, No3 외 29개 런 차트\"로, 보조선 숫자 라벨은 수십 개가 겹치므로 선만"
-   ]
   }
  ],
- "page": "https://github.com/eden-0721/MicroMeasurePro/releases/tag/micromeasurepro-v2.5.27",
+ "page": "https://github.com/eden-0721/MicroMeasurePro/releases/tag/micromeasurepro-v2.5.28",
  "private": true,
  "filesRepo": "eden-0721/MicroMeasurePro",
  "source": "https://github.com/eden-0721/MicroMeasurePro",
  "previous": {
-  "version": "2.5.26",
+  "version": "2.5.27",
   "setup": {
-   "file": "MicroMeasurePro_Setup_v2.5.26.exe",
-   "url": "https://github.com/eden-0721/MicroMeasurePro/releases/download/micromeasurepro-v2.5.26/MicroMeasurePro_Setup_v2.5.26.exe",
-   "sha256": "71a81e6a30f127e0fa63fd545afcabea71e7c8bf91e89c50e37fc1b6687afd54",
-   "size": 16505235
+   "file": "MicroMeasurePro_Setup_v2.5.27.exe",
+   "url": "https://github.com/eden-0721/MicroMeasurePro/releases/download/micromeasurepro-v2.5.27/MicroMeasurePro_Setup_v2.5.27.exe",
+   "sha256": "f8ca4221029bdac5ab0294cc2e2ae02e94e2ca242672ad1566f2370732b01c59",
+   "size": 16506493
   },
-  "tag": "micromeasurepro-v2.5.26",
+  "tag": "micromeasurepro-v2.5.27",
   "filesRepo": "eden-0721/MicroMeasurePro"
  }
 }
