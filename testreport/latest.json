@@ -1,19 +1,26 @@
 {
  "app": "testreport",
  "name": "시험성적서 워크벤치",
- "version": "2.2.9",
+ "version": "2.3.0",
  "date": "2026-10-07",
  "channel": "release",
- "tag": "testreport-v2.2.9",
+ "tag": "testreport-v2.3.0",
  "private": true,
  "filesRepo": "eden-0721/test_reports",
  "setup": {
-  "file": "TestReport_Setup_v2.2.9.exe",
-  "url": "https://github.com/eden-0721/test_reports/releases/download/testreport-v2.2.9/TestReport_Setup_v2.2.9.exe",
-  "sha256": "b3dbba8719ec4706fc238ec2f69cec8e765a4f9e787a6107561dd3d93c30e94e",
-  "size": 3749972
+  "file": "TestReport_Setup_v2.3.0.exe",
+  "url": "https://github.com/eden-0721/test_reports/releases/download/testreport-v2.3.0/TestReport_Setup_v2.3.0.exe",
+  "sha256": "aa911fbd5f5c27e12871d36fabaef35cb0ebb6a84cc783a227e78fdbffe8f70e",
+  "size": 3752701
  },
  "notes": [
+  {
+   "v": "2.3.0",
+   "date": "2026-10-07",
+   "items": [
+    "의뢰서를 Gemini 로 판독할 때 모델을 고르지 않아도 됩니다: 키로 쓸 수 있는 모델 중 가장 좋은 것부터 자동으로 시도하고, 시간 초과·과부하·사용 한도면 다음 모델로 넘어갑니다 (실패한 모델은 30분 동안 뒤로)"
+   ]
+  },
   {
    "v": "2.2.9",
    "date": "2026-10-07",
