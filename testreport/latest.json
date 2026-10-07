@@ -1,19 +1,26 @@
 {
  "app": "testreport",
  "name": "시험성적서 워크벤치",
- "version": "2.3.4",
+ "version": "2.3.5",
  "date": "2026-10-08",
  "channel": "release",
- "tag": "testreport-v2.3.4",
+ "tag": "testreport-v2.3.5",
  "private": true,
  "filesRepo": "eden-0721/test_reports",
  "setup": {
-  "file": "TestReport_Setup_v2.3.4.exe",
-  "url": "https://github.com/eden-0721/test_reports/releases/download/testreport-v2.3.4/TestReport_Setup_v2.3.4.exe",
-  "sha256": "93c3da9482879787c68b6257eaefa512de2269293ce7c52f2d316f2cd8721325",
-  "size": 3759712
+  "file": "TestReport_Setup_v2.3.5.exe",
+  "url": "https://github.com/eden-0721/test_reports/releases/download/testreport-v2.3.5/TestReport_Setup_v2.3.5.exe",
+  "sha256": "f8a3b5e2b3e9ba188738dc71ffd67f6fd269fbe513f546d1bae058053565401a",
+  "size": 3760927
  },
  "notes": [
+  {
+   "v": "2.3.5",
+   "date": "2026-10-08",
+   "items": [
+    "최종 조판 [크게 보기]: 조판만 앱 창 전체로 띄우고 100%·125%·150%·폭 맞춤으로 확대합니다 (Esc 로 돌아오기, 확대한 채로 그림·표 크기를 끌어도 mm 정확)"
+   ]
+  },
   {
    "v": "2.3.4",
    "date": "2026-10-08",
