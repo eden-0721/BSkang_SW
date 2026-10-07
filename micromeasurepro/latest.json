@@ -1,23 +1,34 @@
 {
  "app": "micromeasurepro",
  "name": "MicroMeasure Pro",
- "version": "2.5.19",
+ "version": "2.5.20",
  "date": "2026-10-07",
  "channel": "release",
- "tag": "micromeasurepro-v2.5.19",
+ "tag": "micromeasurepro-v2.5.20",
  "setup": {
-  "file": "MicroMeasurePro_Setup_v2.5.19.exe",
-  "url": "https://github.com/eden-0721/MicroMeasurePro/releases/download/micromeasurepro-v2.5.19/MicroMeasurePro_Setup_v2.5.19.exe",
-  "sha256": "e7f98b66ac319c6186ae3f67eff8c43f166a1d5328ed5c5a8d44146c7bf1ce31",
-  "size": 16461857
+  "file": "MicroMeasurePro_Setup_v2.5.20.exe",
+  "url": "https://github.com/eden-0721/MicroMeasurePro/releases/download/micromeasurepro-v2.5.20/MicroMeasurePro_Setup_v2.5.20.exe",
+  "sha256": "1d50f91c15d009d4215d6a8660570a3eed6872a009301041f7e04296de7615e0",
+  "size": 16465355
  },
  "zip": {
-  "file": "MicroMeasurePro_v2.5.19.zip",
-  "url": "https://github.com/eden-0721/MicroMeasurePro/releases/download/micromeasurepro-v2.5.19/MicroMeasurePro_v2.5.19.zip",
-  "sha256": "f8f46f254495babadc03c65e0223151674893cd4363ec9260ddb3998677c3034",
-  "size": 18579776
+  "file": "MicroMeasurePro_v2.5.20.zip",
+  "url": "https://github.com/eden-0721/MicroMeasurePro/releases/download/micromeasurepro-v2.5.20/MicroMeasurePro_v2.5.20.zip",
+  "sha256": "e639d2d8656448fcf2e538a6ef248c111199edb0b9627e096092df2609a62135",
+  "size": 18584282
  },
  "notes": [
+  {
+   "v": "2.5.20",
+   "date": "2026-10-07",
+   "title": "구간 분석 — 그래프 여러 개를 함께: 전체 요약 · 비교 표",
+   "items": [
+    "**전체 요약** (그래프 2개 이상): 구간 HUD 맨 위에 모든 그래프의 구간 값을 합친 n·평균·σ·최소/최대(어느 그래프의 몇 번 시료인지)·범위",
+    "**그래프 간 편차**: 그래프별 평균의 최고·최저·차이·σ 를 그래프 안 흔들림(각 그래프 σ)과 나란히 — 그래프끼리 차이가 흔들림보다 크면 \"채널·센서·시편마다 치우침\" 안내",
+    "**비교 표** (그래프 5개 이상): 카드 대신 한 줄에 그래프 하나(평균·σ·최소·최대·범위·Cpk — 표시 항목 설정을 따름). 열 제목을 누르면 정렬, 열마다 최고 빨강·최저 파랑, 맨 아래 \"전체\" 줄. 표가 다 보이게 HUD 폭을 맞춥니다",
+    "HUD 머리의 **⧉ 복사**(엑셀에 붙여넣기) · **⬇ CSV**. ⚙ HUD 표시에서 전체 요약·비교 표를 끌 수 있습니다. 4개 이하는 지금처럼 카드"
+   ]
+  },
   {
    "v": "2.5.19",
    "date": "2026-10-07",
@@ -71,32 +82,21 @@
     "**결과표 셀을 더블클릭**하면 그 프레임 조각으로 학습 창이 열립니다 — 값을 입력해 [학습]하면 견본이 늘고 그 프레임 값이 확정됩니다(의심값을 고치는 가장 빠른 길)",
     "조각 뽑기가 비슷한 조각만 뽑던 것 개선: 후보를 3배 읽어 **서로 다른 값·낮은 신뢰도**를 먼저, 시간이 몰리지 않게, 이미 학습한 프레임은 제외"
    ]
-  },
-  {
-   "v": "2.5.15",
-   "date": "2026-10-07",
-   "title": "ROI 추적 결함 수정 — 조각이 비틀리고 엉뚱한 곳을 읽던 문제",
-   "items": [
-    "ROI 만 그렸을 때(패널 모서리 없이) 추적을 **평행 이동만**으로 바꿨습니다. 전에는 ROI 주변 네 기준점으로 평면 변환을 구해서 기준점 하나만 틀려도 조각이 옆으로 비틀려 글자가 깨졌습니다",
-    "**ROI 마다 자기 기준 프레임**을 갖습니다(그린 프레임의 주변 기준점 조각 + 거친 탐색 조각 저장). 전에는 ROI 를 새로 그릴 때마다 기준 프레임이 바뀌어, 다른 프레임에서 그린 앞 ROI 들이 엉뚱한 곳을 읽었습니다. 큰 손떨림(±160px)도 전역 프레임 없이 따라붙습니다",
-    "실영상 정확도 94.3% → **95.9%** (학습 안 한 프레임, 확신 오답 1)",
-    "초록·빨강·주황 글자 ROI 를 그리면 \"7세그먼트라면 종류를 **LED 숫자**로\" 안내하고, 학습이 글자 수 불일치로 실패할 때도 같은 안내를 붙입니다(구조가 확실하면 자동으로 LED 로). 흐린 영상에서는 LED 구조를 자동으로 단정하기 어려워 안내로 둡니다"
-   ]
   }
  ],
- "page": "https://github.com/eden-0721/MicroMeasurePro/releases/tag/micromeasurepro-v2.5.19",
+ "page": "https://github.com/eden-0721/MicroMeasurePro/releases/tag/micromeasurepro-v2.5.20",
  "private": true,
  "filesRepo": "eden-0721/MicroMeasurePro",
  "source": "https://github.com/eden-0721/MicroMeasurePro",
  "previous": {
-  "version": "2.5.18",
+  "version": "2.5.19",
   "setup": {
-   "file": "MicroMeasurePro_Setup_v2.5.18.exe",
-   "url": "https://github.com/eden-0721/MicroMeasurePro/releases/download/micromeasurepro-v2.5.18/MicroMeasurePro_Setup_v2.5.18.exe",
-   "sha256": "80070294eed4fbf63e7a344d0b26717cbee613ded7925cd7438ac4bb011673c1",
-   "size": 16455680
+   "file": "MicroMeasurePro_Setup_v2.5.19.exe",
+   "url": "https://github.com/eden-0721/MicroMeasurePro/releases/download/micromeasurepro-v2.5.19/MicroMeasurePro_Setup_v2.5.19.exe",
+   "sha256": "e7f98b66ac319c6186ae3f67eff8c43f166a1d5328ed5c5a8d44146c7bf1ce31",
+   "size": 16461857
   },
-  "tag": "micromeasurepro-v2.5.18",
+  "tag": "micromeasurepro-v2.5.19",
   "filesRepo": "eden-0721/MicroMeasurePro"
  }
 }
