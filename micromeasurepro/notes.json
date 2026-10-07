@@ -2,6 +2,16 @@
  "app": "micromeasurepro",
  "notes": [
   {
+   "v": "2.5.27",
+   "date": "2026-10-07",
+   "title": "Claude 연결 버튼 (AI 에게 맡기기)",
+   "items": [
+    "영상 분석 [설정] 탭 **🤖 AI 에게 맡기기**: [Claude 데스크톱에 연결] (claude_desktop_config.json 에 등록, 다른 설정 유지·.bak 사본) · [Claude Code 에 연결] (claude mcp add --scope user) · 명령 복사 · 연결 상태(연결됨 ✓). 시험성적서 앱과 같은 방식",
+    "연결한 뒤 Claude 채팅에서 \"이 영상 값을 뽑아 줘\" 처럼 시키면 Claude 가 영상 열기·ROI·학습·분석·의심 확정·CSV 를 합니다 (개발 PC 전용)",
+    "Claude 데스크톱 확장 파일(.mcpb)도 만들 수 있음: tools/xs-build/mcp/build-mcpb.mjs"
+   ]
+  },
+  {
    "v": "2.5.26",
    "date": "2026-10-07",
    "title": "AI 에게 맡기기 (MCP) · LED 화면 정리",

@@ -1,23 +1,33 @@
 {
  "app": "micromeasurepro",
  "name": "MicroMeasure Pro",
- "version": "2.5.26",
+ "version": "2.5.27",
  "date": "2026-10-07",
  "channel": "release",
- "tag": "micromeasurepro-v2.5.26",
+ "tag": "micromeasurepro-v2.5.27",
  "setup": {
-  "file": "MicroMeasurePro_Setup_v2.5.26.exe",
-  "url": "https://github.com/eden-0721/MicroMeasurePro/releases/download/micromeasurepro-v2.5.26/MicroMeasurePro_Setup_v2.5.26.exe",
-  "sha256": "71a81e6a30f127e0fa63fd545afcabea71e7c8bf91e89c50e37fc1b6687afd54",
-  "size": 16505235
+  "file": "MicroMeasurePro_Setup_v2.5.27.exe",
+  "url": "https://github.com/eden-0721/MicroMeasurePro/releases/download/micromeasurepro-v2.5.27/MicroMeasurePro_Setup_v2.5.27.exe",
+  "sha256": "f8ca4221029bdac5ab0294cc2e2ae02e94e2ca242672ad1566f2370732b01c59",
+  "size": 16506493
  },
  "zip": {
-  "file": "MicroMeasurePro_v2.5.26.zip",
-  "url": "https://github.com/eden-0721/MicroMeasurePro/releases/download/micromeasurepro-v2.5.26/MicroMeasurePro_v2.5.26.zip",
-  "sha256": "2d3ed09727675a457170ef4607a8134df92af736e1f8d0842c4f6710f79a1edb",
-  "size": 18643558
+  "file": "MicroMeasurePro_v2.5.27.zip",
+  "url": "https://github.com/eden-0721/MicroMeasurePro/releases/download/micromeasurepro-v2.5.27/MicroMeasurePro_v2.5.27.zip",
+  "sha256": "3e87be5bbe8b8e64b95c983cf7f88c044a5fb0bc66f7e328d871c623e86a5bf6",
+  "size": 18646781
  },
  "notes": [
+  {
+   "v": "2.5.27",
+   "date": "2026-10-07",
+   "title": "Claude 연결 버튼 (AI 에게 맡기기)",
+   "items": [
+    "영상 분석 [설정] 탭 **🤖 AI 에게 맡기기**: [Claude 데스크톱에 연결] (claude_desktop_config.json 에 등록, 다른 설정 유지·.bak 사본) · [Claude Code 에 연결] (claude mcp add --scope user) · 명령 복사 · 연결 상태(연결됨 ✓). 시험성적서 앱과 같은 방식",
+    "연결한 뒤 Claude 채팅에서 \"이 영상 값을 뽑아 줘\" 처럼 시키면 Claude 가 영상 열기·ROI·학습·분석·의심 확정·CSV 를 합니다 (개발 PC 전용)",
+    "Claude 데스크톱 확장 파일(.mcpb)도 만들 수 있음: tools/xs-build/mcp/build-mcpb.mjs"
+   ]
+  },
   {
    "v": "2.5.26",
    "date": "2026-10-07",
@@ -65,34 +75,21 @@
     "**축 더블클릭**: X·Y(·오른쪽 Y) 축 숫자 위를 더블클릭하면 그 축 범위 창 — 지금 보이는 최소·최대가 들어 있고 고쳐서 Enter. 간격·소수·단위·로그, [자동]. 플롯 안 더블클릭 = 처음(설정한) 범위로",
     "**저장 이미지 글 겹침**: 그래프가 9개 이상이면 범례를 차트 아래에 칸 맞춰 놓고(제목과 안 겹침), 제목은 \"No1, No2, No3 외 29개 런 차트\"로, 보조선 숫자 라벨은 수십 개가 겹치므로 선만"
    ]
-  },
-  {
-   "v": "2.5.22",
-   "date": "2026-10-07",
-   "title": "그래프 값 보기 — 축 설정 · X축 시각 · 값 읽기 · A·B 측정 · 응답 분석",
-   "items": [
-    "**축 ▾** (차트 막대): X·Y 최소·최대·눈금 간격·소수 자리·단위·로그. **구간에 맞춰 확대**(X = 구간, Y = 구간 안 값 ± 8%) · 지금 보이는 범위로 · 자동으로 · 다른 패널에도 적용. 차트 종류별로 저장되고 이미지 내보내기·프로젝트에 그대로",
-    "**X축 시각**: 시트 A열이 09:55:01 같은 시각이면 런 차트 X축이 #순번 대신 시각(확대하면 눈금이 10초·1분 단위로 다시), 또는 **경과 시간**(분:초). 구간 캡션·HUD·패널 제목도 \"구간 09:57:29 ~ 10:01:19 (3분 50초)\". 시각 모드에서는 X 범위를 9:56:00 처럼 입력",
-    "**┆ 값 읽기**: 마우스를 따라 세로선 + 그 시점의 모든 그래프 값을 큰 순서로 · 최고−최저 · 평균. 클릭하면 고정(이미지에도 나옴), 끌어서 이동, ⧉ 복사",
-    "**📏 A·B 측정**: 두 번 클릭 → A·B 선, 사이 Δ시간, 그래프마다 A값·B값·B−A·기울기(분당) — 변화 큰 순",
-    "**⏱ 응답 분석** (분석 ▾): 그래프마다 시작값·안정값·10% 지점·90% 도달·상승 시간(10→90%)·오버슈트(값·%)·정착 시간(± 범위) — 가장 빠른/느린 채널, 오버슈트 최대, 정착 안 됨을 한 줄로. 정렬·복사·CSV",
-    "**선 강조**: 선·범례·값 카드·구간 HUD 표·응답 분석 표 줄에 마우스 → 그 그래프만 진하게. **오른쪽 Y축**: 축 ▾ 에서 그래프를 골라 단위가 다른 값(압력 등)을 오른쪽 축에, 보조선도 그 축 기준. 보기 ▾ **패널 간 X축 확대 범위 연동**"
-   ]
   }
  ],
- "page": "https://github.com/eden-0721/MicroMeasurePro/releases/tag/micromeasurepro-v2.5.26",
+ "page": "https://github.com/eden-0721/MicroMeasurePro/releases/tag/micromeasurepro-v2.5.27",
  "private": true,
  "filesRepo": "eden-0721/MicroMeasurePro",
  "source": "https://github.com/eden-0721/MicroMeasurePro",
  "previous": {
-  "version": "2.5.25",
+  "version": "2.5.26",
   "setup": {
-   "file": "MicroMeasurePro_Setup_v2.5.25.exe",
-   "url": "https://github.com/eden-0721/MicroMeasurePro/releases/download/micromeasurepro-v2.5.25/MicroMeasurePro_Setup_v2.5.25.exe",
-   "sha256": "effd28932a8798e3a50b347967dbad8d3048b5404ddd706fac6065b24c941d30",
-   "size": 16498961
+   "file": "MicroMeasurePro_Setup_v2.5.26.exe",
+   "url": "https://github.com/eden-0721/MicroMeasurePro/releases/download/micromeasurepro-v2.5.26/MicroMeasurePro_Setup_v2.5.26.exe",
+   "sha256": "71a81e6a30f127e0fa63fd545afcabea71e7c8bf91e89c50e37fc1b6687afd54",
+   "size": 16505235
   },
-  "tag": "micromeasurepro-v2.5.25",
+  "tag": "micromeasurepro-v2.5.26",
   "filesRepo": "eden-0721/MicroMeasurePro"
  }
 }
