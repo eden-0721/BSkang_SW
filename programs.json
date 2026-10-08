@@ -174,15 +174,15 @@
    "description": "시험성적서 작성·발행 (비공개)",
    "icon": "icon-64.png",
    "private": true,
-   "version": "2.3.8",
+   "version": "2.3.9",
    "date": "2026-10-08",
    "setup": {
-    "file": "TestReport_Setup_v2.3.8.exe",
-    "url": "https://github.com/login?return_to=/eden-0721/test_reports/releases/download/testreport-v2.3.8/TestReport_Setup_v2.3.8.exe",
-    "size": 3762844,
-    "sha256": "b4dc6f747b20a8585da7c728102385a92b641434758c5c155402988a923182b6"
+    "file": "TestReport_Setup_v2.3.9.exe",
+    "url": "https://github.com/login?return_to=/eden-0721/test_reports/releases/download/testreport-v2.3.9/TestReport_Setup_v2.3.9.exe",
+    "size": 3764104,
+    "sha256": "d61b120a01c7f3677e5817fb6a4509bbc3d4ddf6cfe3418c705c60b61d64f079"
    },
-   "page": "https://github.com/eden-0721/test_reports/releases/tag/testreport-v2.3.8",
+   "page": "https://github.com/eden-0721/test_reports/releases/tag/testreport-v2.3.9",
    "source": "https://github.com/eden-0721/test_reports"
   }
  ],
