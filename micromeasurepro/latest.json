@@ -1,23 +1,37 @@
 {
  "app": "micromeasurepro",
  "name": "MicroMeasure Pro",
- "version": "2.5.34",
+ "version": "2.5.35",
  "date": "2026-10-08",
  "channel": "release",
- "tag": "micromeasurepro-v2.5.34",
+ "tag": "micromeasurepro-v2.5.35",
  "setup": {
-  "file": "MicroMeasurePro_Setup_v2.5.34.exe",
-  "url": "https://github.com/eden-0721/MicroMeasurePro/releases/download/micromeasurepro-v2.5.34/MicroMeasurePro_Setup_v2.5.34.exe",
-  "sha256": "4e17cbd9fd80addc1bc19a705c3785c1dd4d0500ca535f09472bde53edd0c2d0",
-  "size": 16532525
+  "file": "MicroMeasurePro_Setup_v2.5.35.exe",
+  "url": "https://github.com/eden-0721/MicroMeasurePro/releases/download/micromeasurepro-v2.5.35/MicroMeasurePro_Setup_v2.5.35.exe",
+  "sha256": "3a145282a80d595fc10171971569a0256f301532beed5ffc8bf2912cb4a74955",
+  "size": 16544413
  },
  "zip": {
-  "file": "MicroMeasurePro_v2.5.34.zip",
-  "url": "https://github.com/eden-0721/MicroMeasurePro/releases/download/micromeasurepro-v2.5.34/MicroMeasurePro_v2.5.34.zip",
-  "sha256": "b408354decd1f6192d02a57874be14921b615fafdc473d3ba2fa71e89c3a8ede",
-  "size": 18687968
+  "file": "MicroMeasurePro_v2.5.35.zip",
+  "url": "https://github.com/eden-0721/MicroMeasurePro/releases/download/micromeasurepro-v2.5.35/MicroMeasurePro_v2.5.35.zip",
+  "sha256": "661dec1cd93e13867e26318fd9be7e158d80bb3e81f315d246daa3a3477d499c",
+  "size": 18700241
  },
  "notes": [
+  {
+   "v": "2.5.35",
+   "date": "2026-10-08",
+   "title": "영상 분석: 학습 다시 쓰기 · 자동 저장 · 대표값 · 실제 시각",
+   "items": [
+    "**학습이 사라지지 않게**: 학습·검수·ROI 가 바뀌면 3초 뒤 영상 옆 .mmvid 에 자동 저장, 다른 영상을 열기 전·창을 닫을 때도 저장 — 예전엔 [💾 저장] 을 안 누르고 다른 영상을 열면 학습이 사라졌음",
+    "**📚 표시기 라이브러리**: 표시기 하나의 학습을 설비별로 저장해 두고 다른 영상에서 다시 쓰기 — 표시창에 맞춰 ROI 를 다시 잡고 학습을 새 크기로 옮김 (찍은 거리가 달라도). 손영상 검증: 다른 영상에 옮겨 14/14·5/5, 25% 멀리서 찍은 영상은 값 세 개 확인 뒤 29/30",
+    "**⬇ 대표값 CSV**: 정한 초마다 한 줄 (가장 많이 보인 값·최소·최대·확신 수) — 값이 초당 여러 번 바뀌는 표시기에",
+    "**빈칸 이유**: 요약 카드에 의심(빈칸) 비율과 이유 (바뀌는 순간·흐림·자릿수…), 빈칸이 많으면 평균·Cpk 는 대표값으로 보라는 안내",
+    "**실제 시각**: 영상 정보 탭에서 \"지금 프레임의 실제 시각\" 을 직접 지정 (화면 시계 ROI·영상 메타보다 우선) — CSV clock 열",
+    "**촬영 요령**: 가이드 항목 + 현장용 인쇄 한 장 (영상 정보 탭 🖨 촬영 안내)",
+    "AI 도구: library_list · library_save · library_apply, export_csv bucket(초)"
+   ]
+  },
   {
    "v": "2.5.34",
    "date": "2026-10-08",
@@ -60,35 +74,21 @@
     "**⇥ 오른쪽에 붙이기**: 구간 창을 그래프 옆 패널로 고정 (그래프를 가리지 않음)",
     "**PNG·복사**: 구간 통계를 그래프 오른쪽 패널로 붙여 한 장 (구간 보조선 범례·값, 전체 요약, 그래프별 표) — 예전엔 떠 있는 창이 그래프를 가리고 아래가 잘렸음"
    ]
-  },
-  {
-   "v": "2.5.30",
-   "date": "2026-10-08",
-   "title": "LED 판독: % 표시기·맨 오른쪽 자리·확신 오답",
-   "items": [
-    "% 표시기(100.0 과 5.8 처럼 자리 수가 바뀌는 것): 짧은 값도 오른쪽 정렬로 같은 7세그먼트 격자에 학습 — 예전엔 100.0 만 쓰여 \"약함\"이 되고 100.0 을 8.8 로 읽었음",
-    "0↔8·9↔8·5↔6 처럼 획 하나 차이가 늘 애매하던 것: 켜진 숫자 안의 꺼진 획(옆 획 번짐으로 밝음)과 빈 자리를 섞어 문턱을 잡던 것을 고침 + 문턱을 읽을 때와 같은 정렬 조건에서도 다시 잡음 → 맨 오른쪽 자리·% 표시기 100.0 확신이 크게 올라감 (0.05 → 0.6~1)",
-    "처음 몇 개로 맞춘 자리 격자가 나중 견본을 틀리게 읽으면 최근 견본으로 다시 맞춤",
-    "격자가 학습된 LED 는 글자를 늘 획 판독으로 — 모양(견본) 판독이 유령 획 때문에 100.0→88.8, 1.36→.36 을 확신하며 내던 오답을 막음 (둘이 다르면 의심으로)",
-    "**한 프레임만 보인 값은 의심**: 값이 바뀌는 순간 두 값이 겹쳐 \"8\" 처럼 보이는 프레임(1.34→1.36 사이 1.38)을 확신 오답으로 내던 것 — 프레임을 빠짐없이 읽은 결과에서 앞뒤와 모두 다른 한 프레임짜리 값을 의심으로 (매 프레임 바뀌는 표시기는 제외)",
-    "ROI 보정: 표시창 사각형이 옆의 어두운 것과 붙어 커지면 모든 프레임이 몇 px 어긋나던 문제 (기준 프레임에서 스스로 0 을 맞춤)",
-    "AI 도구: 긴 분석은 240초 뒤 \"진행 중\" 으로 돌아오고 analysis_progress 로 끝을 확인 (Claude 쪽 요청 시간 초과로 실패하던 것)"
-   ]
   }
  ],
- "page": "https://github.com/eden-0721/MicroMeasurePro/releases/tag/micromeasurepro-v2.5.34",
+ "page": "https://github.com/eden-0721/MicroMeasurePro/releases/tag/micromeasurepro-v2.5.35",
  "private": true,
  "filesRepo": "eden-0721/MicroMeasurePro",
  "source": "https://github.com/eden-0721/MicroMeasurePro",
  "previous": {
-  "version": "2.5.33",
+  "version": "2.5.34",
   "setup": {
-   "file": "MicroMeasurePro_Setup_v2.5.33.exe",
-   "url": "https://github.com/eden-0721/MicroMeasurePro/releases/download/micromeasurepro-v2.5.33/MicroMeasurePro_Setup_v2.5.33.exe",
-   "sha256": "7187f9e68d365f5444fdcc9361de105b806417b660b5d3b36d6eabb52e91f095",
-   "size": 16534147
+   "file": "MicroMeasurePro_Setup_v2.5.34.exe",
+   "url": "https://github.com/eden-0721/MicroMeasurePro/releases/download/micromeasurepro-v2.5.34/MicroMeasurePro_Setup_v2.5.34.exe",
+   "sha256": "4e17cbd9fd80addc1bc19a705c3785c1dd4d0500ca535f09472bde53edd0c2d0",
+   "size": 16532525
   },
-  "tag": "micromeasurepro-v2.5.33",
+  "tag": "micromeasurepro-v2.5.34",
   "filesRepo": "eden-0721/MicroMeasurePro"
  }
 }
