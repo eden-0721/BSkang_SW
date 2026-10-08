@@ -1,19 +1,27 @@
 {
  "app": "testreport",
  "name": "시험성적서 워크벤치",
- "version": "2.6.0",
+ "version": "2.6.1",
  "date": "2026-10-08",
  "channel": "release",
- "tag": "testreport-v2.6.0",
+ "tag": "testreport-v2.6.1",
  "private": true,
  "filesRepo": "eden-0721/test_reports",
  "setup": {
-  "file": "TestReport_Setup_v2.6.0.exe",
-  "url": "https://github.com/eden-0721/test_reports/releases/download/testreport-v2.6.0/TestReport_Setup_v2.6.0.exe",
-  "sha256": "def9e1c0754761a1d8a076e3cc5e40b0230dde4a1118c7dc47467c6049886812",
-  "size": 3803240
+  "file": "TestReport_Setup_v2.6.1.exe",
+  "url": "https://github.com/eden-0721/test_reports/releases/download/testreport-v2.6.1/TestReport_Setup_v2.6.1.exe",
+  "sha256": "03dc381d4a05321fc7d06cd8a3a924464d2b99ec1d7d1e411f6a51c9b955e11e",
+  "size": 3805300
  },
  "notes": [
+  {
+   "v": "2.6.1",
+   "date": "2026-10-08",
+   "items": [
+    "관계도에서 시험항목을 여러 개 골라(Ctrl+클릭 또는 [초안에 담기], 시제품·분야·장비를 고르면 [이어진 항목 모두 담기]) [이 항목으로 초안 시작]을 누르면 그 항목들로 접수 표를 채워 성적서를 시작합니다 — 새 성적서로 / 지금 작업에 더하기",
+    "앱이 남긴 초안 사본(data\\hwp\\초안)은 30일이 지나면 켤 때 자동으로 정리합니다 (직접 고른 저장 위치의 파일은 그대로)"
+   ]
+  },
   {
    "v": "2.6.0",
    "date": "2026-10-08",
