@@ -1,23 +1,33 @@
 {
  "app": "micromeasurepro",
  "name": "MicroMeasure Pro",
- "version": "2.5.37",
+ "version": "2.5.38",
  "date": "2026-10-08",
  "channel": "release",
- "tag": "micromeasurepro-v2.5.37",
+ "tag": "micromeasurepro-v2.5.38",
  "setup": {
-  "file": "MicroMeasurePro_Setup_v2.5.37.exe",
-  "url": "https://github.com/eden-0721/MicroMeasurePro/releases/download/micromeasurepro-v2.5.37/MicroMeasurePro_Setup_v2.5.37.exe",
-  "sha256": "37282ec2f5f3fd9900c02a64a45df68239ddc0735e71f836469212789021dfef",
-  "size": 16559711
+  "file": "MicroMeasurePro_Setup_v2.5.38.exe",
+  "url": "https://github.com/eden-0721/MicroMeasurePro/releases/download/micromeasurepro-v2.5.38/MicroMeasurePro_Setup_v2.5.38.exe",
+  "sha256": "35e7133e937d1d000d1f0a9b6b36946d16358248d2749bf41bc57b968619122d",
+  "size": 16561745
  },
  "zip": {
-  "file": "MicroMeasurePro_v2.5.37.zip",
-  "url": "https://github.com/eden-0721/MicroMeasurePro/releases/download/micromeasurepro-v2.5.37/MicroMeasurePro_v2.5.37.zip",
-  "sha256": "71603c15fbdf6ab39e5cb148d689f670c3dad477f4d3e7bd1b5feacaccc07d1d",
-  "size": 18719964
+  "file": "MicroMeasurePro_v2.5.38.zip",
+  "url": "https://github.com/eden-0721/MicroMeasurePro/releases/download/micromeasurepro-v2.5.38/MicroMeasurePro_v2.5.38.zip",
+  "sha256": "ea97f2c9c03a93f4932b2b3a40838e6ff1e1265fc63b5e0c77929d86fa9afaf8",
+  "size": 18722085
  },
  "notes": [
+  {
+   "v": "2.5.38",
+   "date": "2026-10-08",
+   "title": "차트 제목과 범례가 겹치지 않게 · 범례 자리 고르기",
+   "items": [
+    "**제목·범례 겹침 고침**: 범례를 제목 아래·플롯 위에 두고 범례 줄 수만큼 위 여백을 늘림 (제목을 가운데로 옮긴 뒤 겹치던 것). 그래프 크기·창 폭이 바뀌어 범례 줄 수가 달라지면 다시 맞춤",
+    "**[범례 ▾]**: 자동 · 위 · 아래 · 오른쪽 · 플롯 안 네 귀퉁이 · 숨기기 (패널마다)",
+    "**범례를 끌어 옮기기**: 놓은 자리를 기억 — 다시 그려도, 저장·이미지에도 그대로"
+   ]
+  },
   {
    "v": "2.5.37",
    "date": "2026-10-08",
@@ -72,31 +82,21 @@
     "프로그램 창을 모두 닫으면 서버도 몇 초 뒤 스스로 꺼짐 (스튜디오 창이 따로 열려 있으면 마지막 창까지 닫았을 때). 서버 기록은 data/server.log",
     "예전처럼 검은 창으로 보려면 run.bat console"
    ]
-  },
-  {
-   "v": "2.5.33",
-   "date": "2026-10-08",
-   "title": "스튜디오: 같은 파일에 저장 · 그래프별 켜기/끄기",
-   "items": [
-    "**저장**: 파일 이름 끝을 날짜로 (MicroMeasure_Studio_20261008.mms). 한 번 저장하면 이후 Ctrl+S 는 같은 파일에 덮어쓰기 — 예전엔 누를 때마다 새 파일이 생겼음. 다른 이름으로: Ctrl+Shift+S. 열기로 연 파일은 그 파일에 저장",
-    "**구간 창 그래프별 켜기/끄기**: 끄면 구간 창·PNG 모두 전체 요약만, 켜면 PNG 에도 그래프별 표",
-    "CSV·엑셀·차트 PNG 파일 이름도 날짜로"
-   ]
   }
  ],
- "page": "https://github.com/eden-0721/MicroMeasurePro/releases/tag/micromeasurepro-v2.5.37",
+ "page": "https://github.com/eden-0721/MicroMeasurePro/releases/tag/micromeasurepro-v2.5.38",
  "private": true,
  "filesRepo": "eden-0721/MicroMeasurePro",
  "source": "https://github.com/eden-0721/MicroMeasurePro",
  "previous": {
-  "version": "2.5.36",
+  "version": "2.5.37",
   "setup": {
-   "file": "MicroMeasurePro_Setup_v2.5.36.exe",
-   "url": "https://github.com/eden-0721/MicroMeasurePro/releases/download/micromeasurepro-v2.5.36/MicroMeasurePro_Setup_v2.5.36.exe",
-   "sha256": "f5d402ff80fee4003435ac1a70abf2898220cb4e680ad33dff19f85dd3c8e611",
-   "size": 16545746
+   "file": "MicroMeasurePro_Setup_v2.5.37.exe",
+   "url": "https://github.com/eden-0721/MicroMeasurePro/releases/download/micromeasurepro-v2.5.37/MicroMeasurePro_Setup_v2.5.37.exe",
+   "sha256": "37282ec2f5f3fd9900c02a64a45df68239ddc0735e71f836469212789021dfef",
+   "size": 16559711
   },
-  "tag": "micromeasurepro-v2.5.36",
+  "tag": "micromeasurepro-v2.5.37",
   "filesRepo": "eden-0721/MicroMeasurePro"
  }
 }

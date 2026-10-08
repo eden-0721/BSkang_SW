@@ -24,21 +24,21 @@
    "description": "현미경 단면 정밀 계측 + 공정 통계 분석",
    "icon": "icon-64.png",
    "channel": "release",
-   "version": "2.5.37",
+   "version": "2.5.38",
    "date": "2026-10-08",
    "setup": {
-    "file": "MicroMeasurePro_Setup_v2.5.37.exe",
-    "url": "https://github.com/eden-0721/MicroMeasurePro/releases/download/micromeasurepro-v2.5.37/MicroMeasurePro_Setup_v2.5.37.exe",
-    "sha256": "37282ec2f5f3fd9900c02a64a45df68239ddc0735e71f836469212789021dfef",
-    "size": 16559711
+    "file": "MicroMeasurePro_Setup_v2.5.38.exe",
+    "url": "https://github.com/eden-0721/MicroMeasurePro/releases/download/micromeasurepro-v2.5.38/MicroMeasurePro_Setup_v2.5.38.exe",
+    "sha256": "35e7133e937d1d000d1f0a9b6b36946d16358248d2749bf41bc57b968619122d",
+    "size": 16561745
    },
    "zip": {
-    "file": "MicroMeasurePro_v2.5.37.zip",
-    "url": "https://github.com/eden-0721/MicroMeasurePro/releases/download/micromeasurepro-v2.5.37/MicroMeasurePro_v2.5.37.zip",
-    "sha256": "71603c15fbdf6ab39e5cb148d689f670c3dad477f4d3e7bd1b5feacaccc07d1d",
-    "size": 18719964
+    "file": "MicroMeasurePro_v2.5.38.zip",
+    "url": "https://github.com/eden-0721/MicroMeasurePro/releases/download/micromeasurepro-v2.5.38/MicroMeasurePro_v2.5.38.zip",
+    "sha256": "ea97f2c9c03a93f4932b2b3a40838e6ff1e1265fc63b5e0c77929d86fa9afaf8",
+    "size": 18722085
    },
-   "page": "https://github.com/eden-0721/MicroMeasurePro/releases/tag/micromeasurepro-v2.5.37",
+   "page": "https://github.com/eden-0721/MicroMeasurePro/releases/tag/micromeasurepro-v2.5.38",
    "private": true,
    "source": "https://github.com/eden-0721/MicroMeasurePro"
   },
@@ -118,6 +118,23 @@
    "source": "https://github.com/eden-0721/photo_organize"
   },
   {
+   "app": "testreport",
+   "name": "시험성적서 워크벤치",
+   "description": "시험성적서 작성·발행 (비공개)",
+   "icon": "icon-64.png",
+   "private": true,
+   "version": "2.5.0",
+   "date": "2026-10-08",
+   "setup": {
+    "file": "TestReport_Setup_v2.5.0.exe",
+    "url": "https://github.com/login?return_to=/eden-0721/test_reports/releases/download/testreport-v2.5.0/TestReport_Setup_v2.5.0.exe",
+    "size": 3787891,
+    "sha256": "8c306c2d38a2fee0dafa7f003f9e3b915a8291e7f5ec3505d302de06f50628e0"
+   },
+   "page": "https://github.com/eden-0721/test_reports/releases/tag/testreport-v2.5.0",
+   "source": "https://github.com/eden-0721/test_reports"
+  },
+  {
    "app": "learn-eng",
    "name": "영어 배우기",
    "description": "아이부터 어른까지, 하루 몇 분 만화와 이야기로 배우는 가족·반 영어 공부 앱",
@@ -167,23 +184,6 @@
    },
    "source": "https://github.com/eden-0721/secretary-app",
    "notes": true
-  },
-  {
-   "app": "testreport",
-   "name": "시험성적서 워크벤치",
-   "description": "시험성적서 작성·발행 (비공개)",
-   "icon": "icon-64.png",
-   "private": true,
-   "version": "2.5.0",
-   "date": "2026-10-08",
-   "setup": {
-    "file": "TestReport_Setup_v2.5.0.exe",
-    "url": "https://github.com/login?return_to=/eden-0721/test_reports/releases/download/testreport-v2.5.0/TestReport_Setup_v2.5.0.exe",
-    "size": 3787891,
-    "sha256": "8c306c2d38a2fee0dafa7f003f9e3b915a8291e7f5ec3505d302de06f50628e0"
-   },
-   "page": "https://github.com/eden-0721/test_reports/releases/tag/testreport-v2.5.0",
-   "source": "https://github.com/eden-0721/test_reports"
   }
  ],
  "shared": [
