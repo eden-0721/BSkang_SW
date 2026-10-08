@@ -1,23 +1,36 @@
 {
  "app": "micromeasurepro",
  "name": "MicroMeasure Pro",
- "version": "2.5.39",
+ "version": "2.5.40",
  "date": "2026-10-08",
  "channel": "release",
- "tag": "micromeasurepro-v2.5.39",
+ "tag": "micromeasurepro-v2.5.40",
  "setup": {
-  "file": "MicroMeasurePro_Setup_v2.5.39.exe",
-  "url": "https://github.com/eden-0721/MicroMeasurePro/releases/download/micromeasurepro-v2.5.39/MicroMeasurePro_Setup_v2.5.39.exe",
-  "sha256": "57e54f38a5481040d8bb12673ab8449abc4057ed463a5abf0a79b132d47f61fe",
-  "size": 16558412
+  "file": "MicroMeasurePro_Setup_v2.5.40.exe",
+  "url": "https://github.com/eden-0721/MicroMeasurePro/releases/download/micromeasurepro-v2.5.40/MicroMeasurePro_Setup_v2.5.40.exe",
+  "sha256": "7928c81721af0d31fe7709f39f36d88c090017beea6cd7fa68500fd6206dae93",
+  "size": 16566052
  },
  "zip": {
-  "file": "MicroMeasurePro_v2.5.39.zip",
-  "url": "https://github.com/eden-0721/MicroMeasurePro/releases/download/micromeasurepro-v2.5.39/MicroMeasurePro_v2.5.39.zip",
-  "sha256": "9597d0a451efd0aae0cd642b482c11206f86c31a29032d48112096e61b086994",
-  "size": 18722987
+  "file": "MicroMeasurePro_v2.5.40.zip",
+  "url": "https://github.com/eden-0721/MicroMeasurePro/releases/download/micromeasurepro-v2.5.40/MicroMeasurePro_v2.5.40.zip",
+  "sha256": "39e0647867141c9ad0449853ea7051a0ab1a58b2c0284f28caf0e73e128f4387",
+  "size": 18729368
  },
  "notes": [
+  {
+   "v": "2.5.40",
+   "date": "2026-10-08",
+   "title": "되돌리기 하나로 · 엑셀에 메모·서식 · 같은 영상 두 번 막기 · 이미지 메모리",
+   "items": [
+    "**되돌리기 하나로**: 시트 안 Ctrl+Z · 위 ↶ · 시트 도구 막대 ↶ 가 같은 기록 (시트·차트 함께). 방금 친 값도 바로 되돌리고, 되돌린 뒤에도 보던 셀·스크롤 그대로. 시트가 따로 쌓던 사본 기록은 없앰 (메모리)",
+    "**빠른 입력**: 글자를 아주 빨리 치면(바코드 리더 등) 첫 글자만 남던 것",
+    "**엑셀(XLSX)에 메모·표시 형식**: 셀 메모는 엑셀 메모로, 셀마다 고른 소수 자리·%·지수·1,000 단위는 엑셀 표시 형식으로 (서버·브라우저 두 경로)",
+    "**영상 트랙**: 같은 영상을 다시 추가하면 새 트랙 대신 그 트랙으로 (같은 영상 두 트랙은 저장 파일을 서로 덮어씀), 예전 프로젝트의 중복 트랙은 열 때 하나로 · 경로의 \\ / 와 대소문자 차이도 같은 영상",
+    "**비전 메모리**: 안 보는 이미지의 원본 픽셀 사본은 비우고 다시 볼 때 만듦 — 큰 이미지 20장 기준 415MB → 82MB, 전환·그리기 속도는 그대로",
+    "속도 점검: 비전 20장 × 측정 400개 (전환 53ms · 측정 추가 43ms), 영상 10.8만 프레임 (결과 계산 133ms · 저장 148ms) — 이상 없음"
+   ]
+  },
   {
    "v": "2.5.39",
    "date": "2026-10-08",
@@ -73,35 +86,21 @@
     "**차트**: 제목 가운데 · 축 제목 글자를 클릭해 고치면 유지 (축 범위 창이 가로채던 것) · [점 ▾ 그래프별 지정…] 으로 그래프마다 점 모양",
     "**좌우 분할 화면 없앰**: 비전 · 통계 · 영상 세 화면. 스튜디오로 보내기·성적서는 통계 화면으로 (나란히 보려면 ⧉ 새 창)"
    ]
-  },
-  {
-   "v": "2.5.35",
-   "date": "2026-10-08",
-   "title": "영상 분석: 학습 다시 쓰기 · 자동 저장 · 대표값 · 실제 시각",
-   "items": [
-    "**학습이 사라지지 않게**: 학습·검수·ROI 가 바뀌면 3초 뒤 영상 옆 .mmvid 에 자동 저장, 다른 영상을 열기 전·창을 닫을 때도 저장 — 예전엔 [💾 저장] 을 안 누르고 다른 영상을 열면 학습이 사라졌음",
-    "**📚 표시기 라이브러리**: 표시기 하나의 학습을 설비별로 저장해 두고 다른 영상에서 다시 쓰기 — 표시창에 맞춰 ROI 를 다시 잡고 학습을 새 크기로 옮김 (찍은 거리가 달라도). 손영상 검증: 다른 영상에 옮겨 14/14·5/5, 25% 멀리서 찍은 영상은 값 세 개 확인 뒤 29/30",
-    "**⬇ 대표값 CSV**: 정한 초마다 한 줄 (가장 많이 보인 값·최소·최대·확신 수) — 값이 초당 여러 번 바뀌는 표시기에",
-    "**빈칸 이유**: 요약 카드에 의심(빈칸) 비율과 이유 (바뀌는 순간·흐림·자릿수…), 빈칸이 많으면 평균·Cpk 는 대표값으로 보라는 안내",
-    "**실제 시각**: 영상 정보 탭에서 \"지금 프레임의 실제 시각\" 을 직접 지정 (화면 시계 ROI·영상 메타보다 우선) — CSV clock 열",
-    "**촬영 요령**: 가이드 항목 + 현장용 인쇄 한 장 (영상 정보 탭 🖨 촬영 안내)",
-    "AI 도구: library_list · library_save · library_apply, export_csv bucket(초)"
-   ]
   }
  ],
- "page": "https://github.com/eden-0721/MicroMeasurePro/releases/tag/micromeasurepro-v2.5.39",
+ "page": "https://github.com/eden-0721/MicroMeasurePro/releases/tag/micromeasurepro-v2.5.40",
  "private": true,
  "filesRepo": "eden-0721/MicroMeasurePro",
  "source": "https://github.com/eden-0721/MicroMeasurePro",
  "previous": {
-  "version": "2.5.38",
+  "version": "2.5.39",
   "setup": {
-   "file": "MicroMeasurePro_Setup_v2.5.38.exe",
-   "url": "https://github.com/eden-0721/MicroMeasurePro/releases/download/micromeasurepro-v2.5.38/MicroMeasurePro_Setup_v2.5.38.exe",
-   "sha256": "35e7133e937d1d000d1f0a9b6b36946d16358248d2749bf41bc57b968619122d",
-   "size": 16561745
+   "file": "MicroMeasurePro_Setup_v2.5.39.exe",
+   "url": "https://github.com/eden-0721/MicroMeasurePro/releases/download/micromeasurepro-v2.5.39/MicroMeasurePro_Setup_v2.5.39.exe",
+   "sha256": "57e54f38a5481040d8bb12673ab8449abc4057ed463a5abf0a79b132d47f61fe",
+   "size": 16558412
   },
-  "tag": "micromeasurepro-v2.5.38",
+  "tag": "micromeasurepro-v2.5.39",
   "filesRepo": "eden-0721/MicroMeasurePro"
  }
 }
