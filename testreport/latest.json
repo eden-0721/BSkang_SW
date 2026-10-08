@@ -1,19 +1,26 @@
 {
  "app": "testreport",
  "name": "시험성적서 워크벤치",
- "version": "2.4.4",
+ "version": "2.4.5",
  "date": "2026-10-08",
  "channel": "release",
- "tag": "testreport-v2.4.4",
+ "tag": "testreport-v2.4.5",
  "private": true,
  "filesRepo": "eden-0721/test_reports",
  "setup": {
-  "file": "TestReport_Setup_v2.4.4.exe",
-  "url": "https://github.com/eden-0721/test_reports/releases/download/testreport-v2.4.4/TestReport_Setup_v2.4.4.exe",
-  "sha256": "7c4919f308d922d3ccd11fb48fc160da022eefc465b0ddc5cbae5dc3bb5b682c",
-  "size": 3767045
+  "file": "TestReport_Setup_v2.4.5.exe",
+  "url": "https://github.com/eden-0721/test_reports/releases/download/testreport-v2.4.5/TestReport_Setup_v2.4.5.exe",
+  "sha256": "0ba98ef7211faff5eefd9a8b79d59d4e4e73dba89b6c0880534515b8a2664726",
+  "size": 3768781
  },
  "notes": [
+  {
+   "v": "2.4.5",
+   "date": "2026-10-08",
+   "items": [
+    "맨 위 [단위기호] 단추·Ctrl+F10: 자주 쓰는 기호(℃ ° ± × μ ² ³ Ω ≤ ≥ …)·단위(μm mm² m/s² N·m L/min r/min dB(A) % R.H. …)·그리스 문자·화살표를 누르면 클립보드에 복사 (Ctrl+V 로 붙여넣기, 최근 쓴 기호가 맨 위)"
+   ]
+  },
   {
    "v": "2.4.4",
    "date": "2026-10-08",
