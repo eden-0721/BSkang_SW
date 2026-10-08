@@ -1,19 +1,27 @@
 {
  "app": "testreport",
  "name": "시험성적서 워크벤치",
- "version": "2.4.2",
+ "version": "2.4.3",
  "date": "2026-10-08",
  "channel": "release",
- "tag": "testreport-v2.4.2",
+ "tag": "testreport-v2.4.3",
  "private": true,
  "filesRepo": "eden-0721/test_reports",
  "setup": {
-  "file": "TestReport_Setup_v2.4.2.exe",
-  "url": "https://github.com/eden-0721/test_reports/releases/download/testreport-v2.4.2/TestReport_Setup_v2.4.2.exe",
-  "sha256": "4339a757e213cf0a4f78b9d0b6c0302114b491e58119c2e6b06b397ef3f147ce",
-  "size": 3766497
+  "file": "TestReport_Setup_v2.4.3.exe",
+  "url": "https://github.com/eden-0721/test_reports/releases/download/testreport-v2.4.3/TestReport_Setup_v2.4.3.exe",
+  "sha256": "446bada0b052f6611656756611cb48f483435772cf33ca414f3dee80e7ba2576",
+  "size": 3766885
  },
  "notes": [
+  {
+   "v": "2.4.3",
+   "date": "2026-10-08",
+   "items": [
+    "조판에서 Enter 로 나눈 문단이 위 문장과 왼쪽 끝이 맞게 보입니다 (발행본처럼 첫 줄은 맞추고 둘째 줄부터 안으로)",
+    "블록 사이 점선을 한 번 누르면 넣기 메뉴가 뜹니다 (두 번 누르면 빈 줄)"
+   ]
+  },
   {
    "v": "2.4.2",
    "date": "2026-10-08",
