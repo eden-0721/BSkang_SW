@@ -1,23 +1,36 @@
 {
  "app": "micromeasurepro",
  "name": "MicroMeasure Pro",
- "version": "2.5.30",
+ "version": "2.5.31",
  "date": "2026-10-08",
  "channel": "release",
- "tag": "micromeasurepro-v2.5.30",
+ "tag": "micromeasurepro-v2.5.31",
  "setup": {
-  "file": "MicroMeasurePro_Setup_v2.5.30.exe",
-  "url": "https://github.com/eden-0721/MicroMeasurePro/releases/download/micromeasurepro-v2.5.30/MicroMeasurePro_Setup_v2.5.30.exe",
-  "sha256": "ddea4baeb019f4771d197ace208d16e41b0dc88bee518867a29e14b9dc766680",
-  "size": 16523181
+  "file": "MicroMeasurePro_Setup_v2.5.31.exe",
+  "url": "https://github.com/eden-0721/MicroMeasurePro/releases/download/micromeasurepro-v2.5.31/MicroMeasurePro_Setup_v2.5.31.exe",
+  "sha256": "50f6918908e5cccd020c1f157908c2317451f574d4ad2eb9356dfe06c12842fa",
+  "size": 16531358
  },
  "zip": {
-  "file": "MicroMeasurePro_v2.5.30.zip",
-  "url": "https://github.com/eden-0721/MicroMeasurePro/releases/download/micromeasurepro-v2.5.30/MicroMeasurePro_v2.5.30.zip",
-  "sha256": "6a6a12b66b93003847fc62d33cfe4d7eb34ce4832dc1908e8e7f88934054789a",
-  "size": 18667954
+  "file": "MicroMeasurePro_v2.5.31.zip",
+  "url": "https://github.com/eden-0721/MicroMeasurePro/releases/download/micromeasurepro-v2.5.31/MicroMeasurePro_v2.5.31.zip",
+  "sha256": "fc46180511845710121f6bd43eac945fa1570ffcf436abbd858b9853f386764d",
+  "size": 18680823
  },
  "notes": [
+  {
+   "v": "2.5.31",
+   "date": "2026-10-08",
+   "title": "스튜디오: 시트마다 그래프 탭 · 구간 분석 강화",
+   "items": [
+    "**시트 탭 ↔ 그래프 탭**: 왼쪽 시트를 더하면(＋ 시트) 오른쪽에 같은 이름의 그래프 탭이 생기고 그 시트의 값으로 따로 그려짐 — 예전엔 새 시트 값이 그래프에 전혀 안 나왔음. 시트마다 차트 설정·마스킹·규격을 따로 기억, 양쪽 탭이 같이 바뀜, 프로젝트·되돌리기에 포함",
+    "**구간을 숫자로**: 구간 창 맨 위에 시작 ~ 끝 (시료 번호·시각·시료 이름), ◀ ▶ 로 같은 폭 이전/다음 구간",
+    "**구간 보조선 단추**: 평균 · ±σ · 최대/최소(어느 그래프 몇 번) · 추세 · 규격 — 그래프가 여러 개면 모두 합쳐 한 벌, 기본은 그래프 전체 폭(구간 폭만도 가능), 범례에 선 모양·값",
+    "**구간 통계 추가 (오리진 구간 통계처럼)**: 표준오차 · CV · 추세 기울기·R² · 처음→끝 변화",
+    "**⇥ 오른쪽에 붙이기**: 구간 창을 그래프 옆 패널로 고정 (그래프를 가리지 않음)",
+    "**PNG·복사**: 구간 통계를 그래프 오른쪽 패널로 붙여 한 장 (구간 보조선 범례·값, 전체 요약, 그래프별 표) — 예전엔 떠 있는 창이 그래프를 가리고 아래가 잘렸음"
+   ]
+  },
   {
    "v": "2.5.30",
    "date": "2026-10-08",
@@ -63,32 +76,21 @@
     "연결한 뒤 Claude 채팅에서 \"이 영상 값을 뽑아 줘\" 처럼 시키면 Claude 가 영상 열기·ROI·학습·분석·의심 확정·CSV 를 합니다 (개발 PC 전용)",
     "Claude 데스크톱 확장 파일(.mcpb)도 만들 수 있음: tools/xs-build/mcp/build-mcpb.mjs"
    ]
-  },
-  {
-   "v": "2.5.26",
-   "date": "2026-10-07",
-   "title": "AI 에게 맡기기 (MCP) · LED 화면 정리",
-   "items": [
-    "**영상 판독 MCP 서버** (개발 PC 의 Claude Code 용, tools/xs-build/mcp/mmp-video-mcp.mjs · .mcp.json): Claude 가 앱을 직접 조작 — 영상 열기, ROI 잡기, 표시기 조각 그림을 보고 값을 읽어 학습, 분석, 의심 칸 그림을 보고 확정·버림, CSV·프로젝트 저장. 도구 22개, 크롬은 보이지 않게(MMP_MCP_SHOW=1 이면 보임)",
-    "**LED 미리보기**: ROI 설정의 \"기계가 보는 것\" 이 예전 이진화(검게 뭉개짐) 대신 학습 전에는 LED 색다움(켜진 획만 밝게), 학습 뒤에는 찾은 획(초록 켜짐·회색 꺼짐)",
-    "LED 색 자동 고르기를 ROI 안쪽에서 (밝은 회색 테두리 때문에 \"흰색\" 이 되던 것), 스포이드로 찍은 LED 색이 LED 색 선택에도 반영, LED 는 바탕 색 안내 안 함, 획 판독 중에는 밝기 문턱 줄을 숨김",
-    "분석 준비 점검이 획 판독만 학습한 LED 를 \"학습 안 됨\" 으로 막던 것 수정"
-   ]
   }
  ],
- "page": "https://github.com/eden-0721/MicroMeasurePro/releases/tag/micromeasurepro-v2.5.30",
+ "page": "https://github.com/eden-0721/MicroMeasurePro/releases/tag/micromeasurepro-v2.5.31",
  "private": true,
  "filesRepo": "eden-0721/MicroMeasurePro",
  "source": "https://github.com/eden-0721/MicroMeasurePro",
  "previous": {
-  "version": "2.5.29",
+  "version": "2.5.30",
   "setup": {
-   "file": "MicroMeasurePro_Setup_v2.5.29.exe",
-   "url": "https://github.com/eden-0721/MicroMeasurePro/releases/download/micromeasurepro-v2.5.29/MicroMeasurePro_Setup_v2.5.29.exe",
-   "sha256": "78f99546f48137e5fe8debcb3cfe3cb36bdaed27d292bb84f328afe546a75424",
-   "size": 16520318
+   "file": "MicroMeasurePro_Setup_v2.5.30.exe",
+   "url": "https://github.com/eden-0721/MicroMeasurePro/releases/download/micromeasurepro-v2.5.30/MicroMeasurePro_Setup_v2.5.30.exe",
+   "sha256": "ddea4baeb019f4771d197ace208d16e41b0dc88bee518867a29e14b9dc766680",
+   "size": 16523181
   },
-  "tag": "micromeasurepro-v2.5.29",
+  "tag": "micromeasurepro-v2.5.30",
   "filesRepo": "eden-0721/MicroMeasurePro"
  }
 }
