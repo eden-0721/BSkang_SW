@@ -1,19 +1,26 @@
 {
  "app": "testreport",
  "name": "시험성적서 워크벤치",
- "version": "2.4.3",
+ "version": "2.4.4",
  "date": "2026-10-08",
  "channel": "release",
- "tag": "testreport-v2.4.3",
+ "tag": "testreport-v2.4.4",
  "private": true,
  "filesRepo": "eden-0721/test_reports",
  "setup": {
-  "file": "TestReport_Setup_v2.4.3.exe",
-  "url": "https://github.com/eden-0721/test_reports/releases/download/testreport-v2.4.3/TestReport_Setup_v2.4.3.exe",
-  "sha256": "446bada0b052f6611656756611cb48f483435772cf33ca414f3dee80e7ba2576",
-  "size": 3766885
+  "file": "TestReport_Setup_v2.4.4.exe",
+  "url": "https://github.com/eden-0721/test_reports/releases/download/testreport-v2.4.4/TestReport_Setup_v2.4.4.exe",
+  "sha256": "7c4919f308d922d3ccd11fb48fc160da022eefc465b0ddc5cbae5dc3bb5b682c",
+  "size": 3767045
  },
  "notes": [
+  {
+   "v": "2.4.4",
+   "date": "2026-10-08",
+   "items": [
+    "본문 문단의 둘째 줄부터도 첫 줄과 같은 자리에서 시작합니다 — 조판 화면과 발행본 모두, 절 첫 문장이 줄 바뀐 자리에 맞춤 (실제 성적서처럼)"
+   ]
+  },
   {
    "v": "2.4.3",
    "date": "2026-10-08",
