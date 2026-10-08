@@ -1,19 +1,26 @@
 {
  "app": "testreport",
  "name": "시험성적서 워크벤치",
- "version": "2.3.7",
+ "version": "2.3.8",
  "date": "2026-10-08",
  "channel": "release",
- "tag": "testreport-v2.3.7",
+ "tag": "testreport-v2.3.8",
  "private": true,
  "filesRepo": "eden-0721/test_reports",
  "setup": {
-  "file": "TestReport_Setup_v2.3.7.exe",
-  "url": "https://github.com/eden-0721/test_reports/releases/download/testreport-v2.3.7/TestReport_Setup_v2.3.7.exe",
-  "sha256": "17e5ed5818a889ba24f88dd2b0f039d1d9aa8b97843f8217069706da7a403c4c",
-  "size": 3761389
+  "file": "TestReport_Setup_v2.3.8.exe",
+  "url": "https://github.com/eden-0721/test_reports/releases/download/testreport-v2.3.8/TestReport_Setup_v2.3.8.exe",
+  "sha256": "b4dc6f747b20a8585da7c728102385a92b641434758c5c155402988a923182b6",
+  "size": 3762844
  },
  "notes": [
+  {
+   "v": "2.3.8",
+   "date": "2026-10-08",
+   "items": [
+    "[위 내용으로 조판]을 다시 누를 때 '표·그림 유지하고 갱신'을 고를 수 있습니다: 글(개요·시험장·장비·환경·본문·결과)은 카드 내용으로 새로 맞추고, 조판에서 넣은 표·그림·차트·나란히·수식·빈 줄·직접 만든 절은 제자리에 둡니다 (예전엔 모두 지워졌음)"
+   ]
+  },
   {
    "v": "2.3.7",
    "date": "2026-10-08",
