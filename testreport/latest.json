@@ -1,19 +1,27 @@
 {
  "app": "testreport",
  "name": "시험성적서 워크벤치",
- "version": "2.8.3",
+ "version": "2.8.4",
  "date": "2026-10-09",
  "channel": "release",
- "tag": "testreport-v2.8.3",
+ "tag": "testreport-v2.8.4",
  "private": true,
  "filesRepo": "eden-0721/test_reports",
  "setup": {
-  "file": "TestReport_Setup_v2.8.3.exe",
-  "url": "https://github.com/eden-0721/test_reports/releases/download/testreport-v2.8.3/TestReport_Setup_v2.8.3.exe",
-  "sha256": "4ab66c64c544d9ad095b73ae697c04a4272fd8d96fbc4c9245e2cee1bf092b05",
-  "size": 3820609
+  "file": "TestReport_Setup_v2.8.4.exe",
+  "url": "https://github.com/eden-0721/test_reports/releases/download/testreport-v2.8.4/TestReport_Setup_v2.8.4.exe",
+  "sha256": "07c0fdfc3425b91ab6e2bda0e46e5e441f66e57813b8723d48cf18283662c048",
+  "size": 3820932
  },
  "notes": [
+  {
+   "v": "2.8.4",
+   "date": "2026-10-09",
+   "items": [
+    "조판 서식 창이 휠을 굴릴 때 위아래로 움직이며 안내 줄을 가리던 문제: 파워포인트처럼 화면 오른쪽에 붙박이로 (스크롤해도 제자리)",
+    "서식 창은 다른 곳을 누르면 닫히고, 표·그림·차트를 다시 누르면 나옵니다. 위쪽 다른 카드로 올라가면 숨습니다"
+   ]
+  },
   {
    "v": "2.8.3",
    "date": "2026-10-09",
