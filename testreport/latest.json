@@ -1,19 +1,29 @@
 {
  "app": "testreport",
  "name": "시험성적서 워크벤치",
- "version": "2.8.2",
+ "version": "2.8.3",
  "date": "2026-10-09",
  "channel": "release",
- "tag": "testreport-v2.8.2",
+ "tag": "testreport-v2.8.3",
  "private": true,
  "filesRepo": "eden-0721/test_reports",
  "setup": {
-  "file": "TestReport_Setup_v2.8.2.exe",
-  "url": "https://github.com/eden-0721/test_reports/releases/download/testreport-v2.8.2/TestReport_Setup_v2.8.2.exe",
-  "sha256": "d4c99acc187e012cbf7c6e3a8d45d9360ec6ec5504bc6e33cfd6a128c82edc0c",
-  "size": 3819443
+  "file": "TestReport_Setup_v2.8.3.exe",
+  "url": "https://github.com/eden-0721/test_reports/releases/download/testreport-v2.8.3/TestReport_Setup_v2.8.3.exe",
+  "sha256": "4ab66c64c544d9ad095b73ae697c04a4272fd8d96fbc4c9245e2cee1bf092b05",
+  "size": 3820609
  },
  "notes": [
+  {
+   "v": "2.8.3",
+   "date": "2026-10-09",
+   "items": [
+    "조판 서식 창: 화면 오른쪽에 떠 있는 창으로 바꿔 열려도 종이가 오른쪽으로 밀리지 않습니다 (화면이 좁아 겹칠 때만 비켜 줌), 창 왼쪽 끝을 끌어 폭 조절",
+    "서식 창 ✕ 는 그 블록에서만 닫고, 블록을 다시 누르면 다시 나옵니다 (아예 끄고 켜기는 맨 위 조판 → 서식 창)",
+    "크게 보기에서 서식 창이 잘리거나 가려지던 문제, '폭 맞춤'이 서식 창 폭을 빼지 않아 종이가 잘리던 문제를 고쳤습니다",
+    "크게 보기의 확대 단추(100·125·150%·폭 맞춤)를 리본 [보기] 안에 세로로 넣어 리본이 넘치지 않게 했습니다"
+   ]
+  },
   {
    "v": "2.8.2",
    "date": "2026-10-09",
