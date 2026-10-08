@@ -1,19 +1,28 @@
 {
  "app": "testreport",
  "name": "시험성적서 워크벤치",
- "version": "2.3.8",
+ "version": "2.3.9",
  "date": "2026-10-08",
  "channel": "release",
- "tag": "testreport-v2.3.8",
+ "tag": "testreport-v2.3.9",
  "private": true,
  "filesRepo": "eden-0721/test_reports",
  "setup": {
-  "file": "TestReport_Setup_v2.3.8.exe",
-  "url": "https://github.com/eden-0721/test_reports/releases/download/testreport-v2.3.8/TestReport_Setup_v2.3.8.exe",
-  "sha256": "b4dc6f747b20a8585da7c728102385a92b641434758c5c155402988a923182b6",
-  "size": 3762844
+  "file": "TestReport_Setup_v2.3.9.exe",
+  "url": "https://github.com/eden-0721/test_reports/releases/download/testreport-v2.3.9/TestReport_Setup_v2.3.9.exe",
+  "sha256": "d61b120a01c7f3677e5817fb6a4509bbc3d4ddf6cfe3418c705c60b61d64f079",
+  "size": 3764104
  },
  "notes": [
+  {
+   "v": "2.3.9",
+   "date": "2026-10-08",
+   "items": [
+    "조판의 시험장 및 시험장치 절이 카드를 따라갑니다: 환경(일자·온습도)·공통 장비·주소·업체·시제품을 고치면 바로 바뀝니다 (조판에서 직접 고친 줄은 그대로)",
+    "항목 카드 장비 칸에 직접 친 장비(쉼표로 여러 개)도 공통 시험 장비에 들어갑니다 — 이름만 쳐도 장비 DB 에 하나뿐이면 제조사·모델까지",
+    "측정장치 줄에서 제조사·모델을 모르는 장비는 이름만 나옵니다 (빈 '(제조사 : , 모델명 : )' 없이)"
+   ]
+  },
   {
    "v": "2.3.8",
    "date": "2026-10-08",
