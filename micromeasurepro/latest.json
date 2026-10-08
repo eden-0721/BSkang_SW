@@ -1,23 +1,38 @@
 {
  "app": "micromeasurepro",
  "name": "MicroMeasure Pro",
- "version": "2.5.40",
- "date": "2026-10-08",
+ "version": "2.5.42",
+ "date": "2026-10-09",
  "channel": "release",
- "tag": "micromeasurepro-v2.5.40",
+ "tag": "micromeasurepro-v2.5.42",
  "setup": {
-  "file": "MicroMeasurePro_Setup_v2.5.40.exe",
-  "url": "https://github.com/eden-0721/MicroMeasurePro/releases/download/micromeasurepro-v2.5.40/MicroMeasurePro_Setup_v2.5.40.exe",
-  "sha256": "7928c81721af0d31fe7709f39f36d88c090017beea6cd7fa68500fd6206dae93",
-  "size": 16566052
+  "file": "MicroMeasurePro_Setup_v2.5.42.exe",
+  "url": "https://github.com/eden-0721/MicroMeasurePro/releases/download/micromeasurepro-v2.5.42/MicroMeasurePro_Setup_v2.5.42.exe",
+  "sha256": "78c979fefcf1316398cd787a8bd37b93cb3ea2fcb2a8a8c578e5449688327921",
+  "size": 16581139
  },
  "zip": {
-  "file": "MicroMeasurePro_v2.5.40.zip",
-  "url": "https://github.com/eden-0721/MicroMeasurePro/releases/download/micromeasurepro-v2.5.40/MicroMeasurePro_v2.5.40.zip",
-  "sha256": "39e0647867141c9ad0449853ea7051a0ab1a58b2c0284f28caf0e73e128f4387",
-  "size": 18729368
+  "file": "MicroMeasurePro_v2.5.42.zip",
+  "url": "https://github.com/eden-0721/MicroMeasurePro/releases/download/micromeasurepro-v2.5.42/MicroMeasurePro_v2.5.42.zip",
+  "sha256": "c254790b50bbe2012db2c20a6fe5499b6f3ec123de256ebead6b80da97dd44f2",
+  "size": 18749879
  },
  "notes": [
+  {
+   "v": "2.5.42",
+   "date": "2026-10-09",
+   "title": "비전 화면을 엑셀·파워포인트처럼 (리본 1단계)",
+   "items": [
+    "**맨 위 제목 줄**: 프로그램 이름 · 빠른 실행(저장·실행 취소) · 비전/통계/영상 전환 · **무엇을 할까요?** (기능 이름 검색, Ctrl+K) · 크게 보기 · 현장 보기 · 새 창 · 가이드",
+    "**탭과 리본**: 파일 · 홈 · 측정 · 스케일 · 분석 · 데이터 · 보기. 자주 쓰는 것은 **홈** 탭에 큰 버튼으로, 나머지는 탭마다 묶음 이름과 함께. 예전 두 줄에 늘어서던 버튼 35개 → 홈 탭 16개 (화면 전체로 보이는 버튼 78개 → 65개)",
+    "**오피스처럼 정돈**: 색 이모지 대신 한 가지 색의 선 아이콘, 버튼은 평소 테두리 없이 (마우스를 올리면 옅은 회색), 켜진 도구만 옅은 파랑",
+    "**작업 화면이 넓어짐**: 측정 항목 줄은 홈 탭으로, 단계 표시는 맨 아래 상태 표시줄로, 이미지를 가리던 아래 도구 상자는 보기·분석 탭과 상태 표시줄(확대 − 100% +)로 — 이미지가 위아래로 더 넓고 가리는 것이 없음",
+    "**리본 접기**: 탭을 두 번 누르면 탭만 남고, 탭을 누르면 잠깐 펼쳐짐 (오피스와 같음)",
+    "**크게 보기**: 보기 탭 또는 제목 줄 A+ — 리본·메뉴·표의 글씨와 버튼을 크게 (기억됨)",
+    "**전수 정리 (리본 밖까지)**: 왼쪽 목록 · 오른쪽 계측 패널 · 표 · 대화상자 17개 · 정렬선 막대 · 단축키 창 — 이모지 54곳 → 0 (같은 뜻의 선 아이콘), 버튼 모양 40가지 → 하나의 규칙(높이 24px · 모서리 4px · 글씨 12px, 주 버튼만 파랑, 켜짐은 옅은 파랑), 대화상자 모서리 8px · 카드 6px, 창 안 탭은 밑줄, 선택 상자·입력 칸 높이 통일, 닫기·표 삭제 버튼도 아이콘",
+    "버튼 이름·기능·단축키는 그대로입니다 (자리만 옮김). 통계·영상 화면 안쪽은 다음 단계(리본 2·3단계)에서 같은 모양으로"
+   ]
+  },
   {
    "v": "2.5.40",
    "date": "2026-10-08",
@@ -71,36 +86,21 @@
     "**규격 밖 빨강**: 열 규격을 벗어난 셀을 빨갛게 (보기 ▾ 에서 끔)",
     "고침: 행을 넣거나 지우면 마스킹·비전 행 정보가 다른 행에 붙던 것 (행 정보를 행에 붙여 둠) · 되돌린 뒤 편집하면 되돌리기 기록까지 같이 바뀌던 것"
    ]
-  },
-  {
-   "v": "2.5.36",
-   "date": "2026-10-08",
-   "title": "스튜디오 시트를 엑셀처럼 · 그래프별 마커 · 좌우 분할 없앰",
-   "items": [
-    "**엑셀에서 붙여넣기**: 엑셀에서 복사한 표가 Ctrl+V 로 그대로 들어감 (예전엔 안 들어가던 것), 행·열이 모자라면 시트가 늘어나고 붙인 범위를 선택",
-    "**채우기 점 더블클릭**: 1, 2 를 골라 점을 더블클릭하면 옆 열 데이터 끝까지 3, 4 … (숫자 2칸 이상 = 같은 간격으로 늘림)",
-    "**수식**: 복사·채우기·Ctrl+D 에서 참조가 엑셀처럼 옮겨지고 $ 는 고정, 수식 중 F4 = $ 붙이기 바꾸기",
-    "**단축키**: Ctrl+A · Ctrl+화살표(Shift = 선택) · Ctrl+Home/End · Ctrl+D/R 채우기 · Ctrl+− 삭제 · Ctrl+Shift+= 삽입",
-    "**여러 행·열 한 번에**: 행 번호·열 머리를 여러 개 골라 오른쪽 클릭 → 삽입/삭제가 고른 만큼 한 번에 (예전엔 한 줄씩)",
-    "**시트 길이**: 데이터 끝 + 30행 (예전엔 늘 500행), 내려가며 적으면 늘어남 · 머리글도 값도 없는 열은 차트 열 목록에서 뺌",
-    "**차트**: 제목 가운데 · 축 제목 글자를 클릭해 고치면 유지 (축 범위 창이 가로채던 것) · [점 ▾ 그래프별 지정…] 으로 그래프마다 점 모양",
-    "**좌우 분할 화면 없앰**: 비전 · 통계 · 영상 세 화면. 스튜디오로 보내기·성적서는 통계 화면으로 (나란히 보려면 ⧉ 새 창)"
-   ]
   }
  ],
- "page": "https://github.com/eden-0721/MicroMeasurePro/releases/tag/micromeasurepro-v2.5.40",
+ "page": "https://github.com/eden-0721/MicroMeasurePro/releases/tag/micromeasurepro-v2.5.42",
  "private": true,
  "filesRepo": "eden-0721/MicroMeasurePro",
  "source": "https://github.com/eden-0721/MicroMeasurePro",
  "previous": {
-  "version": "2.5.39",
+  "version": "2.5.40",
   "setup": {
-   "file": "MicroMeasurePro_Setup_v2.5.39.exe",
-   "url": "https://github.com/eden-0721/MicroMeasurePro/releases/download/micromeasurepro-v2.5.39/MicroMeasurePro_Setup_v2.5.39.exe",
-   "sha256": "57e54f38a5481040d8bb12673ab8449abc4057ed463a5abf0a79b132d47f61fe",
-   "size": 16558412
+   "file": "MicroMeasurePro_Setup_v2.5.40.exe",
+   "url": "https://github.com/eden-0721/MicroMeasurePro/releases/download/micromeasurepro-v2.5.40/MicroMeasurePro_Setup_v2.5.40.exe",
+   "sha256": "7928c81721af0d31fe7709f39f36d88c090017beea6cd7fa68500fd6206dae93",
+   "size": 16566052
   },
-  "tag": "micromeasurepro-v2.5.39",
+  "tag": "micromeasurepro-v2.5.40",
   "filesRepo": "eden-0721/MicroMeasurePro"
  }
 }
