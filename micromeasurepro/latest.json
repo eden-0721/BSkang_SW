@@ -1,23 +1,33 @@
 {
  "app": "micromeasurepro",
  "name": "MicroMeasure Pro",
- "version": "2.5.33",
+ "version": "2.5.34",
  "date": "2026-10-08",
  "channel": "release",
- "tag": "micromeasurepro-v2.5.33",
+ "tag": "micromeasurepro-v2.5.34",
  "setup": {
-  "file": "MicroMeasurePro_Setup_v2.5.33.exe",
-  "url": "https://github.com/eden-0721/MicroMeasurePro/releases/download/micromeasurepro-v2.5.33/MicroMeasurePro_Setup_v2.5.33.exe",
-  "sha256": "7187f9e68d365f5444fdcc9361de105b806417b660b5d3b36d6eabb52e91f095",
-  "size": 16534147
+  "file": "MicroMeasurePro_Setup_v2.5.34.exe",
+  "url": "https://github.com/eden-0721/MicroMeasurePro/releases/download/micromeasurepro-v2.5.34/MicroMeasurePro_Setup_v2.5.34.exe",
+  "sha256": "4e17cbd9fd80addc1bc19a705c3785c1dd4d0500ca535f09472bde53edd0c2d0",
+  "size": 16532525
  },
  "zip": {
-  "file": "MicroMeasurePro_v2.5.33.zip",
-  "url": "https://github.com/eden-0721/MicroMeasurePro/releases/download/micromeasurepro-v2.5.33/MicroMeasurePro_v2.5.33.zip",
-  "sha256": "83ca8023578a73b526ea2c72e8e4209b4246016f9a49a6d3a3e3bc23f667c182",
-  "size": 18685142
+  "file": "MicroMeasurePro_v2.5.34.zip",
+  "url": "https://github.com/eden-0721/MicroMeasurePro/releases/download/micromeasurepro-v2.5.34/MicroMeasurePro_v2.5.34.zip",
+  "sha256": "b408354decd1f6192d02a57874be14921b615fafdc473d3ba2fa71e89c3a8ede",
+  "size": 18687968
  },
  "notes": [
+  {
+   "v": "2.5.34",
+   "date": "2026-10-08",
+   "title": "작업 표시줄에 창 하나",
+   "items": [
+    "프로그램을 켜면 작업 표시줄에 **프로그램 창 하나만** — 검은 콘솔 창(계측 서버)은 보이지 않게 뒤에서 돎",
+    "프로그램 창을 모두 닫으면 서버도 몇 초 뒤 스스로 꺼짐 (스튜디오 창이 따로 열려 있으면 마지막 창까지 닫았을 때). 서버 기록은 data/server.log",
+    "예전처럼 검은 창으로 보려면 run.bat console"
+   ]
+  },
   {
    "v": "2.5.33",
    "date": "2026-10-08",
@@ -64,33 +74,21 @@
     "ROI 보정: 표시창 사각형이 옆의 어두운 것과 붙어 커지면 모든 프레임이 몇 px 어긋나던 문제 (기준 프레임에서 스스로 0 을 맞춤)",
     "AI 도구: 긴 분석은 240초 뒤 \"진행 중\" 으로 돌아오고 analysis_progress 로 끝을 확인 (Claude 쪽 요청 시간 초과로 실패하던 것)"
    ]
-  },
-  {
-   "v": "2.5.29",
-   "date": "2026-10-08",
-   "title": "영상 분석: ROI 가 튀지 않게 · 값이 바뀔 때만",
-   "items": [
-    "손으로 든 영상에서 ROI 가 갑자기 옆으로 튀어 숫자가 안 보이던 문제: 표시기마다 **어두운 표시창 사각형**을 직접 찾아 맞춤 (배관 색 변화·위아래로 쌓인 같은 표시창에 속지 않음). 어두운 창이 없으면 예전 둘레 고리 맞춤",
-    "**같은 값이면 다시 읽지 않음**: 조각이 마지막으로 읽은 것과 같으면 그 값을 그대로 (30fps 에서 같은 값 수십 프레임) — 완료 메시지에 건너뛴 칸 수",
-    "**⬇ CSV (변화만)** 기본 · **⬇ 전체 프레임** 따로. AI 도구 export_csv 도 기본은 변화만(all=true 면 전체)",
-    "학습 창: 조각을 **서로 다르게 생긴 것**으로 골라 같은 그림이 줄줄이 나오지 않게 · 조각 그림 가로세로 비율 유지(찌그러짐 없음)",
-    "AI 도구(MCP) 서버: 크롬이 막 떴을 때 빈 페이지에서 명령이 실패하던 문제 수정"
-   ]
   }
  ],
- "page": "https://github.com/eden-0721/MicroMeasurePro/releases/tag/micromeasurepro-v2.5.33",
+ "page": "https://github.com/eden-0721/MicroMeasurePro/releases/tag/micromeasurepro-v2.5.34",
  "private": true,
  "filesRepo": "eden-0721/MicroMeasurePro",
  "source": "https://github.com/eden-0721/MicroMeasurePro",
  "previous": {
-  "version": "2.5.32",
+  "version": "2.5.33",
   "setup": {
-   "file": "MicroMeasurePro_Setup_v2.5.32.exe",
-   "url": "https://github.com/eden-0721/MicroMeasurePro/releases/download/micromeasurepro-v2.5.32/MicroMeasurePro_Setup_v2.5.32.exe",
-   "sha256": "63496e4bac37bc8902091c8e8fb014ad2e6cb0a8856af171b8db175987a71b88",
-   "size": 16529254
+   "file": "MicroMeasurePro_Setup_v2.5.33.exe",
+   "url": "https://github.com/eden-0721/MicroMeasurePro/releases/download/micromeasurepro-v2.5.33/MicroMeasurePro_Setup_v2.5.33.exe",
+   "sha256": "7187f9e68d365f5444fdcc9361de105b806417b660b5d3b36d6eabb52e91f095",
+   "size": 16534147
   },
-  "tag": "micromeasurepro-v2.5.32",
+  "tag": "micromeasurepro-v2.5.33",
   "filesRepo": "eden-0721/MicroMeasurePro"
  }
 }
