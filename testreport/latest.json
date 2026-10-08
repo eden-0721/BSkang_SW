@@ -1,19 +1,28 @@
 {
  "app": "testreport",
  "name": "시험성적서 워크벤치",
- "version": "2.5.1",
+ "version": "2.6.0",
  "date": "2026-10-08",
  "channel": "release",
- "tag": "testreport-v2.5.1",
+ "tag": "testreport-v2.6.0",
  "private": true,
  "filesRepo": "eden-0721/test_reports",
  "setup": {
-  "file": "TestReport_Setup_v2.5.1.exe",
-  "url": "https://github.com/eden-0721/test_reports/releases/download/testreport-v2.5.1/TestReport_Setup_v2.5.1.exe",
-  "sha256": "f1e4ad4d85a26c0826fd7bcd8467d2f1bf0e24c7832f3cd14511a9acf2f13f1c",
-  "size": 3791488
+  "file": "TestReport_Setup_v2.6.0.exe",
+  "url": "https://github.com/eden-0721/test_reports/releases/download/testreport-v2.6.0/TestReport_Setup_v2.6.0.exe",
+  "sha256": "def9e1c0754761a1d8a076e3cc5e40b0230dde4a1118c7dc47467c6049886812",
+  "size": 3803240
  },
  "notes": [
+  {
+   "v": "2.6.0",
+   "date": "2026-10-08",
+   "items": [
+    "성적서 라이브러리에 '관계도'를 추가했습니다: 시제품·시험항목·시험 분야·장비가 어떻게 이어져 있는지 그림으로 보고, 누르면 이어진 것이 펼쳐집니다 (찾기·확대·끌어 옮기기, 오른쪽에 자세한 내용과 성적서 목록)",
+    "작성 화면 항목 카드의 '참고한 과거 성적서' 줄에 [관계도] 단추 — 그 시험항목을 관계도에서 바로 엽니다",
+    "관계도에는 업체명을 넣지 않습니다"
+   ]
+  },
   {
    "v": "2.5.1",
    "date": "2026-10-08",
