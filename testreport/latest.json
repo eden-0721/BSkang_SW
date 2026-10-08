@@ -1,19 +1,28 @@
 {
  "app": "testreport",
  "name": "시험성적서 워크벤치",
- "version": "2.4.6",
+ "version": "2.4.7",
  "date": "2026-10-08",
  "channel": "release",
- "tag": "testreport-v2.4.6",
+ "tag": "testreport-v2.4.7",
  "private": true,
  "filesRepo": "eden-0721/test_reports",
  "setup": {
-  "file": "TestReport_Setup_v2.4.6.exe",
-  "url": "https://github.com/eden-0721/test_reports/releases/download/testreport-v2.4.6/TestReport_Setup_v2.4.6.exe",
-  "sha256": "41266d1c6c8cb28c6455d463f3eef3e09a7dbdade7686c4552bc1e9760388cd9",
-  "size": 3770049
+  "file": "TestReport_Setup_v2.4.7.exe",
+  "url": "https://github.com/eden-0721/test_reports/releases/download/testreport-v2.4.7/TestReport_Setup_v2.4.7.exe",
+  "sha256": "7383d616a7bc15e5b68120efca9846f6ab415da37eda3c1aca81ed1b20f430a6",
+  "size": 3772876
  },
  "notes": [
+  {
+   "v": "2.4.7",
+   "date": "2026-10-08",
+   "items": [
+    "표 숫자 열은 소수 자리를 열에서 가장 긴 자리에 맞춥니다 (0.5, 0.52 → 0.50, 0.52 — 값은 그대로)",
+    "표 숫자 열은 칸 가운데에 두되 오른쪽 끝을 맞춰 '-' 부호가 있어도 자리·소수점이 위아래로 맞습니다 (조판 화면·발행본)",
+    "결과 문장·종합의견의 숫자를 보기 좋게 줄입니다 (0.002341 → 0.0023, 12.3456 → 12.35) — 요약표·결과 줄은 원래 값"
+   ]
+  },
   {
    "v": "2.4.6",
    "date": "2026-10-08",
