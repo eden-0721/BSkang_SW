@@ -1,23 +1,33 @@
 {
  "app": "micromeasurepro",
  "name": "MicroMeasure Pro",
- "version": "2.5.32",
+ "version": "2.5.33",
  "date": "2026-10-08",
  "channel": "release",
- "tag": "micromeasurepro-v2.5.32",
+ "tag": "micromeasurepro-v2.5.33",
  "setup": {
-  "file": "MicroMeasurePro_Setup_v2.5.32.exe",
-  "url": "https://github.com/eden-0721/MicroMeasurePro/releases/download/micromeasurepro-v2.5.32/MicroMeasurePro_Setup_v2.5.32.exe",
-  "sha256": "63496e4bac37bc8902091c8e8fb014ad2e6cb0a8856af171b8db175987a71b88",
-  "size": 16529254
+  "file": "MicroMeasurePro_Setup_v2.5.33.exe",
+  "url": "https://github.com/eden-0721/MicroMeasurePro/releases/download/micromeasurepro-v2.5.33/MicroMeasurePro_Setup_v2.5.33.exe",
+  "sha256": "7187f9e68d365f5444fdcc9361de105b806417b660b5d3b36d6eabb52e91f095",
+  "size": 16534147
  },
  "zip": {
-  "file": "MicroMeasurePro_v2.5.32.zip",
-  "url": "https://github.com/eden-0721/MicroMeasurePro/releases/download/micromeasurepro-v2.5.32/MicroMeasurePro_v2.5.32.zip",
-  "sha256": "3bd153081e78d23efb994367a9deceb16c5b68531472eca4240388170bfcfd6f",
-  "size": 18683116
+  "file": "MicroMeasurePro_v2.5.33.zip",
+  "url": "https://github.com/eden-0721/MicroMeasurePro/releases/download/micromeasurepro-v2.5.33/MicroMeasurePro_v2.5.33.zip",
+  "sha256": "83ca8023578a73b526ea2c72e8e4209b4246016f9a49a6d3a3e3bc23f667c182",
+  "size": 18685142
  },
  "notes": [
+  {
+   "v": "2.5.33",
+   "date": "2026-10-08",
+   "title": "스튜디오: 같은 파일에 저장 · 그래프별 켜기/끄기",
+   "items": [
+    "**저장**: 파일 이름 끝을 날짜로 (MicroMeasure_Studio_20261008.mms). 한 번 저장하면 이후 Ctrl+S 는 같은 파일에 덮어쓰기 — 예전엔 누를 때마다 새 파일이 생겼음. 다른 이름으로: Ctrl+Shift+S. 열기로 연 파일은 그 파일에 저장",
+    "**구간 창 그래프별 켜기/끄기**: 끄면 구간 창·PNG 모두 전체 요약만, 켜면 PNG 에도 그래프별 표",
+    "CSV·엑셀·차트 PNG 파일 이름도 날짜로"
+   ]
+  },
   {
    "v": "2.5.32",
    "date": "2026-10-08",
@@ -66,31 +76,21 @@
     "학습 창: 조각을 **서로 다르게 생긴 것**으로 골라 같은 그림이 줄줄이 나오지 않게 · 조각 그림 가로세로 비율 유지(찌그러짐 없음)",
     "AI 도구(MCP) 서버: 크롬이 막 떴을 때 빈 페이지에서 명령이 실패하던 문제 수정"
    ]
-  },
-  {
-   "v": "2.5.28",
-   "date": "2026-10-08",
-   "title": "AI 에게 맡기기 — 설치본에서도",
-   "items": [
-    "영상 판독 MCP 서버를 **파이썬(표준 라이브러리만)**으로 다시 만들어 설치본의 내장 파이썬으로 돕니다 — node·개발 폴더가 없어도 크롬(또는 엣지)만 있으면 됨. 배포 패키지에 tools/mcp 포함",
-    "[설정] 탭의 [Claude 데스크톱에 연결]·[Claude Code 에 연결] 이 설치본에서도 동작 (내장 python.exe 로 등록). 크롬은 원격 디버깅으로 보이지 않게 띄움",
-    "Claude 데스크톱 확장 파일(tools/mcp/micromeasure-video.mcpb)도 설치 폴더 기본값으로"
-   ]
   }
  ],
- "page": "https://github.com/eden-0721/MicroMeasurePro/releases/tag/micromeasurepro-v2.5.32",
+ "page": "https://github.com/eden-0721/MicroMeasurePro/releases/tag/micromeasurepro-v2.5.33",
  "private": true,
  "filesRepo": "eden-0721/MicroMeasurePro",
  "source": "https://github.com/eden-0721/MicroMeasurePro",
  "previous": {
-  "version": "2.5.31",
+  "version": "2.5.32",
   "setup": {
-   "file": "MicroMeasurePro_Setup_v2.5.31.exe",
-   "url": "https://github.com/eden-0721/MicroMeasurePro/releases/download/micromeasurepro-v2.5.31/MicroMeasurePro_Setup_v2.5.31.exe",
-   "sha256": "50f6918908e5cccd020c1f157908c2317451f574d4ad2eb9356dfe06c12842fa",
-   "size": 16531358
+   "file": "MicroMeasurePro_Setup_v2.5.32.exe",
+   "url": "https://github.com/eden-0721/MicroMeasurePro/releases/download/micromeasurepro-v2.5.32/MicroMeasurePro_Setup_v2.5.32.exe",
+   "sha256": "63496e4bac37bc8902091c8e8fb014ad2e6cb0a8856af171b8db175987a71b88",
+   "size": 16529254
   },
-  "tag": "micromeasurepro-v2.5.31",
+  "tag": "micromeasurepro-v2.5.32",
   "filesRepo": "eden-0721/MicroMeasurePro"
  }
 }
