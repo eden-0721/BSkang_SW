@@ -1,19 +1,26 @@
 {
  "app": "testreport",
  "name": "시험성적서 워크벤치",
- "version": "2.4.1",
+ "version": "2.4.2",
  "date": "2026-10-08",
  "channel": "release",
- "tag": "testreport-v2.4.1",
+ "tag": "testreport-v2.4.2",
  "private": true,
  "filesRepo": "eden-0721/test_reports",
  "setup": {
-  "file": "TestReport_Setup_v2.4.1.exe",
-  "url": "https://github.com/eden-0721/test_reports/releases/download/testreport-v2.4.1/TestReport_Setup_v2.4.1.exe",
-  "sha256": "5443eb3744c3b7614be829ac9feaebf530566869561649d98c035c234e575fde",
-  "size": 3766247
+  "file": "TestReport_Setup_v2.4.2.exe",
+  "url": "https://github.com/eden-0721/test_reports/releases/download/testreport-v2.4.2/TestReport_Setup_v2.4.2.exe",
+  "sha256": "4339a757e213cf0a4f78b9d0b6c0302114b491e58119c2e6b06b397ef3f147ce",
+  "size": 3766497
  },
  "notes": [
+  {
+   "v": "2.4.2",
+   "date": "2026-10-08",
+   "items": [
+    "작업표시줄에서 로그 창과 앱 창을 한 단추로 묶습니다 (로그 창 아이콘도 프로그램 아이콘으로)"
+   ]
+  },
   {
    "v": "2.4.1",
    "date": "2026-10-08",
