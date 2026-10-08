@@ -1,23 +1,33 @@
 {
  "app": "micromeasurepro",
  "name": "MicroMeasure Pro",
- "version": "2.5.31",
+ "version": "2.5.32",
  "date": "2026-10-08",
  "channel": "release",
- "tag": "micromeasurepro-v2.5.31",
+ "tag": "micromeasurepro-v2.5.32",
  "setup": {
-  "file": "MicroMeasurePro_Setup_v2.5.31.exe",
-  "url": "https://github.com/eden-0721/MicroMeasurePro/releases/download/micromeasurepro-v2.5.31/MicroMeasurePro_Setup_v2.5.31.exe",
-  "sha256": "50f6918908e5cccd020c1f157908c2317451f574d4ad2eb9356dfe06c12842fa",
-  "size": 16531358
+  "file": "MicroMeasurePro_Setup_v2.5.32.exe",
+  "url": "https://github.com/eden-0721/MicroMeasurePro/releases/download/micromeasurepro-v2.5.32/MicroMeasurePro_Setup_v2.5.32.exe",
+  "sha256": "63496e4bac37bc8902091c8e8fb014ad2e6cb0a8856af171b8db175987a71b88",
+  "size": 16529254
  },
  "zip": {
-  "file": "MicroMeasurePro_v2.5.31.zip",
-  "url": "https://github.com/eden-0721/MicroMeasurePro/releases/download/micromeasurepro-v2.5.31/MicroMeasurePro_v2.5.31.zip",
-  "sha256": "fc46180511845710121f6bd43eac945fa1570ffcf436abbd858b9853f386764d",
-  "size": 18680823
+  "file": "MicroMeasurePro_v2.5.32.zip",
+  "url": "https://github.com/eden-0721/MicroMeasurePro/releases/download/micromeasurepro-v2.5.32/MicroMeasurePro_v2.5.32.zip",
+  "sha256": "3bd153081e78d23efb994367a9deceb16c5b68531472eca4240388170bfcfd6f",
+  "size": 18683116
  },
  "notes": [
+  {
+   "v": "2.5.32",
+   "date": "2026-10-08",
+   "title": "스튜디오: 그래프 크기 지정 · 값 읽기 카드 고정",
+   "items": [
+    "**그래프 크기**: 그래프 탭 줄 오른쪽에 폭 × 높이(px) — 넣으면 그 크기로 고정하고 창보다 크면 스크롤, PNG 도 그 크기. [창에 맞춤]으로 해제",
+    "**값 읽기**: 클릭하면 카드도 그 자리 값으로 고정 (마우스를 옮겨도 그대로), 카드 ✕ 로 지우면 다시 마우스를 따라감. 닫은 카드가 화면에 남던 문제도 고침",
+    "구간 창: 전체 요약 숫자(-35.94 · No15 #1002 등)가 오른쪽에서 잘리던 것 — 창 폭을 내용에 맞춤"
+   ]
+  },
   {
    "v": "2.5.31",
    "date": "2026-10-08",
@@ -66,31 +76,21 @@
     "[설정] 탭의 [Claude 데스크톱에 연결]·[Claude Code 에 연결] 이 설치본에서도 동작 (내장 python.exe 로 등록). 크롬은 원격 디버깅으로 보이지 않게 띄움",
     "Claude 데스크톱 확장 파일(tools/mcp/micromeasure-video.mcpb)도 설치 폴더 기본값으로"
    ]
-  },
-  {
-   "v": "2.5.27",
-   "date": "2026-10-07",
-   "title": "Claude 연결 버튼 (AI 에게 맡기기)",
-   "items": [
-    "영상 분석 [설정] 탭 **🤖 AI 에게 맡기기**: [Claude 데스크톱에 연결] (claude_desktop_config.json 에 등록, 다른 설정 유지·.bak 사본) · [Claude Code 에 연결] (claude mcp add --scope user) · 명령 복사 · 연결 상태(연결됨 ✓). 시험성적서 앱과 같은 방식",
-    "연결한 뒤 Claude 채팅에서 \"이 영상 값을 뽑아 줘\" 처럼 시키면 Claude 가 영상 열기·ROI·학습·분석·의심 확정·CSV 를 합니다 (개발 PC 전용)",
-    "Claude 데스크톱 확장 파일(.mcpb)도 만들 수 있음: tools/xs-build/mcp/build-mcpb.mjs"
-   ]
   }
  ],
- "page": "https://github.com/eden-0721/MicroMeasurePro/releases/tag/micromeasurepro-v2.5.31",
+ "page": "https://github.com/eden-0721/MicroMeasurePro/releases/tag/micromeasurepro-v2.5.32",
  "private": true,
  "filesRepo": "eden-0721/MicroMeasurePro",
  "source": "https://github.com/eden-0721/MicroMeasurePro",
  "previous": {
-  "version": "2.5.30",
+  "version": "2.5.31",
   "setup": {
-   "file": "MicroMeasurePro_Setup_v2.5.30.exe",
-   "url": "https://github.com/eden-0721/MicroMeasurePro/releases/download/micromeasurepro-v2.5.30/MicroMeasurePro_Setup_v2.5.30.exe",
-   "sha256": "ddea4baeb019f4771d197ace208d16e41b0dc88bee518867a29e14b9dc766680",
-   "size": 16523181
+   "file": "MicroMeasurePro_Setup_v2.5.31.exe",
+   "url": "https://github.com/eden-0721/MicroMeasurePro/releases/download/micromeasurepro-v2.5.31/MicroMeasurePro_Setup_v2.5.31.exe",
+   "sha256": "50f6918908e5cccd020c1f157908c2317451f574d4ad2eb9356dfe06c12842fa",
+   "size": 16531358
   },
-  "tag": "micromeasurepro-v2.5.30",
+  "tag": "micromeasurepro-v2.5.31",
   "filesRepo": "eden-0721/MicroMeasurePro"
  }
 }
