@@ -1,19 +1,27 @@
 {
  "app": "testreport",
  "name": "시험성적서 워크벤치",
- "version": "2.4.5",
+ "version": "2.4.6",
  "date": "2026-10-08",
  "channel": "release",
- "tag": "testreport-v2.4.5",
+ "tag": "testreport-v2.4.6",
  "private": true,
  "filesRepo": "eden-0721/test_reports",
  "setup": {
-  "file": "TestReport_Setup_v2.4.5.exe",
-  "url": "https://github.com/eden-0721/test_reports/releases/download/testreport-v2.4.5/TestReport_Setup_v2.4.5.exe",
-  "sha256": "0ba98ef7211faff5eefd9a8b79d59d4e4e73dba89b6c0880534515b8a2664726",
-  "size": 3768781
+  "file": "TestReport_Setup_v2.4.6.exe",
+  "url": "https://github.com/eden-0721/test_reports/releases/download/testreport-v2.4.6/TestReport_Setup_v2.4.6.exe",
+  "sha256": "41266d1c6c8cb28c6455d463f3eef3e09a7dbdade7686c4552bc1e9760388cd9",
+  "size": 3770049
  },
  "notes": [
+  {
+   "v": "2.4.6",
+   "date": "2026-10-08",
+   "items": [
+    "조판에서 옮겨 둔 문단 자리가 유지됩니다: 카드에서 글을 고치거나 [위 내용으로 조판]을 다시 눌러도 문단이 절 맨 앞으로 모이지 않고 그 자리에서 글만 바뀝니다",
+    "조판에서 지운 것을 Ctrl+Z 로 되돌릴 때 화면이 맨 위로 올라가지 않고 그 자리에서 되돌립니다 (커서도 되살린 곳에)"
+   ]
+  },
   {
    "v": "2.4.5",
    "date": "2026-10-08",
