@@ -1,19 +1,27 @@
 {
  "app": "testreport",
  "name": "시험성적서 워크벤치",
- "version": "2.4.0",
+ "version": "2.4.1",
  "date": "2026-10-08",
  "channel": "release",
- "tag": "testreport-v2.4.0",
+ "tag": "testreport-v2.4.1",
  "private": true,
  "filesRepo": "eden-0721/test_reports",
  "setup": {
-  "file": "TestReport_Setup_v2.4.0.exe",
-  "url": "https://github.com/eden-0721/test_reports/releases/download/testreport-v2.4.0/TestReport_Setup_v2.4.0.exe",
-  "sha256": "38d134738d1c359b051bab2c6badbf13455567e521d85afe74c7052d22b5a96d",
-  "size": 3765440
+  "file": "TestReport_Setup_v2.4.1.exe",
+  "url": "https://github.com/eden-0721/test_reports/releases/download/testreport-v2.4.1/TestReport_Setup_v2.4.1.exe",
+  "sha256": "5443eb3744c3b7614be829ac9feaebf530566869561649d98c035c234e575fde",
+  "size": 3766247
  },
  "notes": [
+  {
+   "v": "2.4.1",
+   "date": "2026-10-08",
+   "items": [
+    "작성 카드의 '조판에 넣은 그림·표·조판 데이터'를 접어 두고 제목을 누르면 펼칩니다 (펼친 것은 계속 펼친 채)",
+    "항목 '필요 장비'가 공통 시험 장비에 빠지던 문제: [AI 초안 생성]이 공통 장비 목록을 통째로 바꾸던 것을 더하기만 하게 고치고, 빠져 있던 항목 장비는 자동으로 채웁니다"
+   ]
+  },
   {
    "v": "2.4.0",
    "date": "2026-10-08",
