@@ -1,19 +1,26 @@
 {
  "app": "testreport",
  "name": "시험성적서 워크벤치",
- "version": "2.4.7",
+ "version": "2.4.8",
  "date": "2026-10-08",
  "channel": "release",
- "tag": "testreport-v2.4.7",
+ "tag": "testreport-v2.4.8",
  "private": true,
  "filesRepo": "eden-0721/test_reports",
  "setup": {
-  "file": "TestReport_Setup_v2.4.7.exe",
-  "url": "https://github.com/eden-0721/test_reports/releases/download/testreport-v2.4.7/TestReport_Setup_v2.4.7.exe",
-  "sha256": "7383d616a7bc15e5b68120efca9846f6ab415da37eda3c1aca81ed1b20f430a6",
-  "size": 3772876
+  "file": "TestReport_Setup_v2.4.8.exe",
+  "url": "https://github.com/eden-0721/test_reports/releases/download/testreport-v2.4.8/TestReport_Setup_v2.4.8.exe",
+  "sha256": "5acd6f41ce8cc9f086f13eb3b453c43d128fa3626d0f3645b2e8b5a0916fa32e",
+  "size": 3776251
  },
  "notes": [
+  {
+   "v": "2.4.8",
+   "date": "2026-10-08",
+   "items": [
+    "작업 로그를 data\\logs 폴더에 날짜별로 남기고(14일), 프로그램이 꺼질 때 이유(창 닫기·업데이트·로그 창 닫힘·Windows 종료 등)와 실행 시간·메모리를 기록합니다 — 저절로 꺼지는 원인을 찾기 위함"
+   ]
+  },
   {
    "v": "2.4.7",
    "date": "2026-10-08",
