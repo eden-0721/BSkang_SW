@@ -1,23 +1,37 @@
 {
  "app": "micromeasurepro",
  "name": "MicroMeasure Pro",
- "version": "2.5.29",
+ "version": "2.5.30",
  "date": "2026-10-08",
  "channel": "release",
- "tag": "micromeasurepro-v2.5.29",
+ "tag": "micromeasurepro-v2.5.30",
  "setup": {
-  "file": "MicroMeasurePro_Setup_v2.5.29.exe",
-  "url": "https://github.com/eden-0721/MicroMeasurePro/releases/download/micromeasurepro-v2.5.29/MicroMeasurePro_Setup_v2.5.29.exe",
-  "sha256": "78f99546f48137e5fe8debcb3cfe3cb36bdaed27d292bb84f328afe546a75424",
-  "size": 16520318
+  "file": "MicroMeasurePro_Setup_v2.5.30.exe",
+  "url": "https://github.com/eden-0721/MicroMeasurePro/releases/download/micromeasurepro-v2.5.30/MicroMeasurePro_Setup_v2.5.30.exe",
+  "sha256": "ddea4baeb019f4771d197ace208d16e41b0dc88bee518867a29e14b9dc766680",
+  "size": 16523181
  },
  "zip": {
-  "file": "MicroMeasurePro_v2.5.29.zip",
-  "url": "https://github.com/eden-0721/MicroMeasurePro/releases/download/micromeasurepro-v2.5.29/MicroMeasurePro_v2.5.29.zip",
-  "sha256": "932a094d0ea9e725a3e323eafcab6b01eaf33f8eaae491adc1adf2377e1c7001",
-  "size": 18664534
+  "file": "MicroMeasurePro_v2.5.30.zip",
+  "url": "https://github.com/eden-0721/MicroMeasurePro/releases/download/micromeasurepro-v2.5.30/MicroMeasurePro_v2.5.30.zip",
+  "sha256": "6a6a12b66b93003847fc62d33cfe4d7eb34ce4832dc1908e8e7f88934054789a",
+  "size": 18667954
  },
  "notes": [
+  {
+   "v": "2.5.30",
+   "date": "2026-10-08",
+   "title": "LED 판독: % 표시기·맨 오른쪽 자리·확신 오답",
+   "items": [
+    "% 표시기(100.0 과 5.8 처럼 자리 수가 바뀌는 것): 짧은 값도 오른쪽 정렬로 같은 7세그먼트 격자에 학습 — 예전엔 100.0 만 쓰여 \"약함\"이 되고 100.0 을 8.8 로 읽었음",
+    "0↔8·9↔8·5↔6 처럼 획 하나 차이가 늘 애매하던 것: 켜진 숫자 안의 꺼진 획(옆 획 번짐으로 밝음)과 빈 자리를 섞어 문턱을 잡던 것을 고침 + 문턱을 읽을 때와 같은 정렬 조건에서도 다시 잡음 → 맨 오른쪽 자리·% 표시기 100.0 확신이 크게 올라감 (0.05 → 0.6~1)",
+    "처음 몇 개로 맞춘 자리 격자가 나중 견본을 틀리게 읽으면 최근 견본으로 다시 맞춤",
+    "격자가 학습된 LED 는 글자를 늘 획 판독으로 — 모양(견본) 판독이 유령 획 때문에 100.0→88.8, 1.36→.36 을 확신하며 내던 오답을 막음 (둘이 다르면 의심으로)",
+    "**한 프레임만 보인 값은 의심**: 값이 바뀌는 순간 두 값이 겹쳐 \"8\" 처럼 보이는 프레임(1.34→1.36 사이 1.38)을 확신 오답으로 내던 것 — 프레임을 빠짐없이 읽은 결과에서 앞뒤와 모두 다른 한 프레임짜리 값을 의심으로 (매 프레임 바뀌는 표시기는 제외)",
+    "ROI 보정: 표시창 사각형이 옆의 어두운 것과 붙어 커지면 모든 프레임이 몇 px 어긋나던 문제 (기준 프레임에서 스스로 0 을 맞춤)",
+    "AI 도구: 긴 분석은 240초 뒤 \"진행 중\" 으로 돌아오고 analysis_progress 로 끝을 확인 (Claude 쪽 요청 시간 초과로 실패하던 것)"
+   ]
+  },
   {
    "v": "2.5.29",
    "date": "2026-10-08",
@@ -60,32 +74,21 @@
     "LED 색 자동 고르기를 ROI 안쪽에서 (밝은 회색 테두리 때문에 \"흰색\" 이 되던 것), 스포이드로 찍은 LED 색이 LED 색 선택에도 반영, LED 는 바탕 색 안내 안 함, 획 판독 중에는 밝기 문턱 줄을 숨김",
     "분석 준비 점검이 획 판독만 학습한 LED 를 \"학습 안 됨\" 으로 막던 것 수정"
    ]
-  },
-  {
-   "v": "2.5.25",
-   "date": "2026-10-07",
-   "title": "학습 창 입력칸 자동 채움 · 스포이드로 LED 전환",
-   "items": [
-    "**학습 창 입력칸**: 판독기가 읽은 값(학습한 뒤에는 \"다시 읽음\" 값)을 미리 넣습니다 — 잘 읽혔으면 [학습]·Enter·[모두 학습] 만 누르면 되고 틀린 칸만 고치면 됩니다. 예전엔 OCR 추정(0.35 를 39 로)이 들어가 다 다시 쳐야 했습니다. 직접 고친 값은 다시 그려도 그대로",
-    "**스포이드로 LED 전환**: 일반 숫자로 그린 표시기에 LED 색(초록·빨강·파랑·주황)을 찍으면 종류가 \"LED 숫자 (7세그먼트)\" 로 바뀌고, LED 는 찍은 색 이름으로 획을 잽니다(2색 지도는 흐린 맨 오른쪽 자리를 지워 오히려 안 보였다). 2색 지도(글자·바탕)는 일반 숫자·흰 글자용",
-    "LED 로 보이는데 일반 글꼴인 표시기는 ROI 설정에 ⚠ 안내와 [LED 로 바꾸기] 버튼",
-    "학습 때 늘 숫자가 있던 자리는 빈 칸으로 덜 읽게 (흐린 맨 오른쪽 자리가 빠져 0.31 이 0.3 으로)"
-   ]
   }
  ],
- "page": "https://github.com/eden-0721/MicroMeasurePro/releases/tag/micromeasurepro-v2.5.29",
+ "page": "https://github.com/eden-0721/MicroMeasurePro/releases/tag/micromeasurepro-v2.5.30",
  "private": true,
  "filesRepo": "eden-0721/MicroMeasurePro",
  "source": "https://github.com/eden-0721/MicroMeasurePro",
  "previous": {
-  "version": "2.5.28",
+  "version": "2.5.29",
   "setup": {
-   "file": "MicroMeasurePro_Setup_v2.5.28.exe",
-   "url": "https://github.com/eden-0721/MicroMeasurePro/releases/download/micromeasurepro-v2.5.28/MicroMeasurePro_Setup_v2.5.28.exe",
-   "sha256": "74ff245b9a0c6a964dc62903ff5d01ae2126a91f68f715a5aa3127ab0cd8c7b6",
-   "size": 16511500
+   "file": "MicroMeasurePro_Setup_v2.5.29.exe",
+   "url": "https://github.com/eden-0721/MicroMeasurePro/releases/download/micromeasurepro-v2.5.29/MicroMeasurePro_Setup_v2.5.29.exe",
+   "sha256": "78f99546f48137e5fe8debcb3cfe3cb36bdaed27d292bb84f328afe546a75424",
+   "size": 16520318
   },
-  "tag": "micromeasurepro-v2.5.28",
+  "tag": "micromeasurepro-v2.5.29",
   "filesRepo": "eden-0721/MicroMeasurePro"
  }
 }
