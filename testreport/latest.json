@@ -1,19 +1,29 @@
 {
  "app": "testreport",
  "name": "시험성적서 워크벤치",
- "version": "2.6.1",
- "date": "2026-10-08",
+ "version": "2.7.0",
+ "date": "2026-10-09",
  "channel": "release",
- "tag": "testreport-v2.6.1",
+ "tag": "testreport-v2.7.0",
  "private": true,
  "filesRepo": "eden-0721/test_reports",
  "setup": {
-  "file": "TestReport_Setup_v2.6.1.exe",
-  "url": "https://github.com/eden-0721/test_reports/releases/download/testreport-v2.6.1/TestReport_Setup_v2.6.1.exe",
-  "sha256": "03dc381d4a05321fc7d06cd8a3a924464d2b99ec1d7d1e411f6a51c9b955e11e",
-  "size": 3805300
+  "file": "TestReport_Setup_v2.7.0.exe",
+  "url": "https://github.com/eden-0721/test_reports/releases/download/testreport-v2.7.0/TestReport_Setup_v2.7.0.exe",
+  "sha256": "c97a649b53c4ac91c4760ded190c5dbb2c597d51c20ce6eebf44c9a306425a7c",
+  "size": 3810748
  },
  "notes": [
+  {
+   "v": "2.7.0",
+   "date": "2026-10-09",
+   "items": [
+    "엑셀·파워포인트처럼 맨 위 메뉴 탭(파일 · 접수 · 작성 · 조판 · 라이브러리 · 도구 · 도움말)과 그 아래 아이콘 단추 묶음(리본)으로 바꿨습니다 — 화면 곳곳에 있던 단추를 한 곳에 모았습니다",
+    "왼쪽 사이드바를 없애 문서가 넓어졌고, 로그는 아래 상태 표시줄 [로그]로 엽니다. 리본은 탭을 두 번 누르거나 Ctrl+F1 로 접습니다",
+    "조판 탭의 [넣기]는 커서가 있는 블록 바로 뒤에 넣습니다. 리본 단추를 눌러도 문서의 커서가 그대로입니다",
+    "크게 보기에서도 리본이 보여 조판 단추를 계속 쓸 수 있습니다. 작성 화면에서 조판까지 내려가면 리본이 저절로 [조판]으로 바뀝니다"
+   ]
+  },
   {
    "v": "2.6.1",
    "date": "2026-10-08",
