@@ -1,23 +1,36 @@
 {
  "app": "micromeasurepro",
  "name": "MicroMeasure Pro",
- "version": "2.5.42",
+ "version": "2.5.43",
  "date": "2026-10-09",
  "channel": "release",
- "tag": "micromeasurepro-v2.5.42",
+ "tag": "micromeasurepro-v2.5.43",
  "setup": {
-  "file": "MicroMeasurePro_Setup_v2.5.42.exe",
-  "url": "https://github.com/eden-0721/MicroMeasurePro/releases/download/micromeasurepro-v2.5.42/MicroMeasurePro_Setup_v2.5.42.exe",
-  "sha256": "78c979fefcf1316398cd787a8bd37b93cb3ea2fcb2a8a8c578e5449688327921",
-  "size": 16581139
+  "file": "MicroMeasurePro_Setup_v2.5.43.exe",
+  "url": "https://github.com/eden-0721/MicroMeasurePro/releases/download/micromeasurepro-v2.5.43/MicroMeasurePro_Setup_v2.5.43.exe",
+  "sha256": "176064edd998559605a80b7a0600de08cf21172fb4a7d7bc979c3e8c2aa669ad",
+  "size": 16588976
  },
  "zip": {
-  "file": "MicroMeasurePro_v2.5.42.zip",
-  "url": "https://github.com/eden-0721/MicroMeasurePro/releases/download/micromeasurepro-v2.5.42/MicroMeasurePro_v2.5.42.zip",
-  "sha256": "c254790b50bbe2012db2c20a6fe5499b6f3ec123de256ebead6b80da97dd44f2",
-  "size": 18749879
+  "file": "MicroMeasurePro_v2.5.43.zip",
+  "url": "https://github.com/eden-0721/MicroMeasurePro/releases/download/micromeasurepro-v2.5.43/MicroMeasurePro_v2.5.43.zip",
+  "sha256": "6883fee08cbafe166d0a8073db276b619dd38017f8ae94011446caef0e976438",
+  "size": 18759668
  },
  "notes": [
+  {
+   "v": "2.5.43",
+   "date": "2026-10-09",
+   "title": "통계 화면도 엑셀·파워포인트처럼 (리본 2단계 + 서식 창)",
+   "items": [
+    "**통계 리본**: 파일 · 홈 · 삽입 · 차트 · 분석 · 보기 탭. 자주 쓰는 가져오기·열 속성·이상치·공정능력·내보내기는 **홈** 탭에, 예전 [분석 ▾] [주석 ▾] [내보내기 ▾] [보기 ▾] 메뉴와 차트 위 두 번째 막대는 탭으로 옮김",
+    "**오른쪽 서식 창** (파워포인트처럼): 축 서식 · 그래프 나누기 · 관리도 옵션 · I-MR 규칙 · 이상치 기준 · 마스킹 목록 · 차트 스타일 · 열 속성이 차트를 가리지 않고 옆에 열림. 차트를 눌러도 닫히지 않고 ✕ 또는 Esc 로 닫음",
+    "**차트에 맞는 묶음만**: 관리도 옵션처럼 지금 차트 종류에 안 맞는 묶음은 리본에서 숨김",
+    "**같은 모양**: 비전과 같은 선 아이콘 · 버튼 24px · 모서리 4px · 글씨 12px, 차트 종류 탭은 밑줄. 통계 화면 안 색 이모지 → 선 아이콘",
+    "리본 접기(탭 두 번) · 크게 보기(보기 탭, 비전과 함께 기억) · 투어가 맞는 탭을 열어 줌",
+    "**고침**: 비전 홈 탭 [ROI 자동 ▾] 목록이 리본 아래에서 잘리던 문제"
+   ]
+  },
   {
    "v": "2.5.42",
    "date": "2026-10-09",
@@ -70,37 +83,21 @@
     "**[범례 ▾]**: 자동 · 위 · 아래 · 오른쪽 · 플롯 안 네 귀퉁이 · 숨기기 (패널마다)",
     "**범례를 끌어 옮기기**: 놓은 자리를 기억 — 다시 그려도, 저장·이미지에도 그대로"
    ]
-  },
-  {
-   "v": "2.5.37",
-   "date": "2026-10-08",
-   "title": "스튜디오 시트를 엑셀처럼 (2): 정렬 · 필터 · 찾기 · 메모 · 서식",
-   "items": [
-    "**정렬**: 오른쪽 클릭 → 오름차순/내림차순 — 행째로 옮김 (마스킹·비전 정보·메모도 같이), 빈칸은 맨 뒤, Ctrl+Z 로 되돌리기",
-    "**필터 (Ctrl+Shift+L)**: 머리글 ▾ 로 보일 값만 — 숨긴 행은 차트·통계·합계에서도 빠짐",
-    "**찾기·바꾸기 (Ctrl+F / Ctrl+H)**: 다음·이전·모두 찾기(찾은 셀 모두 고르기)·바꾸기·모두 바꾸기, 대/소문자·셀 전체·보이는 값 옵션",
-    "**메모 (Shift+F2)**: 셀에 빨간 세모, 마우스를 올리면 보임, 저장 파일에 같이",
-    "**표시 형식**: 소수 자리 늘리기/줄이기(셀별, 0~6자리), 소수 5·6자리·지수 형식, 백분율은 엑셀처럼 ×100 — 고른 형식은 시트 전체 소수 자리를 바꿔도 그대로",
-    "**붙여넣기**: Ctrl+Shift+V = 값만 (수식은 계산한 값), 행·열 바꿔 붙여넣기 · **틀 고정**: 여기서 고정 / 취소",
-    "**Ctrl+클릭 여러 범위**: 지우기·서식·행 삭제가 한꺼번에, 상태 줄 합계·평균도 고른 곳 전체",
-    "**규격 밖 빨강**: 열 규격을 벗어난 셀을 빨갛게 (보기 ▾ 에서 끔)",
-    "고침: 행을 넣거나 지우면 마스킹·비전 행 정보가 다른 행에 붙던 것 (행 정보를 행에 붙여 둠) · 되돌린 뒤 편집하면 되돌리기 기록까지 같이 바뀌던 것"
-   ]
   }
  ],
- "page": "https://github.com/eden-0721/MicroMeasurePro/releases/tag/micromeasurepro-v2.5.42",
+ "page": "https://github.com/eden-0721/MicroMeasurePro/releases/tag/micromeasurepro-v2.5.43",
  "private": true,
  "filesRepo": "eden-0721/MicroMeasurePro",
  "source": "https://github.com/eden-0721/MicroMeasurePro",
  "previous": {
-  "version": "2.5.40",
+  "version": "2.5.42",
   "setup": {
-   "file": "MicroMeasurePro_Setup_v2.5.40.exe",
-   "url": "https://github.com/eden-0721/MicroMeasurePro/releases/download/micromeasurepro-v2.5.40/MicroMeasurePro_Setup_v2.5.40.exe",
-   "sha256": "7928c81721af0d31fe7709f39f36d88c090017beea6cd7fa68500fd6206dae93",
-   "size": 16566052
+   "file": "MicroMeasurePro_Setup_v2.5.42.exe",
+   "url": "https://github.com/eden-0721/MicroMeasurePro/releases/download/micromeasurepro-v2.5.42/MicroMeasurePro_Setup_v2.5.42.exe",
+   "sha256": "78c979fefcf1316398cd787a8bd37b93cb3ea2fcb2a8a8c578e5449688327921",
+   "size": 16581139
   },
-  "tag": "micromeasurepro-v2.5.40",
+  "tag": "micromeasurepro-v2.5.42",
   "filesRepo": "eden-0721/MicroMeasurePro"
  }
 }
