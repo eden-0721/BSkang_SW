@@ -1,23 +1,34 @@
 {
  "app": "micromeasurepro",
  "name": "MicroMeasure Pro",
- "version": "2.5.45",
+ "version": "2.5.46",
  "date": "2026-10-09",
  "channel": "release",
- "tag": "micromeasurepro-v2.5.45",
+ "tag": "micromeasurepro-v2.5.46",
  "setup": {
-  "file": "MicroMeasurePro_Setup_v2.5.45.exe",
-  "url": "https://github.com/eden-0721/MicroMeasurePro/releases/download/micromeasurepro-v2.5.45/MicroMeasurePro_Setup_v2.5.45.exe",
-  "sha256": "de859790e530ba733985260fb48bf701a5c92a632b55386d9228de2e071ef7f8",
-  "size": 16592810
+  "file": "MicroMeasurePro_Setup_v2.5.46.exe",
+  "url": "https://github.com/eden-0721/MicroMeasurePro/releases/download/micromeasurepro-v2.5.46/MicroMeasurePro_Setup_v2.5.46.exe",
+  "sha256": "0464c9ceade4f61c4d21782a19651d87913db1bd41e556c8f9a5a5af8de27b84",
+  "size": 16591022
  },
  "zip": {
-  "file": "MicroMeasurePro_v2.5.45.zip",
-  "url": "https://github.com/eden-0721/MicroMeasurePro/releases/download/micromeasurepro-v2.5.45/MicroMeasurePro_v2.5.45.zip",
-  "sha256": "afbcd9fc593c29deb9e845417adee1bcbdaf5aa1992c7a5ad1d275e4d18c3224",
-  "size": 18766990
+  "file": "MicroMeasurePro_v2.5.46.zip",
+  "url": "https://github.com/eden-0721/MicroMeasurePro/releases/download/micromeasurepro-v2.5.46/MicroMeasurePro_v2.5.46.zip",
+  "sha256": "c3a62079c635467b8078e6a31d06552f4caa7408a2d8096082676ca842515e44",
+  "size": 18769318
  },
  "notes": [
+  {
+   "v": "2.5.46",
+   "date": "2026-10-09",
+   "title": "업데이트가 \"설치 중…\" 에서 멈추던 문제",
+   "items": [
+    "**원인**: Claude 데스크톱·Claude Code 의 영상 판독 연결이 켜져 있으면 이 프로그램의 내장 파이썬 파일을 붙잡고 있어, 설치가 그 파일을 덮어쓰지 못해 실패 → 옛 버전 그대로 다시 켜져 화면이 \"설치 중…\" 에서 기다리기만 했습니다",
+    "이제 설치 전에 이 프로그램 폴더의 파이썬으로 도는 연결을 잠깐 끄고 설치합니다 (Claude 를 다시 켜거나 새 대화를 열면 이어짐)",
+    "서버가 정말 꺼질 때까지 기다린 뒤 설치 (예전엔 2초 고정이라 겹칠 수 있었음)",
+    "그래도 설치가 실패하면 멈추지 않고 **이유를 창에 보여 주고** [업데이트] 를 다시 누를 수 있게"
+   ]
+  },
   {
    "v": "2.5.45",
    "date": "2026-10-09",
@@ -69,34 +80,21 @@
     "**전수 정리 (리본 밖까지)**: 왼쪽 목록 · 오른쪽 계측 패널 · 표 · 대화상자 17개 · 정렬선 막대 · 단축키 창 — 이모지 54곳 → 0 (같은 뜻의 선 아이콘), 버튼 모양 40가지 → 하나의 규칙(높이 24px · 모서리 4px · 글씨 12px, 주 버튼만 파랑, 켜짐은 옅은 파랑), 대화상자 모서리 8px · 카드 6px, 창 안 탭은 밑줄, 선택 상자·입력 칸 높이 통일, 닫기·표 삭제 버튼도 아이콘",
     "버튼 이름·기능·단축키는 그대로입니다 (자리만 옮김). 통계·영상 화면 안쪽은 다음 단계(리본 2·3단계)에서 같은 모양으로"
    ]
-  },
-  {
-   "v": "2.5.40",
-   "date": "2026-10-08",
-   "title": "되돌리기 하나로 · 엑셀에 메모·서식 · 같은 영상 두 번 막기 · 이미지 메모리",
-   "items": [
-    "**되돌리기 하나로**: 시트 안 Ctrl+Z · 위 ↶ · 시트 도구 막대 ↶ 가 같은 기록 (시트·차트 함께). 방금 친 값도 바로 되돌리고, 되돌린 뒤에도 보던 셀·스크롤 그대로. 시트가 따로 쌓던 사본 기록은 없앰 (메모리)",
-    "**빠른 입력**: 글자를 아주 빨리 치면(바코드 리더 등) 첫 글자만 남던 것",
-    "**엑셀(XLSX)에 메모·표시 형식**: 셀 메모는 엑셀 메모로, 셀마다 고른 소수 자리·%·지수·1,000 단위는 엑셀 표시 형식으로 (서버·브라우저 두 경로)",
-    "**영상 트랙**: 같은 영상을 다시 추가하면 새 트랙 대신 그 트랙으로 (같은 영상 두 트랙은 저장 파일을 서로 덮어씀), 예전 프로젝트의 중복 트랙은 열 때 하나로 · 경로의 \\ / 와 대소문자 차이도 같은 영상",
-    "**비전 메모리**: 안 보는 이미지의 원본 픽셀 사본은 비우고 다시 볼 때 만듦 — 큰 이미지 20장 기준 415MB → 82MB, 전환·그리기 속도는 그대로",
-    "속도 점검: 비전 20장 × 측정 400개 (전환 53ms · 측정 추가 43ms), 영상 10.8만 프레임 (결과 계산 133ms · 저장 148ms) — 이상 없음"
-   ]
   }
  ],
- "page": "https://github.com/eden-0721/MicroMeasurePro/releases/tag/micromeasurepro-v2.5.45",
+ "page": "https://github.com/eden-0721/MicroMeasurePro/releases/tag/micromeasurepro-v2.5.46",
  "private": true,
  "filesRepo": "eden-0721/MicroMeasurePro",
  "source": "https://github.com/eden-0721/MicroMeasurePro",
  "previous": {
-  "version": "2.5.44",
+  "version": "2.5.45",
   "setup": {
-   "file": "MicroMeasurePro_Setup_v2.5.44.exe",
-   "url": "https://github.com/eden-0721/MicroMeasurePro/releases/download/micromeasurepro-v2.5.44/MicroMeasurePro_Setup_v2.5.44.exe",
-   "sha256": "2277aa095258cb128c6bce3b9e9b91a0284eca8499838871c2c4d954904138c4",
-   "size": 16585895
+   "file": "MicroMeasurePro_Setup_v2.5.45.exe",
+   "url": "https://github.com/eden-0721/MicroMeasurePro/releases/download/micromeasurepro-v2.5.45/MicroMeasurePro_Setup_v2.5.45.exe",
+   "sha256": "de859790e530ba733985260fb48bf701a5c92a632b55386d9228de2e071ef7f8",
+   "size": 16592810
   },
-  "tag": "micromeasurepro-v2.5.44",
+  "tag": "micromeasurepro-v2.5.45",
   "filesRepo": "eden-0721/MicroMeasurePro"
  }
 }
