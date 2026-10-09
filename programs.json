@@ -177,13 +177,16 @@
    "icon": "icon-64.png",
    "kind": "web",
    "private": true,
-   "version": "1.12.1",
+   "version": "1.13.0",
    "date": "2026-10-09",
    "web": {
     "url": "https://secretary-app.badboysbk.workers.dev"
    },
    "source": "https://github.com/eden-0721/secretary-app",
-   "notes": true
+   "notes": true,
+   "zip": {
+    "url": "https://github.com/eden-0721/secretary-app/archive/refs/heads/main.zip"
+   }
   }
  ],
  "shared": [
