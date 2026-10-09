@@ -66,8 +66,8 @@
    "icon": "icon-64.png",
    "kind": "web",
    "private": true,
-   "version": "0.45.2",
-   "date": "2026-10-07",
+   "version": "0.45.3",
+   "date": "2026-10-09",
    "web": {
     "url": "https://via.badboysbk.workers.dev"
    },
