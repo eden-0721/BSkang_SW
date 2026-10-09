@@ -1,25 +1,36 @@
 {
  "app": "photo-organize",
  "name": "사진 정리",
- "version": "0.29.0",
- "date": "2026-10-07",
+ "version": "0.30.0",
+ "date": "2026-10-09",
  "channel": "release",
- "tag": "photo-organize-v0.29.0",
+ "tag": "photo-organize-v0.30.0",
  "private": true,
  "filesRepo": "eden-0721/photo_organize",
  "setup": {
-  "file": "PhotoOrganize_Setup_v0.29.0.exe",
-  "url": "https://github.com/eden-0721/photo_organize/releases/download/photo-organize-v0.29.0/PhotoOrganize_Setup_v0.29.0.exe",
-  "sha256": "ef0245422fda53c31b181bbfb07dd43a1a7bc0cc0d27474794f3b1fca8f0bf8f",
-  "size": 2884022
+  "file": "PhotoOrganize_Setup_v0.30.0.exe",
+  "url": "https://github.com/eden-0721/photo_organize/releases/download/photo-organize-v0.30.0/PhotoOrganize_Setup_v0.30.0.exe",
+  "sha256": "269b25199be75947185c2fc26731fc7245348e01b5a77bd31d3ccc2075eb7bb2",
+  "size": 2892835
  },
  "zip": {
-  "file": "PhotoOrganize_v0.29.0.zip",
-  "url": "https://github.com/eden-0721/photo_organize/releases/download/photo-organize-v0.29.0/PhotoOrganize_v0.29.0.zip",
-  "sha256": "0432077b11c95e14b10fdd3a91d992d195af7f8410517c18b19d98e8c8529531",
-  "size": 762464
+  "file": "PhotoOrganize_v0.30.0.zip",
+  "url": "https://github.com/eden-0721/photo_organize/releases/download/photo-organize-v0.30.0/PhotoOrganize_v0.30.0.zip",
+  "sha256": "a2706a42f0620283ad42fda7a3256caf139528de4de6179239fc45f4a0231316",
+  "size": 778383
  },
  "notes": [
+  {
+   "v": "0.30.0",
+   "date": "2026-10-09",
+   "title": "관리: 오래 써도 느려지지 않게, 자동으로",
+   "items": [
+    "[설정 → 관리]가 생겼어요. 쌓인 기록·작은 그림·옛 백업을 치워서 오래 써도 느려지지 않아요(한 달에 한 번 저절로)",
+    "윈도우를 켜면 프로그램도 켜지게, 정해진 요일·시각에 정리가 저절로 되게 할 수 있어요",
+    "정리 기록을 일주일에 한 번 NAS에도 백업해요",
+    "빼 둔 폴더에 무엇이 얼마나 있는지 보고, 시놀로지 휴지통이 켜져 있으면 폴더째 휴지통으로 보낼 수 있어요"
+   ]
+  },
   {
    "v": "0.29.0",
    "date": "2026-10-07",
