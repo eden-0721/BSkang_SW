@@ -1,23 +1,35 @@
 {
  "app": "micromeasurepro",
  "name": "MicroMeasure Pro",
- "version": "2.5.43",
+ "version": "2.5.44",
  "date": "2026-10-09",
  "channel": "release",
- "tag": "micromeasurepro-v2.5.43",
+ "tag": "micromeasurepro-v2.5.44",
  "setup": {
-  "file": "MicroMeasurePro_Setup_v2.5.43.exe",
-  "url": "https://github.com/eden-0721/MicroMeasurePro/releases/download/micromeasurepro-v2.5.43/MicroMeasurePro_Setup_v2.5.43.exe",
-  "sha256": "176064edd998559605a80b7a0600de08cf21172fb4a7d7bc979c3e8c2aa669ad",
-  "size": 16588976
+  "file": "MicroMeasurePro_Setup_v2.5.44.exe",
+  "url": "https://github.com/eden-0721/MicroMeasurePro/releases/download/micromeasurepro-v2.5.44/MicroMeasurePro_Setup_v2.5.44.exe",
+  "sha256": "2277aa095258cb128c6bce3b9e9b91a0284eca8499838871c2c4d954904138c4",
+  "size": 16585895
  },
  "zip": {
-  "file": "MicroMeasurePro_v2.5.43.zip",
-  "url": "https://github.com/eden-0721/MicroMeasurePro/releases/download/micromeasurepro-v2.5.43/MicroMeasurePro_v2.5.43.zip",
-  "sha256": "6883fee08cbafe166d0a8073db276b619dd38017f8ae94011446caef0e976438",
-  "size": 18759668
+  "file": "MicroMeasurePro_v2.5.44.zip",
+  "url": "https://github.com/eden-0721/MicroMeasurePro/releases/download/micromeasurepro-v2.5.44/MicroMeasurePro_v2.5.44.zip",
+  "sha256": "c43d6634c49fa3f6bb751a330b231381080851071d393d7524fd968cb645bac6",
+  "size": 18763604
  },
  "notes": [
+  {
+   "v": "2.5.44",
+   "date": "2026-10-09",
+   "title": "영상 화면도 엑셀·파워포인트처럼 (리본 3단계)",
+   "items": [
+    "**영상 리본**: 파일 · 홈 · 편집 · 보기 탭. **홈**에 자주 쓰는 순서대로 — 영상 열기 → ROI 그리기·자동 찾기·견본 학습 → 전체 분석·의심값 검수 → 스튜디오로",
+    "옆 창(ROI·결과 탭) 안에 있던 분석·검수·CSV·스튜디오로 단추를 리본에서도 바로 (옆 창이 다시 그려져도 켜짐·꺼짐이 따라감)",
+    "**편집** 탭: 구간 시작·종료, 잘라내기·분할·삭제 — 재생 막대는 재생 단추만 남아 깔끔하게. **보기** 탭: 확대·맞춤·원본 보기·시각 표시·단축키·시계열 차트·옆 창 열기",
+    "**같은 모양**: 재생 단추·영상 정보·구간·결과·설정 창의 색 이모지 → 선 아이콘, 버튼 24px · 모서리 4px, 옆 창 탭 밑줄. 리본 접기는 비전 화면과 함께",
+    "**고침**: 영상을 연 뒤 [ROI 그리기]·[패널 모서리] 단추가 꺼진 채 있던 문제 · 비전 화면의 주 버튼(적용·추가 등)이 파랑 대신 하얗게 보이던 문제(2.5.41~43)"
+   ]
+  },
   {
    "v": "2.5.43",
    "date": "2026-10-09",
@@ -73,31 +85,21 @@
     "**단축키**: 시트에서 Ctrl+Shift+R(회귀 분석)이 오른쪽 채우기까지 하던 것, 찾기 창을 닫으면 차트를 고른 뒤에도 키가 시트로 가던 것",
     "아주 긴 붙여넣기(12만 줄)에서 멈추던 것, 모두 찾기로 수천 곳을 고르면 스크롤이 느려지던 것"
    ]
-  },
-  {
-   "v": "2.5.38",
-   "date": "2026-10-08",
-   "title": "차트 제목과 범례가 겹치지 않게 · 범례 자리 고르기",
-   "items": [
-    "**제목·범례 겹침 고침**: 범례를 제목 아래·플롯 위에 두고 범례 줄 수만큼 위 여백을 늘림 (제목을 가운데로 옮긴 뒤 겹치던 것). 그래프 크기·창 폭이 바뀌어 범례 줄 수가 달라지면 다시 맞춤",
-    "**[범례 ▾]**: 자동 · 위 · 아래 · 오른쪽 · 플롯 안 네 귀퉁이 · 숨기기 (패널마다)",
-    "**범례를 끌어 옮기기**: 놓은 자리를 기억 — 다시 그려도, 저장·이미지에도 그대로"
-   ]
   }
  ],
- "page": "https://github.com/eden-0721/MicroMeasurePro/releases/tag/micromeasurepro-v2.5.43",
+ "page": "https://github.com/eden-0721/MicroMeasurePro/releases/tag/micromeasurepro-v2.5.44",
  "private": true,
  "filesRepo": "eden-0721/MicroMeasurePro",
  "source": "https://github.com/eden-0721/MicroMeasurePro",
  "previous": {
-  "version": "2.5.42",
+  "version": "2.5.43",
   "setup": {
-   "file": "MicroMeasurePro_Setup_v2.5.42.exe",
-   "url": "https://github.com/eden-0721/MicroMeasurePro/releases/download/micromeasurepro-v2.5.42/MicroMeasurePro_Setup_v2.5.42.exe",
-   "sha256": "78c979fefcf1316398cd787a8bd37b93cb3ea2fcb2a8a8c578e5449688327921",
-   "size": 16581139
+   "file": "MicroMeasurePro_Setup_v2.5.43.exe",
+   "url": "https://github.com/eden-0721/MicroMeasurePro/releases/download/micromeasurepro-v2.5.43/MicroMeasurePro_Setup_v2.5.43.exe",
+   "sha256": "176064edd998559605a80b7a0600de08cf21172fb4a7d7bc979c3e8c2aa669ad",
+   "size": 16588976
   },
-  "tag": "micromeasurepro-v2.5.42",
+  "tag": "micromeasurepro-v2.5.43",
   "filesRepo": "eden-0721/MicroMeasurePro"
  }
 }
