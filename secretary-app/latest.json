@@ -3,7 +3,7 @@
  "name": "총무의 정석",
  "description": "모임 정산 · 총무 도우미 (PWA)",
  "kind": "web",
- "version": "1.12.0",
+ "version": "1.12.1",
  "date": "2026-10-09",
  "channel": "release",
  "web": {
@@ -15,6 +15,14 @@
  "source": "https://github.com/eden-0721/secretary-app",
  "private": true,
  "notes": [
+  {
+   "v": "1.12.1",
+   "date": "2026-10-09",
+   "title": "서버를 데이터 가까이",
+   "items": [
+    "서버가 데이터베이스와 같은 지역(도쿄)에서 돌아 저장·동기화·정산 완료·공유 링크 응답이 빨라집니다"
+   ]
+  },
   {
    "v": "1.12.0",
    "date": "2026-10-09",
