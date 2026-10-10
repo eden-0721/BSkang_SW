@@ -1,19 +1,28 @@
 {
  "app": "testreport",
  "name": "시험성적서 워크벤치",
- "version": "2.9.0",
+ "version": "2.9.1",
  "date": "2026-10-10",
  "channel": "release",
- "tag": "testreport-v2.9.0",
+ "tag": "testreport-v2.9.1",
  "private": true,
  "filesRepo": "eden-0721/test_reports",
  "setup": {
-  "file": "TestReport_Setup_v2.9.0.exe",
-  "url": "https://github.com/eden-0721/test_reports/releases/download/testreport-v2.9.0/TestReport_Setup_v2.9.0.exe",
-  "sha256": "4afac5aa8f01cf96d250a1d02164aac4315f2a98513b4b013cca6d481213623f",
-  "size": 3839369
+  "file": "TestReport_Setup_v2.9.1.exe",
+  "url": "https://github.com/eden-0721/test_reports/releases/download/testreport-v2.9.1/TestReport_Setup_v2.9.1.exe",
+  "sha256": "4928c4a6fff6e7e5f033e035e021edb8af378b8ad38a78f12c402ad62f32c8e9",
+  "size": 3840107
  },
  "notes": [
+  {
+   "v": "2.9.1",
+   "date": "2026-10-10",
+   "items": [
+    "창이 좁아 '간단한 리본'이 되어도 조판의 [최종 발행]은 [더 보기]에 숨지 않고 늘 보입니다",
+    "리본 큰 단추의 두 줄 이름 아래가 조금 잘리던 것을 고쳤습니다",
+    "리본 아이콘 정리: 새 성적서·의뢰서 열기·관계도·수식·그림 여러 장·아래로·최종 발행·구글 드라이브·학습 중단·단위기호를 뜻에 맞는 그림으로"
+   ]
+  },
   {
    "v": "2.9.0",
    "date": "2026-10-10",
