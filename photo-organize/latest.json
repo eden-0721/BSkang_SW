@@ -1,25 +1,35 @@
 {
  "app": "photo-organize",
  "name": "사진 정리",
- "version": "0.32.1",
+ "version": "0.33.0",
  "date": "2026-10-10",
  "channel": "release",
- "tag": "photo-organize-v0.32.1",
+ "tag": "photo-organize-v0.33.0",
  "private": true,
  "filesRepo": "eden-0721/photo_organize",
  "setup": {
-  "file": "PhotoOrganize_Setup_v0.32.1.exe",
-  "url": "https://github.com/eden-0721/photo_organize/releases/download/photo-organize-v0.32.1/PhotoOrganize_Setup_v0.32.1.exe",
-  "sha256": "518a9cfff69d47f83a60edf8d08a54cf1252ed976ca8edcc0739cd3d4443c830",
-  "size": 2903767
+  "file": "PhotoOrganize_Setup_v0.33.0.exe",
+  "url": "https://github.com/eden-0721/photo_organize/releases/download/photo-organize-v0.33.0/PhotoOrganize_Setup_v0.33.0.exe",
+  "sha256": "e62e9f52f91d70ccfb6c5f9321da5f717406acd2deca49601babe59413c136ee",
+  "size": 2907519
  },
  "zip": {
-  "file": "PhotoOrganize_v0.32.1.zip",
-  "url": "https://github.com/eden-0721/photo_organize/releases/download/photo-organize-v0.32.1/PhotoOrganize_v0.32.1.zip",
-  "sha256": "b5f979de0f3d8ec9e50e0292e02a18bfc6125d9467fae5188be162d88df5d682",
-  "size": 792100
+  "file": "PhotoOrganize_v0.33.0.zip",
+  "url": "https://github.com/eden-0721/photo_organize/releases/download/photo-organize-v0.33.0/PhotoOrganize_v0.33.0.zip",
+  "sha256": "68ae525b61ae9fbd4db39633c377c284794ab6814151b8b7812d381c6fd39567",
+  "size": 798653
  },
  "notes": [
+  {
+   "v": "0.33.0",
+   "date": "2026-10-10",
+   "title": "빼 둔 폴더: 확인된 중복을 한 번에 휴지통으로",
+   "items": [
+    "[설정 → 관리 → 빼 둔 폴더]에서 [중복인지 확인]을 누르면, 이 프로그램이 옮긴 것이 아닌 폴더(연도 폴더 등)의 파일을 사진 폴더와 하나씩 맞춰 봐요",
+    "사진 폴더에 같은 것이 있는 파일만 [휴지통으로] 한 번에 시놀로지 휴지통으로 보내요. 사진 폴더에 없는 사진(같은 순간의 다른 장면 등)은 남겨요",
+    "[목록 받기]로 무엇을 지우고 무엇을 남기는지 이유와 함께 볼 수 있어요"
+   ]
+  },
   {
    "v": "0.32.1",
    "date": "2026-10-10",
