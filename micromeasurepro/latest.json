@@ -1,23 +1,32 @@
 {
  "app": "micromeasurepro",
  "name": "MicroMeasure Pro",
- "version": "2.5.51",
+ "version": "2.5.52",
  "date": "2026-10-10",
  "channel": "release",
- "tag": "micromeasurepro-v2.5.51",
+ "tag": "micromeasurepro-v2.5.52",
  "setup": {
-  "file": "MicroMeasurePro_Setup_v2.5.51.exe",
-  "url": "https://github.com/eden-0721/MicroMeasurePro/releases/download/micromeasurepro-v2.5.51/MicroMeasurePro_Setup_v2.5.51.exe",
-  "sha256": "85a4942fa4322323309c2ad10f7baa4d1661515e05f48612ce6c060105c96a68",
-  "size": 16315318
+  "file": "MicroMeasurePro_Setup_v2.5.52.exe",
+  "url": "https://github.com/eden-0721/MicroMeasurePro/releases/download/micromeasurepro-v2.5.52/MicroMeasurePro_Setup_v2.5.52.exe",
+  "sha256": "f85e554c79ee80b703e51d47798d99a23581f86683a46efabe33a79538994c6f",
+  "size": 16312993
  },
  "zip": {
-  "file": "MicroMeasurePro_v2.5.51.zip",
-  "url": "https://github.com/eden-0721/MicroMeasurePro/releases/download/micromeasurepro-v2.5.51/MicroMeasurePro_v2.5.51.zip",
-  "sha256": "64e95c952c0ff0fa146042607b87bf20dfd80975600ff4ec6d2c0fee82396565",
-  "size": 18244076
+  "file": "MicroMeasurePro_v2.5.52.zip",
+  "url": "https://github.com/eden-0721/MicroMeasurePro/releases/download/micromeasurepro-v2.5.52/MicroMeasurePro_v2.5.52.zip",
+  "sha256": "b76c29c43bcebf35635b86f5b8ec1c903eb060a0f2d300447486c2e3c688732e",
+  "size": 18244914
  },
  "notes": [
+  {
+   "v": "2.5.52",
+   "date": "2026-10-10",
+   "title": "영상 화면에서 가이드가 안 보이던 문제",
+   "items": [
+    "영상 화면에서 [가이드]·탭 줄 오른쪽 [?] 를 눌러도 아무것도 안 보이던 문제: 가이드 창이 숨은 비전 화면 안에 있었습니다 — 이제 영상 화면 오른쪽에 열립니다",
+    "영상 화면의 가이드는 영상 주제와 \"무엇을 하고 싶으세요?\" (숫자 읽어 기록 · 표시기 자리 잡기 · 잘못 읽을 때 · 소요 시간 · 결과 보내기 · 라이브러리 · 촬영 · Claude 에게 맡기기) 로"
+   ]
+  },
   {
    "v": "2.5.51",
    "date": "2026-10-10",
@@ -60,30 +69,21 @@
     "**구간 음영 색·진하기**: 구간 창 ⚙ → 구간 음영 — 색과 진하기(0~60%), 테두리·캡션도 같은 색, PNG·프로젝트에 저장",
     "프로그램 제거를 조용히 할 때 \"data 폴더도 지울까요?\" 창에서 멈추던 문제"
    ]
-  },
-  {
-   "v": "2.5.47",
-   "date": "2026-10-10",
-   "title": "업데이트 뒤 꺼지지 않는 서버가 쌓이던 문제",
-   "items": [
-    "업데이트가 끝나고(또는 실패하고) 다시 켜진 서버가 창을 닫아도 꺼지지 않아, 업데이트를 할 때마다 보이지 않는 서버가 하나씩 남았습니다 → 이제 처음 켤 때와 같이 창을 다 닫으면 꺼집니다",
-    "(2.5.46 원인 확인: 현장 설치 기록에 \"Python 이 파일을 쓰고 있어 닫지 못함 → 설치 중단\" — Claude 연결과 남은 서버들)"
-   ]
   }
  ],
- "page": "https://github.com/eden-0721/MicroMeasurePro/releases/tag/micromeasurepro-v2.5.51",
+ "page": "https://github.com/eden-0721/MicroMeasurePro/releases/tag/micromeasurepro-v2.5.52",
  "private": true,
  "filesRepo": "eden-0721/MicroMeasurePro",
  "source": "https://github.com/eden-0721/MicroMeasurePro",
  "previous": {
-  "version": "2.5.50",
+  "version": "2.5.51",
   "setup": {
-   "file": "MicroMeasurePro_Setup_v2.5.50.exe",
-   "url": "https://github.com/eden-0721/MicroMeasurePro/releases/download/micromeasurepro-v2.5.50/MicroMeasurePro_Setup_v2.5.50.exe",
-   "sha256": "301afe7fca93b7f87a1df0d64bbbc47c5328632c843f8faec96f2bb48397f4d6",
-   "size": 16582725
+   "file": "MicroMeasurePro_Setup_v2.5.51.exe",
+   "url": "https://github.com/eden-0721/MicroMeasurePro/releases/download/micromeasurepro-v2.5.51/MicroMeasurePro_Setup_v2.5.51.exe",
+   "sha256": "85a4942fa4322323309c2ad10f7baa4d1661515e05f48612ce6c060105c96a68",
+   "size": 16315318
   },
-  "tag": "micromeasurepro-v2.5.50",
+  "tag": "micromeasurepro-v2.5.51",
   "filesRepo": "eden-0721/MicroMeasurePro"
  }
 }
