@@ -3,7 +3,7 @@
  "name": "총무의 정석",
  "description": "모임 정산 · 총무 도우미 (PWA)",
  "kind": "web",
- "version": "1.13.1",
+ "version": "1.13.2",
  "date": "2026-10-10",
  "channel": "release",
  "web": {
@@ -15,6 +15,15 @@
  "source": "https://github.com/eden-0721/secretary-app",
  "private": true,
  "notes": [
+  {
+   "v": "1.13.2",
+   "date": "2026-10-10",
+   "title": "첫 화면 가볍게",
+   "items": [
+    "아이콘 묶음을 첫 화면 다음에 받아 처음 여는 속도가 조금 빨라졌어요",
+    "개발용: 받기·올리기 실행파일이 첫 줄에 오류 문구를 내던 것 고침"
+   ]
+  },
   {
    "v": "1.13.1",
    "date": "2026-10-10",
