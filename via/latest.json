@@ -1,10 +1,11 @@
 {
  "app": "via",
  "name": "VIA",
- "version": "0.45.3",
- "date": "2026-10-09",
- "channel": "release",
+ "description": "실제 관광 데이터로 짜는 AI 국내 여행 코스, 맛집·경비 기록까지",
  "kind": "web",
+ "version": "0.45.4",
+ "date": "2026-10-10",
+ "channel": "release",
  "web": {
   "url": "https://via.badboysbk.workers.dev"
  },
@@ -12,7 +13,18 @@
   "url": "https://github.com/eden-0721/via/archive/refs/heads/main.zip"
  },
  "source": "https://github.com/eden-0721/via",
+ "private": true,
  "notes": [
+  {
+   "v": "0.45.4",
+   "date": "2026-10-10",
+   "title": "공통 템플릿 0.36.0 받기",
+   "items": [
+    "다른 프로그램들과 같은 공통 모양(색·모서리)으로 맞췄어요 — 화면 배치는 그대로예요",
+    "여러 기록이 바뀔 때 다시 읽는 양을 줄이는 기반이 들어왔어요",
+    "그림 프롬프트·영수증 문구는 쓸 때 받아서 첫 화면이 더 가벼워졌어요"
+   ]
+  },
   {
    "v": "0.45.3",
    "date": "2026-10-09",
