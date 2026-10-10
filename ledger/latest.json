@@ -1,10 +1,11 @@
 {
  "app": "ledger",
  "name": "천안중앙교회 토요학교 회계",
- "version": "0.9.1",
- "date": "2026-09-28",
- "channel": "release",
+ "description": "종이 금전출납부를 사진으로 옮기고, 교회 양식 그대로 월 회계보고·기수 전체 보고를 만드는 토요학교 회계장부",
  "kind": "web",
+ "version": "0.9.2",
+ "date": "2026-10-10",
+ "channel": "release",
  "web": {
   "url": "https://ledger.badboysbk.workers.dev"
  },
@@ -12,7 +13,19 @@
   "url": "https://github.com/eden-0721/ledger/archive/refs/heads/main.zip"
  },
  "source": "https://github.com/eden-0721/ledger",
+ "private": true,
  "notes": [
+  {
+   "v": "0.9.2",
+   "date": "2026-10-10",
+   "title": "새 바탕 · 선 아이콘 · 여러 컴퓨터에서 작업",
+   "items": [
+    "메뉴 아이콘이 깔끔한 선 아이콘으로 바뀌었어요",
+    "재정 현황의 \"이번 달 보고서\" 바로가기가 옆 칸과 같은 모양으로 정리됐어요",
+    "모서리가 조금 덜 둥글어져 다른 프로그램들과 같은 모양이 됐어요",
+    "여러 컴퓨터를 오가며 작업할 때 받기·올리기를 한 번에 하는 도구가 들어왔어요"
+   ]
+  },
   {
    "v": "0.9.1",
    "date": "2026-09-28",
