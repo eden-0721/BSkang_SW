@@ -3,8 +3,8 @@
  "name": "VIA",
  "description": "실제 관광 데이터로 짜는 AI 국내 여행 코스, 맛집·경비 기록까지",
  "kind": "web",
- "version": "0.45.5",
- "date": "2026-10-10",
+ "version": "0.45.6",
+ "date": "2026-10-11",
  "channel": "release",
  "web": {
   "url": "https://via.badboysbk.workers.dev"
@@ -15,6 +15,14 @@
  "source": "https://github.com/eden-0721/via",
  "private": true,
  "notes": [
+  {
+   "v": "0.45.6",
+   "date": "2026-10-11",
+   "title": "서버 위치 되돌림",
+   "items": [
+    "지난 버전에서 바꾼 서버 위치가 오히려 응답을 조금 느리게 해서 원래대로 되돌렸어요"
+   ]
+  },
   {
    "v": "0.45.5",
    "date": "2026-10-10",
