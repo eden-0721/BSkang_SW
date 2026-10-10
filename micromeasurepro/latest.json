@@ -1,23 +1,32 @@
 {
  "app": "micromeasurepro",
  "name": "MicroMeasure Pro",
- "version": "2.5.50",
+ "version": "2.5.51",
  "date": "2026-10-10",
  "channel": "release",
- "tag": "micromeasurepro-v2.5.50",
+ "tag": "micromeasurepro-v2.5.51",
  "setup": {
-  "file": "MicroMeasurePro_Setup_v2.5.50.exe",
-  "url": "https://github.com/eden-0721/MicroMeasurePro/releases/download/micromeasurepro-v2.5.50/MicroMeasurePro_Setup_v2.5.50.exe",
-  "sha256": "301afe7fca93b7f87a1df0d64bbbc47c5328632c843f8faec96f2bb48397f4d6",
-  "size": 16582725
+  "file": "MicroMeasurePro_Setup_v2.5.51.exe",
+  "url": "https://github.com/eden-0721/MicroMeasurePro/releases/download/micromeasurepro-v2.5.51/MicroMeasurePro_Setup_v2.5.51.exe",
+  "sha256": "85a4942fa4322323309c2ad10f7baa4d1661515e05f48612ce6c060105c96a68",
+  "size": 16315318
  },
  "zip": {
-  "file": "MicroMeasurePro_v2.5.50.zip",
-  "url": "https://github.com/eden-0721/MicroMeasurePro/releases/download/micromeasurepro-v2.5.50/MicroMeasurePro_v2.5.50.zip",
-  "sha256": "cbfd484db1d2ae5d9ee96f80a00b2e698dada227b29a9504d7c1dc8c12130795",
-  "size": 18785029
+  "file": "MicroMeasurePro_v2.5.51.zip",
+  "url": "https://github.com/eden-0721/MicroMeasurePro/releases/download/micromeasurepro-v2.5.51/MicroMeasurePro_v2.5.51.zip",
+  "sha256": "64e95c952c0ff0fa146042607b87bf20dfd80975600ff4ec6d2c0fee82396565",
+  "size": 18244076
  },
  "notes": [
+  {
+   "v": "2.5.51",
+   "date": "2026-10-10",
+   "title": "\"수정된 설치\" 잘못된 알림 고침",
+   "items": [
+    "업데이트 뒤 탭 줄 오른쪽에 **\"수정된 설치 (50개 파일) — 복구\"** 가 잘못 뜨던 문제: 프로그램 파일은 그대로였고, 파이썬이 스스로 만들고 고쳐 쓰는 캐시 파일(__pycache__)까지 검사해서 생긴 알림이었습니다 — 이제 캐시 파일은 설치 파일·검사에서 뺍니다",
+    "같은 버전을 다시 설치하는 복구 창의 단추 이름을 \"같은 버전 다시 설치해 복구\" 로 (예전엔 \"이전 버전으로 되돌리기\" 로 보였음)"
+   ]
+  },
   {
    "v": "2.5.50",
    "date": "2026-10-10",
@@ -60,32 +69,21 @@
     "업데이트가 끝나고(또는 실패하고) 다시 켜진 서버가 창을 닫아도 꺼지지 않아, 업데이트를 할 때마다 보이지 않는 서버가 하나씩 남았습니다 → 이제 처음 켤 때와 같이 창을 다 닫으면 꺼집니다",
     "(2.5.46 원인 확인: 현장 설치 기록에 \"Python 이 파일을 쓰고 있어 닫지 못함 → 설치 중단\" — Claude 연결과 남은 서버들)"
    ]
-  },
-  {
-   "v": "2.5.46",
-   "date": "2026-10-09",
-   "title": "업데이트가 \"설치 중…\" 에서 멈추던 문제",
-   "items": [
-    "**원인**: Claude 데스크톱·Claude Code 의 영상 판독 연결이 켜져 있으면 이 프로그램의 내장 파이썬 파일을 붙잡고 있어, 설치가 그 파일을 덮어쓰지 못해 실패 → 옛 버전 그대로 다시 켜져 화면이 \"설치 중…\" 에서 기다리기만 했습니다",
-    "이제 설치 전에 이 프로그램 폴더의 파이썬으로 도는 연결을 잠깐 끄고 설치합니다 (Claude 를 다시 켜거나 새 대화를 열면 이어짐)",
-    "서버가 정말 꺼질 때까지 기다린 뒤 설치 (예전엔 2초 고정이라 겹칠 수 있었음)",
-    "그래도 설치가 실패하면 멈추지 않고 **이유를 창에 보여 주고** [업데이트] 를 다시 누를 수 있게"
-   ]
   }
  ],
- "page": "https://github.com/eden-0721/MicroMeasurePro/releases/tag/micromeasurepro-v2.5.50",
+ "page": "https://github.com/eden-0721/MicroMeasurePro/releases/tag/micromeasurepro-v2.5.51",
  "private": true,
  "filesRepo": "eden-0721/MicroMeasurePro",
  "source": "https://github.com/eden-0721/MicroMeasurePro",
  "previous": {
-  "version": "2.5.49",
+  "version": "2.5.50",
   "setup": {
-   "file": "MicroMeasurePro_Setup_v2.5.49.exe",
-   "url": "https://github.com/eden-0721/MicroMeasurePro/releases/download/micromeasurepro-v2.5.49/MicroMeasurePro_Setup_v2.5.49.exe",
-   "sha256": "9491890918085ea12cf160da1700d30b5c87d172f39c3916a65ba9f3f631aa71",
-   "size": 16583262
+   "file": "MicroMeasurePro_Setup_v2.5.50.exe",
+   "url": "https://github.com/eden-0721/MicroMeasurePro/releases/download/micromeasurepro-v2.5.50/MicroMeasurePro_Setup_v2.5.50.exe",
+   "sha256": "301afe7fca93b7f87a1df0d64bbbc47c5328632c843f8faec96f2bb48397f4d6",
+   "size": 16582725
   },
-  "tag": "micromeasurepro-v2.5.49",
+  "tag": "micromeasurepro-v2.5.50",
   "filesRepo": "eden-0721/MicroMeasurePro"
  }
 }
