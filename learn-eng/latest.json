@@ -3,7 +3,7 @@
  "name": "영어 배우기",
  "description": "아이부터 어른까지, 하루 몇 분 만화와 이야기로 배우는 가족·반 영어 공부 앱",
  "kind": "web",
- "version": "0.10.44",
+ "version": "0.10.45",
  "date": "2026-10-10",
  "channel": "release",
  "web": {
@@ -15,6 +15,14 @@
  "source": "https://github.com/eden-0721/learn_eng",
  "private": true,
  "notes": [
+  {
+   "v": "0.10.45",
+   "date": "2026-10-10",
+   "title": "화면 색 정리",
+   "items": [
+    "화면 색 설정을 공통 기준에 맞게 정리했어요. 보이는 색은 그대로예요"
+   ]
+  },
   {
    "v": "0.10.44",
    "date": "2026-10-10",
