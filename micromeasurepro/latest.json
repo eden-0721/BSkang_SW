@@ -1,23 +1,32 @@
 {
  "app": "micromeasurepro",
  "name": "MicroMeasure Pro",
- "version": "2.5.46",
- "date": "2026-10-09",
+ "version": "2.5.47",
+ "date": "2026-10-10",
  "channel": "release",
- "tag": "micromeasurepro-v2.5.46",
+ "tag": "micromeasurepro-v2.5.47",
  "setup": {
-  "file": "MicroMeasurePro_Setup_v2.5.46.exe",
-  "url": "https://github.com/eden-0721/MicroMeasurePro/releases/download/micromeasurepro-v2.5.46/MicroMeasurePro_Setup_v2.5.46.exe",
-  "sha256": "0464c9ceade4f61c4d21782a19651d87913db1bd41e556c8f9a5a5af8de27b84",
-  "size": 16591022
+  "file": "MicroMeasurePro_Setup_v2.5.47.exe",
+  "url": "https://github.com/eden-0721/MicroMeasurePro/releases/download/micromeasurepro-v2.5.47/MicroMeasurePro_Setup_v2.5.47.exe",
+  "sha256": "24c700283bb7815d21f6483ad329f96d982fb8f5e1b8c3b791b143be97f40ba5",
+  "size": 16590896
  },
  "zip": {
-  "file": "MicroMeasurePro_v2.5.46.zip",
-  "url": "https://github.com/eden-0721/MicroMeasurePro/releases/download/micromeasurepro-v2.5.46/MicroMeasurePro_v2.5.46.zip",
-  "sha256": "c3a62079c635467b8078e6a31d06552f4caa7408a2d8096082676ca842515e44",
-  "size": 18769318
+  "file": "MicroMeasurePro_v2.5.47.zip",
+  "url": "https://github.com/eden-0721/MicroMeasurePro/releases/download/micromeasurepro-v2.5.47/MicroMeasurePro_v2.5.47.zip",
+  "sha256": "ff36dea0eea39376433af75876e60e98c1e5eb24e6c90aa8ac607fb6eaad6d16",
+  "size": 18769706
  },
  "notes": [
+  {
+   "v": "2.5.47",
+   "date": "2026-10-10",
+   "title": "업데이트 뒤 꺼지지 않는 서버가 쌓이던 문제",
+   "items": [
+    "업데이트가 끝나고(또는 실패하고) 다시 켜진 서버가 창을 닫아도 꺼지지 않아, 업데이트를 할 때마다 보이지 않는 서버가 하나씩 남았습니다 → 이제 처음 켤 때와 같이 창을 다 닫으면 꺼집니다",
+    "(2.5.46 원인 확인: 현장 설치 기록에 \"Python 이 파일을 쓰고 있어 닫지 못함 → 설치 중단\" — Claude 연결과 남은 서버들)"
+   ]
+  },
   {
    "v": "2.5.46",
    "date": "2026-10-09",
@@ -65,36 +74,21 @@
     "리본 접기(탭 두 번) · 크게 보기(보기 탭, 비전과 함께 기억) · 투어가 맞는 탭을 열어 줌",
     "**고침**: 비전 홈 탭 [ROI 자동 ▾] 목록이 리본 아래에서 잘리던 문제"
    ]
-  },
-  {
-   "v": "2.5.42",
-   "date": "2026-10-09",
-   "title": "비전 화면을 엑셀·파워포인트처럼 (리본 1단계)",
-   "items": [
-    "**맨 위 제목 줄**: 프로그램 이름 · 빠른 실행(저장·실행 취소) · 비전/통계/영상 전환 · **무엇을 할까요?** (기능 이름 검색, Ctrl+K) · 크게 보기 · 현장 보기 · 새 창 · 가이드",
-    "**탭과 리본**: 파일 · 홈 · 측정 · 스케일 · 분석 · 데이터 · 보기. 자주 쓰는 것은 **홈** 탭에 큰 버튼으로, 나머지는 탭마다 묶음 이름과 함께. 예전 두 줄에 늘어서던 버튼 35개 → 홈 탭 16개 (화면 전체로 보이는 버튼 78개 → 65개)",
-    "**오피스처럼 정돈**: 색 이모지 대신 한 가지 색의 선 아이콘, 버튼은 평소 테두리 없이 (마우스를 올리면 옅은 회색), 켜진 도구만 옅은 파랑",
-    "**작업 화면이 넓어짐**: 측정 항목 줄은 홈 탭으로, 단계 표시는 맨 아래 상태 표시줄로, 이미지를 가리던 아래 도구 상자는 보기·분석 탭과 상태 표시줄(확대 − 100% +)로 — 이미지가 위아래로 더 넓고 가리는 것이 없음",
-    "**리본 접기**: 탭을 두 번 누르면 탭만 남고, 탭을 누르면 잠깐 펼쳐짐 (오피스와 같음)",
-    "**크게 보기**: 보기 탭 또는 제목 줄 A+ — 리본·메뉴·표의 글씨와 버튼을 크게 (기억됨)",
-    "**전수 정리 (리본 밖까지)**: 왼쪽 목록 · 오른쪽 계측 패널 · 표 · 대화상자 17개 · 정렬선 막대 · 단축키 창 — 이모지 54곳 → 0 (같은 뜻의 선 아이콘), 버튼 모양 40가지 → 하나의 규칙(높이 24px · 모서리 4px · 글씨 12px, 주 버튼만 파랑, 켜짐은 옅은 파랑), 대화상자 모서리 8px · 카드 6px, 창 안 탭은 밑줄, 선택 상자·입력 칸 높이 통일, 닫기·표 삭제 버튼도 아이콘",
-    "버튼 이름·기능·단축키는 그대로입니다 (자리만 옮김). 통계·영상 화면 안쪽은 다음 단계(리본 2·3단계)에서 같은 모양으로"
-   ]
   }
  ],
- "page": "https://github.com/eden-0721/MicroMeasurePro/releases/tag/micromeasurepro-v2.5.46",
+ "page": "https://github.com/eden-0721/MicroMeasurePro/releases/tag/micromeasurepro-v2.5.47",
  "private": true,
  "filesRepo": "eden-0721/MicroMeasurePro",
  "source": "https://github.com/eden-0721/MicroMeasurePro",
  "previous": {
-  "version": "2.5.45",
+  "version": "2.5.46",
   "setup": {
-   "file": "MicroMeasurePro_Setup_v2.5.45.exe",
-   "url": "https://github.com/eden-0721/MicroMeasurePro/releases/download/micromeasurepro-v2.5.45/MicroMeasurePro_Setup_v2.5.45.exe",
-   "sha256": "de859790e530ba733985260fb48bf701a5c92a632b55386d9228de2e071ef7f8",
-   "size": 16592810
+   "file": "MicroMeasurePro_Setup_v2.5.46.exe",
+   "url": "https://github.com/eden-0721/MicroMeasurePro/releases/download/micromeasurepro-v2.5.46/MicroMeasurePro_Setup_v2.5.46.exe",
+   "sha256": "0464c9ceade4f61c4d21782a19651d87913db1bd41e556c8f9a5a5af8de27b84",
+   "size": 16591022
   },
-  "tag": "micromeasurepro-v2.5.45",
+  "tag": "micromeasurepro-v2.5.46",
   "filesRepo": "eden-0721/MicroMeasurePro"
  }
 }
