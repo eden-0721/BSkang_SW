@@ -1,23 +1,35 @@
 {
  "app": "micromeasurepro",
  "name": "MicroMeasure Pro",
- "version": "2.5.47",
+ "version": "2.5.48",
  "date": "2026-10-10",
  "channel": "release",
- "tag": "micromeasurepro-v2.5.47",
+ "tag": "micromeasurepro-v2.5.48",
  "setup": {
-  "file": "MicroMeasurePro_Setup_v2.5.47.exe",
-  "url": "https://github.com/eden-0721/MicroMeasurePro/releases/download/micromeasurepro-v2.5.47/MicroMeasurePro_Setup_v2.5.47.exe",
-  "sha256": "24c700283bb7815d21f6483ad329f96d982fb8f5e1b8c3b791b143be97f40ba5",
-  "size": 16590896
+  "file": "MicroMeasurePro_Setup_v2.5.48.exe",
+  "url": "https://github.com/eden-0721/MicroMeasurePro/releases/download/micromeasurepro-v2.5.48/MicroMeasurePro_Setup_v2.5.48.exe",
+  "sha256": "d639de05d800a03b3fb9e718b764fd7524935e186aa9f19ca9eea7a16a3a6f7f",
+  "size": 16579634
  },
  "zip": {
-  "file": "MicroMeasurePro_v2.5.47.zip",
-  "url": "https://github.com/eden-0721/MicroMeasurePro/releases/download/micromeasurepro-v2.5.47/MicroMeasurePro_v2.5.47.zip",
-  "sha256": "ff36dea0eea39376433af75876e60e98c1e5eb24e6c90aa8ac607fb6eaad6d16",
-  "size": 18769706
+  "file": "MicroMeasurePro_v2.5.48.zip",
+  "url": "https://github.com/eden-0721/MicroMeasurePro/releases/download/micromeasurepro-v2.5.48/MicroMeasurePro_v2.5.48.zip",
+  "sha256": "173c899f10086f2680c4faee7c9e9c05b763f5eb56fb271975280b91c0035446",
+  "size": 18772629
  },
  "notes": [
+  {
+   "v": "2.5.48",
+   "date": "2026-10-10",
+   "title": "업데이트를 시험성적서 앱처럼 · 구간 창 접기·숨기기 · 구간 음영 색",
+   "items": [
+    "**업데이트가 창 없이 한 번에**: 검은 cmd 창이 뜨지 않고, 설치 파일이 내장 파이썬을 버전이 바뀔 때만 덮어써서 Claude 연결이 켜져 있어도 설치가 막히지 않습니다 (Claude 연결도 끊지 않음). 남아 있던 옛 서버는 정리",
+    "**구간 창이 차트 밖으로 안 나감**: 왼쪽(시트 쪽)으로 끌면 차트 가장자리에서 멈춰, 다시 잡을 수 없던 문제를 고쳤습니다",
+    "**구간 창 접기·숨기기**: 머리의 — (또는 머리 두 번 누르기)로 머리 줄만, 눈 모양으로 숨기기 → 차트 오른쪽 위 [구간 통계] · 차트 탭 [구간 창] 으로 다시 보기",
+    "**구간 음영 색·진하기**: 구간 창 ⚙ → 구간 음영 — 색과 진하기(0~60%), 테두리·캡션도 같은 색, PNG·프로젝트에 저장",
+    "프로그램 제거를 조용히 할 때 \"data 폴더도 지울까요?\" 창에서 멈추던 문제"
+   ]
+  },
   {
    "v": "2.5.47",
    "date": "2026-10-10",
@@ -61,34 +73,21 @@
     "**같은 모양**: 재생 단추·영상 정보·구간·결과·설정 창의 색 이모지 → 선 아이콘, 버튼 24px · 모서리 4px, 옆 창 탭 밑줄. 리본 접기는 비전 화면과 함께",
     "**고침**: 영상을 연 뒤 [ROI 그리기]·[패널 모서리] 단추가 꺼진 채 있던 문제 · 비전 화면의 주 버튼(적용·추가 등)이 파랑 대신 하얗게 보이던 문제(2.5.41~43)"
    ]
-  },
-  {
-   "v": "2.5.43",
-   "date": "2026-10-09",
-   "title": "통계 화면도 엑셀·파워포인트처럼 (리본 2단계 + 서식 창)",
-   "items": [
-    "**통계 리본**: 파일 · 홈 · 삽입 · 차트 · 분석 · 보기 탭. 자주 쓰는 가져오기·열 속성·이상치·공정능력·내보내기는 **홈** 탭에, 예전 [분석 ▾] [주석 ▾] [내보내기 ▾] [보기 ▾] 메뉴와 차트 위 두 번째 막대는 탭으로 옮김",
-    "**오른쪽 서식 창** (파워포인트처럼): 축 서식 · 그래프 나누기 · 관리도 옵션 · I-MR 규칙 · 이상치 기준 · 마스킹 목록 · 차트 스타일 · 열 속성이 차트를 가리지 않고 옆에 열림. 차트를 눌러도 닫히지 않고 ✕ 또는 Esc 로 닫음",
-    "**차트에 맞는 묶음만**: 관리도 옵션처럼 지금 차트 종류에 안 맞는 묶음은 리본에서 숨김",
-    "**같은 모양**: 비전과 같은 선 아이콘 · 버튼 24px · 모서리 4px · 글씨 12px, 차트 종류 탭은 밑줄. 통계 화면 안 색 이모지 → 선 아이콘",
-    "리본 접기(탭 두 번) · 크게 보기(보기 탭, 비전과 함께 기억) · 투어가 맞는 탭을 열어 줌",
-    "**고침**: 비전 홈 탭 [ROI 자동 ▾] 목록이 리본 아래에서 잘리던 문제"
-   ]
   }
  ],
- "page": "https://github.com/eden-0721/MicroMeasurePro/releases/tag/micromeasurepro-v2.5.47",
+ "page": "https://github.com/eden-0721/MicroMeasurePro/releases/tag/micromeasurepro-v2.5.48",
  "private": true,
  "filesRepo": "eden-0721/MicroMeasurePro",
  "source": "https://github.com/eden-0721/MicroMeasurePro",
  "previous": {
-  "version": "2.5.46",
+  "version": "2.5.47",
   "setup": {
-   "file": "MicroMeasurePro_Setup_v2.5.46.exe",
-   "url": "https://github.com/eden-0721/MicroMeasurePro/releases/download/micromeasurepro-v2.5.46/MicroMeasurePro_Setup_v2.5.46.exe",
-   "sha256": "0464c9ceade4f61c4d21782a19651d87913db1bd41e556c8f9a5a5af8de27b84",
-   "size": 16591022
+   "file": "MicroMeasurePro_Setup_v2.5.47.exe",
+   "url": "https://github.com/eden-0721/MicroMeasurePro/releases/download/micromeasurepro-v2.5.47/MicroMeasurePro_Setup_v2.5.47.exe",
+   "sha256": "24c700283bb7815d21f6483ad329f96d982fb8f5e1b8c3b791b143be97f40ba5",
+   "size": 16590896
   },
-  "tag": "micromeasurepro-v2.5.46",
+  "tag": "micromeasurepro-v2.5.47",
   "filesRepo": "eden-0721/MicroMeasurePro"
  }
 }
