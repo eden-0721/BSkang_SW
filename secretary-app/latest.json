@@ -3,7 +3,7 @@
  "name": "총무의 정석",
  "description": "모임 정산 · 총무 도우미 (PWA)",
  "kind": "web",
- "version": "1.14.0",
+ "version": "1.14.1",
  "date": "2026-10-10",
  "channel": "release",
  "web": {
@@ -15,6 +15,15 @@
  "source": "https://github.com/eden-0721/secretary-app",
  "private": true,
  "notes": [
+  {
+   "v": "1.14.1",
+   "date": "2026-10-10",
+   "title": "공통 모양 맞춤",
+   "items": [
+    "바탕·글자·선·좋음/주의/나쁨 색을 다른 앱들과 같은 공통 모양으로 — 앱마다 다른 건 대표색(호박색) 하나",
+    "완납·남는 돈은 초록, 미납은 빨강 그대로"
+   ]
+  },
   {
    "v": "1.14.0",
    "date": "2026-10-10",
