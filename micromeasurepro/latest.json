@@ -1,23 +1,33 @@
 {
  "app": "micromeasurepro",
  "name": "MicroMeasure Pro",
- "version": "2.5.49",
+ "version": "2.5.50",
  "date": "2026-10-10",
  "channel": "release",
- "tag": "micromeasurepro-v2.5.49",
+ "tag": "micromeasurepro-v2.5.50",
  "setup": {
-  "file": "MicroMeasurePro_Setup_v2.5.49.exe",
-  "url": "https://github.com/eden-0721/MicroMeasurePro/releases/download/micromeasurepro-v2.5.49/MicroMeasurePro_Setup_v2.5.49.exe",
-  "sha256": "9491890918085ea12cf160da1700d30b5c87d172f39c3916a65ba9f3f631aa71",
-  "size": 16583262
+  "file": "MicroMeasurePro_Setup_v2.5.50.exe",
+  "url": "https://github.com/eden-0721/MicroMeasurePro/releases/download/micromeasurepro-v2.5.50/MicroMeasurePro_Setup_v2.5.50.exe",
+  "sha256": "301afe7fca93b7f87a1df0d64bbbc47c5328632c843f8faec96f2bb48397f4d6",
+  "size": 16582725
  },
  "zip": {
-  "file": "MicroMeasurePro_v2.5.49.zip",
-  "url": "https://github.com/eden-0721/MicroMeasurePro/releases/download/micromeasurepro-v2.5.49/MicroMeasurePro_v2.5.49.zip",
-  "sha256": "979652dbbf283a7ece98a04336be864d4f5f63ddaee23322317313672cb08338",
-  "size": 18784735
+  "file": "MicroMeasurePro_v2.5.50.zip",
+  "url": "https://github.com/eden-0721/MicroMeasurePro/releases/download/micromeasurepro-v2.5.50/MicroMeasurePro_v2.5.50.zip",
+  "sha256": "cbfd484db1d2ae5d9ee96f80a00b2e698dada227b29a9504d7c1dc8c12130795",
+  "size": 18785029
  },
  "notes": [
+  {
+   "v": "2.5.50",
+   "date": "2026-10-10",
+   "title": "공통 모양 다듬기",
+   "items": [
+    "리본 큰 단추 이름이 두 줄까지 (길면 … 로 줄임) — \"비전 계측값 가져오기\" 가 묶음 이름을 가리지 않게",
+    "표·숫자 칸에 쓰던 중 리본 단추를 눌러도 값이 확정되고, 그 뒤 Ctrl+S 가 바로 저장",
+    "Ctrl+F1 리본 접기가 비전·영상 어디서든 한 번에"
+   ]
+  },
   {
    "v": "2.5.49",
    "date": "2026-10-10",
@@ -61,33 +71,21 @@
     "서버가 정말 꺼질 때까지 기다린 뒤 설치 (예전엔 2초 고정이라 겹칠 수 있었음)",
     "그래도 설치가 실패하면 멈추지 않고 **이유를 창에 보여 주고** [업데이트] 를 다시 누를 수 있게"
    ]
-  },
-  {
-   "v": "2.5.45",
-   "date": "2026-10-09",
-   "title": "작은 화면은 간단한 리본 · 가이드·투어 정리 (리본 4단계)",
-   "items": [
-    "**간단한 리본** (오피스와 같음): 창이 좁아 리본이 다 안 들어가면 저절로 **한 줄**로 — 묶음 이름은 숨고 작은 버튼은 아이콘만(마우스를 올리면 이름). 넘치는 뒤쪽 묶음은 오른쪽 끝 **더 보기**에",
-    "리본 오른쪽 끝 접기 단추 옆 단추로 간단한 리본을 직접 켜고 끔 — 비전·통계·영상이 같은 선택을 기억",
-    "**가이드 창**: 버튼·칩·검색 칸·투어 단추를 모서리 4px · 높이 24px 로, 투어 [다음] 은 다른 주 버튼과 같은 파랑",
-    "**투어**: 비전 투어(처음 선폭 재기·입자 분석·폴더 일괄)가 필요한 리본 탭을 열어 가리키도록, 안내 문장을 탭 이름으로",
-    "가이드 문장의 옛 위치(툴바·상단·하단)를 리본 탭 이름으로"
-   ]
   }
  ],
- "page": "https://github.com/eden-0721/MicroMeasurePro/releases/tag/micromeasurepro-v2.5.49",
+ "page": "https://github.com/eden-0721/MicroMeasurePro/releases/tag/micromeasurepro-v2.5.50",
  "private": true,
  "filesRepo": "eden-0721/MicroMeasurePro",
  "source": "https://github.com/eden-0721/MicroMeasurePro",
  "previous": {
-  "version": "2.5.48",
+  "version": "2.5.49",
   "setup": {
-   "file": "MicroMeasurePro_Setup_v2.5.48.exe",
-   "url": "https://github.com/eden-0721/MicroMeasurePro/releases/download/micromeasurepro-v2.5.48/MicroMeasurePro_Setup_v2.5.48.exe",
-   "sha256": "d639de05d800a03b3fb9e718b764fd7524935e186aa9f19ca9eea7a16a3a6f7f",
-   "size": 16579634
+   "file": "MicroMeasurePro_Setup_v2.5.49.exe",
+   "url": "https://github.com/eden-0721/MicroMeasurePro/releases/download/micromeasurepro-v2.5.49/MicroMeasurePro_Setup_v2.5.49.exe",
+   "sha256": "9491890918085ea12cf160da1700d30b5c87d172f39c3916a65ba9f3f631aa71",
+   "size": 16583262
   },
-  "tag": "micromeasurepro-v2.5.48",
+  "tag": "micromeasurepro-v2.5.49",
   "filesRepo": "eden-0721/MicroMeasurePro"
  }
 }
