@@ -3,8 +3,8 @@
  "name": "영어 배우기",
  "description": "아이부터 어른까지, 하루 몇 분 만화와 이야기로 배우는 가족·반 영어 공부 앱",
  "kind": "web",
- "version": "0.10.46",
- "date": "2026-10-10",
+ "version": "0.10.47",
+ "date": "2026-10-11",
  "channel": "release",
  "web": {
   "url": "https://learn-eng.badboysbk.workers.dev"
@@ -15,6 +15,15 @@
  "source": "https://github.com/eden-0721/learn_eng",
  "private": true,
  "notes": [
+  {
+   "v": "0.10.47",
+   "date": "2026-10-11",
+   "title": "만화는 움직이는 만화로",
+   "items": [
+    "만화 단계에서 바로 움직이는 만화가 나와요",
+    "영상은 진짜 영상이 붙은 단원에만 나와요. 영상이 없으면 그 단원은 만화에서 끝나요"
+   ]
+  },
   {
    "v": "0.10.46",
    "date": "2026-10-10",
