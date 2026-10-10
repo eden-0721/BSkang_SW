@@ -3,8 +3,8 @@
  "name": "API 키 금고",
  "description": "API 키를 내 기기 안에서 암호화해 보관하고 어디서든 꺼내 쓰는 개인 금고",
  "kind": "web",
- "version": "0.4.3",
- "date": "2026-10-04",
+ "version": "0.4.4",
+ "date": "2026-10-10",
  "channel": "release",
  "web": {
   "url": "https://manageapi.badboysbk.workers.dev"
@@ -15,6 +15,15 @@
  "source": "https://github.com/eden-0721/ManageAPI",
  "private": true,
  "notes": [
+  {
+   "v": "0.4.4",
+   "date": "2026-10-10",
+   "title": "공통 모양 · 여러 컴퓨터에서 작업하기",
+   "items": [
+    "다른 앱들과 같은 공통 모양(글꼴·모서리·색 체계)으로 맞췄어요",
+    "개발용: 여러 컴퓨터를 오가며 작업할 수 있게 매일 받기·올리기와 새 컴퓨터 설치 파일을 넣었어요"
+   ]
+  },
   {
    "v": "0.4.3",
    "date": "2026-10-04",
