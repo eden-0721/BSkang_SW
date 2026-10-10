@@ -100,21 +100,21 @@
    "description": "흩어진 가족 사진의 중복을 골라내고 NAS에 연도/월 폴더로 정리 (Windows · 시놀로지 NAS)",
    "icon": "icon-64.png",
    "private": true,
-   "version": "0.30.0",
-   "date": "2026-10-09",
+   "version": "0.31.0",
+   "date": "2026-10-10",
    "setup": {
-    "file": "PhotoOrganize_Setup_v0.30.0.exe",
-    "url": "https://github.com/login?return_to=/eden-0721/photo_organize/releases/download/photo-organize-v0.30.0/PhotoOrganize_Setup_v0.30.0.exe",
-    "sha256": "269b25199be75947185c2fc26731fc7245348e01b5a77bd31d3ccc2075eb7bb2",
-    "size": 2892835
+    "file": "PhotoOrganize_Setup_v0.31.0.exe",
+    "url": "https://github.com/login?return_to=/eden-0721/photo_organize/releases/download/photo-organize-v0.31.0/PhotoOrganize_Setup_v0.31.0.exe",
+    "sha256": "fdaad2d1c3a14b516ce43801cb869469e4881610c1a064e5d935a117535d44ff",
+    "size": 2902930
    },
    "zip": {
-    "file": "PhotoOrganize_v0.30.0.zip",
-    "url": "https://github.com/login?return_to=/eden-0721/photo_organize/releases/download/photo-organize-v0.30.0/PhotoOrganize_v0.30.0.zip",
-    "sha256": "a2706a42f0620283ad42fda7a3256caf139528de4de6179239fc45f4a0231316",
-    "size": 778383
+    "file": "PhotoOrganize_v0.31.0.zip",
+    "url": "https://github.com/login?return_to=/eden-0721/photo_organize/releases/download/photo-organize-v0.31.0/PhotoOrganize_v0.31.0.zip",
+    "sha256": "df51dfc796f550041812af823d3502fa336af7ea661663ef903ec86be0b1ead7",
+    "size": 790859
    },
-   "page": "https://github.com/eden-0721/photo_organize/releases/tag/photo-organize-v0.30.0",
+   "page": "https://github.com/eden-0721/photo_organize/releases/tag/photo-organize-v0.31.0",
    "source": "https://github.com/eden-0721/photo_organize"
   },
   {

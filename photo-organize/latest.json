@@ -1,25 +1,34 @@
 {
  "app": "photo-organize",
  "name": "사진 정리",
- "version": "0.30.0",
- "date": "2026-10-09",
+ "version": "0.31.0",
+ "date": "2026-10-10",
  "channel": "release",
- "tag": "photo-organize-v0.30.0",
+ "tag": "photo-organize-v0.31.0",
  "private": true,
  "filesRepo": "eden-0721/photo_organize",
  "setup": {
-  "file": "PhotoOrganize_Setup_v0.30.0.exe",
-  "url": "https://github.com/eden-0721/photo_organize/releases/download/photo-organize-v0.30.0/PhotoOrganize_Setup_v0.30.0.exe",
-  "sha256": "269b25199be75947185c2fc26731fc7245348e01b5a77bd31d3ccc2075eb7bb2",
-  "size": 2892835
+  "file": "PhotoOrganize_Setup_v0.31.0.exe",
+  "url": "https://github.com/eden-0721/photo_organize/releases/download/photo-organize-v0.31.0/PhotoOrganize_Setup_v0.31.0.exe",
+  "sha256": "fdaad2d1c3a14b516ce43801cb869469e4881610c1a064e5d935a117535d44ff",
+  "size": 2902930
  },
  "zip": {
-  "file": "PhotoOrganize_v0.30.0.zip",
-  "url": "https://github.com/eden-0721/photo_organize/releases/download/photo-organize-v0.30.0/PhotoOrganize_v0.30.0.zip",
-  "sha256": "a2706a42f0620283ad42fda7a3256caf139528de4de6179239fc45f4a0231316",
-  "size": 778383
+  "file": "PhotoOrganize_v0.31.0.zip",
+  "url": "https://github.com/eden-0721/photo_organize/releases/download/photo-organize-v0.31.0/PhotoOrganize_v0.31.0.zip",
+  "sha256": "df51dfc796f550041812af823d3502fa336af7ea661663ef903ec86be0b1ead7",
+  "size": 790859
  },
  "notes": [
+  {
+   "v": "0.31.0",
+   "date": "2026-10-10",
+   "title": "새 공통 모양",
+   "items": [
+    "다른 프로그램들과 같은 모양이 됐어요: 차분한 회색 바탕, 조금 덜 둥근 카드, 선으로 그린 아이콘",
+    "아래(또는 왼쪽) 메뉴, 바로가기, 첫 화면의 단계 표시가 그림 문자 대신 선 아이콘이에요. 어느 기기에서나 같은 모양으로 보여요"
+   ]
+  },
   {
    "v": "0.30.0",
    "date": "2026-10-09",
