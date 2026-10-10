@@ -1,23 +1,35 @@
 {
  "app": "micromeasurepro",
  "name": "MicroMeasure Pro",
- "version": "2.5.48",
+ "version": "2.5.49",
  "date": "2026-10-10",
  "channel": "release",
- "tag": "micromeasurepro-v2.5.48",
+ "tag": "micromeasurepro-v2.5.49",
  "setup": {
-  "file": "MicroMeasurePro_Setup_v2.5.48.exe",
-  "url": "https://github.com/eden-0721/MicroMeasurePro/releases/download/micromeasurepro-v2.5.48/MicroMeasurePro_Setup_v2.5.48.exe",
-  "sha256": "d639de05d800a03b3fb9e718b764fd7524935e186aa9f19ca9eea7a16a3a6f7f",
-  "size": 16579634
+  "file": "MicroMeasurePro_Setup_v2.5.49.exe",
+  "url": "https://github.com/eden-0721/MicroMeasurePro/releases/download/micromeasurepro-v2.5.49/MicroMeasurePro_Setup_v2.5.49.exe",
+  "sha256": "9491890918085ea12cf160da1700d30b5c87d172f39c3916a65ba9f3f631aa71",
+  "size": 16583262
  },
  "zip": {
-  "file": "MicroMeasurePro_v2.5.48.zip",
-  "url": "https://github.com/eden-0721/MicroMeasurePro/releases/download/micromeasurepro-v2.5.48/MicroMeasurePro_v2.5.48.zip",
-  "sha256": "173c899f10086f2680c4faee7c9e9c05b763f5eb56fb271975280b91c0035446",
-  "size": 18772629
+  "file": "MicroMeasurePro_v2.5.49.zip",
+  "url": "https://github.com/eden-0721/MicroMeasurePro/releases/download/micromeasurepro-v2.5.49/MicroMeasurePro_v2.5.49.zip",
+  "sha256": "979652dbbf283a7ece98a04336be864d4f5f63ddaee23322317313672cb08338",
+  "size": 18784735
  },
  "notes": [
+  {
+   "v": "2.5.49",
+   "date": "2026-10-10",
+   "title": "BSKang SW 공통 모양으로 — 제목 줄 없이 더 넓게",
+   "items": [
+    "**제목 줄이 없어졌습니다** (워드·엑셀처럼): 비전/통계/영상 전환 · 무엇을 할까요?(Ctrl+K) · 크게 보기 · 현장 보기 · 새 창 · 가이드 · 업데이트 알림은 리본 **탭 줄 오른쪽**으로 — 작업 화면이 그만큼 넓어졌습니다",
+    "창 제목에 지금 작업이 보입니다: \"사진 이름 — MicroMeasure Pro\", \"영상 분석 — MicroMeasure Pro\"",
+    "저장·되돌리기는 **파일**·**홈** 탭 첫 묶음과 Ctrl+S · Ctrl+Z 로",
+    "통계 화면에서도 리본 오른쪽에서 비전·영상으로 바로 전환, 업데이트 알림도 보입니다",
+    "[파일] 탭이 파란색, 회색은 다른 BSKang SW 프로그램과 같은 푸른 기 회색 — 대표색 파랑은 그대로. Ctrl+F1 = 리본 접기"
+   ]
+  },
   {
    "v": "2.5.48",
    "date": "2026-10-10",
@@ -61,33 +73,21 @@
     "**투어**: 비전 투어(처음 선폭 재기·입자 분석·폴더 일괄)가 필요한 리본 탭을 열어 가리키도록, 안내 문장을 탭 이름으로",
     "가이드 문장의 옛 위치(툴바·상단·하단)를 리본 탭 이름으로"
    ]
-  },
-  {
-   "v": "2.5.44",
-   "date": "2026-10-09",
-   "title": "영상 화면도 엑셀·파워포인트처럼 (리본 3단계)",
-   "items": [
-    "**영상 리본**: 파일 · 홈 · 편집 · 보기 탭. **홈**에 자주 쓰는 순서대로 — 영상 열기 → ROI 그리기·자동 찾기·견본 학습 → 전체 분석·의심값 검수 → 스튜디오로",
-    "옆 창(ROI·결과 탭) 안에 있던 분석·검수·CSV·스튜디오로 단추를 리본에서도 바로 (옆 창이 다시 그려져도 켜짐·꺼짐이 따라감)",
-    "**편집** 탭: 구간 시작·종료, 잘라내기·분할·삭제 — 재생 막대는 재생 단추만 남아 깔끔하게. **보기** 탭: 확대·맞춤·원본 보기·시각 표시·단축키·시계열 차트·옆 창 열기",
-    "**같은 모양**: 재생 단추·영상 정보·구간·결과·설정 창의 색 이모지 → 선 아이콘, 버튼 24px · 모서리 4px, 옆 창 탭 밑줄. 리본 접기는 비전 화면과 함께",
-    "**고침**: 영상을 연 뒤 [ROI 그리기]·[패널 모서리] 단추가 꺼진 채 있던 문제 · 비전 화면의 주 버튼(적용·추가 등)이 파랑 대신 하얗게 보이던 문제(2.5.41~43)"
-   ]
   }
  ],
- "page": "https://github.com/eden-0721/MicroMeasurePro/releases/tag/micromeasurepro-v2.5.48",
+ "page": "https://github.com/eden-0721/MicroMeasurePro/releases/tag/micromeasurepro-v2.5.49",
  "private": true,
  "filesRepo": "eden-0721/MicroMeasurePro",
  "source": "https://github.com/eden-0721/MicroMeasurePro",
  "previous": {
-  "version": "2.5.47",
+  "version": "2.5.48",
   "setup": {
-   "file": "MicroMeasurePro_Setup_v2.5.47.exe",
-   "url": "https://github.com/eden-0721/MicroMeasurePro/releases/download/micromeasurepro-v2.5.47/MicroMeasurePro_Setup_v2.5.47.exe",
-   "sha256": "24c700283bb7815d21f6483ad329f96d982fb8f5e1b8c3b791b143be97f40ba5",
-   "size": 16590896
+   "file": "MicroMeasurePro_Setup_v2.5.48.exe",
+   "url": "https://github.com/eden-0721/MicroMeasurePro/releases/download/micromeasurepro-v2.5.48/MicroMeasurePro_Setup_v2.5.48.exe",
+   "sha256": "d639de05d800a03b3fb9e718b764fd7524935e186aa9f19ca9eea7a16a3a6f7f",
+   "size": 16579634
   },
-  "tag": "micromeasurepro-v2.5.47",
+  "tag": "micromeasurepro-v2.5.48",
   "filesRepo": "eden-0721/MicroMeasurePro"
  }
 }
