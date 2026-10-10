@@ -1,19 +1,29 @@
 {
  "app": "testreport",
  "name": "시험성적서 워크벤치",
- "version": "2.8.5",
+ "version": "2.9.0",
  "date": "2026-10-10",
  "channel": "release",
- "tag": "testreport-v2.8.5",
+ "tag": "testreport-v2.9.0",
  "private": true,
  "filesRepo": "eden-0721/test_reports",
  "setup": {
-  "file": "TestReport_Setup_v2.8.5.exe",
-  "url": "https://github.com/eden-0721/test_reports/releases/download/testreport-v2.8.5/TestReport_Setup_v2.8.5.exe",
-  "sha256": "93666546b48a52661f42a16617dfd3934a35a7b7b4fb86d846e29b7963260c49",
-  "size": 3822726
+  "file": "TestReport_Setup_v2.9.0.exe",
+  "url": "https://github.com/eden-0721/test_reports/releases/download/testreport-v2.9.0/TestReport_Setup_v2.9.0.exe",
+  "sha256": "4afac5aa8f01cf96d250a1d02164aac4315f2a98513b4b013cca6d481213623f",
+  "size": 3839369
  },
  "notes": [
+  {
+   "v": "2.9.0",
+   "date": "2026-10-10",
+   "items": [
+    "리본을 BSKang SW 공통 템플릿으로 바꿨습니다 — 다른 프로그램(MicroMeasure 등)과 같은 모양·같은 동작입니다. 대표색은 지금 남색 그대로입니다",
+    "리본 아이콘을 선 아이콘으로 바꿨습니다(화면 안의 다른 아이콘은 차차 바꿉니다)",
+    "창이 좁으면 '간단한 리본' 한 줄로 바뀌고, 넘치는 묶음은 오른쪽 [더 보기]에 들어갑니다. 탭 줄 오른쪽 [간단한 리본] 단추로 직접 켜고 끌 수 있습니다",
+    "리본을 접은 채 탭을 누르면 단추가 잠깐 펼쳐졌다가 다시 접힙니다(오피스와 같음)"
+   ]
+  },
   {
    "v": "2.8.5",
    "date": "2026-10-10",
