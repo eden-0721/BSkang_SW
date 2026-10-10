@@ -3,8 +3,8 @@
  "name": "영어 배우기",
  "description": "아이부터 어른까지, 하루 몇 분 만화와 이야기로 배우는 가족·반 영어 공부 앱",
  "kind": "web",
- "version": "0.10.42",
- "date": "2026-10-09",
+ "version": "0.10.43",
+ "date": "2026-10-10",
  "channel": "release",
  "web": {
   "url": "https://learn-eng.badboysbk.workers.dev"
@@ -15,6 +15,15 @@
  "source": "https://github.com/eden-0721/learn_eng",
  "private": true,
  "notes": [
+  {
+   "v": "0.10.43",
+   "date": "2026-10-10",
+   "title": "공통 모양 업데이트",
+   "items": [
+    "앱 바탕 틀을 새 버전으로 바꿨어요. 버튼·카드 모서리가 조금 더 단정해졌어요",
+    "새 컴퓨터에서 작업을 이어가는 설치·동기화 파일을 표준으로 맞췄어요"
+   ]
+  },
   {
    "v": "0.10.42",
    "date": "2026-10-09",
