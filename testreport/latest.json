@@ -1,19 +1,29 @@
 {
  "app": "testreport",
  "name": "시험성적서 워크벤치",
- "version": "2.8.4",
- "date": "2026-10-09",
+ "version": "2.8.5",
+ "date": "2026-10-10",
  "channel": "release",
- "tag": "testreport-v2.8.4",
+ "tag": "testreport-v2.8.5",
  "private": true,
  "filesRepo": "eden-0721/test_reports",
  "setup": {
-  "file": "TestReport_Setup_v2.8.4.exe",
-  "url": "https://github.com/eden-0721/test_reports/releases/download/testreport-v2.8.4/TestReport_Setup_v2.8.4.exe",
-  "sha256": "07c0fdfc3425b91ab6e2bda0e46e5e441f66e57813b8723d48cf18283662c048",
-  "size": 3820932
+  "file": "TestReport_Setup_v2.8.5.exe",
+  "url": "https://github.com/eden-0721/test_reports/releases/download/testreport-v2.8.5/TestReport_Setup_v2.8.5.exe",
+  "sha256": "93666546b48a52661f42a16617dfd3934a35a7b7b4fb86d846e29b7963260c49",
+  "size": 3822726
  },
  "notes": [
+  {
+   "v": "2.8.5",
+   "date": "2026-10-10",
+   "items": [
+    "리본: 창이 좁거나 140% 로 키워 다 들어가지 않으면 덜 쓰는 묶음부터 아이콘만 남기고, 그래도 모자라면 묶음을 단추 하나로 접습니다(누르면 펼침). 예전에는 140% 에서 조판의 [최종 발행]이 화면 밖으로 밀렸습니다",
+    "리본 높이를 고정해 탭을 바꿀 때 아래 화면이 들썩이지 않습니다",
+    "아이콘 정리: 한 그림이 두 가지 뜻으로 쓰이던 것과 뜻이 어긋난 것 12개를 바꿨습니다(최종 발행·다른 이름으로 저장·지식 정리·복구 등)",
+    "'작성 · 발행' 단추 글자 줄바꿈, 단위기호 표시 통일, 템플릿 이름이 입력 칸처럼 보이던 것 수정"
+   ]
+  },
   {
    "v": "2.8.4",
    "date": "2026-10-09",
