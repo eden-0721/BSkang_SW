@@ -2,17 +2,28 @@
  "app": "papermaster",
  "name": "PaperMaster",
  "description": "연구자가 넣은 자료만으로 논문을 쓰는 로컬 앱 (파싱·근거 검색·집필·검증)",
- "version": "3.23.5",
- "date": "2026-10-07",
+ "version": "3.23.6",
+ "date": "2026-10-10",
  "channel": "release",
- "tag": "papermaster-v3.23.5",
+ "tag": "papermaster-v3.23.6",
  "setup": {
-  "file": "PaperMaster_Setup_v3.23.5.exe",
-  "url": "https://github.com/eden-0721/papermaster/releases/download/papermaster-v3.23.5/PaperMaster_Setup_v3.23.5.exe",
-  "sha256": "4698fb0a52ed0bfb5b74b0c34621f91b63c354e5ac3edd4802410c10b9ab6bf8",
-  "size": 25839628
+  "file": "PaperMaster_Setup_v3.23.6.exe",
+  "url": "https://github.com/eden-0721/papermaster/releases/download/papermaster-v3.23.6/PaperMaster_Setup_v3.23.6.exe",
+  "sha256": "26a018e1511f058fd127aa63959d81980de204412f72d518407d08d75e064c98",
+  "size": 25841624
  },
  "notes": [
+  {
+   "v": "3.23.6",
+   "date": "2026-10-10",
+   "title": "고침",
+   "items": [
+    "**드라이브 파일을 한꺼번에 휴지통으로 보낼 수 있던 것** — 이 PC의 데이터 폴더가 비었거나(새 설치·폴더 변경) 옛 동기화 장부가 남아 장부의 파일이 이 PC에서 한꺼번에 사라져 보이면, 드라이브에서 지우지 않고 충돌로 보고 (G-50; G-48의 반대쪽 보호)",
+    "설치본 첫 동기화: 로그인 전 첫 실행이 만든 빈 DB와 드라이브 DB가 \"처음 동기화 — 내용 다름\" 충돌로 남아 빈 연구실로 켜지던 것 → 이 PC의 DB에 연구실·소스·문서가 없으면 드라이브 것을 받음(로컬은 data/backups에 스냅샷) (G-50)",
+    "충돌 창을 열 방법이 없던 것 → 머리줄의 동기화 표시를 누르면 충돌 창이 열리고, 수백 건도 \"모두 로컬/클라우드 우선/건너뛰기\"로 한꺼번에 고를 수 있음. 경로에 `'`가 있으면 버튼이 깨지던 것 (G-50)",
+    "설치본에서 구글 로그인 방법이 보이지 않던 것 → 머리줄 동기화 표시를 누르면 원인별 안내: 인증 파일이 없으면 넣을 폴더와 [폴더 열기], 로그인이 안 됐으면 [구글 로그인](브라우저, 3분 제한). 시작 창도 인증 파일이 없으면 위치를 크게 보여 주고 확인을 받음. 화면에 없는 버튼을 가리키던 문구 수정. 상태 확인이 로그인 창을 띄우지 않음 (G-49)"
+   ]
+  },
   {
    "v": "3.23.5",
    "date": "2026-10-07",
@@ -67,29 +78,21 @@
    "items": [
     "배포 빌드가 설치 파일을 올린 뒤 다운로드 페이지 갱신에서 멈추던 것 (아이콘을 만들 Pillow가 빌드 컴퓨터에 없음 → 아이콘을 저장소에 둠). 처음 켤 때 휠 없는 패키지(bibtexparser)를 설치하지 못하던 것 (A-12)"
    ]
-  },
-  {
-   "v": "3.23.1",
-   "date": "2026-10-06",
-   "title": "변경",
-   "items": [
-    "배포 빌드 시간 16분 → 약 5분: 검사·시험은 `publish.bat`이 개발 PC에서 이미 돌리므로 GitHub에서 되풀이하지 않고, 처음 켤 때 받는 패키지는 한 번만 받아(캐시) 설치 시험에 그대로 씀 (A-12)"
-   ]
   }
  ],
- "page": "https://github.com/eden-0721/papermaster/releases/tag/papermaster-v3.23.5",
+ "page": "https://github.com/eden-0721/papermaster/releases/tag/papermaster-v3.23.6",
  "private": true,
  "filesRepo": "eden-0721/papermaster",
  "source": "https://github.com/eden-0721/papermaster",
  "previous": {
-  "version": "3.23.4",
+  "version": "3.23.5",
   "setup": {
-   "file": "PaperMaster_Setup_v3.23.4.exe",
-   "url": "https://github.com/eden-0721/papermaster/releases/download/papermaster-v3.23.4/PaperMaster_Setup_v3.23.4.exe",
-   "sha256": "d3cc6803eb8e0b0c86e0386262fb0e088251b92e9e8027dfc2edb95cb454ea7f",
-   "size": 25832870
+   "file": "PaperMaster_Setup_v3.23.5.exe",
+   "url": "https://github.com/eden-0721/papermaster/releases/download/papermaster-v3.23.5/PaperMaster_Setup_v3.23.5.exe",
+   "sha256": "4698fb0a52ed0bfb5b74b0c34621f91b63c354e5ac3edd4802410c10b9ab6bf8",
+   "size": 25839628
   },
-  "tag": "papermaster-v3.23.4",
+  "tag": "papermaster-v3.23.5",
   "filesRepo": "eden-0721/papermaster"
  }
 }
