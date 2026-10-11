@@ -9,8 +9,8 @@
  "web": {
   "url": "https://ledger.badboysbk.workers.dev"
  },
- "zip": {
-  "url": "https://github.com/eden-0721/ledger/archive/refs/heads/main.zip"
+ "install": {
+  "file": "install.bat"
  },
  "source": "https://github.com/eden-0721/ledger",
  "private": true,
