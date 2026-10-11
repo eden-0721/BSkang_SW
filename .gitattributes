@@ -1,0 +1,2 @@
+# install.bat은 받은 그대로(CRLF) 둔다 — cmd는 LF면 라벨을 못 찾는다
+*.bat -text

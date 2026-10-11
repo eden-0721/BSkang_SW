@@ -12,11 +12,11 @@
    "web": {
     "url": "https://manageapi.badboysbk.workers.dev"
    },
-   "zip": {
-    "url": "https://github.com/eden-0721/ManageAPI/archive/refs/heads/main.zip"
-   },
    "source": "https://github.com/eden-0721/ManageAPI",
-   "notes": true
+   "notes": true,
+   "install": {
+    "file": "install.bat"
+   }
   },
   {
    "app": "micromeasurepro",
@@ -71,11 +71,11 @@
    "web": {
     "url": "https://via.badboysbk.workers.dev"
    },
-   "zip": {
-    "url": "https://github.com/eden-0721/via/archive/refs/heads/main.zip"
-   },
    "source": "https://github.com/eden-0721/via",
-   "notes": true
+   "notes": true,
+   "install": {
+    "file": "install.bat"
+   }
   },
   {
    "app": "TechConsultHelper",
@@ -146,11 +146,11 @@
    "web": {
     "url": "https://learn-eng.badboysbk.workers.dev"
    },
-   "zip": {
-    "url": "https://github.com/eden-0721/learn_eng/archive/refs/heads/main.zip"
-   },
    "source": "https://github.com/eden-0721/learn_eng",
-   "notes": true
+   "notes": true,
+   "install": {
+    "file": "install.bat"
+   }
   },
   {
    "app": "ledger",
@@ -164,11 +164,11 @@
    "web": {
     "url": "https://ledger.badboysbk.workers.dev"
    },
-   "zip": {
-    "url": "https://github.com/eden-0721/ledger/archive/refs/heads/main.zip"
-   },
    "source": "https://github.com/eden-0721/ledger",
-   "notes": true
+   "notes": true,
+   "install": {
+    "file": "install.bat"
+   }
   },
   {
    "app": "secretary-app",
@@ -184,8 +184,8 @@
    },
    "source": "https://github.com/eden-0721/secretary-app",
    "notes": true,
-   "zip": {
-    "url": "https://github.com/eden-0721/secretary-app/archive/refs/heads/main.zip"
+   "install": {
+    "file": "install.bat"
    }
   }
  ],

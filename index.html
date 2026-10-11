@@ -50,7 +50,8 @@
   <div class="note">
     <b>처음 설치할 때 Windows 경고가 뜨면</b> "추가 정보 → 실행"을 누르세요 (서명이 없는 설치 파일이라 처음 한 번 뜹니다).<br>
     설치에는 관리자 권한이 필요 없습니다. 제거는 Windows "앱 및 기능"에서 할 수 있습니다.<br>
-    🔒 표시가 있는 파일은 GitHub 에 로그인한 허용 계정만 받을 수 있습니다. 현장 PC 는 프로그램 안에 "업데이트 키"를 넣어 두면 그 뒤로는 자동으로 받습니다.
+    🔒 표시가 있는 파일은 GitHub 에 로그인한 허용 계정만 받을 수 있습니다. 현장 PC 는 프로그램 안에 "업데이트 키"를 넣어 두면 그 뒤로는 자동으로 받습니다.<br>
+    <b>웹 앱을 새 컴퓨터에서 고칠 때</b>는 "🛠 개발 PC 설치"(install.bat)를 앱 폴더를 둘 곳(예: C:\BSKang_SW\dev)에 놓고 두 번 클릭하세요. GitHub와 연결된 저장소를 받고(그때 GitHub 로그인), 그다음부터는 그 폴더의 sync.bat 으로 받기·올리기를 합니다.
   </div>
   <script>
     (async () => {
@@ -69,7 +70,9 @@
               ${p.kind === 'web' ? `<a class="btn" href="${esc(p.web && p.web.url)}" target="_blank" rel="noopener" title="가입된 사람만 쓸 수 있습니다">🌐 앱 열기</a>`
                 : `<a class="btn" href="${esc(p.setup && p.setup.url)}" title="${p.private ? 'GitHub 로그인이 필요합니다 (허용된 계정만)' : ''}">⬇ 설치 파일${p.private ? ' 🔒' : ''}</a>`}
               ${p.prerelease && p.prerelease.url ? `<a class="btn sub" href="${esc(p.prerelease.url)}" title="시험판 — 개발자 확인용${p.private ? ' (GitHub 로그인 필요)' : ''}">⬇ 시험판 v${esc(p.prerelease.version)}${p.private ? ' 🔒' : ''}</a>` : ''}
-              ${p.zip ? `<a class="btn sub" href="${esc(p.zip.url)}">${p.kind === 'web' ? '소스 ZIP (최신)' : 'ZIP (설치 없이)'}${p.private ? ' 🔒' : ''}</a>` : ''}
+              ${p.kind === 'web'
+                ? (p.install ? `<a class="btn sub" href="${esc(p.app)}/${esc(p.install.file)}" download="${esc(p.app)}-install.bat" title="새 컴퓨터에서 이 앱을 고칠 때: 앱 폴더를 둘 곳에 놓고 두 번 클릭하면 GitHub와 연결된 저장소를 받습니다 (그때 GitHub 로그인)">🛠 개발 PC 설치</a>` : '')
+                : (p.zip ? `<a class="btn sub" href="${esc(p.zip.url)}">ZIP (설치 없이)${p.private ? ' 🔒' : ''}</a>` : '')}
               ${p.source ? `<a class="btn sub" href="${esc(p.source)}" target="_blank" rel="noopener" title="소스 저장소 (비공개 — 개발자만)">개발용 소스 🔒</a>` : ''}
               ${(p.extras || []).map(x => `<a class="btn sub" href="${esc(x.url)}" title="${esc(x.title || '')}">${esc(x.label)}${x.private ? ' 🔒' : ''}</a>`).join('')}
               <button class="btn sub" type="button" data-notes="${esc(p.app)}">바뀐 내용 보기 ▾</button>
