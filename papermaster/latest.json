@@ -2,17 +2,29 @@
  "app": "papermaster",
  "name": "PaperMaster",
  "description": "연구자가 넣은 자료만으로 논문을 쓰는 로컬 앱 (파싱·근거 검색·집필·검증)",
- "version": "3.23.7",
+ "version": "3.24.0",
  "date": "2026-10-11",
  "channel": "release",
- "tag": "papermaster-v3.23.7",
+ "tag": "papermaster-v3.24.0",
  "setup": {
-  "file": "PaperMaster_Setup_v3.23.7.exe",
-  "url": "https://github.com/eden-0721/papermaster/releases/download/papermaster-v3.23.7/PaperMaster_Setup_v3.23.7.exe",
-  "sha256": "9226ee593666a67f9c37fc8e29d818af5f291ef9f4861b720fc45d9b5919c69b",
-  "size": 25841896
+  "file": "PaperMaster_Setup_v3.24.0.exe",
+  "url": "https://github.com/eden-0721/papermaster/releases/download/papermaster-v3.24.0/PaperMaster_Setup_v3.24.0.exe",
+  "sha256": "ff0cf94d6de80e6cde1ed58362757fde181fe358002646a5bde41f3fd7a6b3a5",
+  "size": 25865303
  },
  "notes": [
+  {
+   "v": "3.24.0",
+   "date": "2026-10-11",
+   "title": "추가 · 변경",
+   "items": [
+    "**리본 GUI** — BSKang SW 프로그램(MicroMeasure Pro · 시험성적서 …)과 같은 틀: 리본 → 작업 영역 → 상태 표시줄. 탭 [파일]·홈·자료·분석·집필·보기, 탭 줄 오른쪽에 연구실 이름·진행 중인 작업·업데이트 배지·드라이브 동기화·크게 보기·사용 설명(F1)·간단한 리본·접기(Ctrl+F1). 창 제목 \"연구실 — PaperMaster\". 리본 단추는 이미 있는 기능만 부르고, 연구실을 고르기 전에는 연구실이 필요한 단추가 꺼진다 (A-15)",
+    "**설정에 계정·동기화 / 프로그램 / 백업·진단** — 구글 계정·로그인·로그아웃·인증 파일 폴더·동기화 상태, 버전·업데이트 확인·업데이트 키·설치 상태, 백업 위치·최근 백업·지금 전체 백업·로그 폴더·진단 정보 복사(비밀값 제외) (A-15)",
+    "[파일] → 업데이트 확인(설치본은 선반을 지금 다시 봄), [분석] → 문헌 찾기(지형도의 문헌 찾기 탭) (A-15)",
+    "**공통 모양** — 템플릿 0.8.0 → 0.36.5(공통 모양 look.css·선 아이콘), 데스크톱 부품 0.1.2(리본·기본 부품). 색·모서리·글꼴이 다른 BSKang SW 프로그램과 같고, 대표색은 템플릿 추천 보라 #6B46A8(app.css 한 줄로 바꿈). 인용 표시 버건디는 그대로 (A-15)",
+    "오른쪽 '도구' 목록은 리본과 같은 명령이라 숨기고 가운데를 넓혔다. AI 엔진 표시·AI 사용량·버전 줄은 아래 상태 표시줄로 (A-15)"
+   ]
+  },
   {
    "v": "3.23.7",
    "date": "2026-10-11",
@@ -61,38 +73,21 @@
     "서버 요청이 실패해도 \"완료\"라고 알리던 화면 6곳(연구실 이름 변경·삭제, 소스 역할 변경·일괄 삭제·복사, 논문 이름 변경·삭제) → 실패·부분 성공을 그대로 표시",
     "영문 번역 중 연결이 끊기면 전체 화면 모달에서 나올 수 없던 것 → 닫기 버튼·오류 줄 표시. 소스 상세의 그림·용어 탭이 두 번 그려지던 것"
    ]
-  },
-  {
-   "v": "3.23.3",
-   "date": "2026-10-06",
-   "title": "고침",
-   "items": [
-    "**드라이브 동기화가 로컬 데이터를 통째로 지울 수 있던 것** — 드라이브 폴더가 비어 보이거나(이름 변경·다른 계정) 장부의 20% 넘는 파일이 한꺼번에 사라져 보이면 지우지 않고 충돌로 보고 (G-48)",
-    "동기화가 업데이트 키(`update.key`)·구글 인증 파일·설치 파일·제거 프로그램까지 드라이브에 올리던 것 → 제외. 한 PC에서 누른 업데이트가 다른 PC에서 저절로 설치되던 경로도 막음 (G-48)",
-    "연구실 삭제가 줄·파일을 완전히 지워 다른 연구실에 복사한 소스의 그림까지 사라지던 것 → 목록에서 숨기는 소프트 삭제 (G-48)",
-    "AI 서지 추출(자동·수동)이 사용자가 넣은 제목·저자를 덮어쓰던 것 → 빈 칸만 채움. 추출 실패를 \"동기화 완료\"로 알리던 것 (G-48)",
-    "소스 분석에서 AI 호출이 전부 실패해도 \"완료\"로 표시되던 것 → 실패/부분 실패를 그대로 표시. 글자를 하나도 못 읽은 PDF를 \"완료\"로 두던 것 → 실패 (G-48)",
-    "그림 재분석 실패 문구가 캡션으로 저장되던 것, 인용 대조에서 AI 응답 모양이 다르면 검사 전체가 죽던 것 (G-48)",
-    "보안: 복사·삭제 API의 연구실 ID 검증, 올린 그림 파일 이름 검증, API 키가 오류 문구·주소에 섞여 화면에 보일 수 있던 것, Anthropic 모델 목록이 키가 틀려도 성공처럼 보이던 것 (G-48)",
-    "화면: PDF 조각·외부 검색 결과·AI 답변·참고문헌·수식 원문을 그대로 넣어 스크립트가 실행될 수 있던 곳 7군데, 지형도·상태 점검 창이 뷰어를 안 연 상태에서 열리지 않던 것 (G-48)",
-    "설치본: 패키지 받기가 실패하면 쓰던 패키지로 되돌려 켜지게(전에는 지운 뒤 실패하면 켜지지 않음), DB 경로에 `%`·`#`이 있으면 서버가 안 켜지던 것, 동기화·백업이 같은 임시 파일을 써서 겹치던 것 (G-48)",
-    "개발: `publish.bat`이 push 실패 시 로컬 태그를 남기던 것, `check.py`가 pyflakes 없이 조용히 통과하던 것, 빌드 선반 갱신의 commit 실패가 가려지던 것 (G-48)"
-   ]
   }
  ],
- "page": "https://github.com/eden-0721/papermaster/releases/tag/papermaster-v3.23.7",
+ "page": "https://github.com/eden-0721/papermaster/releases/tag/papermaster-v3.24.0",
  "private": true,
  "filesRepo": "eden-0721/papermaster",
  "source": "https://github.com/eden-0721/papermaster",
  "previous": {
-  "version": "3.23.6",
+  "version": "3.23.7",
   "setup": {
-   "file": "PaperMaster_Setup_v3.23.6.exe",
-   "url": "https://github.com/eden-0721/papermaster/releases/download/papermaster-v3.23.6/PaperMaster_Setup_v3.23.6.exe",
-   "sha256": "26a018e1511f058fd127aa63959d81980de204412f72d518407d08d75e064c98",
-   "size": 25841624
+   "file": "PaperMaster_Setup_v3.23.7.exe",
+   "url": "https://github.com/eden-0721/papermaster/releases/download/papermaster-v3.23.7/PaperMaster_Setup_v3.23.7.exe",
+   "sha256": "9226ee593666a67f9c37fc8e29d818af5f291ef9f4861b720fc45d9b5919c69b",
+   "size": 25841896
   },
-  "tag": "papermaster-v3.23.6",
+  "tag": "papermaster-v3.23.7",
   "filesRepo": "eden-0721/papermaster"
  }
 }
