@@ -47,15 +47,15 @@
    "name": "PaperMaster",
    "description": "연구자가 넣은 자료만으로 논문을 쓰는 로컬 앱 (파싱·근거 검색·집필·검증)",
    "icon": "icon-64.png",
-   "version": "3.23.6",
-   "date": "2026-10-10",
+   "version": "3.23.7",
+   "date": "2026-10-11",
    "setup": {
-    "file": "PaperMaster_Setup_v3.23.6.exe",
-    "url": "https://github.com/eden-0721/papermaster/releases/download/papermaster-v3.23.6/PaperMaster_Setup_v3.23.6.exe",
-    "sha256": "26a018e1511f058fd127aa63959d81980de204412f72d518407d08d75e064c98",
-    "size": 25841624
+    "file": "PaperMaster_Setup_v3.23.7.exe",
+    "url": "https://github.com/eden-0721/papermaster/releases/download/papermaster-v3.23.7/PaperMaster_Setup_v3.23.7.exe",
+    "sha256": "9226ee593666a67f9c37fc8e29d818af5f291ef9f4861b720fc45d9b5919c69b",
+    "size": 25841896
    },
-   "page": "https://github.com/eden-0721/papermaster/releases/tag/papermaster-v3.23.6",
+   "page": "https://github.com/eden-0721/papermaster/releases/tag/papermaster-v3.23.7",
    "private": true,
    "source": "https://github.com/eden-0721/papermaster"
   },

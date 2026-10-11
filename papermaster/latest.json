@@ -2,17 +2,25 @@
  "app": "papermaster",
  "name": "PaperMaster",
  "description": "연구자가 넣은 자료만으로 논문을 쓰는 로컬 앱 (파싱·근거 검색·집필·검증)",
- "version": "3.23.6",
- "date": "2026-10-10",
+ "version": "3.23.7",
+ "date": "2026-10-11",
  "channel": "release",
- "tag": "papermaster-v3.23.6",
+ "tag": "papermaster-v3.23.7",
  "setup": {
-  "file": "PaperMaster_Setup_v3.23.6.exe",
-  "url": "https://github.com/eden-0721/papermaster/releases/download/papermaster-v3.23.6/PaperMaster_Setup_v3.23.6.exe",
-  "sha256": "26a018e1511f058fd127aa63959d81980de204412f72d518407d08d75e064c98",
-  "size": 25841624
+  "file": "PaperMaster_Setup_v3.23.7.exe",
+  "url": "https://github.com/eden-0721/papermaster/releases/download/papermaster-v3.23.7/PaperMaster_Setup_v3.23.7.exe",
+  "sha256": "9226ee593666a67f9c37fc8e29d818af5f291ef9f4861b720fc45d9b5919c69b",
+  "size": 25841896
  },
  "notes": [
+  {
+   "v": "3.23.7",
+   "date": "2026-10-11",
+   "title": "고침",
+   "items": [
+    "충돌을 해결해도 머리줄이 최대 5분 동안 \"⚠️ 충돌\"을 계속 보이고, 눌러도 충돌 창 대신 옛 상태(충돌 1)가 뜨던 것 → 동기화가 끝나거나 충돌 목록을 새로 비교하면 머리줄 상태를 바로 새로 씀 (G-51)"
+   ]
+  },
   {
    "v": "3.23.6",
    "date": "2026-10-10",
@@ -70,29 +78,21 @@
     "설치본: 패키지 받기가 실패하면 쓰던 패키지로 되돌려 켜지게(전에는 지운 뒤 실패하면 켜지지 않음), DB 경로에 `%`·`#`이 있으면 서버가 안 켜지던 것, 동기화·백업이 같은 임시 파일을 써서 겹치던 것 (G-48)",
     "개발: `publish.bat`이 push 실패 시 로컬 태그를 남기던 것, `check.py`가 pyflakes 없이 조용히 통과하던 것, 빌드 선반 갱신의 commit 실패가 가려지던 것 (G-48)"
    ]
-  },
-  {
-   "v": "3.23.2",
-   "date": "2026-10-06",
-   "title": "고침",
-   "items": [
-    "배포 빌드가 설치 파일을 올린 뒤 다운로드 페이지 갱신에서 멈추던 것 (아이콘을 만들 Pillow가 빌드 컴퓨터에 없음 → 아이콘을 저장소에 둠). 처음 켤 때 휠 없는 패키지(bibtexparser)를 설치하지 못하던 것 (A-12)"
-   ]
   }
  ],
- "page": "https://github.com/eden-0721/papermaster/releases/tag/papermaster-v3.23.6",
+ "page": "https://github.com/eden-0721/papermaster/releases/tag/papermaster-v3.23.7",
  "private": true,
  "filesRepo": "eden-0721/papermaster",
  "source": "https://github.com/eden-0721/papermaster",
  "previous": {
-  "version": "3.23.5",
+  "version": "3.23.6",
   "setup": {
-   "file": "PaperMaster_Setup_v3.23.5.exe",
-   "url": "https://github.com/eden-0721/papermaster/releases/download/papermaster-v3.23.5/PaperMaster_Setup_v3.23.5.exe",
-   "sha256": "4698fb0a52ed0bfb5b74b0c34621f91b63c354e5ac3edd4802410c10b9ab6bf8",
-   "size": 25839628
+   "file": "PaperMaster_Setup_v3.23.6.exe",
+   "url": "https://github.com/eden-0721/papermaster/releases/download/papermaster-v3.23.6/PaperMaster_Setup_v3.23.6.exe",
+   "sha256": "26a018e1511f058fd127aa63959d81980de204412f72d518407d08d75e064c98",
+   "size": 25841624
   },
-  "tag": "papermaster-v3.23.5",
+  "tag": "papermaster-v3.23.6",
   "filesRepo": "eden-0721/papermaster"
  }
 }
