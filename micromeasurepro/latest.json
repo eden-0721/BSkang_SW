@@ -1,23 +1,36 @@
 {
  "app": "micromeasurepro",
  "name": "MicroMeasure Pro",
- "version": "2.5.52",
- "date": "2026-10-10",
+ "version": "2.5.53",
+ "date": "2026-10-12",
  "channel": "release",
- "tag": "micromeasurepro-v2.5.52",
+ "tag": "micromeasurepro-v2.5.53",
  "setup": {
-  "file": "MicroMeasurePro_Setup_v2.5.52.exe",
-  "url": "https://github.com/eden-0721/MicroMeasurePro/releases/download/micromeasurepro-v2.5.52/MicroMeasurePro_Setup_v2.5.52.exe",
-  "sha256": "f85e554c79ee80b703e51d47798d99a23581f86683a46efabe33a79538994c6f",
-  "size": 16312993
+  "file": "MicroMeasurePro_Setup_v2.5.53.exe",
+  "url": "https://github.com/eden-0721/MicroMeasurePro/releases/download/micromeasurepro-v2.5.53/MicroMeasurePro_Setup_v2.5.53.exe",
+  "sha256": "75bc4ec58d6f67e7164002bb3885bce0213711355e5d1b1a1b67fef8a18094bf",
+  "size": 16323673
  },
  "zip": {
-  "file": "MicroMeasurePro_v2.5.52.zip",
-  "url": "https://github.com/eden-0721/MicroMeasurePro/releases/download/micromeasurepro-v2.5.52/MicroMeasurePro_v2.5.52.zip",
-  "sha256": "b76c29c43bcebf35635b86f5b8ec1c903eb060a0f2d300447486c2e3c688732e",
-  "size": 18244914
+  "file": "MicroMeasurePro_v2.5.53.zip",
+  "url": "https://github.com/eden-0721/MicroMeasurePro/releases/download/micromeasurepro-v2.5.53/MicroMeasurePro_v2.5.53.zip",
+  "sha256": "2787bd3c2cac2a55d44d652d08f16a63c7e5927c232cdd541c6c29e8680a6067",
+  "size": 18257913
  },
  "notes": [
+  {
+   "v": "2.5.53",
+   "date": "2026-10-12",
+   "title": "BSKang SW 세 프로그램 같은 배치 — [도구]·[도움말] 탭 · 환경 설정 한 곳",
+   "items": [
+    "**탭이 시험성적서·논문 작성 프로그램과 같은 자리로**: 맨 왼쪽 [파일], 맨 오른쪽 **[도구]·[도움말]**. 비전 = 파일·홈·측정·분석·보기·도구·도움말 (스케일 묶음은 [측정] 맨 앞, 보내기·성적서는 [파일], 레시피·일괄은 [도구]). 통계 = 파일·홈·차트·분석·보기·도구·도움말 (주석은 [차트] 끝 **주석 ▾**). 영상 = 파일·홈·편집·보기·도구·도움말",
+    "**[파일]**: 새로 만들기(Ctrl+N) · 열기 · 저장 · 다른 이름으로 저장 — 비전의 새로 만들기는 열린 이미지를 모두 닫고 처음부터(알림의 [실행 취소]로 되돌림), 통계는 시트·차트 비우기",
+    "**환경 설정** ([도구] 탭) — 흩어져 있던 설정을 한 곳에: AI(Claude 데스크톱·Claude Code 연결) → 백업(내 설정 내보내기·불러오기) → 프로그램 업데이트(업데이트 확인·업데이트 키·상태 점검·복구) → 프로그램 고유(정밀 설정·영상 판독 설정·화면 배율)",
+    "**화면 배율** ([도구] 탭): 100% · 120%(크게 보기) · 140%(현장 보기)",
+    "**[도움말]**: 사용 설명서(F1) · 단축키 · 따라하기 투어 · 새 버전 확인 · 버전 정보 — 업데이트는 탭 줄 오른쪽 알림 · [도움말] 새 버전 확인 · 환경 설정 세 곳 어디서나 같은 창",
+    "탭 줄 오른쪽 순서도 세 프로그램이 같게: 작업 이름 · 업데이트 알림 · 비전/통계/영상 · 무엇을 할까요? · 버전 | 크게 보기 · 간단한 리본 · 접기 (현장 보기·새 창은 [보기] 탭, 가이드는 [도움말] 탭)"
+   ]
+  },
   {
    "v": "2.5.52",
    "date": "2026-10-10",
@@ -57,33 +70,21 @@
     "통계 화면에서도 리본 오른쪽에서 비전·영상으로 바로 전환, 업데이트 알림도 보입니다",
     "[파일] 탭이 파란색, 회색은 다른 BSKang SW 프로그램과 같은 푸른 기 회색 — 대표색 파랑은 그대로. Ctrl+F1 = 리본 접기"
    ]
-  },
-  {
-   "v": "2.5.48",
-   "date": "2026-10-10",
-   "title": "업데이트를 시험성적서 앱처럼 · 구간 창 접기·숨기기 · 구간 음영 색",
-   "items": [
-    "**업데이트가 창 없이 한 번에**: 검은 cmd 창이 뜨지 않고, 설치 파일이 내장 파이썬을 버전이 바뀔 때만 덮어써서 Claude 연결이 켜져 있어도 설치가 막히지 않습니다 (Claude 연결도 끊지 않음). 남아 있던 옛 서버는 정리",
-    "**구간 창이 차트 밖으로 안 나감**: 왼쪽(시트 쪽)으로 끌면 차트 가장자리에서 멈춰, 다시 잡을 수 없던 문제를 고쳤습니다",
-    "**구간 창 접기·숨기기**: 머리의 — (또는 머리 두 번 누르기)로 머리 줄만, 눈 모양으로 숨기기 → 차트 오른쪽 위 [구간 통계] · 차트 탭 [구간 창] 으로 다시 보기",
-    "**구간 음영 색·진하기**: 구간 창 ⚙ → 구간 음영 — 색과 진하기(0~60%), 테두리·캡션도 같은 색, PNG·프로젝트에 저장",
-    "프로그램 제거를 조용히 할 때 \"data 폴더도 지울까요?\" 창에서 멈추던 문제"
-   ]
   }
  ],
- "page": "https://github.com/eden-0721/MicroMeasurePro/releases/tag/micromeasurepro-v2.5.52",
+ "page": "https://github.com/eden-0721/MicroMeasurePro/releases/tag/micromeasurepro-v2.5.53",
  "private": true,
  "filesRepo": "eden-0721/MicroMeasurePro",
  "source": "https://github.com/eden-0721/MicroMeasurePro",
  "previous": {
-  "version": "2.5.51",
+  "version": "2.5.52",
   "setup": {
-   "file": "MicroMeasurePro_Setup_v2.5.51.exe",
-   "url": "https://github.com/eden-0721/MicroMeasurePro/releases/download/micromeasurepro-v2.5.51/MicroMeasurePro_Setup_v2.5.51.exe",
-   "sha256": "85a4942fa4322323309c2ad10f7baa4d1661515e05f48612ce6c060105c96a68",
-   "size": 16315318
+   "file": "MicroMeasurePro_Setup_v2.5.52.exe",
+   "url": "https://github.com/eden-0721/MicroMeasurePro/releases/download/micromeasurepro-v2.5.52/MicroMeasurePro_Setup_v2.5.52.exe",
+   "sha256": "f85e554c79ee80b703e51d47798d99a23581f86683a46efabe33a79538994c6f",
+   "size": 16312993
   },
-  "tag": "micromeasurepro-v2.5.51",
+  "tag": "micromeasurepro-v2.5.52",
   "filesRepo": "eden-0721/MicroMeasurePro"
  }
 }
