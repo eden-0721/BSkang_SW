@@ -1,19 +1,27 @@
 {
  "app": "testreport",
  "name": "시험성적서 워크벤치",
- "version": "2.10.2",
- "date": "2026-10-12",
+ "version": "2.10.3",
+ "date": "2026-10-13",
  "channel": "release",
- "tag": "testreport-v2.10.2",
+ "tag": "testreport-v2.10.3",
  "private": true,
  "filesRepo": "eden-0721/test_reports",
  "setup": {
-  "file": "TestReport_Setup_v2.10.2.exe",
-  "url": "https://github.com/eden-0721/test_reports/releases/download/testreport-v2.10.2/TestReport_Setup_v2.10.2.exe",
-  "sha256": "2f204010aa65348ab87a11a9f247dbaeed3bbbf87694299a3c34f7e6530d768b",
-  "size": 3891321
+  "file": "TestReport_Setup_v2.10.3.exe",
+  "url": "https://github.com/eden-0721/test_reports/releases/download/testreport-v2.10.3/TestReport_Setup_v2.10.3.exe",
+  "sha256": "ab77919aa655696f419015008a8bd29fd93bbf52e130e011f17deed2ea5e90ca",
+  "size": 3893681
  },
  "notes": [
+  {
+   "v": "2.10.3",
+   "date": "2026-10-13",
+   "items": [
+    "[파일] › 최근 작업 목록이 다른 BSKang SW 프로그램과 같은 모양(템플릿 부품)이 되었습니다 — 작업을 열거나 저장하면 오르고, 고르면 바로 그 작업으로 (×로 빼기, 모두 지우기). 전체 목록은 맨 위 작업 이름 ▾ 그대로",
+    "[파일] 새 성적서·열기·저장과 화면 배율 단추가 공통 배치 규칙 표시를 갖춰 세 프로그램 점검을 같이 통과합니다"
+   ]
+  },
   {
    "v": "2.10.2",
    "date": "2026-10-12",
