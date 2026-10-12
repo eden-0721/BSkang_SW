@@ -1,19 +1,28 @@
 {
  "app": "testreport",
  "name": "시험성적서 워크벤치",
- "version": "2.10.0",
+ "version": "2.10.1",
  "date": "2026-10-12",
  "channel": "release",
- "tag": "testreport-v2.10.0",
+ "tag": "testreport-v2.10.1",
  "private": true,
  "filesRepo": "eden-0721/test_reports",
  "setup": {
-  "file": "TestReport_Setup_v2.10.0.exe",
-  "url": "https://github.com/eden-0721/test_reports/releases/download/testreport-v2.10.0/TestReport_Setup_v2.10.0.exe",
-  "sha256": "8a7cffde9d311251efd6e88f34bff6c909fa97169e5ecd8af45b9361559fc105",
-  "size": 3885458
+  "file": "TestReport_Setup_v2.10.1.exe",
+  "url": "https://github.com/eden-0721/test_reports/releases/download/testreport-v2.10.1/TestReport_Setup_v2.10.1.exe",
+  "sha256": "0280d798ea87e7660f7499bd037f7cf0825c5e73a508e40a731ff373aa07980f",
+  "size": 3886004
  },
  "notes": [
+  {
+   "v": "2.10.1",
+   "date": "2026-10-12",
+   "items": [
+    "다른 BSKang SW 프로그램(비전분석·논문 작성)과 메뉴 자리를 맞췄습니다: [도구] 앞이 환경 설정·화면 배율, [도움말]에 사용 설명서·단축키·새 버전 확인·버전 정보, 맨 위 오른쪽은 작업 이름·동기화·업데이트·단위기호·버전 순서",
+    "환경 설정 카드 순서: AI → 구글 드라이브 → 백업 → 프로그램 업데이트 → 채팅 연결·성적서 번호",
+    "F1 = 사용 설명서"
+   ]
+  },
   {
    "v": "2.10.0",
    "date": "2026-10-12",
