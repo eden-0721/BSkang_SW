@@ -1,19 +1,27 @@
 {
  "app": "testreport",
  "name": "시험성적서 워크벤치",
- "version": "2.10.1",
+ "version": "2.10.2",
  "date": "2026-10-12",
  "channel": "release",
- "tag": "testreport-v2.10.1",
+ "tag": "testreport-v2.10.2",
  "private": true,
  "filesRepo": "eden-0721/test_reports",
  "setup": {
-  "file": "TestReport_Setup_v2.10.1.exe",
-  "url": "https://github.com/eden-0721/test_reports/releases/download/testreport-v2.10.1/TestReport_Setup_v2.10.1.exe",
-  "sha256": "0280d798ea87e7660f7499bd037f7cf0825c5e73a508e40a731ff373aa07980f",
-  "size": 3886004
+  "file": "TestReport_Setup_v2.10.2.exe",
+  "url": "https://github.com/eden-0721/test_reports/releases/download/testreport-v2.10.2/TestReport_Setup_v2.10.2.exe",
+  "sha256": "2f204010aa65348ab87a11a9f247dbaeed3bbbf87694299a3c34f7e6530d768b",
+  "size": 3891321
  },
  "notes": [
+  {
+   "v": "2.10.2",
+   "date": "2026-10-12",
+   "items": [
+    "명령 찾기(Ctrl+K, 탭 줄 오른쪽): 리본 단추·환경 설정 카드를 이름으로 찾아 바로 실행 — 다른 BSKang SW 프로그램과 같은 부품",
+    "공통 템플릿 0.2.0: 맨 위 오른쪽 자리(작업 이름 · 동기화 · 업데이트 · 단위기호 · 명령 찾기 · 버전)와 [도구]·[도움말] 공통 단추가 세 프로그램에서 같습니다. 구글 드라이브에 로그인하지 않았을 때는 동기화 자리에 \"로컬 전용\""
+   ]
+  },
   {
    "v": "2.10.1",
    "date": "2026-10-12",
