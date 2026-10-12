@@ -1,23 +1,33 @@
 {
  "app": "micromeasurepro",
  "name": "MicroMeasure Pro",
- "version": "2.5.53",
+ "version": "2.5.54",
  "date": "2026-10-12",
  "channel": "release",
- "tag": "micromeasurepro-v2.5.53",
+ "tag": "micromeasurepro-v2.5.54",
  "setup": {
-  "file": "MicroMeasurePro_Setup_v2.5.53.exe",
-  "url": "https://github.com/eden-0721/MicroMeasurePro/releases/download/micromeasurepro-v2.5.53/MicroMeasurePro_Setup_v2.5.53.exe",
-  "sha256": "75bc4ec58d6f67e7164002bb3885bce0213711355e5d1b1a1b67fef8a18094bf",
-  "size": 16323673
+  "file": "MicroMeasurePro_Setup_v2.5.54.exe",
+  "url": "https://github.com/eden-0721/MicroMeasurePro/releases/download/micromeasurepro-v2.5.54/MicroMeasurePro_Setup_v2.5.54.exe",
+  "sha256": "4569909e1b41b7e58de85cfea9daacfc3f4ca94ff853b396c954c17933cbb492",
+  "size": 16323723
  },
  "zip": {
-  "file": "MicroMeasurePro_v2.5.53.zip",
-  "url": "https://github.com/eden-0721/MicroMeasurePro/releases/download/micromeasurepro-v2.5.53/MicroMeasurePro_v2.5.53.zip",
-  "sha256": "2787bd3c2cac2a55d44d652d08f16a63c7e5927c232cdd541c6c29e8680a6067",
-  "size": 18257913
+  "file": "MicroMeasurePro_v2.5.54.zip",
+  "url": "https://github.com/eden-0721/MicroMeasurePro/releases/download/micromeasurepro-v2.5.54/MicroMeasurePro_v2.5.54.zip",
+  "sha256": "168e4ca9f63f4269d06b072d53aaddd767042b5dcc603ad8160fb5b44d72de31",
+  "size": 18259362
  },
  "notes": [
+  {
+   "v": "2.5.54",
+   "date": "2026-10-12",
+   "title": "화면 배율 140% · 영상 새로 만들기",
+   "items": [
+    "**화면 배율** ([도구] 탭 · 환경 설정): 100% · 120%(크게 보기) · **140%(아주 크게 — 글자 17px · 단추 34px)** — BSKang SW 세 프로그램이 같은 단계. 고른 배율은 기억되고 통계 화면도 같이 바뀝니다. 대비까지 높이는 현장 보기는 [보기] 탭에 따로",
+    "**영상 [파일] 새로 만들기** (Ctrl+N): 지금 영상을 닫고 처음 화면으로 (ROI·판독 결과는 영상 옆 .mmvid 에 남아 다시 열면 그대로)",
+    "[파일] 새로 만들기·열기·저장이 세 화면 모두 같은 자리"
+   ]
+  },
   {
    "v": "2.5.53",
    "date": "2026-10-12",
@@ -58,33 +68,21 @@
     "표·숫자 칸에 쓰던 중 리본 단추를 눌러도 값이 확정되고, 그 뒤 Ctrl+S 가 바로 저장",
     "Ctrl+F1 리본 접기가 비전·영상 어디서든 한 번에"
    ]
-  },
-  {
-   "v": "2.5.49",
-   "date": "2026-10-10",
-   "title": "BSKang SW 공통 모양으로 — 제목 줄 없이 더 넓게",
-   "items": [
-    "**제목 줄이 없어졌습니다** (워드·엑셀처럼): 비전/통계/영상 전환 · 무엇을 할까요?(Ctrl+K) · 크게 보기 · 현장 보기 · 새 창 · 가이드 · 업데이트 알림은 리본 **탭 줄 오른쪽**으로 — 작업 화면이 그만큼 넓어졌습니다",
-    "창 제목에 지금 작업이 보입니다: \"사진 이름 — MicroMeasure Pro\", \"영상 분석 — MicroMeasure Pro\"",
-    "저장·되돌리기는 **파일**·**홈** 탭 첫 묶음과 Ctrl+S · Ctrl+Z 로",
-    "통계 화면에서도 리본 오른쪽에서 비전·영상으로 바로 전환, 업데이트 알림도 보입니다",
-    "[파일] 탭이 파란색, 회색은 다른 BSKang SW 프로그램과 같은 푸른 기 회색 — 대표색 파랑은 그대로. Ctrl+F1 = 리본 접기"
-   ]
   }
  ],
- "page": "https://github.com/eden-0721/MicroMeasurePro/releases/tag/micromeasurepro-v2.5.53",
+ "page": "https://github.com/eden-0721/MicroMeasurePro/releases/tag/micromeasurepro-v2.5.54",
  "private": true,
  "filesRepo": "eden-0721/MicroMeasurePro",
  "source": "https://github.com/eden-0721/MicroMeasurePro",
  "previous": {
-  "version": "2.5.52",
+  "version": "2.5.53",
   "setup": {
-   "file": "MicroMeasurePro_Setup_v2.5.52.exe",
-   "url": "https://github.com/eden-0721/MicroMeasurePro/releases/download/micromeasurepro-v2.5.52/MicroMeasurePro_Setup_v2.5.52.exe",
-   "sha256": "f85e554c79ee80b703e51d47798d99a23581f86683a46efabe33a79538994c6f",
-   "size": 16312993
+   "file": "MicroMeasurePro_Setup_v2.5.53.exe",
+   "url": "https://github.com/eden-0721/MicroMeasurePro/releases/download/micromeasurepro-v2.5.53/MicroMeasurePro_Setup_v2.5.53.exe",
+   "sha256": "75bc4ec58d6f67e7164002bb3885bce0213711355e5d1b1a1b67fef8a18094bf",
+   "size": 16323673
   },
-  "tag": "micromeasurepro-v2.5.52",
+  "tag": "micromeasurepro-v2.5.53",
   "filesRepo": "eden-0721/MicroMeasurePro"
  }
 }
