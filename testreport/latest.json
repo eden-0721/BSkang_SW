@@ -1,19 +1,27 @@
 {
  "app": "testreport",
  "name": "시험성적서 워크벤치",
- "version": "2.11.0",
+ "version": "2.11.1",
  "date": "2026-10-13",
  "channel": "release",
- "tag": "testreport-v2.11.0",
+ "tag": "testreport-v2.11.1",
  "private": true,
  "filesRepo": "eden-0721/test_reports",
  "setup": {
-  "file": "TestReport_Setup_v2.11.0.exe",
-  "url": "https://github.com/eden-0721/test_reports/releases/download/testreport-v2.11.0/TestReport_Setup_v2.11.0.exe",
-  "sha256": "cf68255e6dedeb0a7f72ca31f0d2a55ae90a1e8b466b2132b793589356de43c1",
-  "size": 3900034
+  "file": "TestReport_Setup_v2.11.1.exe",
+  "url": "https://github.com/eden-0721/test_reports/releases/download/testreport-v2.11.1/TestReport_Setup_v2.11.1.exe",
+  "sha256": "4cb9904835e685b140e4f3c674d9ea201486479c3de23987c422f229a05e576e",
+  "size": 3900444
  },
  "notes": [
+  {
+   "v": "2.11.1",
+   "date": "2026-10-13",
+   "items": [
+    "맨 위 '작업 이름 ▾'를 눌러도 작업 메뉴(저장·열기·최근 작업 목록)가 뜨지 않던 v2.11.0 버그 수정 — 작업·자동 저장본·드라이브 동기화는 그대로였고 메뉴만 숨은 자리에 있었습니다",
+    "동기화 상태 글귀가 공통 어휘로: 올릴 변경 N · 새 내용 N"
+   ]
+  },
   {
    "v": "2.11.0",
    "date": "2026-10-13",
