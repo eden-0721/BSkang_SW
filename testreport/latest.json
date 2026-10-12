@@ -1,19 +1,30 @@
 {
  "app": "testreport",
  "name": "시험성적서 워크벤치",
- "version": "2.9.1",
- "date": "2026-10-10",
+ "version": "2.9.2",
+ "date": "2026-10-12",
  "channel": "release",
- "tag": "testreport-v2.9.1",
+ "tag": "testreport-v2.9.2",
  "private": true,
  "filesRepo": "eden-0721/test_reports",
  "setup": {
-  "file": "TestReport_Setup_v2.9.1.exe",
-  "url": "https://github.com/eden-0721/test_reports/releases/download/testreport-v2.9.1/TestReport_Setup_v2.9.1.exe",
-  "sha256": "4928c4a6fff6e7e5f033e035e021edb8af378b8ad38a78f12c402ad62f32c8e9",
-  "size": 3840107
+  "file": "TestReport_Setup_v2.9.2.exe",
+  "url": "https://github.com/eden-0721/test_reports/releases/download/testreport-v2.9.2/TestReport_Setup_v2.9.2.exe",
+  "sha256": "f0e45d5a6dbbc1d1deb8fd2676dd0637493a715434038096ce3e5814293ffe80",
+  "size": 3847265
  },
  "notes": [
+  {
+   "v": "2.9.2",
+   "date": "2026-10-12",
+   "items": [
+    "표가 두세 줄로 넘어가지 않게: 칸마다 글자가 한 줄에 들어가는 폭을 재서 열 너비를 정하고, 글자가 많으면 표를 본문 폭(180 mm)까지 넓힙니다",
+    "머리글에 같은 단위가 여러 번(예: '평균 (℃)', '최고 (℃)') 있으면 표 오른쪽 위에 '< 단위 : ℃ >' 로 올립니다",
+    "표 캡션이 표 바로 아래에 붙고(빈 줄 없음) 표와 같은 쪽에 놓이며, 칸 글에 들여쓰기·내어쓰기가 들어가지 않습니다. 숫자가 두 줄로 꺾이던 열도 고쳤습니다",
+    "그림 여러 장(나란히)이 본문 폭에 꽉 차게 들어갑니다 — 예전엔 본문 폭을 150 mm 로 잘못 알고 작게 넣었습니다",
+    "요약표·결과 줄: 기준이 소수 둘째 자리면 결과도 그 자리로, 그렇게 쓸 수 없으면 기준 자리를 늘려 둘을 같게 합니다. 요약표 결과의 줄바꿈이 사라지거나 첫·마지막 줄이 눌리던 것도 고쳤습니다"
+   ]
+  },
   {
    "v": "2.9.1",
    "date": "2026-10-10",
