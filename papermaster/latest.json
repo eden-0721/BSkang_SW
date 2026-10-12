@@ -2,17 +2,25 @@
  "app": "papermaster",
  "name": "PaperMaster",
  "description": "연구자가 넣은 자료만으로 논문을 쓰는 로컬 앱 (파싱·근거 검색·집필·검증)",
- "version": "3.26.0",
+ "version": "3.27.0",
  "date": "2026-10-12",
  "channel": "release",
- "tag": "papermaster-v3.26.0",
+ "tag": "papermaster-v3.27.0",
  "setup": {
-  "file": "PaperMaster_Setup_v3.26.0.exe",
-  "url": "https://github.com/eden-0721/papermaster/releases/download/papermaster-v3.26.0/PaperMaster_Setup_v3.26.0.exe",
-  "sha256": "1cc94c40fc405e77cfdf6603b3718bf107f9d730931386a3a779c6e3ca97fbfd",
-  "size": 25776507
+  "file": "PaperMaster_Setup_v3.27.0.exe",
+  "url": "https://github.com/eden-0721/papermaster/releases/download/papermaster-v3.27.0/PaperMaster_Setup_v3.27.0.exe",
+  "sha256": "6688ba39bdee96509effc0525c832e08f3a9780a9b82baa3e0788bbd7987b13c",
+  "size": 25781460
  },
  "notes": [
+  {
+   "v": "3.27.0",
+   "date": "2026-10-12",
+   "title": "변경",
+   "items": [
+    "**세 프로그램 GUI 통일 (시험성적서·비전분석·논문 작성 같은 자리)** — 템플릿 데스크톱 부품 0.4.1의 공통 배치 규칙(layout.md)대로 (A-16)"
+   ]
+  },
   {
    "v": "3.26.0",
    "date": "2026-10-12",
@@ -54,32 +62,21 @@
    "items": [
     "충돌을 해결해도 머리줄이 최대 5분 동안 \"⚠️ 충돌\"을 계속 보이고, 눌러도 충돌 창 대신 옛 상태(충돌 1)가 뜨던 것 → 동기화가 끝나거나 충돌 목록을 새로 비교하면 머리줄 상태를 바로 새로 씀 (G-51)"
    ]
-  },
-  {
-   "v": "3.23.6",
-   "date": "2026-10-10",
-   "title": "고침",
-   "items": [
-    "**드라이브 파일을 한꺼번에 휴지통으로 보낼 수 있던 것** — 이 PC의 데이터 폴더가 비었거나(새 설치·폴더 변경) 옛 동기화 장부가 남아 장부의 파일이 이 PC에서 한꺼번에 사라져 보이면, 드라이브에서 지우지 않고 충돌로 보고 (G-50; G-48의 반대쪽 보호)",
-    "설치본 첫 동기화: 로그인 전 첫 실행이 만든 빈 DB와 드라이브 DB가 \"처음 동기화 — 내용 다름\" 충돌로 남아 빈 연구실로 켜지던 것 → 이 PC의 DB에 연구실·소스·문서가 없으면 드라이브 것을 받음(로컬은 data/backups에 스냅샷) (G-50)",
-    "충돌 창을 열 방법이 없던 것 → 머리줄의 동기화 표시를 누르면 충돌 창이 열리고, 수백 건도 \"모두 로컬/클라우드 우선/건너뛰기\"로 한꺼번에 고를 수 있음. 경로에 `'`가 있으면 버튼이 깨지던 것 (G-50)",
-    "설치본에서 구글 로그인 방법이 보이지 않던 것 → 머리줄 동기화 표시를 누르면 원인별 안내: 인증 파일이 없으면 넣을 폴더와 [폴더 열기], 로그인이 안 됐으면 [구글 로그인](브라우저, 3분 제한). 시작 창도 인증 파일이 없으면 위치를 크게 보여 주고 확인을 받음. 화면에 없는 버튼을 가리키던 문구 수정. 상태 확인이 로그인 창을 띄우지 않음 (G-49)"
-   ]
   }
  ],
- "page": "https://github.com/eden-0721/papermaster/releases/tag/papermaster-v3.26.0",
+ "page": "https://github.com/eden-0721/papermaster/releases/tag/papermaster-v3.27.0",
  "private": true,
  "filesRepo": "eden-0721/papermaster",
  "source": "https://github.com/eden-0721/papermaster",
  "previous": {
-  "version": "3.25.0",
+  "version": "3.26.0",
   "setup": {
-   "file": "PaperMaster_Setup_v3.25.0.exe",
-   "url": "https://github.com/eden-0721/papermaster/releases/download/papermaster-v3.25.0/PaperMaster_Setup_v3.25.0.exe",
-   "sha256": "7e319080eacc8e2c3f2da35c46db7d6c338675f0b08321f4b051d502b310e4b0",
-   "size": 25866465
+   "file": "PaperMaster_Setup_v3.26.0.exe",
+   "url": "https://github.com/eden-0721/papermaster/releases/download/papermaster-v3.26.0/PaperMaster_Setup_v3.26.0.exe",
+   "sha256": "1cc94c40fc405e77cfdf6603b3718bf107f9d730931386a3a779c6e3ca97fbfd",
+   "size": 25776507
   },
-  "tag": "papermaster-v3.25.0",
+  "tag": "papermaster-v3.26.0",
   "filesRepo": "eden-0721/papermaster"
  }
 }
