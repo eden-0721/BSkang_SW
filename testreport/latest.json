@@ -1,19 +1,26 @@
 {
  "app": "testreport",
  "name": "시험성적서 워크벤치",
- "version": "2.9.4",
+ "version": "2.9.5",
  "date": "2026-10-12",
  "channel": "release",
- "tag": "testreport-v2.9.4",
+ "tag": "testreport-v2.9.5",
  "private": true,
  "filesRepo": "eden-0721/test_reports",
  "setup": {
-  "file": "TestReport_Setup_v2.9.4.exe",
-  "url": "https://github.com/eden-0721/test_reports/releases/download/testreport-v2.9.4/TestReport_Setup_v2.9.4.exe",
-  "sha256": "6db0158576bb0ec690a39ee69a4e483a84882aeb03f614668c051e290c164278",
-  "size": 3852269
+  "file": "TestReport_Setup_v2.9.5.exe",
+  "url": "https://github.com/eden-0721/test_reports/releases/download/testreport-v2.9.5/TestReport_Setup_v2.9.5.exe",
+  "sha256": "df1e018225d0e06b4b19b6f6864e3c7e3ba0070fea6e50cf0cb939c4721e560b",
+  "size": 3852745
  },
  "notes": [
+  {
+   "v": "2.9.5",
+   "date": "2026-10-12",
+   "items": [
+    "표 숫자 열: '-1' 처럼 부호가 붙어도 숫자 끝자리·소수점이 위아래로 맞고 부호만 앞으로 나옵니다(숫자 묶음은 칸 가운데). 예전엔 숫자가 꺾이는 것을 피하려고 가운데 맞춤이 되어 줄이 어긋났습니다"
+   ]
+  },
   {
    "v": "2.9.4",
    "date": "2026-10-12",
