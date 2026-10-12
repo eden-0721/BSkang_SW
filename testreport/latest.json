@@ -1,19 +1,28 @@
 {
  "app": "testreport",
  "name": "시험성적서 워크벤치",
- "version": "2.9.3",
+ "version": "2.9.4",
  "date": "2026-10-12",
  "channel": "release",
- "tag": "testreport-v2.9.3",
+ "tag": "testreport-v2.9.4",
  "private": true,
  "filesRepo": "eden-0721/test_reports",
  "setup": {
-  "file": "TestReport_Setup_v2.9.3.exe",
-  "url": "https://github.com/eden-0721/test_reports/releases/download/testreport-v2.9.3/TestReport_Setup_v2.9.3.exe",
-  "sha256": "e5e64e0c77db8c083cd31bd87623bd3909de3cead596882559c6670316430c02",
-  "size": 3851223
+  "file": "TestReport_Setup_v2.9.4.exe",
+  "url": "https://github.com/eden-0721/test_reports/releases/download/testreport-v2.9.4/TestReport_Setup_v2.9.4.exe",
+  "sha256": "6db0158576bb0ec690a39ee69a4e483a84882aeb03f614668c051e290c164278",
+  "size": 3852269
  },
  "notes": [
+  {
+   "v": "2.9.4",
+   "date": "2026-10-12",
+   "items": [
+    "표 제목을 표 위 왼쪽(표 왼쪽 선에 맞춤)으로 옮겼습니다. 그림 제목은 그대로 그림 아래 가운데입니다",
+    "단위는 표 제목과 같은 줄 오른쪽 끝에 '(단위: ℃)' 로(8pt) — 제목이 길어 함께 들어가지 않으면 다음 줄 오른쪽",
+    "표 제목에 '단위'라는 낱말이 들어 있어도 머리글의 공통 단위를 단위 줄로 올립니다('단위: …' 표기가 있을 때만 건너뜀)"
+   ]
+  },
   {
    "v": "2.9.3",
    "date": "2026-10-12",
