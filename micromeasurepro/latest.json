@@ -1,23 +1,37 @@
 {
  "app": "micromeasurepro",
  "name": "MicroMeasure Pro",
- "version": "2.5.56",
+ "version": "2.5.57",
  "date": "2026-10-13",
  "channel": "release",
- "tag": "micromeasurepro-v2.5.56",
+ "tag": "micromeasurepro-v2.5.57",
  "setup": {
-  "file": "MicroMeasurePro_Setup_v2.5.56.exe",
-  "url": "https://github.com/eden-0721/MicroMeasurePro/releases/download/micromeasurepro-v2.5.56/MicroMeasurePro_Setup_v2.5.56.exe",
-  "sha256": "240b1cd5f864114e5a9b3a1c9fa6a3c0aa7d2d345c3166ceb7f6ed2223322f21",
-  "size": 16325257
+  "file": "MicroMeasurePro_Setup_v2.5.57.exe",
+  "url": "https://github.com/eden-0721/MicroMeasurePro/releases/download/micromeasurepro-v2.5.57/MicroMeasurePro_Setup_v2.5.57.exe",
+  "sha256": "bb4cee8f85e65622a9c8acbf22e4fcbdf7659590b8b236a487ad40bf917bc7d8",
+  "size": 16329966
  },
  "zip": {
-  "file": "MicroMeasurePro_v2.5.56.zip",
-  "url": "https://github.com/eden-0721/MicroMeasurePro/releases/download/micromeasurepro-v2.5.56/MicroMeasurePro_v2.5.56.zip",
-  "sha256": "49fa5389fdb9a3920e9433232a865375c882fec011fb706522ccf74d9dc49d72",
-  "size": 18265345
+  "file": "MicroMeasurePro_v2.5.57.zip",
+  "url": "https://github.com/eden-0721/MicroMeasurePro/releases/download/micromeasurepro-v2.5.57/MicroMeasurePro_v2.5.57.zip",
+  "sha256": "b3f5e13b60d1d1602b4f61b97c8207a51921b79683b85492a4e89b4968fe6ad5",
+  "size": 18274409
  },
  "notes": [
+  {
+   "v": "2.5.57",
+   "date": "2026-10-13",
+   "title": "세 프로그램 세부까지 같은 모양 — 공통 템플릿 0.5.0",
+   "items": [
+    "BSKang SW 세 프로그램(시험성적서·비전분석·논문 작성)의 **[파일] 첫 묶음 · [도구] 설정·화면 배율 · [도움말] · 탭 줄 오른쪽 · 상태 표시줄 · 환경 설정 창**을 템플릿이 통째로 만듭니다 — 묶음 나누기·큰/작은 단추·아이콘·글귀가 세 프로그램에서 똑같습니다",
+    "**[파일] 열기** = 사진 열기 (Ctrl+O). 저장해 둔 작업(.mmp) 열기는 그 옆 [작업 파일] 묶음으로 (단축키 없음)",
+    "**환경 설정**이 가운데 창의 세로 탭(AI → 백업 → 프로그램 업데이트 → 일반 → 프로그램 고유)으로 — 글자 크기가 깨지던 오른쪽 시트는 없앰. 통계 화면 [도구]에서도 같은 창",
+    "**상태 표시줄** 왼쪽에 **[로그]** — 지나간 안내 메시지를 시각과 함께 봅니다 (비전·통계·영상)",
+    "탭 줄 오른쪽 글귀 통일: **명령 찾기 Ctrl+K** · **새 버전** 배지(어느 버전인지는 툴팁) · 버전 뒤 **개발본** 표시 · 크게 보기·간단한 리본·리본 접기",
+    "리본 안에는 단추만: 영상 [파일] 표시기 프로필·라이브러리 선택 상자 → [프로필 저장]·[라이브러리에 저장] 옆 **▾** 메뉴 / 통계 [파일] 이미지 범위·투명 배경·구간 통계 패널 → [차트 복사] 옆 **▾** 메뉴",
+    "[도움말]에 있던 따라하기 투어는 [도구] 탭 [안내] 묶음으로"
+   ]
+  },
   {
    "v": "2.5.56",
    "date": "2026-10-13",
@@ -59,30 +73,21 @@
     "**[도움말]**: 사용 설명서(F1) · 단축키 · 따라하기 투어 · 새 버전 확인 · 버전 정보 — 업데이트는 탭 줄 오른쪽 알림 · [도움말] 새 버전 확인 · 환경 설정 세 곳 어디서나 같은 창",
     "탭 줄 오른쪽 순서도 세 프로그램이 같게: 작업 이름 · 업데이트 알림 · 비전/통계/영상 · 무엇을 할까요? · 버전 | 크게 보기 · 간단한 리본 · 접기 (현장 보기·새 창은 [보기] 탭, 가이드는 [도움말] 탭)"
    ]
-  },
-  {
-   "v": "2.5.52",
-   "date": "2026-10-10",
-   "title": "영상 화면에서 가이드가 안 보이던 문제",
-   "items": [
-    "영상 화면에서 [가이드]·탭 줄 오른쪽 [?] 를 눌러도 아무것도 안 보이던 문제: 가이드 창이 숨은 비전 화면 안에 있었습니다 — 이제 영상 화면 오른쪽에 열립니다",
-    "영상 화면의 가이드는 영상 주제와 \"무엇을 하고 싶으세요?\" (숫자 읽어 기록 · 표시기 자리 잡기 · 잘못 읽을 때 · 소요 시간 · 결과 보내기 · 라이브러리 · 촬영 · Claude 에게 맡기기) 로"
-   ]
   }
  ],
- "page": "https://github.com/eden-0721/MicroMeasurePro/releases/tag/micromeasurepro-v2.5.56",
+ "page": "https://github.com/eden-0721/MicroMeasurePro/releases/tag/micromeasurepro-v2.5.57",
  "private": true,
  "filesRepo": "eden-0721/MicroMeasurePro",
  "source": "https://github.com/eden-0721/MicroMeasurePro",
  "previous": {
-  "version": "2.5.55",
+  "version": "2.5.56",
   "setup": {
-   "file": "MicroMeasurePro_Setup_v2.5.55.exe",
-   "url": "https://github.com/eden-0721/MicroMeasurePro/releases/download/micromeasurepro-v2.5.55/MicroMeasurePro_Setup_v2.5.55.exe",
-   "sha256": "756f0035362f0a94b04b8394ec7a96fd3636e4b533bea42b5e64f724619bbbfe",
-   "size": 16328251
+   "file": "MicroMeasurePro_Setup_v2.5.56.exe",
+   "url": "https://github.com/eden-0721/MicroMeasurePro/releases/download/micromeasurepro-v2.5.56/MicroMeasurePro_Setup_v2.5.56.exe",
+   "sha256": "240b1cd5f864114e5a9b3a1c9fa6a3c0aa7d2d345c3166ceb7f6ed2223322f21",
+   "size": 16325257
   },
-  "tag": "micromeasurepro-v2.5.55",
+  "tag": "micromeasurepro-v2.5.56",
   "filesRepo": "eden-0721/MicroMeasurePro"
  }
 }
