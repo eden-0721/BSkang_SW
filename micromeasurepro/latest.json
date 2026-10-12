@@ -1,23 +1,32 @@
 {
  "app": "micromeasurepro",
  "name": "MicroMeasure Pro",
- "version": "2.5.55",
+ "version": "2.5.56",
  "date": "2026-10-13",
  "channel": "release",
- "tag": "micromeasurepro-v2.5.55",
+ "tag": "micromeasurepro-v2.5.56",
  "setup": {
-  "file": "MicroMeasurePro_Setup_v2.5.55.exe",
-  "url": "https://github.com/eden-0721/MicroMeasurePro/releases/download/micromeasurepro-v2.5.55/MicroMeasurePro_Setup_v2.5.55.exe",
-  "sha256": "756f0035362f0a94b04b8394ec7a96fd3636e4b533bea42b5e64f724619bbbfe",
-  "size": 16328251
+  "file": "MicroMeasurePro_Setup_v2.5.56.exe",
+  "url": "https://github.com/eden-0721/MicroMeasurePro/releases/download/micromeasurepro-v2.5.56/MicroMeasurePro_Setup_v2.5.56.exe",
+  "sha256": "240b1cd5f864114e5a9b3a1c9fa6a3c0aa7d2d345c3166ceb7f6ed2223322f21",
+  "size": 16325257
  },
  "zip": {
-  "file": "MicroMeasurePro_v2.5.55.zip",
-  "url": "https://github.com/eden-0721/MicroMeasurePro/releases/download/micromeasurepro-v2.5.55/MicroMeasurePro_v2.5.55.zip",
-  "sha256": "f3c84e3f23faf9cd0e71b4e4724524e52c7f0d1d8ef288f676d0320c8fabad51",
-  "size": 18265004
+  "file": "MicroMeasurePro_v2.5.56.zip",
+  "url": "https://github.com/eden-0721/MicroMeasurePro/releases/download/micromeasurepro-v2.5.56/MicroMeasurePro_v2.5.56.zip",
+  "sha256": "49fa5389fdb9a3920e9433232a865375c882fec011fb706522ccf74d9dc49d72",
+  "size": 18265345
  },
  "notes": [
+  {
+   "v": "2.5.56",
+   "date": "2026-10-13",
+   "title": "최근 작업 — 권한을 안 줘도 목록에 남김",
+   "items": [
+    "**최근 작업**: 다시 열 때 읽기 권한 묻기에 [거부]를 누르거나, 영상 화면에서 서버에 연결할 수 없으면 이번엔 열지 않고 **목록에는 남겨 둡니다** (전에는 목록에서 빠져 파일을 잃은 것처럼 보였음). 정말 옮겨졌거나 지워진 파일만 빠집니다",
+    "\"모두 지우기\" 단추에 설명 (목록만 지우고 파일은 그대로) — 공통 템플릿 0.4.1"
+   ]
+  },
   {
    "v": "2.5.55",
    "date": "2026-10-13",
@@ -59,30 +68,21 @@
     "영상 화면에서 [가이드]·탭 줄 오른쪽 [?] 를 눌러도 아무것도 안 보이던 문제: 가이드 창이 숨은 비전 화면 안에 있었습니다 — 이제 영상 화면 오른쪽에 열립니다",
     "영상 화면의 가이드는 영상 주제와 \"무엇을 하고 싶으세요?\" (숫자 읽어 기록 · 표시기 자리 잡기 · 잘못 읽을 때 · 소요 시간 · 결과 보내기 · 라이브러리 · 촬영 · Claude 에게 맡기기) 로"
    ]
-  },
-  {
-   "v": "2.5.51",
-   "date": "2026-10-10",
-   "title": "\"수정된 설치\" 잘못된 알림 고침",
-   "items": [
-    "업데이트 뒤 탭 줄 오른쪽에 **\"수정된 설치 (50개 파일) — 복구\"** 가 잘못 뜨던 문제: 프로그램 파일은 그대로였고, 파이썬이 스스로 만들고 고쳐 쓰는 캐시 파일(__pycache__)까지 검사해서 생긴 알림이었습니다 — 이제 캐시 파일은 설치 파일·검사에서 뺍니다",
-    "같은 버전을 다시 설치하는 복구 창의 단추 이름을 \"같은 버전 다시 설치해 복구\" 로 (예전엔 \"이전 버전으로 되돌리기\" 로 보였음)"
-   ]
   }
  ],
- "page": "https://github.com/eden-0721/MicroMeasurePro/releases/tag/micromeasurepro-v2.5.55",
+ "page": "https://github.com/eden-0721/MicroMeasurePro/releases/tag/micromeasurepro-v2.5.56",
  "private": true,
  "filesRepo": "eden-0721/MicroMeasurePro",
  "source": "https://github.com/eden-0721/MicroMeasurePro",
  "previous": {
-  "version": "2.5.54",
+  "version": "2.5.55",
   "setup": {
-   "file": "MicroMeasurePro_Setup_v2.5.54.exe",
-   "url": "https://github.com/eden-0721/MicroMeasurePro/releases/download/micromeasurepro-v2.5.54/MicroMeasurePro_Setup_v2.5.54.exe",
-   "sha256": "4569909e1b41b7e58de85cfea9daacfc3f4ca94ff853b396c954c17933cbb492",
-   "size": 16323723
+   "file": "MicroMeasurePro_Setup_v2.5.55.exe",
+   "url": "https://github.com/eden-0721/MicroMeasurePro/releases/download/micromeasurepro-v2.5.55/MicroMeasurePro_Setup_v2.5.55.exe",
+   "sha256": "756f0035362f0a94b04b8394ec7a96fd3636e4b533bea42b5e64f724619bbbfe",
+   "size": 16328251
   },
-  "tag": "micromeasurepro-v2.5.54",
+  "tag": "micromeasurepro-v2.5.55",
   "filesRepo": "eden-0721/MicroMeasurePro"
  }
 }
