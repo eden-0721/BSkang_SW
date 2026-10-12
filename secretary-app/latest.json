@@ -3,18 +3,29 @@
  "name": "총무의 정석",
  "description": "모임 정산 · 총무 도우미 (PWA)",
  "kind": "web",
- "version": "1.14.2",
- "date": "2026-10-10",
+ "version": "1.15.0",
+ "date": "2026-10-13",
  "channel": "release",
  "web": {
   "url": "https://secretary-app.badboysbk.workers.dev"
  },
- "zip": {
-  "url": "https://github.com/eden-0721/secretary-app/archive/refs/heads/main.zip"
+ "install": {
+  "file": "install.bat"
  },
  "source": "https://github.com/eden-0721/secretary-app",
  "private": true,
  "notes": [
+  {
+   "v": "1.15.0",
+   "date": "2026-10-13",
+   "title": "설정·도움말 자리를 다른 앱들과 똑같이",
+   "items": [
+    "설정 화면이 다른 앱들과 같은 순서로: 화면(밝기) → 우리 공간 → 계정 → 내 데이터 → 그룹 · 입금 계좌 · 비밀번호 · 백업 · 운영자 → 정보",
+    "상단 바 오른쪽 끝은 늘 도움말(?) 하나 — 화면마다 그 화면 설명이 떠요. 공간 이름·내 이름 동그라미는 설정 › 우리 공간·계정으로",
+    "아래 탭 아이콘: 모임은 집 모양, 설정은 톱니 모양 (모든 앱 공통)",
+    "모임 상세의 ⋯ 단추는 \"더 보기\" 글자 단추로"
+   ]
+  },
   {
    "v": "1.14.2",
    "date": "2026-10-10",
