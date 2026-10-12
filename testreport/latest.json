@@ -1,19 +1,30 @@
 {
  "app": "testreport",
  "name": "시험성적서 워크벤치",
- "version": "2.9.2",
+ "version": "2.9.3",
  "date": "2026-10-12",
  "channel": "release",
- "tag": "testreport-v2.9.2",
+ "tag": "testreport-v2.9.3",
  "private": true,
  "filesRepo": "eden-0721/test_reports",
  "setup": {
-  "file": "TestReport_Setup_v2.9.2.exe",
-  "url": "https://github.com/eden-0721/test_reports/releases/download/testreport-v2.9.2/TestReport_Setup_v2.9.2.exe",
-  "sha256": "f0e45d5a6dbbc1d1deb8fd2676dd0637493a715434038096ce3e5814293ffe80",
-  "size": 3847265
+  "file": "TestReport_Setup_v2.9.3.exe",
+  "url": "https://github.com/eden-0721/test_reports/releases/download/testreport-v2.9.3/TestReport_Setup_v2.9.3.exe",
+  "sha256": "e5e64e0c77db8c083cd31bd87623bd3909de3cead596882559c6670316430c02",
+  "size": 3851223
  },
  "notes": [
+  {
+   "v": "2.9.3",
+   "date": "2026-10-12",
+   "items": [
+    "표·그림 제목을 한글 캡션으로 넣습니다: 논문식(기본)은 표 위 '표 1. 제목', 그림 아래 '그림 1. 제목'(한글이 번호를 자동으로 매김), 성적서식은 '< 제목 >' — 맨 위 조판 › 발행에서 고릅니다",
+    "1쪽 요약표는 번호에서 빼고 본문 첫 표부터 표 1 입니다",
+    "사진 두 장 나란히의 제목이 각 사진 아래 정확히 가운데에 붙습니다(예전엔 빈칸으로 맞춰 치우쳤습니다). 묶음 제목은 사진들 아래 한 줄",
+    "단위 줄 '< 단위 : ℃ >' 는 표 제목 아래 오른쪽에 작은 글자(8pt)로, 표 제목에 '(단위: μm)' 를 써도 단위 줄로 옮깁니다",
+    "표 폭을 직접 정했어도 글자가 넘치면 템플릿 본문 폭 안에서 넓혀 한 줄로 나오게 합니다"
+   ]
+  },
   {
    "v": "2.9.2",
    "date": "2026-10-12",
