@@ -3,7 +3,7 @@
  "name": "총무의 정석",
  "description": "모임 정산 · 총무 도우미 (PWA)",
  "kind": "web",
- "version": "1.15.0",
+ "version": "1.15.1",
  "date": "2026-10-13",
  "channel": "release",
  "web": {
@@ -15,6 +15,15 @@
  "source": "https://github.com/eden-0721/secretary-app",
  "private": true,
  "notes": [
+  {
+   "v": "1.15.1",
+   "date": "2026-10-13",
+   "title": "홈 제목은 공간 이름",
+   "items": [
+    "모임 탭 맨 위 제목이 \"모임\" 대신 우리 공간 이름으로 — 다른 앱들과 같게",
+    "설정 › 계정에 \"비밀번호 바꾸기\"가 들어가 백업·운영자 단락과 나뉘었어요"
+   ]
+  },
   {
    "v": "1.15.0",
    "date": "2026-10-13",

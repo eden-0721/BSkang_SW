@@ -163,7 +163,7 @@
    "icon": "icon-64.png",
    "kind": "web",
    "private": true,
-   "version": "1.15.0",
+   "version": "1.15.1",
    "date": "2026-10-13",
    "web": {
     "url": "https://secretary-app.badboysbk.workers.dev"
