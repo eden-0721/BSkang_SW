@@ -145,8 +145,8 @@
    "icon": "icon-64.png",
    "kind": "web",
    "private": true,
-   "version": "0.9.5",
-   "date": "2026-10-10",
+   "version": "0.10.0",
+   "date": "2026-10-13",
    "web": {
     "url": "https://ledger.badboysbk.workers.dev"
    },
