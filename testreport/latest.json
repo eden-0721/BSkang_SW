@@ -1,19 +1,29 @@
 {
  "app": "testreport",
  "name": "시험성적서 워크벤치",
- "version": "2.13.2",
+ "version": "2.13.3",
  "date": "2026-10-13",
  "channel": "release",
- "tag": "testreport-v2.13.2",
+ "tag": "testreport-v2.13.3",
  "private": true,
  "filesRepo": "eden-0721/test_reports",
  "setup": {
-  "file": "TestReport_Setup_v2.13.2.exe",
-  "url": "https://github.com/eden-0721/test_reports/releases/download/testreport-v2.13.2/TestReport_Setup_v2.13.2.exe",
-  "sha256": "6662e6a837c987e9c013b0ef7231a3daa9412f8266e0b8d18e215f3ab4e4d4dd",
-  "size": 3910731
+  "file": "TestReport_Setup_v2.13.3.exe",
+  "url": "https://github.com/eden-0721/test_reports/releases/download/testreport-v2.13.3/TestReport_Setup_v2.13.3.exe",
+  "sha256": "a5b62d92573b0e17fa486341d16a2842f3855d96baff14b99294802fe865df5e",
+  "size": 3911831
  },
  "notes": [
+  {
+   "v": "2.13.3",
+   "date": "2026-10-13",
+   "items": [
+    "표·그림·그림 여러 장·나란히가 본문 글 들여쓰기 자리에서 왼쪽 맞춤으로 시작합니다 (가운데 아님, 조판 화면도 같게). 제목은 그 개체 폭 안 가운데",
+    "시험장 절의 가.나.다. 항목 줄이 쪽 사이에서 갈라지지 않습니다 (통째로 다음 쪽으로)",
+    "[쪽 확인] 결과에 쪽을 넘어가는 문단 표시 — 쪽 표시는 블록 시작 기준이라 갈라진 문단이 보이지 않던 것 보완",
+    "조판 그림 여러 장의 높이가 2~3px 어긋나던 것 수정"
+   ]
+  },
   {
    "v": "2.13.2",
    "date": "2026-10-13",
