@@ -1,0 +1,26 @@
+{
+    "app":  "TechConsultHelper",
+    "name":  "기술지도 스마트 도우미",
+    "version":  "1.0.4",
+    "tag":  "techconsulthelper-v1.0.4",
+    "date":  "2026-10-13",
+    "private":  true,
+    "page":  "https://github.com/eden-0721/TechConsultHelper/releases/tag/techconsulthelper-v1.0.4",
+    "setup":  {
+                  "file":  "TechConsultHelper_Setup_v1.0.4.exe",
+                  "url":  "https://github.com/eden-0721/TechConsultHelper/releases/download/techconsulthelper-v1.0.4/TechConsultHelper_Setup_v1.0.4.exe",
+                  "size":  2228275,
+                  "sha256":  "fb6861aac73c1312cfc6c619ba2c626d4402b0f95d116af920c57d7c081426eb"
+              },
+    "zip":  {
+                "file":  "TechConsultHelper_v1.0.4.zip",
+                "url":  "https://github.com/eden-0721/TechConsultHelper/releases/download/techconsulthelper-v1.0.4/TechConsultHelper_v1.0.4.zip",
+                "size":  141279,
+                "sha256":  "6be61527bc276bc2c5f98bb8ddeb7c6d87de638020a5182282725c13477648ad"
+            },
+    "notes":  [
+                  "BSKang SW 공통 모양 적용: 대표색 남보라, 공통 회색·완료/주의/오류 색, 모서리, 글꼴(look.css). 배치와 아이콘은 그대로",
+                  "헤더를 밝은 상태 표시줄 색으로 변경"
+              ],
+    "publishedAt":  "2026-10-13T01:39:36Z"
+}
