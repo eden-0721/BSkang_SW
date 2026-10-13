@@ -141,8 +141,8 @@
    "icon": "icon-64.png",
    "kind": "web",
    "private": true,
-   "version": "0.10.63",
-   "date": "2026-10-11",
+   "version": "0.10.64",
+   "date": "2026-10-13",
    "web": {
     "url": "https://learn-eng.badboysbk.workers.dev"
    },
@@ -150,9 +150,6 @@
    "notes": true,
    "install": {
     "file": "install.bat"
-   },
-   "zip": {
-    "url": "https://github.com/eden-0721/learn_eng/archive/refs/heads/main.zip"
    }
   },
   {
