@@ -24,21 +24,21 @@
    "description": "현미경 단면 정밀 계측 + 공정 통계 분석",
    "icon": "icon-64.png",
    "channel": "release",
-   "version": "2.5.60",
+   "version": "2.5.61",
    "date": "2026-10-13",
    "setup": {
-    "file": "MicroMeasurePro_Setup_v2.5.60.exe",
-    "url": "https://github.com/eden-0721/MicroMeasurePro/releases/download/micromeasurepro-v2.5.60/MicroMeasurePro_Setup_v2.5.60.exe",
-    "sha256": "aa8704b19c9d4172e7d6ce8de65979b2882c0e91e231c43cfdcb08bea8d76e22",
-    "size": 16334000
+    "file": "MicroMeasurePro_Setup_v2.5.61.exe",
+    "url": "https://github.com/eden-0721/MicroMeasurePro/releases/download/micromeasurepro-v2.5.61/MicroMeasurePro_Setup_v2.5.61.exe",
+    "sha256": "1e60fba4bb736527a13edb6a219f77c35ad837f561498a0b1339dbf5974ecc2d",
+    "size": 16338190
    },
    "zip": {
-    "file": "MicroMeasurePro_v2.5.60.zip",
-    "url": "https://github.com/eden-0721/MicroMeasurePro/releases/download/micromeasurepro-v2.5.60/MicroMeasurePro_v2.5.60.zip",
-    "sha256": "7ba491d87b2e94f73886c0d1322bed805d0b57c67b9c8000d31d31ba300b3371",
-    "size": 18277593
+    "file": "MicroMeasurePro_v2.5.61.zip",
+    "url": "https://github.com/eden-0721/MicroMeasurePro/releases/download/micromeasurepro-v2.5.61/MicroMeasurePro_v2.5.61.zip",
+    "sha256": "70d1d6545ab17dd510715ab8d075519d3e473e685bd0bda4b371e21b3496bbf5",
+    "size": 18278598
    },
-   "page": "https://github.com/eden-0721/MicroMeasurePro/releases/tag/micromeasurepro-v2.5.60",
+   "page": "https://github.com/eden-0721/MicroMeasurePro/releases/tag/micromeasurepro-v2.5.61",
    "private": true,
    "source": "https://github.com/eden-0721/MicroMeasurePro"
   },
