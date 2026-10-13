@@ -3,8 +3,8 @@
  "name": "iedaMemo",
  "description": "PDF를 보며 적은 메모가 페이지와 녹음에 저절로 이어지는 노트",
  "kind": "web",
- "version": "0.9.0",
- "date": "2026-10-14",
+ "version": "0.10.0",
+ "date": "2026-10-15",
  "channel": "release",
  "web": {
   "url": "https://iedamemo.badboysbk.workers.dev"
@@ -15,6 +15,15 @@
  "source": "https://github.com/eden-0721/memo",
  "private": true,
  "notes": [
+  {
+   "v": "0.10.0",
+   "date": "2026-10-15",
+   "title": "제목 아래 내용 접기",
+   "items": [
+    "제목 1·2·3 앞의 작은 화살표를 누르면 다음 같은 급 제목 전까지 내용이 접혀요 (노션의 토글 제목처럼)",
+    "이미 쓴 메모에도 바로 되고, 접은 상태는 기기마다 기억해요"
+   ]
+  },
   {
    "v": "0.9.0",
    "date": "2026-10-14",
