@@ -3,7 +3,7 @@
  "name": "iedaMemo",
  "description": "PDF를 보며 적은 메모가 페이지와 녹음에 저절로 이어지는 노트",
  "kind": "web",
- "version": "0.4.0",
+ "version": "0.4.1",
  "date": "2026-10-14",
  "channel": "release",
  "web": {
@@ -15,6 +15,16 @@
  "source": "https://github.com/eden-0721/memo",
  "private": true,
  "notes": [
+  {
+   "v": "0.4.1",
+   "date": "2026-10-14",
+   "title": "손글씨 실행 취소 · 다시 실행",
+   "items": [
+    "손글씨 칸, 글 위 필기, PDF 위 필기에 실행 취소·다시 실행 단추가 생겼어요",
+    "지우개로 지운 것과 칸 크기 바꾼 것도 되돌릴 수 있어요",
+    "키보드에서는 Ctrl+Z로 취소, Ctrl+Shift+Z 또는 Ctrl+Y로 다시 실행해요 (PDF 필기)"
+   ]
+  },
   {
    "v": "0.4.0",
    "date": "2026-10-14",
