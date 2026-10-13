@@ -3,7 +3,7 @@
  "name": "영어 배우기",
  "description": "아이부터 어른까지, 하루 몇 분 만화와 이야기로 배우는 가족·반 영어 공부 앱",
  "kind": "web",
- "version": "0.10.65",
+ "version": "0.10.66",
  "date": "2026-10-13",
  "channel": "release",
  "web": {
@@ -15,6 +15,14 @@
  "source": "https://github.com/eden-0721/learn_eng",
  "private": true,
  "notes": [
+  {
+   "v": "0.10.66",
+   "date": "2026-10-13",
+   "title": "첫 화면이 조금 가벼워졌어요",
+   "items": [
+    "설정 화면은 열 때만 받아요 (첫 화면 용량 아낌)"
+   ]
+  },
   {
    "v": "0.10.65",
    "date": "2026-10-13",
