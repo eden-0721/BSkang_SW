@@ -1,25 +1,36 @@
 {
  "app": "photo-organize",
  "name": "사진 정리",
- "version": "0.34.0",
- "date": "2026-10-11",
+ "version": "0.35.0",
+ "date": "2026-10-13",
  "channel": "release",
- "tag": "photo-organize-v0.34.0",
+ "tag": "photo-organize-v0.35.0",
  "private": true,
  "filesRepo": "eden-0721/photo_organize",
  "setup": {
-  "file": "PhotoOrganize_Setup_v0.34.0.exe",
-  "url": "https://github.com/eden-0721/photo_organize/releases/download/photo-organize-v0.34.0/PhotoOrganize_Setup_v0.34.0.exe",
-  "sha256": "1be13e323c5e915540d79b27b8e02954013694eb4f5ade0ffe92b1ca59841bb9",
-  "size": 2908983
+  "file": "PhotoOrganize_Setup_v0.35.0.exe",
+  "url": "https://github.com/eden-0721/photo_organize/releases/download/photo-organize-v0.35.0/PhotoOrganize_Setup_v0.35.0.exe",
+  "sha256": "7502ae7e3cac568a83024c8e125c86e525777c416976655e8d1df05296af4bbf",
+  "size": 2934815
  },
  "zip": {
-  "file": "PhotoOrganize_v0.34.0.zip",
-  "url": "https://github.com/eden-0721/photo_organize/releases/download/photo-organize-v0.34.0/PhotoOrganize_v0.34.0.zip",
-  "sha256": "8d807c816f8ffc05ad43e00f00a3cc9d4ad0c609f1f3de0c93c3c0d8db6281d6",
-  "size": 800713
+  "file": "PhotoOrganize_v0.35.0.zip",
+  "url": "https://github.com/eden-0721/photo_organize/releases/download/photo-organize-v0.35.0/PhotoOrganize_v0.35.0.zip",
+  "sha256": "643810f5604f6ac3e5cf29eeea576a2c3e04a2dde39342ff8e849821efd735da",
+  "size": 849815
  },
  "notes": [
+  {
+   "v": "0.35.0",
+   "date": "2026-10-13",
+   "title": "데스크톱 프로그램 모양: 위에 리본",
+   "items": [
+    "워드·엑셀처럼 위에 탭과 단추가 있는 리본이 생겼어요: [파일] [정리] [단계] [보기] [확인] [도구] [도움말]. 아래 탭과 왼쪽 메뉴는 없어졌어요",
+    "설정은 [도구] → 환경 설정 창에서 해요(백업 · 프로그램 업데이트 · 일반 · 정리 방법 · 사진이 있는 곳 · 자동으로). 관리는 [도구] → 관리 화면",
+    "맨 아래 상태 표시줄에 지금 하는 일, NAS 연결, 마지막 정리 시각이 보여요. 창 제목에는 정리하는 곳 이름이 나와요",
+    "Ctrl+K로 단추 이름을 쳐서 찾을 수 있고, Ctrl+F1로 리본을 접어요. [도움말] → 사용 설명서·단축키"
+   ]
+  },
   {
    "v": "0.34.0",
    "date": "2026-10-11",
