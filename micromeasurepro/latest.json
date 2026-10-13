@@ -1,23 +1,32 @@
 {
  "app": "micromeasurepro",
  "name": "MicroMeasure Pro",
- "version": "2.5.59",
+ "version": "2.5.60",
  "date": "2026-10-13",
  "channel": "release",
- "tag": "micromeasurepro-v2.5.59",
+ "tag": "micromeasurepro-v2.5.60",
  "setup": {
-  "file": "MicroMeasurePro_Setup_v2.5.59.exe",
-  "url": "https://github.com/eden-0721/MicroMeasurePro/releases/download/micromeasurepro-v2.5.59/MicroMeasurePro_Setup_v2.5.59.exe",
-  "sha256": "d8981687e32d223253ca91f9522dd9685f03856e5921f150814a48745453aec6",
-  "size": 16336494
+  "file": "MicroMeasurePro_Setup_v2.5.60.exe",
+  "url": "https://github.com/eden-0721/MicroMeasurePro/releases/download/micromeasurepro-v2.5.60/MicroMeasurePro_Setup_v2.5.60.exe",
+  "sha256": "aa8704b19c9d4172e7d6ce8de65979b2882c0e91e231c43cfdcb08bea8d76e22",
+  "size": 16334000
  },
  "zip": {
-  "file": "MicroMeasurePro_v2.5.59.zip",
-  "url": "https://github.com/eden-0721/MicroMeasurePro/releases/download/micromeasurepro-v2.5.59/MicroMeasurePro_v2.5.59.zip",
-  "sha256": "021c2ff4f9c55acb2119a9376b530e571f56afcd5be7c88267c2206cc4120ace",
-  "size": 18277068
+  "file": "MicroMeasurePro_v2.5.60.zip",
+  "url": "https://github.com/eden-0721/MicroMeasurePro/releases/download/micromeasurepro-v2.5.60/MicroMeasurePro_v2.5.60.zip",
+  "sha256": "7ba491d87b2e94f73886c0d1322bed805d0b57c67b9c8000d31d31ba300b3371",
+  "size": 18277593
  },
  "notes": [
+  {
+   "v": "2.5.60",
+   "date": "2026-10-13",
+   "title": "그래프 위 구간 글자 읽히게",
+   "items": [
+    "그래프 위의 **구간 최대 · 구간 평균 · 구간 최소 · 구간 #시작~#끝** 글자와 평균·USL·LSL 같은 보조선 글자를 **진한 글자 굵게 + 흰 바탕 상자 + 선 색 테두리**로 — 선 색 그대로 쓴 옅은 글자가 많은 선 위에서 안 보이던 것",
+    "글자 크기는 [보기] 탭 차트 스타일의 **캡션 글자 크기** 그대로입니다 (더 크게 보려면 거기서)"
+   ]
+  },
   {
    "v": "2.5.59",
    "date": "2026-10-13",
@@ -63,31 +72,21 @@
     "**최근 작업**: 다시 열 때 읽기 권한 묻기에 [거부]를 누르거나, 영상 화면에서 서버에 연결할 수 없으면 이번엔 열지 않고 **목록에는 남겨 둡니다** (전에는 목록에서 빠져 파일을 잃은 것처럼 보였음). 정말 옮겨졌거나 지워진 파일만 빠집니다",
     "\"모두 지우기\" 단추에 설명 (목록만 지우고 파일은 그대로) — 공통 템플릿 0.4.1"
    ]
-  },
-  {
-   "v": "2.5.55",
-   "date": "2026-10-13",
-   "title": "[파일] 최근 작업",
-   "items": [
-    "**최근 작업** ([파일] 탭): 전에 연 파일을 10개까지 기억해 목록에서 바로 다시 엽니다 — 비전은 [사진 열기]·[작업 열기] 로 연 파일, 통계는 열거나 저장한 프로젝트(.mms), 영상은 연 영상(ROI·판독은 옆 .mmvid 에서 그대로)",
-    "옮겼거나 지운 파일은 고를 때 목록에서 빠집니다. 줄에 마우스를 올리면 × 로 빼기, 아래 모두 지우기. 비전·통계는 창을 새로 켠 뒤 처음 한 번 읽기 권한을 묻습니다",
-    "BSKang SW 세 프로그램이 같은 모양의 최근 목록 (공통 템플릿 0.4.0)"
-   ]
   }
  ],
- "page": "https://github.com/eden-0721/MicroMeasurePro/releases/tag/micromeasurepro-v2.5.59",
+ "page": "https://github.com/eden-0721/MicroMeasurePro/releases/tag/micromeasurepro-v2.5.60",
  "private": true,
  "filesRepo": "eden-0721/MicroMeasurePro",
  "source": "https://github.com/eden-0721/MicroMeasurePro",
  "previous": {
-  "version": "2.5.58",
+  "version": "2.5.59",
   "setup": {
-   "file": "MicroMeasurePro_Setup_v2.5.58.exe",
-   "url": "https://github.com/eden-0721/MicroMeasurePro/releases/download/micromeasurepro-v2.5.58/MicroMeasurePro_Setup_v2.5.58.exe",
-   "sha256": "b028568075fb50a8739b32acf900007a35a39a21c660d22b09a62b4c2fde4a60",
-   "size": 16331799
+   "file": "MicroMeasurePro_Setup_v2.5.59.exe",
+   "url": "https://github.com/eden-0721/MicroMeasurePro/releases/download/micromeasurepro-v2.5.59/MicroMeasurePro_Setup_v2.5.59.exe",
+   "sha256": "d8981687e32d223253ca91f9522dd9685f03856e5921f150814a48745453aec6",
+   "size": 16336494
   },
-  "tag": "micromeasurepro-v2.5.58",
+  "tag": "micromeasurepro-v2.5.59",
   "filesRepo": "eden-0721/MicroMeasurePro"
  }
 }
