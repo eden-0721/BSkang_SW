@@ -201,7 +201,7 @@
    "icon": "icon-64.png",
    "kind": "web",
    "private": true,
-   "version": "0.16.0",
+   "version": "0.17.0",
    "date": "2026-10-15",
    "web": {
     "url": "https://iedamemo.badboysbk.workers.dev"
