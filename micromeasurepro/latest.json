@@ -1,23 +1,36 @@
 {
  "app": "micromeasurepro",
  "name": "MicroMeasure Pro",
- "version": "2.5.58",
+ "version": "2.5.59",
  "date": "2026-10-13",
  "channel": "release",
- "tag": "micromeasurepro-v2.5.58",
+ "tag": "micromeasurepro-v2.5.59",
  "setup": {
-  "file": "MicroMeasurePro_Setup_v2.5.58.exe",
-  "url": "https://github.com/eden-0721/MicroMeasurePro/releases/download/micromeasurepro-v2.5.58/MicroMeasurePro_Setup_v2.5.58.exe",
-  "sha256": "b028568075fb50a8739b32acf900007a35a39a21c660d22b09a62b4c2fde4a60",
-  "size": 16331799
+  "file": "MicroMeasurePro_Setup_v2.5.59.exe",
+  "url": "https://github.com/eden-0721/MicroMeasurePro/releases/download/micromeasurepro-v2.5.59/MicroMeasurePro_Setup_v2.5.59.exe",
+  "sha256": "d8981687e32d223253ca91f9522dd9685f03856e5921f150814a48745453aec6",
+  "size": 16336494
  },
  "zip": {
-  "file": "MicroMeasurePro_v2.5.58.zip",
-  "url": "https://github.com/eden-0721/MicroMeasurePro/releases/download/micromeasurepro-v2.5.58/MicroMeasurePro_v2.5.58.zip",
-  "sha256": "421efbbed75a1f63cefc32a3ee875b36959fc63b2f3cf49c632b4e9b55095a97",
-  "size": 18275404
+  "file": "MicroMeasurePro_v2.5.59.zip",
+  "url": "https://github.com/eden-0721/MicroMeasurePro/releases/download/micromeasurepro-v2.5.59/MicroMeasurePro_v2.5.59.zip",
+  "sha256": "021c2ff4f9c55acb2119a9376b530e571f56afcd5be7c88267c2206cc4120ace",
+  "size": 18277068
  },
  "notes": [
+  {
+   "v": "2.5.59",
+   "date": "2026-10-13",
+   "title": "구간 창 읽기 쉽게 · 자리 선택 · 범례 가운데",
+   "items": [
+    "**구간 통계 창**: 글자 기본 14px, 항목 이름은 진한 회색, 숫자는 굵게·자릿수 맞춤, 비교 표의 그래프 이름은 그 선 색 — 멀리서도 읽힙니다. 규격이 없으면 Cpk 칸은 보이지 않습니다",
+    "구간 창은 처음에 **범위와 그래프별 수치만** 보입니다. **전체 요약 ▾** · **구간 보조선 ▾** 머리 줄을 누르면 펼치고 다시 누르면 접힙니다 (프로젝트에 기억)",
+    "**창 자리** (오리진처럼): 머리의 ⇥ 또는 ⚙ → 구간 창 › 자리에서 **그래프 안에 띄우기** / **그래프 옆에 붙이기** 를 고릅니다 (이 PC 에 기억)",
+    "서식 창의 구간 절은 시작·끝 입력과 [구간 창 열기]·[구간 해제]만 — 통계는 구간 창 한 곳에서",
+    "그래프가 9개 넘어 범례가 차트 아래로 가면 **가운데 정렬** (전에는 왼쪽에 치우침)",
+    "개발본에서 5분마다 콘솔 창이 잠깐 떴다 사라지던 것 고침 (git · ffmpeg 호출에 창 숨김)"
+   ]
+  },
   {
    "v": "2.5.58",
    "date": "2026-10-13",
@@ -60,31 +73,21 @@
     "옮겼거나 지운 파일은 고를 때 목록에서 빠집니다. 줄에 마우스를 올리면 × 로 빼기, 아래 모두 지우기. 비전·통계는 창을 새로 켠 뒤 처음 한 번 읽기 권한을 묻습니다",
     "BSKang SW 세 프로그램이 같은 모양의 최근 목록 (공통 템플릿 0.4.0)"
    ]
-  },
-  {
-   "v": "2.5.54",
-   "date": "2026-10-12",
-   "title": "화면 배율 140% · 영상 새로 만들기",
-   "items": [
-    "**화면 배율** ([도구] 탭 · 환경 설정): 100% · 120%(크게 보기) · **140%(아주 크게 — 글자 17px · 단추 34px)** — BSKang SW 세 프로그램이 같은 단계. 고른 배율은 기억되고 통계 화면도 같이 바뀝니다. 대비까지 높이는 현장 보기는 [보기] 탭에 따로",
-    "**영상 [파일] 새로 만들기** (Ctrl+N): 지금 영상을 닫고 처음 화면으로 (ROI·판독 결과는 영상 옆 .mmvid 에 남아 다시 열면 그대로)",
-    "[파일] 새로 만들기·열기·저장이 세 화면 모두 같은 자리"
-   ]
   }
  ],
- "page": "https://github.com/eden-0721/MicroMeasurePro/releases/tag/micromeasurepro-v2.5.58",
+ "page": "https://github.com/eden-0721/MicroMeasurePro/releases/tag/micromeasurepro-v2.5.59",
  "private": true,
  "filesRepo": "eden-0721/MicroMeasurePro",
  "source": "https://github.com/eden-0721/MicroMeasurePro",
  "previous": {
-  "version": "2.5.57",
+  "version": "2.5.58",
   "setup": {
-   "file": "MicroMeasurePro_Setup_v2.5.57.exe",
-   "url": "https://github.com/eden-0721/MicroMeasurePro/releases/download/micromeasurepro-v2.5.57/MicroMeasurePro_Setup_v2.5.57.exe",
-   "sha256": "bb4cee8f85e65622a9c8acbf22e4fcbdf7659590b8b236a487ad40bf917bc7d8",
-   "size": 16329966
+   "file": "MicroMeasurePro_Setup_v2.5.58.exe",
+   "url": "https://github.com/eden-0721/MicroMeasurePro/releases/download/micromeasurepro-v2.5.58/MicroMeasurePro_Setup_v2.5.58.exe",
+   "sha256": "b028568075fb50a8739b32acf900007a35a39a21c660d22b09a62b4c2fde4a60",
+   "size": 16331799
   },
-  "tag": "micromeasurepro-v2.5.57",
+  "tag": "micromeasurepro-v2.5.58",
   "filesRepo": "eden-0721/MicroMeasurePro"
  }
 }
