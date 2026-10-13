@@ -1,19 +1,26 @@
 {
  "app": "testreport",
  "name": "시험성적서 워크벤치",
- "version": "2.12.0",
+ "version": "2.12.1",
  "date": "2026-10-13",
  "channel": "release",
- "tag": "testreport-v2.12.0",
+ "tag": "testreport-v2.12.1",
  "private": true,
  "filesRepo": "eden-0721/test_reports",
  "setup": {
-  "file": "TestReport_Setup_v2.12.0.exe",
-  "url": "https://github.com/eden-0721/test_reports/releases/download/testreport-v2.12.0/TestReport_Setup_v2.12.0.exe",
-  "sha256": "76ad09cc695efd77df2811b5132617f5c7bb1ecd0877ed5c3f9cbef7752fba16",
-  "size": 3905949
+  "file": "TestReport_Setup_v2.12.1.exe",
+  "url": "https://github.com/eden-0721/test_reports/releases/download/testreport-v2.12.1/TestReport_Setup_v2.12.1.exe",
+  "sha256": "beb6bba5e5f378ae4e2eebe6a462dfee2d660d42ee8f8e81c62019526ae4f2d1",
+  "size": 3906607
  },
  "notes": [
+  {
+   "v": "2.12.1",
+   "date": "2026-10-13",
+   "items": [
+    "프로그램이 갑자기 꺼지던 원인 하나 수정(오류 코드 -1073741819): 구글 드라이브 통신 연결을 여러 작업이 동시에 쓰다 충돌했습니다 → 작업마다 연결을 따로 씁니다 (동기화·최근 작업·편집 중 표시가 겹쳐도 안전)"
+   ]
+  },
   {
    "v": "2.12.0",
    "date": "2026-10-13",
