@@ -1,19 +1,26 @@
 {
  "app": "testreport",
  "name": "시험성적서 워크벤치",
- "version": "2.12.4",
+ "version": "2.12.5",
  "date": "2026-10-13",
  "channel": "release",
- "tag": "testreport-v2.12.4",
+ "tag": "testreport-v2.12.5",
  "private": true,
  "filesRepo": "eden-0721/test_reports",
  "setup": {
-  "file": "TestReport_Setup_v2.12.4.exe",
-  "url": "https://github.com/eden-0721/test_reports/releases/download/testreport-v2.12.4/TestReport_Setup_v2.12.4.exe",
-  "sha256": "6b2500da248235267afff8e5b896a0aa6a905e6ce87de52d473a4a6d60bb0cef",
-  "size": 3907122
+  "file": "TestReport_Setup_v2.12.5.exe",
+  "url": "https://github.com/eden-0721/test_reports/releases/download/testreport-v2.12.5/TestReport_Setup_v2.12.5.exe",
+  "sha256": "54d8d0a8f3c47147f62e5c53cf7e60378701eb69014faa1df020710bd2d974b7",
+  "size": 3907235
  },
  "notes": [
+  {
+   "v": "2.12.5",
+   "date": "2026-10-13",
+   "items": [
+    "그림 자르기 창에서 가로로 넓은 그림(차트 등)이 창보다 커져 왼쪽·오른쪽 손잡이가 안 보이던 것 수정 — 그림이 창 안에 다 들어옵니다"
+   ]
+  },
   {
    "v": "2.12.4",
    "date": "2026-10-13",
