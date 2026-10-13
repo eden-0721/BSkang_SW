@@ -1,19 +1,26 @@
 {
  "app": "testreport",
  "name": "시험성적서 워크벤치",
- "version": "2.13.1",
+ "version": "2.13.2",
  "date": "2026-10-13",
  "channel": "release",
- "tag": "testreport-v2.13.1",
+ "tag": "testreport-v2.13.2",
  "private": true,
  "filesRepo": "eden-0721/test_reports",
  "setup": {
-  "file": "TestReport_Setup_v2.13.1.exe",
-  "url": "https://github.com/eden-0721/test_reports/releases/download/testreport-v2.13.1/TestReport_Setup_v2.13.1.exe",
-  "sha256": "174e5549aed16b87e1e369ea411729ace55eda368c904b1c094c0dc59a7f0aaa",
-  "size": 3910682
+  "file": "TestReport_Setup_v2.13.2.exe",
+  "url": "https://github.com/eden-0721/test_reports/releases/download/testreport-v2.13.2/TestReport_Setup_v2.13.2.exe",
+  "sha256": "6662e6a837c987e9c013b0ef7231a3daa9412f8266e0b8d18e215f3ab4e4d4dd",
+  "size": 3910731
  },
  "notes": [
+  {
+   "v": "2.13.2",
+   "date": "2026-10-13",
+   "items": [
+    "조판의 그림 여러 장에서 비율이 다른 그림(넓은 그래프 등)의 높이가 옆 그림과 달라지던 것 수정 — 같은 줄은 같은 높이"
+   ]
+  },
   {
    "v": "2.13.1",
    "date": "2026-10-13",
