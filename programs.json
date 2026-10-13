@@ -193,6 +193,24 @@
    },
    "page": "https://github.com/eden-0721/test_reports/releases/tag/testreport-v2.14.3",
    "source": "https://github.com/eden-0721/test_reports"
+  },
+  {
+   "app": "iedamemo",
+   "name": "iedaMemo",
+   "description": "PDF를 보며 적은 메모가 페이지와 녹음에 저절로 이어지는 노트",
+   "icon": "icon-64.png",
+   "kind": "web",
+   "private": true,
+   "version": "0.2.0",
+   "date": "2026-10-13",
+   "web": {
+    "url": "https://iedamemo.badboysbk.workers.dev"
+   },
+   "install": {
+    "file": "install.bat"
+   },
+   "source": "https://github.com/eden-0721/memo",
+   "notes": true
   }
  ],
  "shared": [
