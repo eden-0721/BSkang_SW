@@ -3,8 +3,8 @@
  "name": "iedaMemo",
  "description": "PDF를 보며 적은 메모가 페이지와 녹음에 저절로 이어지는 노트",
  "kind": "web",
- "version": "0.3.4",
- "date": "2026-10-13",
+ "version": "0.3.5",
+ "date": "2026-10-14",
  "channel": "release",
  "web": {
   "url": "https://iedamemo.badboysbk.workers.dev"
@@ -15,6 +15,15 @@
  "source": "https://github.com/eden-0721/memo",
  "private": true,
  "notes": [
+  {
+   "v": "0.3.5",
+   "date": "2026-10-14",
+   "title": "문단 사이에 손글씨 · 정한 크기 안에서만 쓰기",
+   "items": [
+    "블록 ⋮ 메뉴에 '위에 손글씨 넣기'·'아래에 손글씨 넣기' — 문단 사이 어디에든 손글씨 칸을 넣어요",
+    "손글씨 칸을 줄이거나 늘려 크기를 정하면 저절로 커지지 않고 그 칸 안에서만 써져요"
+   ]
+  },
   {
    "v": "0.3.4",
    "date": "2026-10-13",
