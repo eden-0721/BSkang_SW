@@ -1,19 +1,26 @@
 {
  "app": "testreport",
  "name": "시험성적서 워크벤치",
- "version": "2.12.2",
+ "version": "2.12.3",
  "date": "2026-10-13",
  "channel": "release",
- "tag": "testreport-v2.12.2",
+ "tag": "testreport-v2.12.3",
  "private": true,
  "filesRepo": "eden-0721/test_reports",
  "setup": {
-  "file": "TestReport_Setup_v2.12.2.exe",
-  "url": "https://github.com/eden-0721/test_reports/releases/download/testreport-v2.12.2/TestReport_Setup_v2.12.2.exe",
-  "sha256": "1e8541f01b42a3462a0c903ee45dcc4725a5a4f3fb1a9b187ddb2d7055f41efd",
-  "size": 3906627
+  "file": "TestReport_Setup_v2.12.3.exe",
+  "url": "https://github.com/eden-0721/test_reports/releases/download/testreport-v2.12.3/TestReport_Setup_v2.12.3.exe",
+  "sha256": "25277d80898a26716bfdc802c3445714fae0e39c20463d7ef88d99e253c1650a",
+  "size": 3906854
  },
  "notes": [
+  {
+   "v": "2.12.3",
+   "date": "2026-10-13",
+   "items": [
+    "조판의 그림 여러 장(2×2 등)이 한 줄에 한 장씩 풀리던 것 수정 — 칸이 열 수를 넘지 못하게 하고, 다시 그리거나 종이 폭이 바뀔 때 칸 폭을 다시 맞춥니다"
+   ]
+  },
   {
    "v": "2.12.2",
    "date": "2026-10-13",
