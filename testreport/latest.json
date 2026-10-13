@@ -1,19 +1,27 @@
 {
  "app": "testreport",
  "name": "시험성적서 워크벤치",
- "version": "2.11.1",
+ "version": "2.11.2",
  "date": "2026-10-13",
  "channel": "release",
- "tag": "testreport-v2.11.1",
+ "tag": "testreport-v2.11.2",
  "private": true,
  "filesRepo": "eden-0721/test_reports",
  "setup": {
-  "file": "TestReport_Setup_v2.11.1.exe",
-  "url": "https://github.com/eden-0721/test_reports/releases/download/testreport-v2.11.1/TestReport_Setup_v2.11.1.exe",
-  "sha256": "4cb9904835e685b140e4f3c674d9ea201486479c3de23987c422f229a05e576e",
-  "size": 3900444
+  "file": "TestReport_Setup_v2.11.2.exe",
+  "url": "https://github.com/eden-0721/test_reports/releases/download/testreport-v2.11.2/TestReport_Setup_v2.11.2.exe",
+  "sha256": "a1cf32dc11ba3cf77ead44bd0d8348e8adc5a0504c7ccb5027c3eeb0bfc97076",
+  "size": 3901771
  },
  "notes": [
+  {
+   "v": "2.11.2",
+   "date": "2026-10-13",
+   "items": [
+    "최근 작업 목록이 구글 드라이브 기준으로 바뀌었습니다: [파일] › 최근과 맨 위 작업 이름 ▾ 목록이 같은 구글 계정으로 동기화하는 어느 PC 에서나 똑같이 보이고, 이 PC 에 없는 작업도 고르면 드라이브에서 받아 엽니다 (공통 템플릿 0.6.0)",
+    "목록 앞 점으로 상태 표시: 남색 = 다른 PC 의 새 내용 · 주황 = 아직 안 올린 변경 · 빨강 = 충돌. 드라이브 로그인이 없는 PC 는 그 PC 자동 저장본만 (예전과 같음)"
+   ]
+  },
   {
    "v": "2.11.1",
    "date": "2026-10-13",
