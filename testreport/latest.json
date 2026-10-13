@@ -1,19 +1,26 @@
 {
  "app": "testreport",
  "name": "시험성적서 워크벤치",
- "version": "2.12.3",
+ "version": "2.12.4",
  "date": "2026-10-13",
  "channel": "release",
- "tag": "testreport-v2.12.3",
+ "tag": "testreport-v2.12.4",
  "private": true,
  "filesRepo": "eden-0721/test_reports",
  "setup": {
-  "file": "TestReport_Setup_v2.12.3.exe",
-  "url": "https://github.com/eden-0721/test_reports/releases/download/testreport-v2.12.3/TestReport_Setup_v2.12.3.exe",
-  "sha256": "25277d80898a26716bfdc802c3445714fae0e39c20463d7ef88d99e253c1650a",
-  "size": 3906854
+  "file": "TestReport_Setup_v2.12.4.exe",
+  "url": "https://github.com/eden-0721/test_reports/releases/download/testreport-v2.12.4/TestReport_Setup_v2.12.4.exe",
+  "sha256": "6b2500da248235267afff8e5b896a0aa6a905e6ce87de52d473a4a6d60bb0cef",
+  "size": 3907122
  },
  "notes": [
+  {
+   "v": "2.12.4",
+   "date": "2026-10-13",
+   "items": [
+    "조판의 그림 여러 장 줄 오른쪽에 있던 [＋] 네모 상자가 자리를 차지해 발행본과 모양이 달랐던 것 수정 — 상자를 줄 바깥에 띄우고 마우스를 올렸을 때만 보이며, 그림은 발행본처럼 줄 폭 전체를 씁니다"
+   ]
+  },
   {
    "v": "2.12.3",
    "date": "2026-10-13",
