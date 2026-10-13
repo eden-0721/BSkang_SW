@@ -3,7 +3,7 @@
  "name": "iedaMemo",
  "description": "PDF를 보며 적은 메모가 페이지와 녹음에 저절로 이어지는 노트",
  "kind": "web",
- "version": "0.3.3",
+ "version": "0.3.4",
  "date": "2026-10-13",
  "channel": "release",
  "web": {
@@ -15,6 +15,15 @@
  "source": "https://github.com/eden-0721/memo",
  "private": true,
  "notes": [
+  {
+   "v": "0.3.4",
+   "date": "2026-10-13",
+   "title": "태블릿에 마우스를 쓸 때도 ⋮ 메뉴가 보이게",
+   "items": [
+    "태블릿·폰에 마우스를 연결해 쓸 때 왼쪽 메뉴와 블록에 마우스를 올리면 ⋮·+ 가 보여요",
+    "손가락만 쓸 때는 왼쪽 메뉴의 ⋮·+ 가 흐리게 늘 보여요"
+   ]
+  },
   {
    "v": "0.3.3",
    "date": "2026-10-13",
