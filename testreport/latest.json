@@ -1,19 +1,26 @@
 {
  "app": "testreport",
  "name": "시험성적서 워크벤치",
- "version": "2.13.0",
+ "version": "2.13.1",
  "date": "2026-10-13",
  "channel": "release",
- "tag": "testreport-v2.13.0",
+ "tag": "testreport-v2.13.1",
  "private": true,
  "filesRepo": "eden-0721/test_reports",
  "setup": {
-  "file": "TestReport_Setup_v2.13.0.exe",
-  "url": "https://github.com/eden-0721/test_reports/releases/download/testreport-v2.13.0/TestReport_Setup_v2.13.0.exe",
-  "sha256": "011a761f511f2ddc25d806f251325b5c6529dc0b6b829f4a722b10cc78adbfa8",
-  "size": 3910049
+  "file": "TestReport_Setup_v2.13.1.exe",
+  "url": "https://github.com/eden-0721/test_reports/releases/download/testreport-v2.13.1/TestReport_Setup_v2.13.1.exe",
+  "sha256": "174e5549aed16b87e1e369ea411729ace55eda368c904b1c094c0dc59a7f0aaa",
+  "size": 3910682
  },
  "notes": [
+  {
+   "v": "2.13.1",
+   "date": "2026-10-13",
+   "items": [
+    "초안 발행 때 업체 검토용 PDF 를 함께 만듭니다 — 쪽마다 그림으로 바꾼 PDF 라 글자 복사·수정이 안 됩니다 (초안 HWP 옆 같은 이름 .pdf)"
+   ]
+  },
   {
    "v": "2.13.0",
    "date": "2026-10-13",
