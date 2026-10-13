@@ -1,19 +1,26 @@
 {
  "app": "testreport",
  "name": "시험성적서 워크벤치",
- "version": "2.14.1",
+ "version": "2.14.2",
  "date": "2026-10-13",
  "channel": "release",
- "tag": "testreport-v2.14.1",
+ "tag": "testreport-v2.14.2",
  "private": true,
  "filesRepo": "eden-0721/test_reports",
  "setup": {
-  "file": "TestReport_Setup_v2.14.1.exe",
-  "url": "https://github.com/eden-0721/test_reports/releases/download/testreport-v2.14.1/TestReport_Setup_v2.14.1.exe",
-  "sha256": "54397ed405491635178de0b9d688bca90ec27db016f3c5e2024ac236299ca2f1",
-  "size": 3913508
+  "file": "TestReport_Setup_v2.14.2.exe",
+  "url": "https://github.com/eden-0721/test_reports/releases/download/testreport-v2.14.2/TestReport_Setup_v2.14.2.exe",
+  "sha256": "2c8da3777ceaacea8928dd3bc7b434bbb8f537d5a4b8e902a1e61fcb77a37c31",
+  "size": 3913722
  },
  "notes": [
+  {
+   "v": "2.14.2",
+   "date": "2026-10-13",
+   "items": [
+    "조판 표의 열 경계·오른쪽 끝 선을 끌어도 열 너비·표 폭이 바뀌지 않던 것 수정 — 표를 처음 누를 때 서식 창이 열리며 종이가 비켜나 끌기가 무시됐습니다"
+   ]
+  },
   {
    "v": "2.14.1",
    "date": "2026-10-13",
