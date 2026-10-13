@@ -47,15 +47,15 @@
    "name": "PaperMaster",
    "description": "연구자가 넣은 자료만으로 논문을 쓰는 로컬 앱 (파싱·근거 검색·집필·검증)",
    "icon": "icon-64.png",
-   "version": "3.27.0",
-   "date": "2026-10-12",
+   "version": "3.28.0",
+   "date": "2026-10-13",
    "setup": {
-    "file": "PaperMaster_Setup_v3.27.0.exe",
-    "url": "https://github.com/eden-0721/papermaster/releases/download/papermaster-v3.27.0/PaperMaster_Setup_v3.27.0.exe",
-    "sha256": "6688ba39bdee96509effc0525c832e08f3a9780a9b82baa3e0788bbd7987b13c",
-    "size": 25781460
+    "file": "PaperMaster_Setup_v3.28.0.exe",
+    "url": "https://github.com/eden-0721/papermaster/releases/download/papermaster-v3.28.0/PaperMaster_Setup_v3.28.0.exe",
+    "sha256": "ecc622a0313ddaf3b6d643fad25b31a8de831900c1a522f4d92ddc757d6a0b0f",
+    "size": 25789028
    },
-   "page": "https://github.com/eden-0721/papermaster/releases/tag/papermaster-v3.27.0",
+   "page": "https://github.com/eden-0721/papermaster/releases/tag/papermaster-v3.28.0",
    "private": true,
    "source": "https://github.com/eden-0721/papermaster"
   },
@@ -118,6 +118,23 @@
    "source": "https://github.com/eden-0721/photo_organize"
   },
   {
+   "app": "testreport",
+   "name": "시험성적서 워크벤치",
+   "description": "시험성적서 작성·발행 (비공개)",
+   "icon": "icon-64.png",
+   "private": true,
+   "version": "2.12.0",
+   "date": "2026-10-13",
+   "setup": {
+    "file": "TestReport_Setup_v2.12.0.exe",
+    "url": "https://github.com/login?return_to=/eden-0721/test_reports/releases/download/testreport-v2.12.0/TestReport_Setup_v2.12.0.exe",
+    "size": 3905949,
+    "sha256": "76ad09cc695efd77df2811b5132617f5c7bb1ecd0877ed5c3f9cbef7752fba16"
+   },
+   "page": "https://github.com/eden-0721/test_reports/releases/tag/testreport-v2.12.0",
+   "source": "https://github.com/eden-0721/test_reports"
+  },
+  {
    "app": "learn-eng",
    "name": "영어 배우기",
    "description": "아이부터 어른까지, 하루 몇 분 만화와 이야기로 배우는 가족·반 영어 공부 앱",
@@ -170,23 +187,6 @@
    "install": {
     "file": "install.bat"
    }
-  },
-  {
-   "app": "testreport",
-   "name": "시험성적서 워크벤치",
-   "description": "시험성적서 작성·발행 (비공개)",
-   "icon": "icon-64.png",
-   "private": true,
-   "version": "2.12.0",
-   "date": "2026-10-13",
-   "setup": {
-    "file": "TestReport_Setup_v2.12.0.exe",
-    "url": "https://github.com/login?return_to=/eden-0721/test_reports/releases/download/testreport-v2.12.0/TestReport_Setup_v2.12.0.exe",
-    "size": 3905949,
-    "sha256": "76ad09cc695efd77df2811b5132617f5c7bb1ecd0877ed5c3f9cbef7752fba16"
-   },
-   "page": "https://github.com/eden-0721/test_reports/releases/tag/testreport-v2.12.0",
-   "source": "https://github.com/eden-0721/test_reports"
   }
  ],
  "shared": [

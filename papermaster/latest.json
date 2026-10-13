@@ -2,17 +2,25 @@
  "app": "papermaster",
  "name": "PaperMaster",
  "description": "연구자가 넣은 자료만으로 논문을 쓰는 로컬 앱 (파싱·근거 검색·집필·검증)",
- "version": "3.27.0",
- "date": "2026-10-12",
+ "version": "3.28.0",
+ "date": "2026-10-13",
  "channel": "release",
- "tag": "papermaster-v3.27.0",
+ "tag": "papermaster-v3.28.0",
  "setup": {
-  "file": "PaperMaster_Setup_v3.27.0.exe",
-  "url": "https://github.com/eden-0721/papermaster/releases/download/papermaster-v3.27.0/PaperMaster_Setup_v3.27.0.exe",
-  "sha256": "6688ba39bdee96509effc0525c832e08f3a9780a9b82baa3e0788bbd7987b13c",
-  "size": 25781460
+  "file": "PaperMaster_Setup_v3.28.0.exe",
+  "url": "https://github.com/eden-0721/papermaster/releases/download/papermaster-v3.28.0/PaperMaster_Setup_v3.28.0.exe",
+  "sha256": "ecc622a0313ddaf3b6d643fad25b31a8de831900c1a522f4d92ddc757d6a0b0f",
+  "size": 25789028
  },
  "notes": [
+  {
+   "v": "3.28.0",
+   "date": "2026-10-13",
+   "title": "변경",
+   "items": [
+    "**공통 부분을 템플릿이 통째로** (데스크톱 부품 0.5.0, 세 프로그램 \"글자만 다르고 모양은 같게\" — 사용자 결정) — [파일] 작업·동기화 묶음, [도구] 설정·화면 배율, [도움말] 전체, 탭 줄 오른쪽, 상태 표시줄, 환경 설정 창을 템플릿 `DeskRibbon.mount`가 표대로 만들고 PaperMaster는 글자(새 연구실·연구실 열기·드라이브)와 동작만 넣는다 (A-16b)"
+   ]
+  },
   {
    "v": "3.27.0",
    "date": "2026-10-12",
@@ -54,29 +62,21 @@
     "**공통 모양** — 템플릿 0.8.0 → 0.36.5(공통 모양 look.css·선 아이콘), 데스크톱 부품 0.1.2(리본·기본 부품). 색·모서리·글꼴이 다른 BSKang SW 프로그램과 같고, 대표색은 템플릿 추천 보라 #6B46A8(app.css 한 줄로 바꿈). 인용 표시 버건디는 그대로 (A-15)",
     "오른쪽 '도구' 목록은 리본과 같은 명령이라 숨기고 가운데를 넓혔다. AI 엔진 표시·AI 사용량·버전 줄은 아래 상태 표시줄로 (A-15)"
    ]
-  },
-  {
-   "v": "3.23.7",
-   "date": "2026-10-11",
-   "title": "고침",
-   "items": [
-    "충돌을 해결해도 머리줄이 최대 5분 동안 \"⚠️ 충돌\"을 계속 보이고, 눌러도 충돌 창 대신 옛 상태(충돌 1)가 뜨던 것 → 동기화가 끝나거나 충돌 목록을 새로 비교하면 머리줄 상태를 바로 새로 씀 (G-51)"
-   ]
   }
  ],
- "page": "https://github.com/eden-0721/papermaster/releases/tag/papermaster-v3.27.0",
+ "page": "https://github.com/eden-0721/papermaster/releases/tag/papermaster-v3.28.0",
  "private": true,
  "filesRepo": "eden-0721/papermaster",
  "source": "https://github.com/eden-0721/papermaster",
  "previous": {
-  "version": "3.26.0",
+  "version": "3.27.0",
   "setup": {
-   "file": "PaperMaster_Setup_v3.26.0.exe",
-   "url": "https://github.com/eden-0721/papermaster/releases/download/papermaster-v3.26.0/PaperMaster_Setup_v3.26.0.exe",
-   "sha256": "1cc94c40fc405e77cfdf6603b3718bf107f9d730931386a3a779c6e3ca97fbfd",
-   "size": 25776507
+   "file": "PaperMaster_Setup_v3.27.0.exe",
+   "url": "https://github.com/eden-0721/papermaster/releases/download/papermaster-v3.27.0/PaperMaster_Setup_v3.27.0.exe",
+   "sha256": "6688ba39bdee96509effc0525c832e08f3a9780a9b82baa3e0788bbd7987b13c",
+   "size": 25781460
   },
-  "tag": "papermaster-v3.26.0",
+  "tag": "papermaster-v3.27.0",
   "filesRepo": "eden-0721/papermaster"
  }
 }
