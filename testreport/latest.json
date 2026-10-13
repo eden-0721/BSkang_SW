@@ -1,19 +1,26 @@
 {
  "app": "testreport",
  "name": "시험성적서 워크벤치",
- "version": "2.14.2",
+ "version": "2.14.3",
  "date": "2026-10-13",
  "channel": "release",
- "tag": "testreport-v2.14.2",
+ "tag": "testreport-v2.14.3",
  "private": true,
  "filesRepo": "eden-0721/test_reports",
  "setup": {
-  "file": "TestReport_Setup_v2.14.2.exe",
-  "url": "https://github.com/eden-0721/test_reports/releases/download/testreport-v2.14.2/TestReport_Setup_v2.14.2.exe",
-  "sha256": "2c8da3777ceaacea8928dd3bc7b434bbb8f537d5a4b8e902a1e61fcb77a37c31",
-  "size": 3913722
+  "file": "TestReport_Setup_v2.14.3.exe",
+  "url": "https://github.com/eden-0721/test_reports/releases/download/testreport-v2.14.3/TestReport_Setup_v2.14.3.exe",
+  "sha256": "9026dcda2e8f68979869037528044e41568c2becfd4b870388627527f49d86a3",
+  "size": 3913688
  },
  "notes": [
+  {
+   "v": "2.14.3",
+   "date": "2026-10-13",
+   "items": [
+    "그림 여러 장·그림·표 나란히도 본문 들여쓰기 안쪽 폭의 가운데에 놓입니다 — 폭을 다 채우지 못한 그림 줄이 왼쪽에 붙어 보이던 것 수정 (조판 화면·발행본, 묶음 제목도 같은 가운데). 표는 들여쓰기 자리에서 왼쪽 맞춤 그대로"
+   ]
+  },
   {
    "v": "2.14.2",
    "date": "2026-10-13",
