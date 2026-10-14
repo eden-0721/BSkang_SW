@@ -3,7 +3,7 @@
  "name": "iedaMemo",
  "description": "PDF를 보며 적은 메모가 페이지와 녹음에 저절로 이어지는 노트",
  "kind": "web",
- "version": "0.23.2",
+ "version": "0.23.3",
  "date": "2026-10-15",
  "channel": "release",
  "web": {
@@ -15,6 +15,14 @@
  "source": "https://github.com/eden-0721/memo",
  "private": true,
  "notes": [
+  {
+   "v": "0.23.3",
+   "date": "2026-10-15",
+   "title": "새 앱 아이콘",
+   "items": [
+    "앱 아이콘을 밤하늘 공책 그림으로 바꿨어요 (홈 화면·브라우저 탭·알림·링크 미리보기). 이미 설치한 앱은 폰이 아이콘을 다시 받을 때까지 며칠 걸릴 수 있어요"
+   ]
+  },
   {
    "v": "0.23.2",
    "date": "2026-10-15",
