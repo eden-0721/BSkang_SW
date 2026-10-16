@@ -1,19 +1,26 @@
 {
  "app": "testreport",
  "name": "시험성적서 워크벤치",
- "version": "2.14.3",
- "date": "2026-10-13",
+ "version": "2.14.4",
+ "date": "2026-10-16",
  "channel": "release",
- "tag": "testreport-v2.14.3",
+ "tag": "testreport-v2.14.4",
  "private": true,
  "filesRepo": "eden-0721/test_reports",
  "setup": {
-  "file": "TestReport_Setup_v2.14.3.exe",
-  "url": "https://github.com/eden-0721/test_reports/releases/download/testreport-v2.14.3/TestReport_Setup_v2.14.3.exe",
-  "sha256": "9026dcda2e8f68979869037528044e41568c2becfd4b870388627527f49d86a3",
-  "size": 3913688
+  "file": "TestReport_Setup_v2.14.4.exe",
+  "url": "https://github.com/eden-0721/test_reports/releases/download/testreport-v2.14.4/TestReport_Setup_v2.14.4.exe",
+  "sha256": "d815a4c453f09bf7f9ccee89df5ecf3bd04aaa61dd28f963a00760b235b10c76",
+  "size": 3913774
  },
  "notes": [
+  {
+   "v": "2.14.4",
+   "date": "2026-10-16",
+   "items": [
+    "조판 그림 여러 장의 '한 줄에' 배열을 4열보다 많이 고를 수 있습니다 — 그림 수만큼(5열·6열…, 최대 9장) 한 줄에 같은 높이로 (조판 화면·발행본)"
+   ]
+  },
   {
    "v": "2.14.3",
    "date": "2026-10-13",
