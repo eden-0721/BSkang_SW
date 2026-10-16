@@ -3,7 +3,7 @@
  "name": "iedaMemo",
  "description": "PDF를 보며 적은 메모가 페이지와 녹음에 저절로 이어지는 노트",
  "kind": "web",
- "version": "0.45.0",
+ "version": "0.45.1",
  "date": "2026-10-16",
  "channel": "release",
  "web": {
@@ -15,6 +15,14 @@
  "source": "https://github.com/eden-0721/memo",
  "private": true,
  "notes": [
+  {
+   "v": "0.45.1",
+   "date": "2026-10-16",
+   "title": "커서 선을 가늘게",
+   "items": [
+    "마우스 커서의 바깥 선이 너무 두꺼워 투박해 보이던 것을 가늘고 깔끔하게 다듬었어요 — 모양과 색은 그대로예요"
+   ]
+  },
   {
    "v": "0.45.0",
    "date": "2026-10-16",
