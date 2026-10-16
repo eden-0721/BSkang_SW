@@ -1,26 +1,27 @@
 {
     "app":  "TechConsultHelper",
     "name":  "기술지도 스마트 도우미",
-    "version":  "1.0.4",
-    "tag":  "techconsulthelper-v1.0.4",
-    "date":  "2026-10-13",
+    "version":  "1.0.5",
+    "tag":  "techconsulthelper-v1.0.5",
+    "date":  "2026-10-16",
     "private":  true,
-    "page":  "https://github.com/eden-0721/TechConsultHelper/releases/tag/techconsulthelper-v1.0.4",
+    "page":  "https://github.com/eden-0721/TechConsultHelper/releases/tag/techconsulthelper-v1.0.5",
     "setup":  {
-                  "file":  "TechConsultHelper_Setup_v1.0.4.exe",
-                  "url":  "https://github.com/eden-0721/TechConsultHelper/releases/download/techconsulthelper-v1.0.4/TechConsultHelper_Setup_v1.0.4.exe",
-                  "size":  2228275,
-                  "sha256":  "fb6861aac73c1312cfc6c619ba2c626d4402b0f95d116af920c57d7c081426eb"
+                  "file":  "TechConsultHelper_Setup_v1.0.5.exe",
+                  "url":  "https://github.com/eden-0721/TechConsultHelper/releases/download/techconsulthelper-v1.0.5/TechConsultHelper_Setup_v1.0.5.exe",
+                  "size":  2229506,
+                  "sha256":  "03162ecd71ce97ab6d27aff1f8bb6df86b07704fba3589ffff49f53a12fecb36"
               },
     "zip":  {
-                "file":  "TechConsultHelper_v1.0.4.zip",
-                "url":  "https://github.com/eden-0721/TechConsultHelper/releases/download/techconsulthelper-v1.0.4/TechConsultHelper_v1.0.4.zip",
-                "size":  141279,
-                "sha256":  "6be61527bc276bc2c5f98bb8ddeb7c6d87de638020a5182282725c13477648ad"
+                "file":  "TechConsultHelper_v1.0.5.zip",
+                "url":  "https://github.com/eden-0721/TechConsultHelper/releases/download/techconsulthelper-v1.0.5/TechConsultHelper_v1.0.5.zip",
+                "size":  142146,
+                "sha256":  "78456e7d888f855934d46a0850b101805a0b009b811ca1af8c62bf1db89ca302"
             },
     "notes":  [
-                  "BSKang SW 공통 모양 적용: 대표색 남보라, 공통 회색·완료/주의/오류 색, 모서리, 글꼴(look.css). 배치와 아이콘은 그대로",
-                  "헤더를 밝은 상태 표시줄 색으로 변경"
+                  "전수 점검: 자동 채우기·설정 저장·구글 로그인 연타 방지, 상태 메시지가 일찍 사라지던 문제 수정",
+                  "AI 가 쓴 문장·불러온 문장을 시제품명/항목 수정 시 덮어쓰지 않음 (빈 화면일 때만 새로 조합)",
+                  "AI 연결 확인·문장 생성에 시간 제한 추가 (엔진이 멈춰 있어도 화면이 영원히 대기하지 않음)"
               ],
-    "publishedAt":  "2026-10-13T01:39:36Z"
+    "publishedAt":  "2026-10-16T13:43:58Z"
 }
