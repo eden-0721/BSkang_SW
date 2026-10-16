@@ -1,23 +1,37 @@
 {
  "app": "micromeasurepro",
  "name": "MicroMeasure Pro",
- "version": "2.5.61",
- "date": "2026-10-13",
+ "version": "2.5.62",
+ "date": "2026-10-16",
  "channel": "release",
- "tag": "micromeasurepro-v2.5.61",
+ "tag": "micromeasurepro-v2.5.62",
  "setup": {
-  "file": "MicroMeasurePro_Setup_v2.5.61.exe",
-  "url": "https://github.com/eden-0721/MicroMeasurePro/releases/download/micromeasurepro-v2.5.61/MicroMeasurePro_Setup_v2.5.61.exe",
-  "sha256": "1e60fba4bb736527a13edb6a219f77c35ad837f561498a0b1339dbf5974ecc2d",
-  "size": 16338190
+  "file": "MicroMeasurePro_Setup_v2.5.62.exe",
+  "url": "https://github.com/eden-0721/MicroMeasurePro/releases/download/micromeasurepro-v2.5.62/MicroMeasurePro_Setup_v2.5.62.exe",
+  "sha256": "ecaeb756a03ca2114987ab312066d744f6a6aa7208e717bd652db9e14f1af027",
+  "size": 16294527
  },
  "zip": {
-  "file": "MicroMeasurePro_v2.5.61.zip",
-  "url": "https://github.com/eden-0721/MicroMeasurePro/releases/download/micromeasurepro-v2.5.61/MicroMeasurePro_v2.5.61.zip",
-  "sha256": "70d1d6545ab17dd510715ab8d075519d3e473e685bd0bda4b371e21b3496bbf5",
-  "size": 18278598
+  "file": "MicroMeasurePro_v2.5.62.zip",
+  "url": "https://github.com/eden-0721/MicroMeasurePro/releases/download/micromeasurepro-v2.5.62/MicroMeasurePro_v2.5.62.zip",
+  "sha256": "a17378b67d754f06a0e62ba6d350d71fcab7ae0b09e0442592b86bd6bf84f5fc",
+  "size": 18232421
  },
  "notes": [
+  {
+   "v": "2.5.62",
+   "date": "2026-10-16",
+   "title": "전수검사 — 숨은 결함 70여 건 수정",
+   "items": [
+    "**비전**: TIFF 파일 읽기 실패 때 폴더 일괄 처리가 멈추던 것 · 스케일 적용 뒤 Ctrl+Z 하면 값과 배율이 어긋나던 것 · 항목을 클릭만 해도 빈 되돌리기가 쌓이던 것 · 입력란에서 Ctrl+Z 가 측정을 되돌리던 것 · 정렬선 간격 숫자 편집이 안 되던 것 · 스포이드가 선택 도구에서만 되던 것 · 측정 항목 지운 뒤 표가 비던 것 · 같은 이름 항목 추가 · 공차 입력(%·음수) 검증 · CSV 에 쉼표 든 이름 · 오른쪽 단추 끌기 뒤 메뉴가 뜨던 것",
+    "**통계**: 빈 차트 뒤 다시 그리면 클릭 한 번이 더블클릭이 되던 것(값 읽기 고정이 바로 풀림) · 이력 저장 때 로트·이미지·세션이 빠지고 같은 이름 행이 합쳐지던 것 · 규격 없는 열의 공정능력 그래프 x 범위가 0 까지 늘어나던 것 · 해석 줄이 생기면 차트가 상태 표시줄 밑으로 삐져나오던 것 · 투명 배경 PNG 연타 · 이력 저장·엑셀·성적서 연타 · 예전 프로젝트 파일을 열면 구간 창 수치가 비던 것 · 비활성 단추 모양",
+    "**영상**: 열기 도중 다른 영상을 열면 앞 영상 정보가 덮어쓰던 것 · 분석 중 다른 영상을 열면 분석 단추·자동 저장이 영영 막히던 것 · 새 영상에 옛 영상의 자동 잡기 후보·기준 프레임이 남던 것 · \"학습 없이 분석 허용\"이 한 번 뒤 풀리던 것 · 두 번째 영상부터 시계열 차트 클릭 이동이 안 되던 것 · 중단해도 파일 끝까지 내려받던 것 · 서버가 꺼졌을 때 안내 없이 멈추던 것 · 변환·내보내기 진행률이 안 보이던 것 · Space 끌기가 풀리지 않던 것",
+    "**화면**: 측정 항목 추가 창의 색 점이 흰 네모로 보이던 것 · 스페이스바 빠른 도구의 글자가 아이콘에 겹치던 것 · 상태 표시줄의 긴 안내가 잘리던 것(… 으로) · 통계 화면에서 비전 상태 표시줄이 한 줄 더 보이던 것 · 좁은 창에서 통계 그래프 크기 칸이 시트 탭을 밀어내던 것 · 키보드(Tab·Enter)로 사진 열기·ROI 메뉴 쓰기, 포커스 테두리, 입력 칸 라벨 연결, 대화상자 역할 표시",
+    "**통계 계산**: 5만 개 넘는 값의 최소·최대·히스토그램이 앞 5만 개만 보던 것 · I-MR 관리도 넬슨 규칙 3·4 가 한 점씩 더 요구하던 것 · CDF 해석의 중앙값이 요약과 다르던 것 · 공차 0 일 때 추천 칩에 Infinity 가 뜨던 것",
+    "**서버·보안**: 다른 웹페이지가 로컬 서버에 요청을 보내 설정을 바꾸거나 설치 파일을 받게 할 수 있던 틈을 막음(같은 출처만) · data 폴더(설정·업데이트 키·로그)와 폴더 목록이 주소로 열리던 것 · 설치 파일은 GitHub 릴리스에서만 · 설정 파일을 쓰다 꺼지면 깨져 동기화가 멈추던 것 · 서버가 끝날 때 ffmpeg 가 남던 것 · 영상 프로젝트 저장을 영상 옆으로 한정",
+    "**정리**: 없어진 좌우 분할 화면·예전 제목 줄·2단 리본·하단 도크의 남은 코드와 스타일 420여 줄, 안 쓰는 함수·시험 훅 삭제. 사용 설명서의 틀린 단축키 번호·탭 이름·\"예정\" 표기 고침"
+   ]
+  },
   {
    "v": "2.5.61",
    "date": "2026-10-13",
@@ -58,35 +72,21 @@
     "새 버전 배지 · 환경 설정 탭 · [로그] 단추의 툴팁이 템플릿에 들어왔습니다 — 세 프로그램 같은 글귀",
     "영상 화면 리본은 비전 창의 탭 줄 오른쪽·상태 표시줄·환경 설정 창을 그대로 함께 씁니다 (템플릿 share)"
    ]
-  },
-  {
-   "v": "2.5.57",
-   "date": "2026-10-13",
-   "title": "세 프로그램 세부까지 같은 모양 — 공통 템플릿 0.5.0",
-   "items": [
-    "BSKang SW 세 프로그램(시험성적서·비전분석·논문 작성)의 **[파일] 첫 묶음 · [도구] 설정·화면 배율 · [도움말] · 탭 줄 오른쪽 · 상태 표시줄 · 환경 설정 창**을 템플릿이 통째로 만듭니다 — 묶음 나누기·큰/작은 단추·아이콘·글귀가 세 프로그램에서 똑같습니다",
-    "**[파일] 열기** = 사진 열기 (Ctrl+O). 저장해 둔 작업(.mmp) 열기는 그 옆 [작업 파일] 묶음으로 (단축키 없음)",
-    "**환경 설정**이 가운데 창의 세로 탭(AI → 백업 → 프로그램 업데이트 → 일반 → 프로그램 고유)으로 — 글자 크기가 깨지던 오른쪽 시트는 없앰. 통계 화면 [도구]에서도 같은 창",
-    "**상태 표시줄** 왼쪽에 **[로그]** — 지나간 안내 메시지를 시각과 함께 봅니다 (비전·통계·영상)",
-    "탭 줄 오른쪽 글귀 통일: **명령 찾기 Ctrl+K** · **새 버전** 배지(어느 버전인지는 툴팁) · 버전 뒤 **개발본** 표시 · 크게 보기·간단한 리본·리본 접기",
-    "리본 안에는 단추만: 영상 [파일] 표시기 프로필·라이브러리 선택 상자 → [프로필 저장]·[라이브러리에 저장] 옆 **▾** 메뉴 / 통계 [파일] 이미지 범위·투명 배경·구간 통계 패널 → [차트 복사] 옆 **▾** 메뉴",
-    "[도움말]에 있던 따라하기 투어는 [도구] 탭 [안내] 묶음으로"
-   ]
   }
  ],
- "page": "https://github.com/eden-0721/MicroMeasurePro/releases/tag/micromeasurepro-v2.5.61",
+ "page": "https://github.com/eden-0721/MicroMeasurePro/releases/tag/micromeasurepro-v2.5.62",
  "private": true,
  "filesRepo": "eden-0721/MicroMeasurePro",
  "source": "https://github.com/eden-0721/MicroMeasurePro",
  "previous": {
-  "version": "2.5.60",
+  "version": "2.5.61",
   "setup": {
-   "file": "MicroMeasurePro_Setup_v2.5.60.exe",
-   "url": "https://github.com/eden-0721/MicroMeasurePro/releases/download/micromeasurepro-v2.5.60/MicroMeasurePro_Setup_v2.5.60.exe",
-   "sha256": "aa8704b19c9d4172e7d6ce8de65979b2882c0e91e231c43cfdcb08bea8d76e22",
-   "size": 16334000
+   "file": "MicroMeasurePro_Setup_v2.5.61.exe",
+   "url": "https://github.com/eden-0721/MicroMeasurePro/releases/download/micromeasurepro-v2.5.61/MicroMeasurePro_Setup_v2.5.61.exe",
+   "sha256": "1e60fba4bb736527a13edb6a219f77c35ad837f561498a0b1339dbf5974ecc2d",
+   "size": 16338190
   },
-  "tag": "micromeasurepro-v2.5.60",
+  "tag": "micromeasurepro-v2.5.61",
   "filesRepo": "eden-0721/MicroMeasurePro"
  }
 }

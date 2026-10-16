@@ -24,21 +24,21 @@
    "description": "현미경 단면 정밀 계측 + 공정 통계 분석",
    "icon": "icon-64.png",
    "channel": "release",
-   "version": "2.5.61",
-   "date": "2026-10-13",
+   "version": "2.5.62",
+   "date": "2026-10-16",
    "setup": {
-    "file": "MicroMeasurePro_Setup_v2.5.61.exe",
-    "url": "https://github.com/eden-0721/MicroMeasurePro/releases/download/micromeasurepro-v2.5.61/MicroMeasurePro_Setup_v2.5.61.exe",
-    "sha256": "1e60fba4bb736527a13edb6a219f77c35ad837f561498a0b1339dbf5974ecc2d",
-    "size": 16338190
+    "file": "MicroMeasurePro_Setup_v2.5.62.exe",
+    "url": "https://github.com/eden-0721/MicroMeasurePro/releases/download/micromeasurepro-v2.5.62/MicroMeasurePro_Setup_v2.5.62.exe",
+    "sha256": "ecaeb756a03ca2114987ab312066d744f6a6aa7208e717bd652db9e14f1af027",
+    "size": 16294527
    },
    "zip": {
-    "file": "MicroMeasurePro_v2.5.61.zip",
-    "url": "https://github.com/eden-0721/MicroMeasurePro/releases/download/micromeasurepro-v2.5.61/MicroMeasurePro_v2.5.61.zip",
-    "sha256": "70d1d6545ab17dd510715ab8d075519d3e473e685bd0bda4b371e21b3496bbf5",
-    "size": 18278598
+    "file": "MicroMeasurePro_v2.5.62.zip",
+    "url": "https://github.com/eden-0721/MicroMeasurePro/releases/download/micromeasurepro-v2.5.62/MicroMeasurePro_v2.5.62.zip",
+    "sha256": "a17378b67d754f06a0e62ba6d350d71fcab7ae0b09e0442592b86bd6bf84f5fc",
+    "size": 18232421
    },
-   "page": "https://github.com/eden-0721/MicroMeasurePro/releases/tag/micromeasurepro-v2.5.61",
+   "page": "https://github.com/eden-0721/MicroMeasurePro/releases/tag/micromeasurepro-v2.5.62",
    "private": true,
    "source": "https://github.com/eden-0721/MicroMeasurePro"
   },
@@ -76,6 +76,24 @@
    "install": {
     "file": "install.bat"
    }
+  },
+  {
+   "app": "iedamemo",
+   "name": "iedaMemo",
+   "description": "PDF를 보며 적은 메모가 페이지와 녹음에 저절로 이어지는 노트",
+   "icon": "icon-64.png",
+   "kind": "web",
+   "private": true,
+   "version": "0.67.0",
+   "date": "2026-10-16",
+   "web": {
+    "url": "https://iedamemo.badboysbk.workers.dev"
+   },
+   "install": {
+    "file": "install.bat"
+   },
+   "source": "https://github.com/eden-0721/memo",
+   "notes": true
   },
   {
    "app": "TechConsultHelper",
@@ -116,6 +134,23 @@
    },
    "page": "https://github.com/eden-0721/photo_organize/releases/tag/photo-organize-v0.36.0",
    "source": "https://github.com/eden-0721/photo_organize"
+  },
+  {
+   "app": "testreport",
+   "name": "시험성적서 워크벤치",
+   "description": "시험성적서 작성·발행 (비공개)",
+   "icon": "icon-64.png",
+   "private": true,
+   "version": "2.15.0",
+   "date": "2026-10-16",
+   "setup": {
+    "file": "TestReport_Setup_v2.15.0.exe",
+    "url": "https://github.com/login?return_to=/eden-0721/test_reports/releases/download/testreport-v2.15.0/TestReport_Setup_v2.15.0.exe",
+    "size": 3915122,
+    "sha256": "54ed2e997c97c87e0beca7a2e2f1998d0194dd3ad0b36615701b2ab9adfe7bf9"
+   },
+   "page": "https://github.com/eden-0721/test_reports/releases/tag/testreport-v2.15.0",
+   "source": "https://github.com/eden-0721/test_reports"
   },
   {
    "app": "learn-eng",
@@ -170,41 +205,6 @@
    "install": {
     "file": "install.bat"
    }
-  },
-  {
-   "app": "iedamemo",
-   "name": "iedaMemo",
-   "description": "PDF를 보며 적은 메모가 페이지와 녹음에 저절로 이어지는 노트",
-   "icon": "icon-64.png",
-   "kind": "web",
-   "private": true,
-   "version": "0.67.0",
-   "date": "2026-10-16",
-   "web": {
-    "url": "https://iedamemo.badboysbk.workers.dev"
-   },
-   "install": {
-    "file": "install.bat"
-   },
-   "source": "https://github.com/eden-0721/memo",
-   "notes": true
-  },
-  {
-   "app": "testreport",
-   "name": "시험성적서 워크벤치",
-   "description": "시험성적서 작성·발행 (비공개)",
-   "icon": "icon-64.png",
-   "private": true,
-   "version": "2.15.0",
-   "date": "2026-10-16",
-   "setup": {
-    "file": "TestReport_Setup_v2.15.0.exe",
-    "url": "https://github.com/login?return_to=/eden-0721/test_reports/releases/download/testreport-v2.15.0/TestReport_Setup_v2.15.0.exe",
-    "size": 3915122,
-    "sha256": "54ed2e997c97c87e0beca7a2e2f1998d0194dd3ad0b36615701b2ab9adfe7bf9"
-   },
-   "page": "https://github.com/eden-0721/test_reports/releases/tag/testreport-v2.15.0",
-   "source": "https://github.com/eden-0721/test_reports"
   }
  ],
  "shared": [
