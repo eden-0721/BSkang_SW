@@ -1,23 +1,32 @@
 {
  "app": "micromeasurepro",
  "name": "MicroMeasure Pro",
- "version": "2.5.62",
- "date": "2026-10-16",
+ "version": "2.5.63",
+ "date": "2026-10-17",
  "channel": "release",
- "tag": "micromeasurepro-v2.5.62",
+ "tag": "micromeasurepro-v2.5.63",
  "setup": {
-  "file": "MicroMeasurePro_Setup_v2.5.62.exe",
-  "url": "https://github.com/eden-0721/MicroMeasurePro/releases/download/micromeasurepro-v2.5.62/MicroMeasurePro_Setup_v2.5.62.exe",
-  "sha256": "ecaeb756a03ca2114987ab312066d744f6a6aa7208e717bd652db9e14f1af027",
-  "size": 16294527
+  "file": "MicroMeasurePro_Setup_v2.5.63.exe",
+  "url": "https://github.com/eden-0721/MicroMeasurePro/releases/download/micromeasurepro-v2.5.63/MicroMeasurePro_Setup_v2.5.63.exe",
+  "sha256": "c157454e8c9cc1ff8799e0dfb25ef87afa2f7cb78e837b1981d2f0d6e639b313",
+  "size": 16295649
  },
  "zip": {
-  "file": "MicroMeasurePro_v2.5.62.zip",
-  "url": "https://github.com/eden-0721/MicroMeasurePro/releases/download/micromeasurepro-v2.5.62/MicroMeasurePro_v2.5.62.zip",
-  "sha256": "a17378b67d754f06a0e62ba6d350d71fcab7ae0b09e0442592b86bd6bf84f5fc",
-  "size": 18232421
+  "file": "MicroMeasurePro_v2.5.63.zip",
+  "url": "https://github.com/eden-0721/MicroMeasurePro/releases/download/micromeasurepro-v2.5.63/MicroMeasurePro_v2.5.63.zip",
+  "sha256": "77ae268288b0c8b98dfe595a63cdefb9748eb863eced9a9f2fb697af068284c4",
+  "size": 18232698
  },
  "notes": [
+  {
+   "v": "2.5.63",
+   "date": "2026-10-17",
+   "title": "공통 회색 — 따뜻한 회색 (BSKang SW 공통 모양 0.6.2)",
+   "items": [
+    "바탕·카드·상태 표시줄·글자·선 색이 노션 같은 **따뜻한 회색**으로 — BSKang SW 세 프로그램이 같은 색을 씁니다 (리본·배치는 그대로, 대표색 파랑도 그대로)",
+    "인쇄·성적서는 늘 밝은 바탕으로 나옵니다"
+   ]
+  },
   {
    "v": "2.5.62",
    "date": "2026-10-16",
@@ -62,31 +71,21 @@
     "그래프가 9개 넘어 범례가 차트 아래로 가면 **가운데 정렬** (전에는 왼쪽에 치우침)",
     "개발본에서 5분마다 콘솔 창이 잠깐 떴다 사라지던 것 고침 (git · ffmpeg 호출에 창 숨김)"
    ]
-  },
-  {
-   "v": "2.5.58",
-   "date": "2026-10-13",
-   "title": "공통 템플릿 0.6.1 — 빈 작업 칩 숨김 · 툴팁",
-   "items": [
-    "사진을 열기 전에는 탭 줄 오른쪽의 빈 작업 이름 칩이 안 보입니다 (창 제목은 프로그램 이름만)",
-    "새 버전 배지 · 환경 설정 탭 · [로그] 단추의 툴팁이 템플릿에 들어왔습니다 — 세 프로그램 같은 글귀",
-    "영상 화면 리본은 비전 창의 탭 줄 오른쪽·상태 표시줄·환경 설정 창을 그대로 함께 씁니다 (템플릿 share)"
-   ]
   }
  ],
- "page": "https://github.com/eden-0721/MicroMeasurePro/releases/tag/micromeasurepro-v2.5.62",
+ "page": "https://github.com/eden-0721/MicroMeasurePro/releases/tag/micromeasurepro-v2.5.63",
  "private": true,
  "filesRepo": "eden-0721/MicroMeasurePro",
  "source": "https://github.com/eden-0721/MicroMeasurePro",
  "previous": {
-  "version": "2.5.61",
+  "version": "2.5.62",
   "setup": {
-   "file": "MicroMeasurePro_Setup_v2.5.61.exe",
-   "url": "https://github.com/eden-0721/MicroMeasurePro/releases/download/micromeasurepro-v2.5.61/MicroMeasurePro_Setup_v2.5.61.exe",
-   "sha256": "1e60fba4bb736527a13edb6a219f77c35ad837f561498a0b1339dbf5974ecc2d",
-   "size": 16338190
+   "file": "MicroMeasurePro_Setup_v2.5.62.exe",
+   "url": "https://github.com/eden-0721/MicroMeasurePro/releases/download/micromeasurepro-v2.5.62/MicroMeasurePro_Setup_v2.5.62.exe",
+   "sha256": "ecaeb756a03ca2114987ab312066d744f6a6aa7208e717bd652db9e14f1af027",
+   "size": 16294527
   },
-  "tag": "micromeasurepro-v2.5.61",
+  "tag": "micromeasurepro-v2.5.62",
   "filesRepo": "eden-0721/MicroMeasurePro"
  }
 }
