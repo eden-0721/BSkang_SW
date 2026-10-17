@@ -1,19 +1,26 @@
 {
  "app": "testreport",
  "name": "시험성적서 워크벤치",
- "version": "2.15.2",
+ "version": "2.15.3",
  "date": "2026-10-17",
  "channel": "release",
- "tag": "testreport-v2.15.2",
+ "tag": "testreport-v2.15.3",
  "private": true,
  "filesRepo": "eden-0721/test_reports",
  "setup": {
-  "file": "TestReport_Setup_v2.15.2.exe",
-  "url": "https://github.com/eden-0721/test_reports/releases/download/testreport-v2.15.2/TestReport_Setup_v2.15.2.exe",
-  "sha256": "948f9c7e097f33985dfb3914d5dee93fbeacfcf8e940bf9bdcc4a49ab73c2e44",
-  "size": 3915577
+  "file": "TestReport_Setup_v2.15.3.exe",
+  "url": "https://github.com/eden-0721/test_reports/releases/download/testreport-v2.15.3/TestReport_Setup_v2.15.3.exe",
+  "sha256": "040cc4b662ce8e74308f56943dea697a8c9ecdc04b1e4231634e1cd7a3294a37",
+  "size": 3915552
  },
  "notes": [
+  {
+   "v": "2.15.3",
+   "date": "2026-10-17",
+   "items": [
+    "공통 화면 부품 0.6.4 — 대화상자 뒤 가림막·알림 상자·눌린 단추 그림자에 남아 있던 차가운 회색을 따뜻한 회색으로"
+   ]
+  },
   {
    "v": "2.15.2",
    "date": "2026-10-17",
