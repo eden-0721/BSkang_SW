@@ -1,0 +1,26 @@
+{
+    "app":  "TechConsultHelper",
+    "name":  "기술지도 스마트 도우미",
+    "version":  "1.0.6",
+    "tag":  "techconsulthelper-v1.0.6",
+    "date":  "2026-10-17",
+    "private":  true,
+    "page":  "https://github.com/eden-0721/TechConsultHelper/releases/tag/techconsulthelper-v1.0.6",
+    "setup":  {
+                  "file":  "TechConsultHelper_Setup_v1.0.6.exe",
+                  "url":  "https://github.com/eden-0721/TechConsultHelper/releases/download/techconsulthelper-v1.0.6/TechConsultHelper_Setup_v1.0.6.exe",
+                  "size":  2230875,
+                  "sha256":  "f0798ecd5e317c284abe64092ea458ee1824b5d4c30d7045e6444b4233ef9642"
+              },
+    "zip":  {
+                "file":  "TechConsultHelper_v1.0.6.zip",
+                "url":  "https://github.com/eden-0721/TechConsultHelper/releases/download/techconsulthelper-v1.0.6/TechConsultHelper_v1.0.6.zip",
+                "size":  141949,
+                "sha256":  "28fca45093a75ea6cbdc496aa006997d84b25568cafbd9d9a50a334d9e2bbd78"
+            },
+    "notes":  [
+                  "BSKang SW 공통 회색을 따뜻한 회색으로 (템플릿 0.46.0): 흰 본문, 옅은 회색 머리 줄, 옅은 테두리. 대표색·이모지·배치는 그대로",
+                  "환경설정의 연간 목표 건수 칸 모양을 다른 입력칸과 맞춤"
+              ],
+    "publishedAt":  "2026-10-17T11:46:32Z"
+}
