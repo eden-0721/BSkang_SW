@@ -1,25 +1,34 @@
 {
  "app": "photo-organize",
  "name": "사진 정리",
- "version": "0.36.0",
- "date": "2026-10-16",
+ "version": "0.37.0",
+ "date": "2026-10-17",
  "channel": "release",
- "tag": "photo-organize-v0.36.0",
+ "tag": "photo-organize-v0.37.0",
  "private": true,
  "filesRepo": "eden-0721/photo_organize",
  "setup": {
-  "file": "PhotoOrganize_Setup_v0.36.0.exe",
-  "url": "https://github.com/eden-0721/photo_organize/releases/download/photo-organize-v0.36.0/PhotoOrganize_Setup_v0.36.0.exe",
-  "sha256": "3f858699830b82bb158f1c4e84682c66bd4b4f3e5535c9da3fc8f48f2e582823",
-  "size": 2941551
+  "file": "PhotoOrganize_Setup_v0.37.0.exe",
+  "url": "https://github.com/eden-0721/photo_organize/releases/download/photo-organize-v0.37.0/PhotoOrganize_Setup_v0.37.0.exe",
+  "sha256": "25b2c93144da5ae1b479c2a488234c33d242666b9e2a7040612ba7df615bf9d4",
+  "size": 2953866
  },
  "zip": {
-  "file": "PhotoOrganize_v0.36.0.zip",
-  "url": "https://github.com/eden-0721/photo_organize/releases/download/photo-organize-v0.36.0/PhotoOrganize_v0.36.0.zip",
-  "sha256": "3e1ed164cb5a48f52cd17c5ed360545707545bbfac453ddb190f0e8098a92dd2",
-  "size": 858917
+  "file": "PhotoOrganize_v0.37.0.zip",
+  "url": "https://github.com/eden-0721/photo_organize/releases/download/photo-organize-v0.37.0/PhotoOrganize_v0.37.0.zip",
+  "sha256": "843d68c48da44f0a61a2f0b0944c14097ac51c8bb7bab9a685b14d26f00e670e",
+  "size": 881656
  },
  "notes": [
+  {
+   "v": "0.37.0",
+   "date": "2026-10-17",
+   "title": "새 공통 모양: 따뜻한 회색",
+   "items": [
+    "다른 프로그램들과 같은 새 모양이에요. 회색이 차분한 따뜻한 회색으로 바뀌고, 카드는 옅은 테두리로 나뉘어요",
+    "리본·단추 자리·대표색 분홍은 그대로예요. 창 제목 줄 색은 바탕색과 같아요"
+   ]
+  },
   {
    "v": "0.36.0",
    "date": "2026-10-16",
