@@ -1,19 +1,26 @@
 {
  "app": "testreport",
  "name": "시험성적서 워크벤치",
- "version": "2.15.1",
+ "version": "2.15.2",
  "date": "2026-10-17",
  "channel": "release",
- "tag": "testreport-v2.15.1",
+ "tag": "testreport-v2.15.2",
  "private": true,
  "filesRepo": "eden-0721/test_reports",
  "setup": {
-  "file": "TestReport_Setup_v2.15.1.exe",
-  "url": "https://github.com/eden-0721/test_reports/releases/download/testreport-v2.15.1/TestReport_Setup_v2.15.1.exe",
-  "sha256": "3817fda37dea7d6f00ae67e86845f634bc4460970242e2d1cfc727598f1e957a",
-  "size": 3915510
+  "file": "TestReport_Setup_v2.15.2.exe",
+  "url": "https://github.com/eden-0721/test_reports/releases/download/testreport-v2.15.2/TestReport_Setup_v2.15.2.exe",
+  "sha256": "948f9c7e097f33985dfb3914d5dee93fbeacfcf8e940bf9bdcc4a49ab73c2e44",
+  "size": 3915577
  },
  "notes": [
+  {
+   "v": "2.15.2",
+   "date": "2026-10-17",
+   "items": [
+    "공통 화면 부품을 0.6.3 으로 맞췄습니다 (화면 변화 없음 — 공통 색 점검 도구로 남은 차가운 회색이 없음을 확인)"
+   ]
+  },
   {
    "v": "2.15.1",
    "date": "2026-10-17",
