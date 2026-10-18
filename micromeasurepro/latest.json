@@ -1,23 +1,34 @@
 {
  "app": "micromeasurepro",
  "name": "MicroMeasure Pro",
- "version": "2.5.67",
+ "version": "2.5.68",
  "date": "2026-10-18",
  "channel": "release",
- "tag": "micromeasurepro-v2.5.67",
+ "tag": "micromeasurepro-v2.5.68",
  "setup": {
-  "file": "MicroMeasurePro_Setup_v2.5.67.exe",
-  "url": "https://github.com/eden-0721/MicroMeasurePro/releases/download/micromeasurepro-v2.5.67/MicroMeasurePro_Setup_v2.5.67.exe",
-  "sha256": "c4b50440a91b5a8a6c357437a210f9a0425147c1b235e8e68984d7ef0c60bd1f",
-  "size": 16298884
+  "file": "MicroMeasurePro_Setup_v2.5.68.exe",
+  "url": "https://github.com/eden-0721/MicroMeasurePro/releases/download/micromeasurepro-v2.5.68/MicroMeasurePro_Setup_v2.5.68.exe",
+  "sha256": "aae5998ace3b50f9937a1d72d43ea03654cd274d0ef7456e922ca71c88e62775",
+  "size": 16298955
  },
  "zip": {
-  "file": "MicroMeasurePro_v2.5.67.zip",
-  "url": "https://github.com/eden-0721/MicroMeasurePro/releases/download/micromeasurepro-v2.5.67/MicroMeasurePro_v2.5.67.zip",
-  "sha256": "81c0a1cbc23b312df5f3448b3948cddfefcc7e11ac0c4e046420f4ce9b2ddf89",
-  "size": 18237357
+  "file": "MicroMeasurePro_v2.5.68.zip",
+  "url": "https://github.com/eden-0721/MicroMeasurePro/releases/download/micromeasurepro-v2.5.68/MicroMeasurePro_v2.5.68.zip",
+  "sha256": "00096ddb8a844569cbbf52a3bed12538a70dad761168c31f4d330d403dcdc795",
+  "size": 18240748
  },
  "notes": [
+  {
+   "v": "2.5.68",
+   "date": "2026-10-18",
+   "title": "어두운 화면",
+   "items": [
+    "**어두운 화면**: [도구] 환경 설정 → **일반** 맨 위 **밝기**(기기 · 밝게 · 어둡게). 기기를 고르면 Windows 설정을 따릅니다. 이 PC 에 기억되고, 비전·통계·영상 세 화면이 함께 바뀝니다 (통계 화면 설정에서 바꿔도 같음)",
+    "통계 차트·분석 창 차트·영상 시계열 차트도 어두운 바탕에 밝은 글자로. 너무 어두운 선(논문 테마의 검정 등)은 밝게 올립니다. 시트는 밝기만 뒤집어 빨강·노랑 표시는 그대로",
+    "**PNG 저장·차트 복사·성적서·엑셀은 어두운 화면이어도 늘 밝게** 나옵니다 (PPT·보고서용)",
+    "사진·영상 화면과 측정 색(ROI·판정 색)은 그대로 둡니다"
+   ]
+  },
   {
    "v": "2.5.67",
    "date": "2026-10-18",
@@ -53,30 +64,21 @@
     "비전·통계·영상 화면 안의 패널·표·차트 틀·도움말 창에 남아 있던 푸른 기 회색 173곳을 같은 밝기의 따뜻한 회색으로 — 2.5.63 의 바탕·리본 색과 이제 섞여 보이지 않습니다",
     "선택·켜짐 표시의 연한 파랑, 보라 강조색, 판정 색(초록·빨강·주황)은 그대로"
    ]
-  },
-  {
-   "v": "2.5.63",
-   "date": "2026-10-17",
-   "title": "공통 회색 — 따뜻한 회색 (BSKang SW 공통 모양 0.6.2)",
-   "items": [
-    "바탕·카드·상태 표시줄·글자·선 색이 노션 같은 **따뜻한 회색**으로 — BSKang SW 세 프로그램이 같은 색을 씁니다 (리본·배치는 그대로, 대표색 파랑도 그대로)",
-    "인쇄·성적서는 늘 밝은 바탕으로 나옵니다"
-   ]
   }
  ],
- "page": "https://github.com/eden-0721/MicroMeasurePro/releases/tag/micromeasurepro-v2.5.67",
+ "page": "https://github.com/eden-0721/MicroMeasurePro/releases/tag/micromeasurepro-v2.5.68",
  "private": true,
  "filesRepo": "eden-0721/MicroMeasurePro",
  "source": "https://github.com/eden-0721/MicroMeasurePro",
  "previous": {
-  "version": "2.5.66",
+  "version": "2.5.67",
   "setup": {
-   "file": "MicroMeasurePro_Setup_v2.5.66.exe",
-   "url": "https://github.com/eden-0721/MicroMeasurePro/releases/download/micromeasurepro-v2.5.66/MicroMeasurePro_Setup_v2.5.66.exe",
-   "sha256": "ab660b5dc57e2e3a11e55e9a17591775d16beb9b8ae0a4c2048bcd0e40a0e1bd",
-   "size": 16293089
+   "file": "MicroMeasurePro_Setup_v2.5.67.exe",
+   "url": "https://github.com/eden-0721/MicroMeasurePro/releases/download/micromeasurepro-v2.5.67/MicroMeasurePro_Setup_v2.5.67.exe",
+   "sha256": "c4b50440a91b5a8a6c357437a210f9a0425147c1b235e8e68984d7ef0c60bd1f",
+   "size": 16298884
   },
-  "tag": "micromeasurepro-v2.5.66",
+  "tag": "micromeasurepro-v2.5.67",
   "filesRepo": "eden-0721/MicroMeasurePro"
  }
 }
