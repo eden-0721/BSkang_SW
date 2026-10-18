@@ -1,19 +1,26 @@
 {
  "app": "testreport",
  "name": "시험성적서 워크벤치",
- "version": "2.15.3",
- "date": "2026-10-17",
+ "version": "2.15.4",
+ "date": "2026-10-18",
  "channel": "release",
- "tag": "testreport-v2.15.3",
+ "tag": "testreport-v2.15.4",
  "private": true,
  "filesRepo": "eden-0721/test_reports",
  "setup": {
-  "file": "TestReport_Setup_v2.15.3.exe",
-  "url": "https://github.com/eden-0721/test_reports/releases/download/testreport-v2.15.3/TestReport_Setup_v2.15.3.exe",
-  "sha256": "040cc4b662ce8e74308f56943dea697a8c9ecdc04b1e4231634e1cd7a3294a37",
-  "size": 3915552
+  "file": "TestReport_Setup_v2.15.4.exe",
+  "url": "https://github.com/eden-0721/test_reports/releases/download/testreport-v2.15.4/TestReport_Setup_v2.15.4.exe",
+  "sha256": "160df2e71f89675a6fb8ec8ee9b280aebe1523be4c393d57e7e9ff0f1f793200",
+  "size": 3916851
  },
  "notes": [
+  {
+   "v": "2.15.4",
+   "date": "2026-10-18",
+   "items": [
+    "공통 화면 부품 0.7.0 — 맨 위 오른쪽 '명령 찾기'가 '검색'(Ctrl+K)으로 이름이 바뀌었습니다. 어두운 화면은 아직 켜지 않았습니다"
+   ]
+  },
   {
    "v": "2.15.3",
    "date": "2026-10-17",
