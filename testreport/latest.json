@@ -1,19 +1,26 @@
 {
  "app": "testreport",
  "name": "시험성적서 워크벤치",
- "version": "2.16.0",
+ "version": "2.16.1",
  "date": "2026-10-18",
  "channel": "release",
- "tag": "testreport-v2.16.0",
+ "tag": "testreport-v2.16.1",
  "private": true,
  "filesRepo": "eden-0721/test_reports",
  "setup": {
-  "file": "TestReport_Setup_v2.16.0.exe",
-  "url": "https://github.com/eden-0721/test_reports/releases/download/testreport-v2.16.0/TestReport_Setup_v2.16.0.exe",
-  "sha256": "6b1905cce2f4475eeb684e4c2cf15639b92db4e68d79b87dc90aeb25eb859f3d",
-  "size": 3918438
+  "file": "TestReport_Setup_v2.16.1.exe",
+  "url": "https://github.com/eden-0721/test_reports/releases/download/testreport-v2.16.1/TestReport_Setup_v2.16.1.exe",
+  "sha256": "3f6121e1cedca4dea828cd2bcdcfdc5b784e1f09c65939e3d428aeebd1465efc",
+  "size": 3918414
  },
  "notes": [
+  {
+   "v": "2.16.1",
+   "date": "2026-10-18",
+   "items": [
+    "공통 화면 부품 0.7.2 — 리본 묶음 이름·검색 칸·버전 같은 설명 글자를 조금 진하게 해 밝은 화면에서 더 잘 읽힙니다"
+   ]
+  },
   {
    "v": "2.16.0",
    "date": "2026-10-18",
