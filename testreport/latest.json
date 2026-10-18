@@ -1,19 +1,27 @@
 {
  "app": "testreport",
  "name": "시험성적서 워크벤치",
- "version": "2.16.1",
+ "version": "2.16.2",
  "date": "2026-10-18",
  "channel": "release",
- "tag": "testreport-v2.16.1",
+ "tag": "testreport-v2.16.2",
  "private": true,
  "filesRepo": "eden-0721/test_reports",
  "setup": {
-  "file": "TestReport_Setup_v2.16.1.exe",
-  "url": "https://github.com/eden-0721/test_reports/releases/download/testreport-v2.16.1/TestReport_Setup_v2.16.1.exe",
-  "sha256": "3f6121e1cedca4dea828cd2bcdcfdc5b784e1f09c65939e3d428aeebd1465efc",
-  "size": 3918414
+  "file": "TestReport_Setup_v2.16.2.exe",
+  "url": "https://github.com/eden-0721/test_reports/releases/download/testreport-v2.16.2/TestReport_Setup_v2.16.2.exe",
+  "sha256": "de3544475190d63ae7b58bf62a42a4c625adc2af39b988587cc9c768a1c744ef",
+  "size": 3918622
  },
  "notes": [
+  {
+   "v": "2.16.2",
+   "date": "2026-10-18",
+   "items": [
+    "흐리게 보이던 안내 글자(관계도 안내, 서식 창의 mm 같은 단위 표시 등)를 조금 진하게 해 밝은 화면에서도 잘 읽힙니다",
+    "공통 화면 부품 0.7.3"
+   ]
+  },
   {
    "v": "2.16.1",
    "date": "2026-10-18",
