@@ -1,23 +1,33 @@
 {
  "app": "micromeasurepro",
  "name": "MicroMeasure Pro",
- "version": "2.5.64",
- "date": "2026-10-17",
+ "version": "2.5.65",
+ "date": "2026-10-18",
  "channel": "release",
- "tag": "micromeasurepro-v2.5.64",
+ "tag": "micromeasurepro-v2.5.65",
  "setup": {
-  "file": "MicroMeasurePro_Setup_v2.5.64.exe",
-  "url": "https://github.com/eden-0721/MicroMeasurePro/releases/download/micromeasurepro-v2.5.64/MicroMeasurePro_Setup_v2.5.64.exe",
-  "sha256": "305b4c3015062087dc7a72095e5be55a0005776be40acd31bfbf4a8aee7e95f8",
-  "size": 16296252
+  "file": "MicroMeasurePro_Setup_v2.5.65.exe",
+  "url": "https://github.com/eden-0721/MicroMeasurePro/releases/download/micromeasurepro-v2.5.65/MicroMeasurePro_Setup_v2.5.65.exe",
+  "sha256": "7160cfef3c289ac170baaff0e656aac49e05530f42cd18078ca994257ea15d56",
+  "size": 16296203
  },
  "zip": {
-  "file": "MicroMeasurePro_v2.5.64.zip",
-  "url": "https://github.com/eden-0721/MicroMeasurePro/releases/download/micromeasurepro-v2.5.64/MicroMeasurePro_v2.5.64.zip",
-  "sha256": "20b876ae325a3a3598f165143eed85f1ec7e824726925890baee8e7e422650d8",
-  "size": 18232825
+  "file": "MicroMeasurePro_v2.5.65.zip",
+  "url": "https://github.com/eden-0721/MicroMeasurePro/releases/download/micromeasurepro-v2.5.65/MicroMeasurePro_v2.5.65.zip",
+  "sha256": "5a8de07d2a91d4bdfbcb95ea1d04908c9c9fe0fdb34b1f690595c8101a8f7130",
+  "size": 18234738
  },
  "notes": [
+  {
+   "v": "2.5.65",
+   "date": "2026-10-18",
+   "title": "\"명령 찾기\" → \"검색\" (BSKang SW 공통 부품 0.7.0)",
+   "items": [
+    "탭 줄 오른쪽 **명령 찾기**가 **검색**(Ctrl+K)으로 — BSKang SW 프로그램 모두 같은 말입니다. 하는 일은 그대로(기능 이름으로 찾아 바로 실행)",
+    "공통 부품의 남은 직접 색(알림 바탕·대화상자 가림막·고르기 그림자)을 공통 변수로 — 보이는 모양은 그대로",
+    "어두운 화면은 아직 켜지 않았습니다 — 차트·시트·패널 색을 먼저 공통 변수로 옮긴 뒤 다음 판에서 켭니다"
+   ]
+  },
   {
    "v": "2.5.64",
    "date": "2026-10-17",
@@ -58,30 +68,21 @@
     "구간 창 ⚙ → **그래프 위 구간·보조선 글자**: **크기**(0 = 캡션 글자 크기 따름, 최대 36) · **색**(진한 글자 / 선 색 / 직접 고르기) · **굵게** · **흰 바탕 상자·선 색 테두리** 를 직접 바꿉니다",
     "구간 평균·최대·최소·구간 캡션은 물론 평균·USL·LSL 같은 보조선 글자에도 같이 적용되고, 프로젝트와 PNG 에 저장됩니다"
    ]
-  },
-  {
-   "v": "2.5.60",
-   "date": "2026-10-13",
-   "title": "그래프 위 구간 글자 읽히게",
-   "items": [
-    "그래프 위의 **구간 최대 · 구간 평균 · 구간 최소 · 구간 #시작~#끝** 글자와 평균·USL·LSL 같은 보조선 글자를 **진한 글자 굵게 + 흰 바탕 상자 + 선 색 테두리**로 — 선 색 그대로 쓴 옅은 글자가 많은 선 위에서 안 보이던 것",
-    "글자 크기는 [보기] 탭 차트 스타일의 **캡션 글자 크기** 그대로입니다 (더 크게 보려면 거기서)"
-   ]
   }
  ],
- "page": "https://github.com/eden-0721/MicroMeasurePro/releases/tag/micromeasurepro-v2.5.64",
+ "page": "https://github.com/eden-0721/MicroMeasurePro/releases/tag/micromeasurepro-v2.5.65",
  "private": true,
  "filesRepo": "eden-0721/MicroMeasurePro",
  "source": "https://github.com/eden-0721/MicroMeasurePro",
  "previous": {
-  "version": "2.5.63",
+  "version": "2.5.64",
   "setup": {
-   "file": "MicroMeasurePro_Setup_v2.5.63.exe",
-   "url": "https://github.com/eden-0721/MicroMeasurePro/releases/download/micromeasurepro-v2.5.63/MicroMeasurePro_Setup_v2.5.63.exe",
-   "sha256": "c157454e8c9cc1ff8799e0dfb25ef87afa2f7cb78e837b1981d2f0d6e639b313",
-   "size": 16295649
+   "file": "MicroMeasurePro_Setup_v2.5.64.exe",
+   "url": "https://github.com/eden-0721/MicroMeasurePro/releases/download/micromeasurepro-v2.5.64/MicroMeasurePro_Setup_v2.5.64.exe",
+   "sha256": "305b4c3015062087dc7a72095e5be55a0005776be40acd31bfbf4a8aee7e95f8",
+   "size": 16296252
   },
-  "tag": "micromeasurepro-v2.5.63",
+  "tag": "micromeasurepro-v2.5.64",
   "filesRepo": "eden-0721/MicroMeasurePro"
  }
 }
