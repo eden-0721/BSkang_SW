@@ -1,25 +1,33 @@
 {
  "app": "photo-organize",
  "name": "사진 정리",
- "version": "0.38.1",
+ "version": "0.38.2",
  "date": "2026-10-18",
  "channel": "release",
- "tag": "photo-organize-v0.38.1",
+ "tag": "photo-organize-v0.38.2",
  "private": true,
  "filesRepo": "eden-0721/photo_organize",
  "setup": {
-  "file": "PhotoOrganize_Setup_v0.38.1.exe",
-  "url": "https://github.com/eden-0721/photo_organize/releases/download/photo-organize-v0.38.1/PhotoOrganize_Setup_v0.38.1.exe",
-  "sha256": "8f16bf323942ab49cefe904b54003c2c45392813c1a0245a3b5cf4a88921f63b",
-  "size": 2959951
+  "file": "PhotoOrganize_Setup_v0.38.2.exe",
+  "url": "https://github.com/eden-0721/photo_organize/releases/download/photo-organize-v0.38.2/PhotoOrganize_Setup_v0.38.2.exe",
+  "sha256": "6321f7d94ef0d0c33ad3f36238122d619eb1b683c98daa59dda705f7f3f028b0",
+  "size": 2960629
  },
  "zip": {
-  "file": "PhotoOrganize_v0.38.1.zip",
-  "url": "https://github.com/eden-0721/photo_organize/releases/download/photo-organize-v0.38.1/PhotoOrganize_v0.38.1.zip",
-  "sha256": "33d98e0636c5a8c48d643f0f66a9fd0c7f693da55b944b7771ce61521584875e",
-  "size": 893037
+  "file": "PhotoOrganize_v0.38.2.zip",
+  "url": "https://github.com/eden-0721/photo_organize/releases/download/photo-organize-v0.38.2/PhotoOrganize_v0.38.2.zip",
+  "sha256": "94899b276ab537084a347df9a114c13257bac42b0b8b7f738c1c48cf3ec30738",
+  "size": 894078
  },
  "notes": [
+  {
+   "v": "0.38.2",
+   "date": "2026-10-18",
+   "title": "공통 부품 새 판",
+   "items": [
+    "다른 프로그램들과 같은 공통 부품의 새 판을 받았어요. 쓰는 모양과 동작은 그대로예요"
+   ]
+  },
   {
    "v": "0.38.1",
    "date": "2026-10-18",
