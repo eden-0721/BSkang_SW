@@ -1,19 +1,28 @@
 {
  "app": "testreport",
  "name": "시험성적서 워크벤치",
- "version": "2.15.4",
+ "version": "2.16.0",
  "date": "2026-10-18",
  "channel": "release",
- "tag": "testreport-v2.15.4",
+ "tag": "testreport-v2.16.0",
  "private": true,
  "filesRepo": "eden-0721/test_reports",
  "setup": {
-  "file": "TestReport_Setup_v2.15.4.exe",
-  "url": "https://github.com/eden-0721/test_reports/releases/download/testreport-v2.15.4/TestReport_Setup_v2.15.4.exe",
-  "sha256": "160df2e71f89675a6fb8ec8ee9b280aebe1523be4c393d57e7e9ff0f1f793200",
-  "size": 3916851
+  "file": "TestReport_Setup_v2.16.0.exe",
+  "url": "https://github.com/eden-0721/test_reports/releases/download/testreport-v2.16.0/TestReport_Setup_v2.16.0.exe",
+  "sha256": "6b1905cce2f4475eeb684e4c2cf15639b92db4e68d79b87dc90aeb25eb859f3d",
+  "size": 3918438
  },
  "notes": [
+  {
+   "v": "2.16.0",
+   "date": "2026-10-18",
+   "items": [
+    "어두운 화면 — 환경 설정 → [일반] → 밝기(기기 · 밝게 · 어둡게). '기기'는 Windows 의 밝게/어둡게 설정을 따릅니다",
+    "성적서 조판 종이는 어두운 화면에서도 발행본처럼 흰 종이로 보이고, 인쇄는 늘 밝게 나옵니다",
+    "관계도도 어두운 화면에 맞는 색으로 그립니다. 밝은 화면은 예전과 똑같습니다"
+   ]
+  },
   {
    "v": "2.15.4",
    "date": "2026-10-18",
