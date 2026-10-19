@@ -1,19 +1,27 @@
 {
  "app": "testreport",
  "name": "시험성적서 워크벤치",
- "version": "2.17.0",
+ "version": "2.17.1",
  "date": "2026-10-19",
  "channel": "release",
- "tag": "testreport-v2.17.0",
+ "tag": "testreport-v2.17.1",
  "private": true,
  "filesRepo": "eden-0721/test_reports",
  "setup": {
-  "file": "TestReport_Setup_v2.17.0.exe",
-  "url": "https://github.com/eden-0721/test_reports/releases/download/testreport-v2.17.0/TestReport_Setup_v2.17.0.exe",
-  "sha256": "b467cdac37284b6a65cdfc45cfb4e11d568b452ee7dbb9bec386fc2cfc8e75af",
-  "size": 3929315
+  "file": "TestReport_Setup_v2.17.1.exe",
+  "url": "https://github.com/eden-0721/test_reports/releases/download/testreport-v2.17.1/TestReport_Setup_v2.17.1.exe",
+  "sha256": "0ed7c143859bf26924252ab62a112479ed80a19cc7478c276042512214f3e94f",
+  "size": 3930149
  },
  "notes": [
+  {
+   "v": "2.17.1",
+   "date": "2026-10-19",
+   "items": [
+    "공통 화면 부품 0.7.9 — 창이 좁으면 전체 리본에서도 넘치는 묶음이 [더 보기]로, 리본 탭을 ←/→ 로 옮기기, [더 보기]·접기 단추 상태 표시, 탭 줄 [화면 배율] 이름, 입력 칸 테두리를 조금 진하게(어두운 화면에서도 보이게)",
+    "환경 설정 창: 저장하지 않은 값이 있으면 창이 닫히기 전에 묻습니다(설정으로 돌아가기 가능)"
+   ]
+  },
   {
    "v": "2.17.0",
    "date": "2026-10-19",
