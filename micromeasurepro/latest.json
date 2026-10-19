@@ -1,23 +1,50 @@
 {
  "app": "micromeasurepro",
  "name": "MicroMeasure Pro",
- "version": "2.5.68",
- "date": "2026-10-18",
+ "version": "2.5.70",
+ "date": "2026-10-19",
  "channel": "release",
- "tag": "micromeasurepro-v2.5.68",
+ "tag": "micromeasurepro-v2.5.70",
  "setup": {
-  "file": "MicroMeasurePro_Setup_v2.5.68.exe",
-  "url": "https://github.com/eden-0721/MicroMeasurePro/releases/download/micromeasurepro-v2.5.68/MicroMeasurePro_Setup_v2.5.68.exe",
-  "sha256": "aae5998ace3b50f9937a1d72d43ea03654cd274d0ef7456e922ca71c88e62775",
-  "size": 16298955
+  "file": "MicroMeasurePro_Setup_v2.5.70.exe",
+  "url": "https://github.com/eden-0721/MicroMeasurePro/releases/download/micromeasurepro-v2.5.70/MicroMeasurePro_Setup_v2.5.70.exe",
+  "sha256": "29374f71af8a4f82e75a709a495d97ec683d0e84c8d456543afa28f611fc4f28",
+  "size": 16316189
  },
  "zip": {
-  "file": "MicroMeasurePro_v2.5.68.zip",
-  "url": "https://github.com/eden-0721/MicroMeasurePro/releases/download/micromeasurepro-v2.5.68/MicroMeasurePro_v2.5.68.zip",
-  "sha256": "00096ddb8a844569cbbf52a3bed12538a70dad761168c31f4d330d403dcdc795",
-  "size": 18240748
+  "file": "MicroMeasurePro_v2.5.70.zip",
+  "url": "https://github.com/eden-0721/MicroMeasurePro/releases/download/micromeasurepro-v2.5.70/MicroMeasurePro_v2.5.70.zip",
+  "sha256": "efca10f9575ad2e48aea33c653163631dc6a925439b38494b3316a2cc7302ab2",
+  "size": 18265335
  },
  "notes": [
+  {
+   "v": "2.5.70",
+   "date": "2026-10-19",
+   "title": "전체 점검 83항목 고침",
+   "items": [
+    "**값이 틀리던 것**: ROI [금속폭 & 간격]이 어두운 선을 스페이스로 뒤바꿔 잡던 것 · 사다리꼴 상폭·하폭·측벽각이 ROI 크기에 따라 흔들리던 것(측벽 직선 맞춤) · µm·µm²·° 가 섞인 항목의 평균 · 입자 분석에 글자 상자·스케일바가 섞이던 것 · Cpk 옆에 **Ppk** 를 함께 보이고 해석은 낮은 쪽으로 판정",
+    "**작업이 사라지던 것**: 이미지 닫기·새로 만들기·측정 항목 이름 바꾸기·지우기·스케일 전역 적용도 **Ctrl+Z** 로 되돌리고 **Ctrl+Y** 로 다시 실행 · 일괄 계측이 보이지 않는 이미지의 측정을 지우던 것 · 복구 배너에 답하기 전 이전 자동 저장을 덮던 것 · 영상·통계 화면에서 누른 단축키가 비전 측정을 지우던 것 · 영상 [전체 분석]을 다시 누를 때 묻고, 중단하면 이전 결과로",
+    "스케일은 맞춘 이미지에만 — 다른 이미지에 퍼지는 것은 [전역 적용]을 눌렀을 때만 (다른 배율이면 묻습니다)",
+    "영상: CSV 시각이 시:분:초로, 이름에 쉼표가 있어도 열이 맞게 · 분할한 조각이 제자리에 · 견본 학습 창은 확신이 낮은 칸을 비워 두고 [모두 학습] 전에 묻습니다 · [자동 잡기] 중지 · 프로필·라이브러리 덮어쓰기 확인",
+    "통계: 누적분포를 본 뒤 다른 차트가 비던 것 · 이력에 넣은 로트와 측정 날짜 · 성적서 로트 칸·장 번호 · 셀 주소 B2 · 보조선 글자를 눌러 HTML 상자가 열리던 것 · 좁은 차트의 눈금·그룹 이름 겹침",
+    "키보드·창: 떠 있는 창을 **Esc** 로 닫고 탭이 바뀌어도 창이 뛰지 않게 · 측정 항목 칩을 키보드로 · 칩이 넘치면 [+N] · 창을 키우면 사진을 다시 맞춤 · 작업 저장이 [최근] 목록에 남고 다음 Ctrl+S 는 같은 파일에",
+    "검색(Ctrl+K)이 화면마다 맞는 기능을 찾습니다 (영상 기능 · 설명서 · 밝기 · 배율 · 통계에서 설정·버전) · 어두운 화면의 파랑·초록·빨강 글자와 시트 도구 줄이 잘 보이게",
+    "공통 부품 0.7.8 · 0.7.9: 리본 탭 화살표 키, 넘치는 묶음은 [더 보기], 간단한 리본 + 140% 에서 글자 잘림 없음"
+   ]
+  },
+  {
+   "v": "2.5.69",
+   "date": "2026-10-19",
+   "title": "공통 부품 0.7.7 — 최근 목록 · 설정 창 키보드",
+   "items": [
+    "리본의 **작업 이름**을 누르면 최근 작업 목록이 그 이름 바로 아래에 뜹니다. 같은 이름을 다시 누르면 닫히고, 지금 작업에는 ✓ 표시가 붙습니다",
+    "사진을 열기 전에는 [파일] **다른 이름으로 저장**이 꺼져 있습니다 (저장할 것이 없을 때)",
+    "**환경 설정** 창을 열면 키보드 초점이 창 안으로 가고, Tab 은 창 안에서만 돌며, 닫으면 연 자리로 돌아옵니다",
+    "접은 리본에서 잠깐 펼친 판은 **Esc** 로 닫힙니다. 리본 작은 단추의 누르는 자리가 조금 넓어졌습니다 (배치는 그대로)",
+    "보조 글자가 조금 더 진해져 읽기 쉽습니다 (공통 부품 0.7.5)"
+   ]
+  },
   {
    "v": "2.5.68",
    "date": "2026-10-18",
@@ -45,40 +72,21 @@
    "items": [
     "리본 묶음 이름 · 검색 칸 · 버전 글자 · Ctrl+K 표시 같은 설명 글자를 조금 더 진하게 — 흰 바탕에서 더 잘 읽힙니다 (BSKang SW 공통)"
    ]
-  },
-  {
-   "v": "2.5.65",
-   "date": "2026-10-18",
-   "title": "\"명령 찾기\" → \"검색\" (BSKang SW 공통 부품 0.7.0)",
-   "items": [
-    "탭 줄 오른쪽 **명령 찾기**가 **검색**(Ctrl+K)으로 — BSKang SW 프로그램 모두 같은 말입니다. 하는 일은 그대로(기능 이름으로 찾아 바로 실행)",
-    "공통 부품의 남은 직접 색(알림 바탕·대화상자 가림막·고르기 그림자)을 공통 변수로 — 보이는 모양은 그대로",
-    "어두운 화면은 아직 켜지 않았습니다 — 차트·시트·패널 색을 먼저 공통 변수로 옮긴 뒤 다음 판에서 켭니다"
-   ]
-  },
-  {
-   "v": "2.5.64",
-   "date": "2026-10-17",
-   "title": "화면 안쪽 회색도 따뜻한 회색으로",
-   "items": [
-    "비전·통계·영상 화면 안의 패널·표·차트 틀·도움말 창에 남아 있던 푸른 기 회색 173곳을 같은 밝기의 따뜻한 회색으로 — 2.5.63 의 바탕·리본 색과 이제 섞여 보이지 않습니다",
-    "선택·켜짐 표시의 연한 파랑, 보라 강조색, 판정 색(초록·빨강·주황)은 그대로"
-   ]
   }
  ],
- "page": "https://github.com/eden-0721/MicroMeasurePro/releases/tag/micromeasurepro-v2.5.68",
+ "page": "https://github.com/eden-0721/MicroMeasurePro/releases/tag/micromeasurepro-v2.5.70",
  "private": true,
  "filesRepo": "eden-0721/MicroMeasurePro",
  "source": "https://github.com/eden-0721/MicroMeasurePro",
  "previous": {
-  "version": "2.5.67",
+  "version": "2.5.68",
   "setup": {
-   "file": "MicroMeasurePro_Setup_v2.5.67.exe",
-   "url": "https://github.com/eden-0721/MicroMeasurePro/releases/download/micromeasurepro-v2.5.67/MicroMeasurePro_Setup_v2.5.67.exe",
-   "sha256": "c4b50440a91b5a8a6c357437a210f9a0425147c1b235e8e68984d7ef0c60bd1f",
-   "size": 16298884
+   "file": "MicroMeasurePro_Setup_v2.5.68.exe",
+   "url": "https://github.com/eden-0721/MicroMeasurePro/releases/download/micromeasurepro-v2.5.68/MicroMeasurePro_Setup_v2.5.68.exe",
+   "sha256": "aae5998ace3b50f9937a1d72d43ea03654cd274d0ef7456e922ca71c88e62775",
+   "size": 16298955
   },
-  "tag": "micromeasurepro-v2.5.67",
+  "tag": "micromeasurepro-v2.5.68",
   "filesRepo": "eden-0721/MicroMeasurePro"
  }
 }
