@@ -1,0 +1,26 @@
+{
+    "app":  "TechConsultHelper",
+    "name":  "기술지도 스마트 도우미",
+    "version":  "1.0.8",
+    "tag":  "techconsulthelper-v1.0.8",
+    "date":  "2026-10-19",
+    "private":  true,
+    "page":  "https://github.com/eden-0721/TechConsultHelper/releases/tag/techconsulthelper-v1.0.8",
+    "setup":  {
+                  "file":  "TechConsultHelper_Setup_v1.0.8.exe",
+                  "url":  "https://github.com/eden-0721/TechConsultHelper/releases/download/techconsulthelper-v1.0.8/TechConsultHelper_Setup_v1.0.8.exe",
+                  "size":  2238115,
+                  "sha256":  "a7ab22766c7e2abcf0a1b96d1c35d193baf39d96ba0c5cdc15541bd61139945e"
+              },
+    "zip":  {
+                "file":  "TechConsultHelper_v1.0.8.zip",
+                "url":  "https://github.com/eden-0721/TechConsultHelper/releases/download/techconsulthelper-v1.0.8/TechConsultHelper_v1.0.8.zip",
+                "size":  151727,
+                "sha256":  "bcff3f7c79e988eb5b84cfa6b9dd27dbdc48b890c36a5fa1206eb37b9f024cda"
+            },
+    "notes":  [
+                  "전체 점검 60건 반영: 다른 업체에 \u0027완료\u0027가 잘못 뜨던 문제, 깨진 백업 복원 뒤 앱이 멈추던 문제 수정",
+                  "작업 탭 내용을 자동 보관 (같은 날 사이드패널을 닫았다 열어도 유지), 직접 고친 문장 칸은 시제품명을 바꿔도 그대로"
+              ],
+    "publishedAt":  "2026-10-19T07:24:21Z"
+}
