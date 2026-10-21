@@ -19,6 +19,24 @@
    }
   },
   {
+   "app": "iedamemo",
+   "name": "iedaMemo",
+   "description": "PDF를 보며 적은 메모가 페이지와 녹음에 저절로 이어지는 노트",
+   "icon": "icon-64.png",
+   "kind": "web",
+   "private": true,
+   "version": "0.67.0",
+   "date": "2026-10-16",
+   "web": {
+    "url": "https://iedamemo.badboysbk.workers.dev"
+   },
+   "install": {
+    "file": "install.bat"
+   },
+   "source": "https://github.com/eden-0721/memo",
+   "notes": true
+  },
+  {
    "app": "micromeasurepro",
    "name": "MicroMeasure Pro",
    "description": "현미경 단면 정밀 계측 + 공정 통계 분석",
@@ -47,15 +65,15 @@
    "name": "PaperMaster",
    "description": "연구자가 넣은 자료만으로 논문을 쓰는 로컬 앱 (파싱·근거 검색·집필·검증)",
    "icon": "icon-64.png",
-   "version": "3.28.0",
-   "date": "2026-10-13",
+   "version": "3.31.3",
+   "date": "2026-10-21",
    "setup": {
-    "file": "PaperMaster_Setup_v3.28.0.exe",
-    "url": "https://github.com/eden-0721/papermaster/releases/download/papermaster-v3.28.0/PaperMaster_Setup_v3.28.0.exe",
-    "sha256": "ecc622a0313ddaf3b6d643fad25b31a8de831900c1a522f4d92ddc757d6a0b0f",
-    "size": 25789028
+    "file": "PaperMaster_Setup_v3.31.3.exe",
+    "url": "https://github.com/eden-0721/papermaster/releases/download/papermaster-v3.31.3/PaperMaster_Setup_v3.31.3.exe",
+    "sha256": "dd083a518294deba700f52d42a79cc33b19084e4885e794b79c5b6ce46f63033",
+    "size": 25834032
    },
-   "page": "https://github.com/eden-0721/papermaster/releases/tag/papermaster-v3.28.0",
+   "page": "https://github.com/eden-0721/papermaster/releases/tag/papermaster-v3.31.3",
    "private": true,
    "source": "https://github.com/eden-0721/papermaster"
   },
@@ -76,24 +94,6 @@
    "install": {
     "file": "install.bat"
    }
-  },
-  {
-   "app": "iedamemo",
-   "name": "iedaMemo",
-   "description": "PDF를 보며 적은 메모가 페이지와 녹음에 저절로 이어지는 노트",
-   "icon": "icon-64.png",
-   "kind": "web",
-   "private": true,
-   "version": "0.67.0",
-   "date": "2026-10-16",
-   "web": {
-    "url": "https://iedamemo.badboysbk.workers.dev"
-   },
-   "install": {
-    "file": "install.bat"
-   },
-   "source": "https://github.com/eden-0721/memo",
-   "notes": true
   },
   {
    "app": "TechConsultHelper",
@@ -134,6 +134,23 @@
    },
    "page": "https://github.com/eden-0721/photo_organize/releases/tag/photo-organize-v0.39.1",
    "source": "https://github.com/eden-0721/photo_organize"
+  },
+  {
+   "app": "testreport",
+   "name": "시험성적서 워크벤치",
+   "description": "시험성적서 작성·발행 (비공개)",
+   "icon": "icon-64.png",
+   "private": true,
+   "version": "2.17.2",
+   "date": "2026-10-21",
+   "setup": {
+    "file": "TestReport_Setup_v2.17.2.exe",
+    "url": "https://github.com/login?return_to=/eden-0721/test_reports/releases/download/testreport-v2.17.2/TestReport_Setup_v2.17.2.exe",
+    "size": 3929928,
+    "sha256": "7789da4b259b74060f138fcf97ce13f2277283011792143eb05ff008b407e121"
+   },
+   "page": "https://github.com/eden-0721/test_reports/releases/tag/testreport-v2.17.2",
+   "source": "https://github.com/eden-0721/test_reports"
   },
   {
    "app": "learn-eng",
@@ -188,23 +205,6 @@
    "install": {
     "file": "install.bat"
    }
-  },
-  {
-   "app": "testreport",
-   "name": "시험성적서 워크벤치",
-   "description": "시험성적서 작성·발행 (비공개)",
-   "icon": "icon-64.png",
-   "private": true,
-   "version": "2.17.2",
-   "date": "2026-10-21",
-   "setup": {
-    "file": "TestReport_Setup_v2.17.2.exe",
-    "url": "https://github.com/login?return_to=/eden-0721/test_reports/releases/download/testreport-v2.17.2/TestReport_Setup_v2.17.2.exe",
-    "size": 3929928,
-    "sha256": "7789da4b259b74060f138fcf97ce13f2277283011792143eb05ff008b407e121"
-   },
-   "page": "https://github.com/eden-0721/test_reports/releases/tag/testreport-v2.17.2",
-   "source": "https://github.com/eden-0721/test_reports"
   }
  ],
  "shared": [
