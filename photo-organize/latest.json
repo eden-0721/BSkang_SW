@@ -1,25 +1,36 @@
 {
  "app": "photo-organize",
  "name": "사진 정리",
- "version": "0.39.0",
+ "version": "0.39.1",
  "date": "2026-10-19",
  "channel": "release",
- "tag": "photo-organize-v0.39.0",
+ "tag": "photo-organize-v0.39.1",
  "private": true,
  "filesRepo": "eden-0721/photo_organize",
  "setup": {
-  "file": "PhotoOrganize_Setup_v0.39.0.exe",
-  "url": "https://github.com/eden-0721/photo_organize/releases/download/photo-organize-v0.39.0/PhotoOrganize_Setup_v0.39.0.exe",
-  "sha256": "fc43c7c6c5c9226e368b98ebe98828d12c30e9d630714f962c667ee2c7a1e404",
-  "size": 2966497
+  "file": "PhotoOrganize_Setup_v0.39.1.exe",
+  "url": "https://github.com/eden-0721/photo_organize/releases/download/photo-organize-v0.39.1/PhotoOrganize_Setup_v0.39.1.exe",
+  "sha256": "db385373266941c3cebfadb7d62ea0c1fe340428f2554cf9754031e9c01ddd99",
+  "size": 2969839
  },
  "zip": {
-  "file": "PhotoOrganize_v0.39.0.zip",
-  "url": "https://github.com/eden-0721/photo_organize/releases/download/photo-organize-v0.39.0/PhotoOrganize_v0.39.0.zip",
-  "sha256": "8d436cb5fc2e3008e9de9870d8b9590ba070bc84642e60b5805f415ccc0d5fda",
-  "size": 902770
+  "file": "PhotoOrganize_v0.39.1.zip",
+  "url": "https://github.com/eden-0721/photo_organize/releases/download/photo-organize-v0.39.1/PhotoOrganize_v0.39.1.zip",
+  "sha256": "261b8556fb52c06d52bdc801637ab229b869b13e0801108d10ff47bc1c4277d7",
+  "size": 907237
  },
  "notes": [
+  {
+   "v": "0.39.1",
+   "date": "2026-10-19",
+   "title": "키보드·좁은 창 다듬기",
+   "items": [
+    "환경 설정 창을 열면 키보드 초점이 창 안으로 가고, 닫으면 연 자리로 돌아와요",
+    "창을 좁게 하면 리본 탭 줄을 옆으로 밀 수 있고, 환경 설정 창의 탭이 위로 올라가요",
+    "사진 크게 보기 창이 열려 있는 동안 리본이 잠겨요. 사진마다 대체 글이 달라졌어요",
+    "리본 탭은 ←/→ 키로 옮길 수 있고, [더 보기]는 Esc로 닫혀요"
+   ]
+  },
   {
    "v": "0.39.0",
    "date": "2026-10-19",
