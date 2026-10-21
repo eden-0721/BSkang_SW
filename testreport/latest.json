@@ -1,19 +1,27 @@
 {
  "app": "testreport",
  "name": "시험성적서 워크벤치",
- "version": "2.17.2",
+ "version": "2.17.3",
  "date": "2026-10-21",
  "channel": "release",
- "tag": "testreport-v2.17.2",
+ "tag": "testreport-v2.17.3",
  "private": true,
  "filesRepo": "eden-0721/test_reports",
  "setup": {
-  "file": "TestReport_Setup_v2.17.2.exe",
-  "url": "https://github.com/eden-0721/test_reports/releases/download/testreport-v2.17.2/TestReport_Setup_v2.17.2.exe",
-  "sha256": "7789da4b259b74060f138fcf97ce13f2277283011792143eb05ff008b407e121",
-  "size": 3929928
+  "file": "TestReport_Setup_v2.17.3.exe",
+  "url": "https://github.com/eden-0721/test_reports/releases/download/testreport-v2.17.3/TestReport_Setup_v2.17.3.exe",
+  "sha256": "6fd5e5fa7b80ba25894a66dd4fc4ea0ad273bde25641646156c1f9e3e3e2eb7d",
+  "size": 3930478
  },
  "notes": [
+  {
+   "v": "2.17.3",
+   "date": "2026-10-21",
+   "items": [
+    "구글 드라이브 동기화: 드라이브 DB 를 확인하는 중 네트워크(SSL) 오류가 나면 동기화를 멈춥니다 — 예전 버전은 이를 '드라이브에 DB 없음'으로 보고 자기 DB 를 그대로 올려, 다른 PC 에서 최종 발행해 라이브러리에 넣은 성적서가 사라질 수 있었습니다",
+    "설치본 시작 때 '설치 파일 1개가 배포본과 다릅니다: version.json' 이 뜨던 것(2.17.2 배포 파일 문제) 수정"
+   ]
+  },
   {
    "v": "2.17.2",
    "date": "2026-10-21",
