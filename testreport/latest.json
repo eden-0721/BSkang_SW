@@ -1,19 +1,26 @@
 {
  "app": "testreport",
  "name": "시험성적서 워크벤치",
- "version": "2.17.1",
- "date": "2026-10-19",
+ "version": "2.17.2",
+ "date": "2026-10-21",
  "channel": "release",
- "tag": "testreport-v2.17.1",
+ "tag": "testreport-v2.17.2",
  "private": true,
  "filesRepo": "eden-0721/test_reports",
  "setup": {
-  "file": "TestReport_Setup_v2.17.1.exe",
-  "url": "https://github.com/eden-0721/test_reports/releases/download/testreport-v2.17.1/TestReport_Setup_v2.17.1.exe",
-  "sha256": "0ed7c143859bf26924252ab62a112479ed80a19cc7478c276042512214f3e94f",
-  "size": 3930149
+  "file": "TestReport_Setup_v2.17.2.exe",
+  "url": "https://github.com/eden-0721/test_reports/releases/download/testreport-v2.17.2/TestReport_Setup_v2.17.2.exe",
+  "sha256": "7789da4b259b74060f138fcf97ce13f2277283011792143eb05ff008b407e121",
+  "size": 3929928
  },
  "notes": [
+  {
+   "v": "2.17.2",
+   "date": "2026-10-21",
+   "items": [
+    "배포 방식을 BSKang SW 공통 배포 부품으로 바꿨습니다 — 같은 버전을 두 번 올리지 않고, 다운로드 페이지의 버전은 더 높을 때만 바뀝니다. 프로그램 동작은 같습니다"
+   ]
+  },
   {
    "v": "2.17.1",
    "date": "2026-10-19",
