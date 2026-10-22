@@ -1,0 +1,26 @@
+{
+    "app":  "TechConsultHelper",
+    "name":  "기술지도 스마트 도우미",
+    "version":  "1.0.10",
+    "tag":  "techconsulthelper-v1.0.10",
+    "date":  "2026-10-22",
+    "private":  true,
+    "page":  "https://github.com/eden-0721/TechConsultHelper/releases/tag/techconsulthelper-v1.0.10",
+    "setup":  {
+                  "file":  "TechConsultHelper_Setup_v1.0.10.exe",
+                  "url":  "https://github.com/eden-0721/TechConsultHelper/releases/download/techconsulthelper-v1.0.10/TechConsultHelper_Setup_v1.0.10.exe",
+                  "size":  2240172,
+                  "sha256":  "8946af6ae98c9776c9d2c3b10b65bf83e67f2f230e53217fc66f0f26ab8fcfb0"
+              },
+    "zip":  {
+                "file":  "TechConsultHelper_v1.0.10.zip",
+                "url":  "https://github.com/eden-0721/TechConsultHelper/releases/download/techconsulthelper-v1.0.10/TechConsultHelper_v1.0.10.zip",
+                "size":  154373,
+                "sha256":  "57499a61118dc440f1311eac674d7d3f872d6c9c0a8273fd33f76748fe1e2aff"
+            },
+    "notes":  [
+                  "남은 단계 일정에서 날짜를 직접 바꿀 수 있음: 바꾼 단계 뒤 일정은 그 날짜 기준으로 다시 계산되고, [다음 단계로 이동]도 이 일정을 따름",
+                  "배포 이중화: GitHub Actions 가 결제·한도로 막혀도 배포 단추 한 번으로 이 PC 에서 같은 결과(설치 파일 → 비공개 Release → 선반)를 냄 (공통 배포 부품, 프로그램 동작 변화 없음)"
+              ],
+    "publishedAt":  "2026-10-22T01:39:45Z"
+}
