@@ -112,10 +112,10 @@
    "icon": "icon-64.png",
    "private": true,
    "prerelease": {
-    "version": "1.0.10",
-    "url": "https://github.com/eden-0721/TechConsultHelper/releases/download/techconsulthelper-v1.0.10/TechConsultHelper_Setup_v1.0.10.exe",
-    "zip": "https://github.com/eden-0721/TechConsultHelper/releases/download/techconsulthelper-v1.0.10/TechConsultHelper_v1.0.10.zip",
-    "page": "https://github.com/eden-0721/TechConsultHelper/releases/tag/techconsulthelper-v1.0.10"
+    "version": "1.0.12",
+    "url": "https://github.com/eden-0721/TechConsultHelper/releases/download/techconsulthelper-v1.0.12/TechConsultHelper_Setup_v1.0.12.exe",
+    "zip": "https://github.com/eden-0721/TechConsultHelper/releases/download/techconsulthelper-v1.0.12/TechConsultHelper_v1.0.12.zip",
+    "page": "https://github.com/eden-0721/TechConsultHelper/releases/tag/techconsulthelper-v1.0.12"
    }
   },
   {
