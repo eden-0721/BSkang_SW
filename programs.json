@@ -110,7 +110,13 @@
    },
    "page": "https://github.com/eden-0721/TechConsultHelper/releases/tag/techconsulthelper-v1.0.13",
    "icon": "icon-64.png",
-   "private": true
+   "private": true,
+   "prerelease": {
+    "version": "1.0.14",
+    "url": "https://github.com/eden-0721/TechConsultHelper/releases/download/techconsulthelper-v1.0.14/TechConsultHelper_Setup_v1.0.14.exe",
+    "zip": "https://github.com/eden-0721/TechConsultHelper/releases/download/techconsulthelper-v1.0.14/TechConsultHelper_v1.0.14.zip",
+    "page": "https://github.com/eden-0721/TechConsultHelper/releases/tag/techconsulthelper-v1.0.14"
+   }
   },
   {
    "app": "photo-organize",

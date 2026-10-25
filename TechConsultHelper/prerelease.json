@@ -1,0 +1,29 @@
+{
+    "app":  "TechConsultHelper",
+    "name":  "기술지도 스마트 도우미",
+    "version":  "1.0.14",
+    "tag":  "techconsulthelper-v1.0.14",
+    "date":  "2026-10-26",
+    "private":  true,
+    "page":  "https://github.com/eden-0721/TechConsultHelper/releases/tag/techconsulthelper-v1.0.14",
+    "setup":  {
+                  "file":  "TechConsultHelper_Setup_v1.0.14.exe",
+                  "url":  "https://github.com/eden-0721/TechConsultHelper/releases/download/techconsulthelper-v1.0.14/TechConsultHelper_Setup_v1.0.14.exe",
+                  "size":  2256068,
+                  "sha256":  "7d0ffd00c00f373194bb9dc6b44d0ed2d361b2894652222e8632ec3ab0d9db75"
+              },
+    "zip":  {
+                "file":  "TechConsultHelper_v1.0.14.zip",
+                "url":  "https://github.com/eden-0721/TechConsultHelper/releases/download/techconsulthelper-v1.0.14/TechConsultHelper_v1.0.14.zip",
+                "size":  176153,
+                "sha256":  "71740f3360081d01d627b37f9401459236a8bbffac19401f8be16c7912febba8"
+            },
+    "notes":  [
+                  "AI 모델 자동 순서: 모델 목록 맨 위 \u0027🤖 자동 (잘 되는 순서)\u0027(기본). 모델마다 성공·실패를 기록해 잘 되는 모델부터 최대 3개를 차례로 시도하고, 실패한 모델은 뒤로 보냄 (사용량 한도면 1시간 쉼)",
+                  "특정 모델을 고르면 그 모델부터 쓰고, 실패하면 자동 순서로 넘어감. 환경설정에 \u0027AI 모델 순위\u0027와 [순위 초기화]",
+                  "글쓰기에 쓸 수 없는 모델(화면 조작 computer-use·이미지·음성·임베딩 등)은 모델 목록에서 뺌, Gemini 기본 모델을 2.5 계열로",
+                  "AI 실패 이유(사용량 한도·요청 거절·시간 초과 등)를 안내 줄에 표시, 어떤 모델이 썼는지 표시 (작업 탭·이력)",
+                  "가끔 AI 문장: 남은 횟수를 저장해 사이드패널을 닫았다 열어도 이어서 셈, AI 가 꺼져 있을 때 온 차례는 버리지 않고 연결되면 바로 씀"
+              ],
+    "publishedAt":  "2026-10-25T23:52:10Z"
+}
