@@ -1,19 +1,27 @@
 {
  "app": "testreport",
  "name": "시험성적서 워크벤치",
- "version": "2.18.1",
+ "version": "2.19.0",
  "date": "2026-10-27",
  "channel": "release",
- "tag": "testreport-v2.18.1",
+ "tag": "testreport-v2.19.0",
  "private": true,
  "filesRepo": "eden-0721/test_reports",
  "setup": {
-  "file": "TestReport_Setup_v2.18.1.exe",
-  "url": "https://github.com/eden-0721/test_reports/releases/download/testreport-v2.18.1/TestReport_Setup_v2.18.1.exe",
-  "sha256": "b492a70961efaaba7aee347382fe1195ef5bbd5f7c84cf1261a6b9405d8e6dd3",
-  "size": 3934959
+  "file": "TestReport_Setup_v2.19.0.exe",
+  "url": "https://github.com/eden-0721/test_reports/releases/download/testreport-v2.19.0/TestReport_Setup_v2.19.0.exe",
+  "sha256": "1f16ac6bcb3146e52e0b211487a1af96a14f59c0637ca713bfdf7c66bc906803",
+  "size": 3942307
  },
  "notes": [
+  {
+   "v": "2.19.0",
+   "date": "2026-10-27",
+   "items": [
+    "접수: 기관명 칸에 글자를 치면 전에 쓴 기관 목록이 뜨고, 고르면 대표자·사업자번호·주소·업태·의뢰자·연락처·이메일 중 빈 칸만 채웁니다(이미 쓴 칸·시제품·시험항목은 그대로, 알림에서 [되돌리기]). 의뢰자 칸에서는 그 기관의 다른 의뢰자를 고를 수 있습니다",
+    "의뢰서를 판독했을 때와 최종 발행했을 때 기관·의뢰자 정보를 성적서 DB 에 남겨 다음 접수에 씁니다 — 구글 드라이브 동기화로 두 PC 가 같은 목록을 씁니다(처음에는 라이브러리 성적서의 기관명·주소와 작업 파일로 시작)"
+   ]
+  },
   {
    "v": "2.18.1",
    "date": "2026-10-27",
