@@ -1,23 +1,34 @@
 {
  "app": "micromeasurepro",
  "name": "MicroMeasure Pro",
- "version": "2.5.71",
- "date": "2026-10-21",
+ "version": "2.5.72",
+ "date": "2026-10-26",
  "channel": "release",
- "tag": "micromeasurepro-v2.5.71",
+ "tag": "micromeasurepro-v2.5.72",
  "setup": {
-  "file": "MicroMeasurePro_Setup_v2.5.71.exe",
-  "url": "https://github.com/eden-0721/MicroMeasurePro/releases/download/micromeasurepro-v2.5.71/MicroMeasurePro_Setup_v2.5.71.exe",
-  "sha256": "5f47f452ed103d3b23ceab91472ed2e3ab7fa1582dec6e566d37e6c07a69cd19",
-  "size": 16314484
+  "file": "MicroMeasurePro_Setup_v2.5.72.exe",
+  "url": "https://github.com/eden-0721/MicroMeasurePro/releases/download/micromeasurepro-v2.5.72/MicroMeasurePro_Setup_v2.5.72.exe",
+  "sha256": "8b038460e9d852a2b102aa93ff44d09aa00022c002cb4a78ca238324a1caa088",
+  "size": 16319775
  },
  "zip": {
-  "file": "MicroMeasurePro_v2.5.71.zip",
-  "url": "https://github.com/eden-0721/MicroMeasurePro/releases/download/micromeasurepro-v2.5.71/MicroMeasurePro_v2.5.71.zip",
-  "sha256": "b0948698b252ea528bba1d84f2c4828a8ffb5e99c173e46494cb856a1b38b6ef",
-  "size": 18265669
+  "file": "MicroMeasurePro_v2.5.72.zip",
+  "url": "https://github.com/eden-0721/MicroMeasurePro/releases/download/micromeasurepro-v2.5.72/MicroMeasurePro_v2.5.72.zip",
+  "sha256": "4a4ef4c9bc24dd0f83c1396ba67999758a47790121fe456d95d8d1e55415ceb0",
+  "size": 18271797
  },
  "notes": [
+  {
+   "v": "2.5.72",
+   "date": "2026-10-26",
+   "title": "세로 스케일바 · 다각형 면적 · 도형 크기 고치기 · 단위 cm·m",
+   "items": [
+    "**세로 스케일바**: [스케일 감지] 옆 **▾** 에서 방향을 고릅니다 — 자동(가로·세로 중 긴 쪽) · 가로 · 세로. 세로로 쓴 1000 µm 막대도 위·아래 끝을 따라가 잽니다. 수동 지정은 어느 방향으로 드래그해도 됩니다",
+    "**다각형 면적**: [홈] 측정 도구 **다각형** — 꼭짓점을 차례로 클릭하고 더블클릭(또는 첫 점 클릭)으로 닫으면 면적. 그리는 동안 직선처럼 **돋보기**가 뜹니다 (연속선·각도·스케일 감지도)",
+    "**그린 도형 크기 고치기**: 선택 도구로 사각형을 고르면 모서리·변에 손잡이가 생겨 끌어서 크기를 고칩니다. 원은 둘레점, 다각형은 꼭짓점을 끕니다. 값과 판정이 바로 바뀌고 Ctrl+Z 로 되돌립니다",
+    "**단위**: [홈] 스케일 묶음의 **단위** 단추로 nm · µm · mm · **cm · m** 를 고릅니다. 면적도 mm² · cm² · m² 로 따라갑니다 (예: 128020.57 µm² = 0.1280 mm²). 스케일 확인 창의 단위에도 cm · m"
+   ]
+  },
   {
    "v": "2.5.71",
    "date": "2026-10-21",
@@ -65,30 +76,21 @@
     "**PNG 저장·차트 복사·성적서·엑셀은 어두운 화면이어도 늘 밝게** 나옵니다 (PPT·보고서용)",
     "사진·영상 화면과 측정 색(ROI·판정 색)은 그대로 둡니다"
    ]
-  },
-  {
-   "v": "2.5.67",
-   "date": "2026-10-18",
-   "title": "어두운 화면 준비 1단계 — 화면 색 491곳",
-   "items": [
-    "패널·표·도움말 창·목록에 직접 쓴 색 491곳에 어두운 화면용 색을 함께 적어 두었습니다 (공통 부품 0.7.2 도구). **밝은 화면은 픽셀까지 그대로**입니다",
-    "어두운 화면은 차트·시트까지 맞춘 뒤 켭니다. 그때까지는 Windows 가 어두운 모드여도 이 프로그램은 밝게 보입니다 (전에는 바탕·리본만 어두워질 수 있었음)"
-   ]
   }
  ],
- "page": "https://github.com/eden-0721/MicroMeasurePro/releases/tag/micromeasurepro-v2.5.71",
+ "page": "https://github.com/eden-0721/MicroMeasurePro/releases/tag/micromeasurepro-v2.5.72",
  "private": true,
  "filesRepo": "eden-0721/MicroMeasurePro",
  "source": "https://github.com/eden-0721/MicroMeasurePro",
  "previous": {
-  "version": "2.5.70",
+  "version": "2.5.71",
   "setup": {
-   "file": "MicroMeasurePro_Setup_v2.5.70.exe",
-   "url": "https://github.com/eden-0721/MicroMeasurePro/releases/download/micromeasurepro-v2.5.70/MicroMeasurePro_Setup_v2.5.70.exe",
-   "sha256": "29374f71af8a4f82e75a709a495d97ec683d0e84c8d456543afa28f611fc4f28",
-   "size": 16316189
+   "file": "MicroMeasurePro_Setup_v2.5.71.exe",
+   "url": "https://github.com/eden-0721/MicroMeasurePro/releases/download/micromeasurepro-v2.5.71/MicroMeasurePro_Setup_v2.5.71.exe",
+   "sha256": "5f47f452ed103d3b23ceab91472ed2e3ab7fa1582dec6e566d37e6c07a69cd19",
+   "size": 16314484
   },
-  "tag": "micromeasurepro-v2.5.70",
+  "tag": "micromeasurepro-v2.5.71",
   "filesRepo": "eden-0721/MicroMeasurePro"
  }
 }

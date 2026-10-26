@@ -19,44 +19,26 @@
    }
   },
   {
-   "app": "iedamemo",
-   "name": "iedaMemo",
-   "description": "PDF를 보며 적은 메모가 페이지와 녹음에 저절로 이어지는 노트",
-   "icon": "icon-64.png",
-   "kind": "web",
-   "private": true,
-   "version": "0.67.0",
-   "date": "2026-10-16",
-   "web": {
-    "url": "https://iedamemo.badboysbk.workers.dev"
-   },
-   "install": {
-    "file": "install.bat"
-   },
-   "source": "https://github.com/eden-0721/memo",
-   "notes": true
-  },
-  {
    "app": "micromeasurepro",
    "name": "MicroMeasure Pro",
    "description": "현미경 단면 정밀 계측 + 공정 통계 분석",
    "icon": "icon-64.png",
    "channel": "release",
-   "version": "2.5.71",
-   "date": "2026-10-21",
+   "version": "2.5.72",
+   "date": "2026-10-26",
    "setup": {
-    "file": "MicroMeasurePro_Setup_v2.5.71.exe",
-    "url": "https://github.com/eden-0721/MicroMeasurePro/releases/download/micromeasurepro-v2.5.71/MicroMeasurePro_Setup_v2.5.71.exe",
-    "sha256": "5f47f452ed103d3b23ceab91472ed2e3ab7fa1582dec6e566d37e6c07a69cd19",
-    "size": 16314484
+    "file": "MicroMeasurePro_Setup_v2.5.72.exe",
+    "url": "https://github.com/eden-0721/MicroMeasurePro/releases/download/micromeasurepro-v2.5.72/MicroMeasurePro_Setup_v2.5.72.exe",
+    "sha256": "8b038460e9d852a2b102aa93ff44d09aa00022c002cb4a78ca238324a1caa088",
+    "size": 16319775
    },
    "zip": {
-    "file": "MicroMeasurePro_v2.5.71.zip",
-    "url": "https://github.com/eden-0721/MicroMeasurePro/releases/download/micromeasurepro-v2.5.71/MicroMeasurePro_v2.5.71.zip",
-    "sha256": "b0948698b252ea528bba1d84f2c4828a8ffb5e99c173e46494cb856a1b38b6ef",
-    "size": 18265669
+    "file": "MicroMeasurePro_v2.5.72.zip",
+    "url": "https://github.com/eden-0721/MicroMeasurePro/releases/download/micromeasurepro-v2.5.72/MicroMeasurePro_v2.5.72.zip",
+    "sha256": "4a4ef4c9bc24dd0f83c1396ba67999758a47790121fe456d95d8d1e55415ceb0",
+    "size": 18271797
    },
-   "page": "https://github.com/eden-0721/MicroMeasurePro/releases/tag/micromeasurepro-v2.5.71",
+   "page": "https://github.com/eden-0721/MicroMeasurePro/releases/tag/micromeasurepro-v2.5.72",
    "private": true,
    "source": "https://github.com/eden-0721/MicroMeasurePro"
   },
@@ -94,6 +76,24 @@
    "install": {
     "file": "install.bat"
    }
+  },
+  {
+   "app": "iedamemo",
+   "name": "iedaMemo",
+   "description": "PDF를 보며 적은 메모가 페이지와 녹음에 저절로 이어지는 노트",
+   "icon": "icon-64.png",
+   "kind": "web",
+   "private": true,
+   "version": "0.67.0",
+   "date": "2026-10-16",
+   "web": {
+    "url": "https://iedamemo.badboysbk.workers.dev"
+   },
+   "install": {
+    "file": "install.bat"
+   },
+   "source": "https://github.com/eden-0721/memo",
+   "notes": true
   },
   {
    "app": "TechConsultHelper",
@@ -134,6 +134,23 @@
    },
    "page": "https://github.com/eden-0721/photo_organize/releases/tag/photo-organize-v0.39.1",
    "source": "https://github.com/eden-0721/photo_organize"
+  },
+  {
+   "app": "testreport",
+   "name": "시험성적서 워크벤치",
+   "description": "시험성적서 작성·발행 (비공개)",
+   "icon": "icon-64.png",
+   "private": true,
+   "version": "2.18.0",
+   "date": "2026-10-26",
+   "setup": {
+    "file": "TestReport_Setup_v2.18.0.exe",
+    "url": "https://github.com/login?return_to=/eden-0721/test_reports/releases/download/testreport-v2.18.0/TestReport_Setup_v2.18.0.exe",
+    "size": 3934116,
+    "sha256": "7f4e586ed5a4b95974c989b30b6c6656df4858f96eae84a4cf7b207fd9bc856e"
+   },
+   "page": "https://github.com/eden-0721/test_reports/releases/tag/testreport-v2.18.0",
+   "source": "https://github.com/eden-0721/test_reports"
   },
   {
    "app": "learn-eng",
@@ -188,23 +205,6 @@
    "install": {
     "file": "install.bat"
    }
-  },
-  {
-   "app": "testreport",
-   "name": "시험성적서 워크벤치",
-   "description": "시험성적서 작성·발행 (비공개)",
-   "icon": "icon-64.png",
-   "private": true,
-   "version": "2.18.0",
-   "date": "2026-10-26",
-   "setup": {
-    "file": "TestReport_Setup_v2.18.0.exe",
-    "url": "https://github.com/login?return_to=/eden-0721/test_reports/releases/download/testreport-v2.18.0/TestReport_Setup_v2.18.0.exe",
-    "size": 3934116,
-    "sha256": "7f4e586ed5a4b95974c989b30b6c6656df4858f96eae84a4cf7b207fd9bc856e"
-   },
-   "page": "https://github.com/eden-0721/test_reports/releases/tag/testreport-v2.18.0",
-   "source": "https://github.com/eden-0721/test_reports"
   }
  ],
  "shared": [
