@@ -1,19 +1,27 @@
 {
  "app": "testreport",
  "name": "시험성적서 워크벤치",
- "version": "2.18.0",
- "date": "2026-10-26",
+ "version": "2.18.1",
+ "date": "2026-10-27",
  "channel": "release",
- "tag": "testreport-v2.18.0",
+ "tag": "testreport-v2.18.1",
  "private": true,
  "filesRepo": "eden-0721/test_reports",
  "setup": {
-  "file": "TestReport_Setup_v2.18.0.exe",
-  "url": "https://github.com/eden-0721/test_reports/releases/download/testreport-v2.18.0/TestReport_Setup_v2.18.0.exe",
-  "sha256": "7f4e586ed5a4b95974c989b30b6c6656df4858f96eae84a4cf7b207fd9bc856e",
-  "size": 3934116
+  "file": "TestReport_Setup_v2.18.1.exe",
+  "url": "https://github.com/eden-0721/test_reports/releases/download/testreport-v2.18.1/TestReport_Setup_v2.18.1.exe",
+  "sha256": "b492a70961efaaba7aee347382fe1195ef5bbd5f7c84cf1261a6b9405d8e6dd3",
+  "size": 3934959
  },
  "notes": [
+  {
+   "v": "2.18.1",
+   "date": "2026-10-27",
+   "items": [
+    "시험 장소가 두 곳 이상이면 시험장 절 '시험장소' 줄에 주소를 줄마다 하나씩 쓰고, 둘째 주소는 첫 주소 바로 아래에서 시작합니다(조판 화면·발행본 같음) — 예전엔 쉼표로 이어 써 넘친 글이 줄 왼쪽 끝으로 내려갔습니다",
+    "표 한 개도 그림 한 장처럼 본문 들여쓰기 안쪽 폭의 가운데에 놓습니다(조판 화면·발행본 같음) — 예전엔 왼쪽 맞춤이라 좁은 표가 왼쪽으로 쏠려 보였습니다"
+   ]
+  },
   {
    "v": "2.18.0",
    "date": "2026-10-26",
