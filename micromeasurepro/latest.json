@@ -1,23 +1,32 @@
 {
  "app": "micromeasurepro",
  "name": "MicroMeasure Pro",
- "version": "2.5.74",
+ "version": "2.5.75",
  "date": "2026-10-27",
  "channel": "release",
- "tag": "micromeasurepro-v2.5.74",
+ "tag": "micromeasurepro-v2.5.75",
  "setup": {
-  "file": "MicroMeasurePro_Setup_v2.5.74.exe",
-  "url": "https://github.com/eden-0721/MicroMeasurePro/releases/download/micromeasurepro-v2.5.74/MicroMeasurePro_Setup_v2.5.74.exe",
-  "sha256": "39d966445ec5558ebdf6175ac5516b24dcd804984a6c1d1be50cc694bec8950e",
-  "size": 16322455
+  "file": "MicroMeasurePro_Setup_v2.5.75.exe",
+  "url": "https://github.com/eden-0721/MicroMeasurePro/releases/download/micromeasurepro-v2.5.75/MicroMeasurePro_Setup_v2.5.75.exe",
+  "sha256": "2d2697c0aa624b14713c95f7aa8d59cce36c73071345355a4391b2646bab9a86",
+  "size": 16323152
  },
  "zip": {
-  "file": "MicroMeasurePro_v2.5.74.zip",
-  "url": "https://github.com/eden-0721/MicroMeasurePro/releases/download/micromeasurepro-v2.5.74/MicroMeasurePro_v2.5.74.zip",
-  "sha256": "4aa3aed0de07d796d8ee8af86ac9dc95334bd2fe7cb0711ed95ddd9bb7638d8c",
-  "size": 18275229
+  "file": "MicroMeasurePro_v2.5.75.zip",
+  "url": "https://github.com/eden-0721/MicroMeasurePro/releases/download/micromeasurepro-v2.5.75/MicroMeasurePro_v2.5.75.zip",
+  "sha256": "fe9475a95a76588efb7f4f7f70fded3d3eba63cd7c8c36de11d05273e043a031",
+  "size": 18275644
  },
  "notes": [
+  {
+   "v": "2.5.75",
+   "date": "2026-10-27",
+   "title": "개수 카운터 — 지우면 번호를 다시 매김",
+   "items": [
+    "개수 카운터 번호를 지우면 남은 번호를 **1 부터 빈칸 없이** 다시 매기고, 다음 번호도 그 뒤로 이어집니다. 모두 지우면 1 부터 새로 시작합니다 (전에는 지운 번호가 비고 다음 번호로 이어졌다)",
+    "Delete 키 · 표의 × · ROI 자동 [개수 자동 카운팅] 모두 같은 규칙이고, Ctrl+Z 로 지우기 전 번호로 되돌아갑니다"
+   ]
+  },
   {
    "v": "2.5.74",
    "date": "2026-10-27",
@@ -57,36 +66,21 @@
     "같은 버전을 두 번 올리지 않고, 선반의 업데이트 정보는 더 높은 버전일 때만 바꿉니다",
     "개발본의 시험판 확인이 선반 목록의 시험판 표시를 보고 찾습니다 (전에는 시험판을 찾지 못할 수 있었다)"
    ]
-  },
-  {
-   "v": "2.5.70",
-   "date": "2026-10-19",
-   "title": "전체 점검 83항목 고침",
-   "items": [
-    "**값이 틀리던 것**: ROI [금속폭 & 간격]이 어두운 선을 스페이스로 뒤바꿔 잡던 것 · 사다리꼴 상폭·하폭·측벽각이 ROI 크기에 따라 흔들리던 것(측벽 직선 맞춤) · µm·µm²·° 가 섞인 항목의 평균 · 입자 분석에 글자 상자·스케일바가 섞이던 것 · Cpk 옆에 **Ppk** 를 함께 보이고 해석은 낮은 쪽으로 판정",
-    "**작업이 사라지던 것**: 이미지 닫기·새로 만들기·측정 항목 이름 바꾸기·지우기·스케일 전역 적용도 **Ctrl+Z** 로 되돌리고 **Ctrl+Y** 로 다시 실행 · 일괄 계측이 보이지 않는 이미지의 측정을 지우던 것 · 복구 배너에 답하기 전 이전 자동 저장을 덮던 것 · 영상·통계 화면에서 누른 단축키가 비전 측정을 지우던 것 · 영상 [전체 분석]을 다시 누를 때 묻고, 중단하면 이전 결과로",
-    "스케일은 맞춘 이미지에만 — 다른 이미지에 퍼지는 것은 [전역 적용]을 눌렀을 때만 (다른 배율이면 묻습니다)",
-    "영상: CSV 시각이 시:분:초로, 이름에 쉼표가 있어도 열이 맞게 · 분할한 조각이 제자리에 · 견본 학습 창은 확신이 낮은 칸을 비워 두고 [모두 학습] 전에 묻습니다 · [자동 잡기] 중지 · 프로필·라이브러리 덮어쓰기 확인",
-    "통계: 누적분포를 본 뒤 다른 차트가 비던 것 · 이력에 넣은 로트와 측정 날짜 · 성적서 로트 칸·장 번호 · 셀 주소 B2 · 보조선 글자를 눌러 HTML 상자가 열리던 것 · 좁은 차트의 눈금·그룹 이름 겹침",
-    "키보드·창: 떠 있는 창을 **Esc** 로 닫고 탭이 바뀌어도 창이 뛰지 않게 · 측정 항목 칩을 키보드로 · 칩이 넘치면 [+N] · 창을 키우면 사진을 다시 맞춤 · 작업 저장이 [최근] 목록에 남고 다음 Ctrl+S 는 같은 파일에",
-    "검색(Ctrl+K)이 화면마다 맞는 기능을 찾습니다 (영상 기능 · 설명서 · 밝기 · 배율 · 통계에서 설정·버전) · 어두운 화면의 파랑·초록·빨강 글자와 시트 도구 줄이 잘 보이게",
-    "공통 부품 0.7.8 · 0.7.9: 리본 탭 화살표 키, 넘치는 묶음은 [더 보기], 간단한 리본 + 140% 에서 글자 잘림 없음"
-   ]
   }
  ],
- "page": "https://github.com/eden-0721/MicroMeasurePro/releases/tag/micromeasurepro-v2.5.74",
+ "page": "https://github.com/eden-0721/MicroMeasurePro/releases/tag/micromeasurepro-v2.5.75",
  "private": true,
  "filesRepo": "eden-0721/MicroMeasurePro",
  "source": "https://github.com/eden-0721/MicroMeasurePro",
  "previous": {
-  "version": "2.5.73",
+  "version": "2.5.74",
   "setup": {
-   "file": "MicroMeasurePro_Setup_v2.5.73.exe",
-   "url": "https://github.com/eden-0721/MicroMeasurePro/releases/download/micromeasurepro-v2.5.73/MicroMeasurePro_Setup_v2.5.73.exe",
-   "sha256": "102d026e3b6a1158dab375567b46e33a5fb7376df72d217b8d2ebd17013f0de0",
-   "size": 16322112
+   "file": "MicroMeasurePro_Setup_v2.5.74.exe",
+   "url": "https://github.com/eden-0721/MicroMeasurePro/releases/download/micromeasurepro-v2.5.74/MicroMeasurePro_Setup_v2.5.74.exe",
+   "sha256": "39d966445ec5558ebdf6175ac5516b24dcd804984a6c1d1be50cc694bec8950e",
+   "size": 16322455
   },
-  "tag": "micromeasurepro-v2.5.73",
+  "tag": "micromeasurepro-v2.5.74",
   "filesRepo": "eden-0721/MicroMeasurePro"
  }
 }
