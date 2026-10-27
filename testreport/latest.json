@@ -1,19 +1,26 @@
 {
  "app": "testreport",
  "name": "시험성적서 워크벤치",
- "version": "2.20.0",
+ "version": "2.20.1",
  "date": "2026-10-27",
  "channel": "release",
- "tag": "testreport-v2.20.0",
+ "tag": "testreport-v2.20.1",
  "private": true,
  "filesRepo": "eden-0721/test_reports",
  "setup": {
-  "file": "TestReport_Setup_v2.20.0.exe",
-  "url": "https://github.com/eden-0721/test_reports/releases/download/testreport-v2.20.0/TestReport_Setup_v2.20.0.exe",
-  "sha256": "45b666958fd3c81a654f5b10cc4eafc09c7cfe9f2d1d7595c505c26433e1cd7a",
-  "size": 3947650
+  "file": "TestReport_Setup_v2.20.1.exe",
+  "url": "https://github.com/eden-0721/test_reports/releases/download/testreport-v2.20.1/TestReport_Setup_v2.20.1.exe",
+  "sha256": "2b5f5cc736f72f3418bd3e1f5a6b48bae2be843906af45ecfca723dfc04360f6",
+  "size": 3950214
  },
  "notes": [
+  {
+   "v": "2.20.1",
+   "date": "2026-10-27",
+   "items": [
+    "조판: 수식 블록이 'bar {x} = {1} over {n}' 같은 한글 수식 문법 글자로만 보이던 것 — 이제 분수·첨자·근호·합·평균 막대·그리스 문자를 그린 식으로 보여 줍니다(발행본과 같은 모양). 식을 누르면 위에 식 글자가 나와 고칠 수 있고 아래 그림이 바로 바뀝니다. 수식 문법이 없는 보통 글은 예전처럼 글자로"
+   ]
+  },
   {
    "v": "2.20.0",
    "date": "2026-10-27",
