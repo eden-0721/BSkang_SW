@@ -1,23 +1,33 @@
 {
  "app": "micromeasurepro",
  "name": "MicroMeasure Pro",
- "version": "2.5.72",
- "date": "2026-10-26",
+ "version": "2.5.73",
+ "date": "2026-10-27",
  "channel": "release",
- "tag": "micromeasurepro-v2.5.72",
+ "tag": "micromeasurepro-v2.5.73",
  "setup": {
-  "file": "MicroMeasurePro_Setup_v2.5.72.exe",
-  "url": "https://github.com/eden-0721/MicroMeasurePro/releases/download/micromeasurepro-v2.5.72/MicroMeasurePro_Setup_v2.5.72.exe",
-  "sha256": "8b038460e9d852a2b102aa93ff44d09aa00022c002cb4a78ca238324a1caa088",
-  "size": 16319775
+  "file": "MicroMeasurePro_Setup_v2.5.73.exe",
+  "url": "https://github.com/eden-0721/MicroMeasurePro/releases/download/micromeasurepro-v2.5.73/MicroMeasurePro_Setup_v2.5.73.exe",
+  "sha256": "102d026e3b6a1158dab375567b46e33a5fb7376df72d217b8d2ebd17013f0de0",
+  "size": 16322112
  },
  "zip": {
-  "file": "MicroMeasurePro_v2.5.72.zip",
-  "url": "https://github.com/eden-0721/MicroMeasurePro/releases/download/micromeasurepro-v2.5.72/MicroMeasurePro_v2.5.72.zip",
-  "sha256": "4a4ef4c9bc24dd0f83c1396ba67999758a47790121fe456d95d8d1e55415ceb0",
-  "size": 18271797
+  "file": "MicroMeasurePro_v2.5.73.zip",
+  "url": "https://github.com/eden-0721/MicroMeasurePro/releases/download/micromeasurepro-v2.5.73/MicroMeasurePro_v2.5.73.zip",
+  "sha256": "021f350cc0187dd7c5da96c26063c72053ee57821b4aa6184c623c06643e3151",
+  "size": 18274894
  },
  "notes": [
+  {
+   "v": "2.5.73",
+   "date": "2026-10-27",
+   "title": "개수 카운터 — 찍은 자리가 보이게 (표시 방식·색 고르기)",
+   "items": [
+    "**개수 카운터** 옆 **▾** 에서 찍은 자리 표시를 고릅니다: **화살표**(번호에서 찍은 자리까지 실선 화살표 — 기본) · **십자 표시** · **고리** · **찍은 자리에 번호** · 작은 점(예전)",
+    "**색**: 보라 · 빨강 · 청록 · 초록 · 노랑 · 흰색 — 밝은 사진엔 진한 색, 어두운 사진엔 노랑·흰색. 표시에는 검은 테두리가 있어 어느 바탕에서도 보입니다",
+    "번호가 찍은 자리를 덮지 않게 살짝 옆에 두고, 번호를 끌거나 정렬선에 줄 세워도 화살표·선이 찍은 자리를 계속 가리킵니다. 이미지 저장·성적서에도 같은 모양"
+   ]
+  },
   {
    "v": "2.5.72",
    "date": "2026-10-26",
@@ -65,32 +75,21 @@
     "접은 리본에서 잠깐 펼친 판은 **Esc** 로 닫힙니다. 리본 작은 단추의 누르는 자리가 조금 넓어졌습니다 (배치는 그대로)",
     "보조 글자가 조금 더 진해져 읽기 쉽습니다 (공통 부품 0.7.5)"
    ]
-  },
-  {
-   "v": "2.5.68",
-   "date": "2026-10-18",
-   "title": "어두운 화면",
-   "items": [
-    "**어두운 화면**: [도구] 환경 설정 → **일반** 맨 위 **밝기**(기기 · 밝게 · 어둡게). 기기를 고르면 Windows 설정을 따릅니다. 이 PC 에 기억되고, 비전·통계·영상 세 화면이 함께 바뀝니다 (통계 화면 설정에서 바꿔도 같음)",
-    "통계 차트·분석 창 차트·영상 시계열 차트도 어두운 바탕에 밝은 글자로. 너무 어두운 선(논문 테마의 검정 등)은 밝게 올립니다. 시트는 밝기만 뒤집어 빨강·노랑 표시는 그대로",
-    "**PNG 저장·차트 복사·성적서·엑셀은 어두운 화면이어도 늘 밝게** 나옵니다 (PPT·보고서용)",
-    "사진·영상 화면과 측정 색(ROI·판정 색)은 그대로 둡니다"
-   ]
   }
  ],
- "page": "https://github.com/eden-0721/MicroMeasurePro/releases/tag/micromeasurepro-v2.5.72",
+ "page": "https://github.com/eden-0721/MicroMeasurePro/releases/tag/micromeasurepro-v2.5.73",
  "private": true,
  "filesRepo": "eden-0721/MicroMeasurePro",
  "source": "https://github.com/eden-0721/MicroMeasurePro",
  "previous": {
-  "version": "2.5.71",
+  "version": "2.5.72",
   "setup": {
-   "file": "MicroMeasurePro_Setup_v2.5.71.exe",
-   "url": "https://github.com/eden-0721/MicroMeasurePro/releases/download/micromeasurepro-v2.5.71/MicroMeasurePro_Setup_v2.5.71.exe",
-   "sha256": "5f47f452ed103d3b23ceab91472ed2e3ab7fa1582dec6e566d37e6c07a69cd19",
-   "size": 16314484
+   "file": "MicroMeasurePro_Setup_v2.5.72.exe",
+   "url": "https://github.com/eden-0721/MicroMeasurePro/releases/download/micromeasurepro-v2.5.72/MicroMeasurePro_Setup_v2.5.72.exe",
+   "sha256": "8b038460e9d852a2b102aa93ff44d09aa00022c002cb4a78ca238324a1caa088",
+   "size": 16319775
   },
-  "tag": "micromeasurepro-v2.5.71",
+  "tag": "micromeasurepro-v2.5.72",
   "filesRepo": "eden-0721/MicroMeasurePro"
  }
 }
