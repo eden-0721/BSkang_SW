@@ -1,23 +1,32 @@
 {
  "app": "micromeasurepro",
  "name": "MicroMeasure Pro",
- "version": "2.5.73",
+ "version": "2.5.74",
  "date": "2026-10-27",
  "channel": "release",
- "tag": "micromeasurepro-v2.5.73",
+ "tag": "micromeasurepro-v2.5.74",
  "setup": {
-  "file": "MicroMeasurePro_Setup_v2.5.73.exe",
-  "url": "https://github.com/eden-0721/MicroMeasurePro/releases/download/micromeasurepro-v2.5.73/MicroMeasurePro_Setup_v2.5.73.exe",
-  "sha256": "102d026e3b6a1158dab375567b46e33a5fb7376df72d217b8d2ebd17013f0de0",
-  "size": 16322112
+  "file": "MicroMeasurePro_Setup_v2.5.74.exe",
+  "url": "https://github.com/eden-0721/MicroMeasurePro/releases/download/micromeasurepro-v2.5.74/MicroMeasurePro_Setup_v2.5.74.exe",
+  "sha256": "39d966445ec5558ebdf6175ac5516b24dcd804984a6c1d1be50cc694bec8950e",
+  "size": 16322455
  },
  "zip": {
-  "file": "MicroMeasurePro_v2.5.73.zip",
-  "url": "https://github.com/eden-0721/MicroMeasurePro/releases/download/micromeasurepro-v2.5.73/MicroMeasurePro_v2.5.73.zip",
-  "sha256": "021f350cc0187dd7c5da96c26063c72053ee57821b4aa6184c623c06643e3151",
-  "size": 18274894
+  "file": "MicroMeasurePro_v2.5.74.zip",
+  "url": "https://github.com/eden-0721/MicroMeasurePro/releases/download/micromeasurepro-v2.5.74/MicroMeasurePro_v2.5.74.zip",
+  "sha256": "4aa3aed0de07d796d8ee8af86ac9dc95334bd2fe7cb0711ed95ddd9bb7638d8c",
+  "size": 18275229
  },
  "notes": [
+  {
+   "v": "2.5.74",
+   "date": "2026-10-27",
+   "title": "정렬선 설정 막대가 바로 뜨게",
+   "items": [
+    "**정렬선**을 그리거나 눌러 고르면 사진 왼쪽 위에 **정렬(시작 · 중간 · 끝 · 균등배분) · 간격 · 삭제** 막대가 바로 뜹니다 (전에는 다른 동작으로 화면이 다시 그려질 때까지 안 떴다)",
+    "새로 그린 정렬선은 골라진 상태로 남아 바로 정렬·간격을 고를 수 있습니다"
+   ]
+  },
   {
    "v": "2.5.73",
    "date": "2026-10-27",
@@ -63,33 +72,21 @@
     "검색(Ctrl+K)이 화면마다 맞는 기능을 찾습니다 (영상 기능 · 설명서 · 밝기 · 배율 · 통계에서 설정·버전) · 어두운 화면의 파랑·초록·빨강 글자와 시트 도구 줄이 잘 보이게",
     "공통 부품 0.7.8 · 0.7.9: 리본 탭 화살표 키, 넘치는 묶음은 [더 보기], 간단한 리본 + 140% 에서 글자 잘림 없음"
    ]
-  },
-  {
-   "v": "2.5.69",
-   "date": "2026-10-19",
-   "title": "공통 부품 0.7.7 — 최근 목록 · 설정 창 키보드",
-   "items": [
-    "리본의 **작업 이름**을 누르면 최근 작업 목록이 그 이름 바로 아래에 뜹니다. 같은 이름을 다시 누르면 닫히고, 지금 작업에는 ✓ 표시가 붙습니다",
-    "사진을 열기 전에는 [파일] **다른 이름으로 저장**이 꺼져 있습니다 (저장할 것이 없을 때)",
-    "**환경 설정** 창을 열면 키보드 초점이 창 안으로 가고, Tab 은 창 안에서만 돌며, 닫으면 연 자리로 돌아옵니다",
-    "접은 리본에서 잠깐 펼친 판은 **Esc** 로 닫힙니다. 리본 작은 단추의 누르는 자리가 조금 넓어졌습니다 (배치는 그대로)",
-    "보조 글자가 조금 더 진해져 읽기 쉽습니다 (공통 부품 0.7.5)"
-   ]
   }
  ],
- "page": "https://github.com/eden-0721/MicroMeasurePro/releases/tag/micromeasurepro-v2.5.73",
+ "page": "https://github.com/eden-0721/MicroMeasurePro/releases/tag/micromeasurepro-v2.5.74",
  "private": true,
  "filesRepo": "eden-0721/MicroMeasurePro",
  "source": "https://github.com/eden-0721/MicroMeasurePro",
  "previous": {
-  "version": "2.5.72",
+  "version": "2.5.73",
   "setup": {
-   "file": "MicroMeasurePro_Setup_v2.5.72.exe",
-   "url": "https://github.com/eden-0721/MicroMeasurePro/releases/download/micromeasurepro-v2.5.72/MicroMeasurePro_Setup_v2.5.72.exe",
-   "sha256": "8b038460e9d852a2b102aa93ff44d09aa00022c002cb4a78ca238324a1caa088",
-   "size": 16319775
+   "file": "MicroMeasurePro_Setup_v2.5.73.exe",
+   "url": "https://github.com/eden-0721/MicroMeasurePro/releases/download/micromeasurepro-v2.5.73/MicroMeasurePro_Setup_v2.5.73.exe",
+   "sha256": "102d026e3b6a1158dab375567b46e33a5fb7376df72d217b8d2ebd17013f0de0",
+   "size": 16322112
   },
-  "tag": "micromeasurepro-v2.5.72",
+  "tag": "micromeasurepro-v2.5.73",
   "filesRepo": "eden-0721/MicroMeasurePro"
  }
 }
