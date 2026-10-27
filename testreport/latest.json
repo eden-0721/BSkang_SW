@@ -1,19 +1,26 @@
 {
  "app": "testreport",
  "name": "시험성적서 워크벤치",
- "version": "2.19.0",
+ "version": "2.19.1",
  "date": "2026-10-27",
  "channel": "release",
- "tag": "testreport-v2.19.0",
+ "tag": "testreport-v2.19.1",
  "private": true,
  "filesRepo": "eden-0721/test_reports",
  "setup": {
-  "file": "TestReport_Setup_v2.19.0.exe",
-  "url": "https://github.com/eden-0721/test_reports/releases/download/testreport-v2.19.0/TestReport_Setup_v2.19.0.exe",
-  "sha256": "1f16ac6bcb3146e52e0b211487a1af96a14f59c0637ca713bfdf7c66bc906803",
-  "size": 3942307
+  "file": "TestReport_Setup_v2.19.1.exe",
+  "url": "https://github.com/eden-0721/test_reports/releases/download/testreport-v2.19.1/TestReport_Setup_v2.19.1.exe",
+  "sha256": "91762f6cc85b8de3481fcb500c7d142ce0c1d4a02396dc72f6674b536dc8fed0",
+  "size": 3942461
  },
  "notes": [
+  {
+   "v": "2.19.1",
+   "date": "2026-10-27",
+   "items": [
+    "조판 시험장 절: 시제품명이 '…시제품'으로 끝나면(예: 수소 저장용 라이너 정밀 사출 시제품) 시제품명·시험 장소를 다 넣었는데도 '시제품명·시험 장소 없음' 표시가 뜨던 것 — 이름이 비었을 때의 자리표시 문장('시제품은 의뢰기업에서 …')일 때만 뜨게 고침"
+   ]
+  },
   {
    "v": "2.19.0",
    "date": "2026-10-27",
