@@ -1,19 +1,26 @@
 {
  "app": "testreport",
  "name": "시험성적서 워크벤치",
- "version": "2.19.1",
+ "version": "2.19.2",
  "date": "2026-10-27",
  "channel": "release",
- "tag": "testreport-v2.19.1",
+ "tag": "testreport-v2.19.2",
  "private": true,
  "filesRepo": "eden-0721/test_reports",
  "setup": {
-  "file": "TestReport_Setup_v2.19.1.exe",
-  "url": "https://github.com/eden-0721/test_reports/releases/download/testreport-v2.19.1/TestReport_Setup_v2.19.1.exe",
-  "sha256": "91762f6cc85b8de3481fcb500c7d142ce0c1d4a02396dc72f6674b536dc8fed0",
-  "size": 3942461
+  "file": "TestReport_Setup_v2.19.2.exe",
+  "url": "https://github.com/eden-0721/test_reports/releases/download/testreport-v2.19.2/TestReport_Setup_v2.19.2.exe",
+  "sha256": "63ce3d7f2def0755553853c71cad472bce81af8661a0603eec42f4406da10dcb",
+  "size": 3944008
  },
  "notes": [
+  {
+   "v": "2.19.2",
+   "date": "2026-10-27",
+   "items": [
+    "Claude 채팅 연결: Claude 데스크톱이 10월 업데이트 뒤 설정 파일을 새 자리(%LOCALAPPDATA%\\Claude-Data\\claude_…\\claude_desktop_config.json)에서 읽는데, [Claude 데스크톱에 연결]이 예전 자리(%APPDATA%\\Claude)에만 넣어 새로 연결한 PC 에서 채팅 연결이 되지 않던 것 — 새 자리에 넣고(예전 자리에 파일이 있으면 같이 맞춤), 환경 설정 카드의 상태도 Claude 가 실제로 읽는 설정 기준으로 '연결 설정됨 / 예전 설정 위치에만 있음 / 다른 경로를 가리킴'을 보입니다. 사용 PC 는 업데이트 뒤 [Claude 데스크톱에 연결]을 한 번 다시 누르고 Claude 데스크톱을 완전히 종료했다가 다시 켜세요"
+   ]
+  },
   {
    "v": "2.19.1",
    "date": "2026-10-27",
