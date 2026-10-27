@@ -1,19 +1,27 @@
 {
  "app": "testreport",
  "name": "시험성적서 워크벤치",
- "version": "2.19.3",
+ "version": "2.20.0",
  "date": "2026-10-27",
  "channel": "release",
- "tag": "testreport-v2.19.3",
+ "tag": "testreport-v2.20.0",
  "private": true,
  "filesRepo": "eden-0721/test_reports",
  "setup": {
-  "file": "TestReport_Setup_v2.19.3.exe",
-  "url": "https://github.com/eden-0721/test_reports/releases/download/testreport-v2.19.3/TestReport_Setup_v2.19.3.exe",
-  "sha256": "04bc4e78139be18f84d0c6c406f0b51125f6a71d38a2023f9b191dd49185c823",
-  "size": 3945407
+  "file": "TestReport_Setup_v2.20.0.exe",
+  "url": "https://github.com/eden-0721/test_reports/releases/download/testreport-v2.20.0/TestReport_Setup_v2.20.0.exe",
+  "sha256": "45b666958fd3c81a654f5b10cc4eafc09c7cfe9f2d1d7595c505c26433e1cd7a",
+  "size": 3947650
  },
  "notes": [
+  {
+   "v": "2.20.0",
+   "date": "2026-10-27",
+   "items": [
+    "조판: 그림 여러 장(묶음)도 한 번에 키우고 줄일 수 있습니다 — 마지막 그림 오른쪽 아래 모서리를 끌거나, 서식 창 '크기'에 % 를 적습니다(자동 = 높이 75 mm 안). 키워도 본문 폭을 넘지 않고, 묶음 안 그림은 같은 높이를 유지합니다. [자동 크기로]로 되돌리며, 직접 정한 크기는 쪽 맞춤에서 줄이지 않습니다",
+    "Claude 채팅 연결: 조판 항목 절에 수식을 넣는 add_equation — 한글 수식 문법(분수 {F} over {A}, 첨자 x^2·D_{50}, 근호 sqrt, 합 sum, 평균 bar, 그리스 문자 sigma 등)으로 주면 발행본에 한글 수식 개체로 들어갑니다. 기본 자리는 결과 줄 바로 앞, 원하면 식을 설명하는 문단 바로 뒤. [되돌리기]로 한 번에 되돌림"
+   ]
+  },
   {
    "v": "2.19.3",
    "date": "2026-10-27",
