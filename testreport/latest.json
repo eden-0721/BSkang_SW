@@ -1,19 +1,26 @@
 {
  "app": "testreport",
  "name": "시험성적서 워크벤치",
- "version": "2.22.0",
+ "version": "2.22.1",
  "date": "2026-10-28",
  "channel": "release",
- "tag": "testreport-v2.22.0",
+ "tag": "testreport-v2.22.1",
  "private": true,
  "filesRepo": "eden-0721/test_reports",
  "setup": {
-  "file": "TestReport_Setup_v2.22.0.exe",
-  "url": "https://github.com/eden-0721/test_reports/releases/download/testreport-v2.22.0/TestReport_Setup_v2.22.0.exe",
-  "sha256": "f2d37b801d18da624449d178981835b1b978a625ae40c83f5264e57510dd5c94",
-  "size": 3958300
+  "file": "TestReport_Setup_v2.22.1.exe",
+  "url": "https://github.com/eden-0721/test_reports/releases/download/testreport-v2.22.1/TestReport_Setup_v2.22.1.exe",
+  "sha256": "5ec07a7730be82bc7400a0e2b4c63adadca895801814168d04dd69c8e5705702",
+  "size": 3959546
  },
  "notes": [
+  {
+   "v": "2.22.1",
+   "date": "2026-10-28",
+   "items": [
+    "시험항목 절 순서: 방법(첫 문장·문단) → 그림·표 → 마무리 문단 → '- 항목 : 결과' 로 바뀝니다. 예전엔 결과 문장('그 결과 ~로 측정되었다')이 방법 문단 끝에 붙어 그림·표보다 앞에 나왔습니다. 이제 마무리 문장('○○은 [장비]를 이용하여 측정하였으며, 측정 결과 ~로 나타났다.', 장비가 없으면 '측정 결과 ○○은 ~로 나타났다.')을 따로 한 문단으로 결과 줄 바로 앞에 두고, 나중에 넣는 표·그림·수식은 그 앞에 들어갑니다. 결과 칸을 고치면 마무리 문장도 따라 바뀌고, 예전 작업은 [위 내용으로 조판]이나 결과 수정 때 떼어 냅니다"
+   ]
+  },
   {
    "v": "2.22.0",
    "date": "2026-10-28",
