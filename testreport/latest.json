@@ -1,19 +1,36 @@
 {
  "app": "testreport",
  "name": "시험성적서 워크벤치",
- "version": "2.21.1",
+ "version": "2.22.0",
  "date": "2026-10-28",
  "channel": "release",
- "tag": "testreport-v2.21.1",
+ "tag": "testreport-v2.22.0",
  "private": true,
  "filesRepo": "eden-0721/test_reports",
  "setup": {
-  "file": "TestReport_Setup_v2.21.1.exe",
-  "url": "https://github.com/eden-0721/test_reports/releases/download/testreport-v2.21.1/TestReport_Setup_v2.21.1.exe",
-  "sha256": "a911b9b0490b855cf739d001e1c4dcbe348d3847cdb1033d5fc7620aa59aee52",
-  "size": 3955672
+  "file": "TestReport_Setup_v2.22.0.exe",
+  "url": "https://github.com/eden-0721/test_reports/releases/download/testreport-v2.22.0/TestReport_Setup_v2.22.0.exe",
+  "sha256": "f2d37b801d18da624449d178981835b1b978a625ae40c83f5264e57510dd5c94",
+  "size": 3958300
  },
  "notes": [
+  {
+   "v": "2.22.0",
+   "date": "2026-10-28",
+   "items": [
+    "Claude 채팅 연결: add_paragraph — 항목 조판에 본문과 같은 서식(바탕글·같은 들여쓰기)의 문단을 넣습니다(수식 아래 '여기서, x̄ : 평균 두께 (mm), …' 같은 기호 설명 줄). 정렬 left(기본)·center·justify, 결과 줄 앞 또는 지정한 요소 바로 뒤. 이 문단은 조판에만 있고 작성 카드 본문과는 따로라 AI 초안·카드 수정이 바꾸지 않으며, [위 내용으로 조판]을 다시 눌러도 그 자리에 남습니다",
+    "Claude 채팅 연결: add_equation 에 arrange — ' / ' 로 나눈 식을 stack(위아래, 등호 맞춤 — 생략 시 기본) 또는 row(나란히)로. 수식 문법이 없는 보통 글은 수식 칸 대신 거절하고 add_paragraph 를 안내합니다",
+    "Claude 채팅 연결: update_layout — 이미 넣은 요소의 내용만 고칩니다(수식 식·배치·정렬, 조판 문단 글·정렬, 표·그림·차트 캡션). 지우고 다시 넣지 않아 index 가 그대로입니다. remove_layout·move_layout·clear_layout(keep_types 'paragraph')도 조판 문단을 다룹니다"
+   ]
+  },
+  {
+   "v": "2.21.2",
+   "date": "2026-10-28",
+   "items": [
+    "표가 쪽에서 나뉘지 않습니다 — 예전 [쪽 맞춤]은 데이터 10행 넘는 표를 '쪽에서 나눔(머리행 반복)'으로 바꿔 한 표가 두 쪽에 걸쳤습니다. 이제 표가 쪽 끝에 안 들어가면 통째로 다음 쪽으로 가고, 한 쪽에 다 들어갈 수 없는 아주 긴 표만 나눕니다(나누지 않으면 잘리므로). 예전 작업에 남은 '쪽에서 나눔' 값도 지웁니다",
+    "표·그림 뒤 빈 줄: 표 다음 사진, 그림 묶음 제목 다음 그림처럼 개체가 이어져도 빈 줄 한 줄을 둡니다(예전엔 다음이 글일 때만). 이 빈 줄은 [쪽 맞춤]이 줄이지 않습니다(예전엔 2 pt 로 줄여 딱 붙어 보였음)"
+   ]
+  },
   {
    "v": "2.21.1",
    "date": "2026-10-28",
