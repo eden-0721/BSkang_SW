@@ -1,19 +1,26 @@
 {
  "app": "testreport",
  "name": "시험성적서 워크벤치",
- "version": "2.21.0",
- "date": "2026-10-27",
+ "version": "2.21.1",
+ "date": "2026-10-28",
  "channel": "release",
- "tag": "testreport-v2.21.0",
+ "tag": "testreport-v2.21.1",
  "private": true,
  "filesRepo": "eden-0721/test_reports",
  "setup": {
-  "file": "TestReport_Setup_v2.21.0.exe",
-  "url": "https://github.com/eden-0721/test_reports/releases/download/testreport-v2.21.0/TestReport_Setup_v2.21.0.exe",
-  "sha256": "db2e21edfa66b8e430dd60e3ef57d0521b888b3c4650ba7b5888ef9fcb5b5bdf",
-  "size": 3954804
+  "file": "TestReport_Setup_v2.21.1.exe",
+  "url": "https://github.com/eden-0721/test_reports/releases/download/testreport-v2.21.1/TestReport_Setup_v2.21.1.exe",
+  "sha256": "a911b9b0490b855cf739d001e1c4dcbe348d3847cdb1033d5fc7620aa59aee52",
+  "size": 3955672
  },
  "notes": [
+  {
+   "v": "2.21.1",
+   "date": "2026-10-28",
+   "items": [
+    "조판 수식: 식 아래 수치 줄을 둔 '위아래 (= 맞춤)' 묶음 둘을 그림 나란히처럼 왼쪽·오른쪽에 놓을 수 있습니다 — 묶음을 누르고 서식 창 [아래 수식과 나란히 (왼쪽·오른쪽)](사이의 빈 줄은 건너뛰고 지움). 칸마다 등호(=)끼리 맞고 발행본도 칸마다 한 수식입니다. 칸에서 Shift+Enter = 그 칸 안 줄 하나 더, [하나씩 풀기]는 다시 위아래 묶음 두 개로"
+   ]
+  },
   {
    "v": "2.21.0",
    "date": "2026-10-27",
