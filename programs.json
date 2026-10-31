@@ -205,6 +205,21 @@
    },
    "page": "https://github.com/eden-0721/test_reports/releases/tag/testreport-v2.25.0",
    "source": "https://github.com/eden-0721/test_reports"
+  },
+  {
+   "app": "testreport-field",
+   "name": "시험성적서 현장",
+   "description": "휴대폰·태블릿에서 작업 보기·현장 사진·메모·측정값 올리기 (PC 시험성적서 워크벤치와 같은 구글 계정)",
+   "icon": "icon-64.png",
+   "kind": "web",
+   "private": true,
+   "version": "2.27.0",
+   "date": "2026-10-30",
+   "web": {
+    "url": "https://testreport-field.pages.dev"
+   },
+   "source": "https://github.com/eden-0721/test_reports",
+   "notes": true
   }
  ],
  "shared": [
