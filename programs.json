@@ -190,23 +190,6 @@
    }
   },
   {
-   "app": "testreport",
-   "name": "시험성적서 워크벤치",
-   "description": "시험성적서 작성·발행 (비공개)",
-   "icon": "icon-64.png",
-   "private": true,
-   "version": "2.25.0",
-   "date": "2026-10-29",
-   "setup": {
-    "file": "TestReport_Setup_v2.25.0.exe",
-    "url": "https://github.com/login?return_to=/eden-0721/test_reports/releases/download/testreport-v2.25.0/TestReport_Setup_v2.25.0.exe",
-    "size": 3977686,
-    "sha256": "59166054a3581ea68b217ab84220d5638e24b2a9c22b4fbbf6c3fad7b4b2e4fc"
-   },
-   "page": "https://github.com/eden-0721/test_reports/releases/tag/testreport-v2.25.0",
-   "source": "https://github.com/eden-0721/test_reports"
-  },
-  {
    "app": "testreport-field",
    "name": "시험성적서 현장",
    "description": "휴대폰·태블릿에서 작업 보기·현장 사진·메모·측정값 올리기 (PC 시험성적서 워크벤치와 같은 구글 계정)",
@@ -220,6 +203,23 @@
    },
    "source": "https://github.com/eden-0721/test_reports",
    "notes": true
+  },
+  {
+   "app": "testreport",
+   "name": "시험성적서 워크벤치",
+   "description": "시험성적서 작성·발행 (비공개)",
+   "icon": "icon-64.png",
+   "private": true,
+   "version": "2.27.0",
+   "date": "2026-10-30",
+   "setup": {
+    "file": "TestReport_Setup_v2.27.0.exe",
+    "url": "https://github.com/login?return_to=/eden-0721/test_reports/releases/download/testreport-v2.27.0/TestReport_Setup_v2.27.0.exe",
+    "size": 4001566,
+    "sha256": "c70a3d9ad9cbc40d6ec3f60ef5adf228f2c5c3fe618e3c3e34474a7b0576ae8b"
+   },
+   "page": "https://github.com/eden-0721/test_reports/releases/tag/testreport-v2.27.0",
+   "source": "https://github.com/eden-0721/test_reports"
   }
  ],
  "shared": [
