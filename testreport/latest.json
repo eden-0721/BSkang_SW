@@ -1,19 +1,26 @@
 {
  "app": "testreport",
  "name": "시험성적서 워크벤치",
- "version": "2.27.0",
- "date": "2026-10-30",
+ "version": "2.27.1",
+ "date": "2026-11-02",
  "channel": "release",
- "tag": "testreport-v2.27.0",
+ "tag": "testreport-v2.27.1",
  "private": true,
  "filesRepo": "eden-0721/test_reports",
  "setup": {
-  "file": "TestReport_Setup_v2.27.0.exe",
-  "url": "https://github.com/eden-0721/test_reports/releases/download/testreport-v2.27.0/TestReport_Setup_v2.27.0.exe",
-  "sha256": "c70a3d9ad9cbc40d6ec3f60ef5adf228f2c5c3fe618e3c3e34474a7b0576ae8b",
-  "size": 4001566
+  "file": "TestReport_Setup_v2.27.1.exe",
+  "url": "https://github.com/eden-0721/test_reports/releases/download/testreport-v2.27.1/TestReport_Setup_v2.27.1.exe",
+  "sha256": "9de8a8894a60630fd8e0fd045f48e7499b499fded8601cea814e10add9d00400",
+  "size": 4002720
  },
  "notes": [
+  {
+   "v": "2.27.1",
+   "date": "2026-11-02",
+   "items": [
+    "조판 본문(시험장 절 첫 문장·시료분석 항목 앞 문장·종합의견)과 AI 초안에는 시험 장소의 이름만 쓰고, 주소는 시험장 절 '시험장소' 줄에만 둡니다 — 예전엔 분석 장소 칸에 '주소, 이름'을 적으면 '…69-21, 뉴나노에서 분석하였다'처럼 주소까지 본문에 들어갔습니다. 이름 없이 주소만 적었으면 '따로 분석하였다'"
+   ]
+  },
   {
    "v": "2.27.0",
    "date": "2026-10-30",
