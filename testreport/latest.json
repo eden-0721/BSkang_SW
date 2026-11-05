@@ -1,19 +1,29 @@
 {
  "app": "testreport",
  "name": "시험성적서 워크벤치",
- "version": "2.27.1",
- "date": "2026-11-02",
+ "version": "2.27.2",
+ "date": "2026-11-04",
  "channel": "release",
- "tag": "testreport-v2.27.1",
+ "tag": "testreport-v2.27.2",
  "private": true,
  "filesRepo": "eden-0721/test_reports",
  "setup": {
-  "file": "TestReport_Setup_v2.27.1.exe",
-  "url": "https://github.com/eden-0721/test_reports/releases/download/testreport-v2.27.1/TestReport_Setup_v2.27.1.exe",
-  "sha256": "9de8a8894a60630fd8e0fd045f48e7499b499fded8601cea814e10add9d00400",
-  "size": 4002720
+  "file": "TestReport_Setup_v2.27.2.exe",
+  "url": "https://github.com/eden-0721/test_reports/releases/download/testreport-v2.27.2/TestReport_Setup_v2.27.2.exe",
+  "sha256": "42675e6fd7dcaf7872a1207a1efd0ce1bb88234b3e48867dee6e5a121a5b305a",
+  "size": 4004517
  },
  "notes": [
+  {
+   "v": "2.27.2",
+   "date": "2026-11-04",
+   "items": [
+    "조판 화면의 표가 발행본과 같은 폭·열 너비·행 높이로 보입니다 — 예전엔 조판은 종이 폭의 60 % 이상으로 넓게, 발행본은 글자 폭으로 잰 좁은 폭(2열 표 60 mm)이라 서로 달랐습니다. 이제 둘 다 같은 규칙: 기본 폭 = 쓸 수 있는 폭의 60 %(약 102 mm)·열당 26 mm 중 큰 것(150 mm 까지), 글자가 더 많으면 본문 폭까지, 표 폭·열 너비를 끌어 정하면 그대로",
+    "조판 표 행 높이도 발행과 같게 (기본 7.5 mm, [쪽 맞춤] 값이 있으면 그 값). 행 높이를 직접 바꾸면 [쪽 맞춤] 행 높이는 지웁니다",
+    "휴대폰 화면의 A4 조판 표도 같은 폭 규칙",
+    "동기화해도 '새 내용 N' 이 사라지지 않던 것 — 드라이브는 '편집 중' 표시가 남은 작업을 정리하지 않아 12개가 넘게 쌓였는데 PC 는 12개만 두어, 받은 작업이 바로 빠지고 다시 '새 내용'으로 보였습니다. 이제 PC 는 드라이브 최근 목록에 있는 작업·아직 올리지 않은 작업·충돌 사본을 지우지 않고, 드라이브는 15분 넘게 소식이 없는 '편집 중' 표시를 무시하고 12개로 정리합니다"
+   ]
+  },
   {
    "v": "2.27.1",
    "date": "2026-11-02",
