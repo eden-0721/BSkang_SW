@@ -24,21 +24,21 @@
    "description": "현미경 단면 정밀 계측 + 공정 통계 분석",
    "icon": "icon-64.png",
    "channel": "release",
-   "version": "2.5.81",
+   "version": "2.5.83",
    "date": "2026-11-10",
    "setup": {
-    "file": "MicroMeasurePro_Setup_v2.5.81.exe",
-    "url": "https://github.com/eden-0721/MicroMeasurePro/releases/download/micromeasurepro-v2.5.81/MicroMeasurePro_Setup_v2.5.81.exe",
-    "sha256": "a86b2b4f9e0073e0553e4c45a558397e70b2902c9749bb2f3404e85e509b6acd",
-    "size": 16365938
+    "file": "MicroMeasurePro_Setup_v2.5.83.exe",
+    "url": "https://github.com/eden-0721/MicroMeasurePro/releases/download/micromeasurepro-v2.5.83/MicroMeasurePro_Setup_v2.5.83.exe",
+    "sha256": "53aa27ae192f6c90128a030049b2649a28573fa2d036a289c354421072b739fe",
+    "size": 16376213
    },
    "zip": {
-    "file": "MicroMeasurePro_v2.5.81.zip",
-    "url": "https://github.com/eden-0721/MicroMeasurePro/releases/download/micromeasurepro-v2.5.81/MicroMeasurePro_v2.5.81.zip",
-    "sha256": "4323f8d737e1da5524799fd93722ab3c092dfc70588e3cbd128283758db9af70",
-    "size": 18344674
+    "file": "MicroMeasurePro_v2.5.83.zip",
+    "url": "https://github.com/eden-0721/MicroMeasurePro/releases/download/micromeasurepro-v2.5.83/MicroMeasurePro_v2.5.83.zip",
+    "sha256": "67d24b868417e2d19b6aaf5377344332547e9f37ccb517118b6c4a982867e3fb",
+    "size": 18355207
    },
-   "page": "https://github.com/eden-0721/MicroMeasurePro/releases/tag/micromeasurepro-v2.5.81",
+   "page": "https://github.com/eden-0721/MicroMeasurePro/releases/tag/micromeasurepro-v2.5.83",
    "private": true,
    "source": "https://github.com/eden-0721/MicroMeasurePro"
   },
@@ -136,6 +136,23 @@
    "source": "https://github.com/eden-0721/photo_organize"
   },
   {
+   "app": "testreport",
+   "name": "시험성적서 워크벤치",
+   "description": "시험성적서 작성·발행 (비공개)",
+   "icon": "icon-64.png",
+   "private": true,
+   "version": "2.27.4",
+   "date": "2026-11-10",
+   "setup": {
+    "file": "TestReport_Setup_v2.27.4.exe",
+    "url": "https://github.com/login?return_to=/eden-0721/test_reports/releases/download/testreport-v2.27.4/TestReport_Setup_v2.27.4.exe",
+    "size": 4009271,
+    "sha256": "6e9e7c01e3ecb31745259095e0a8372230281de827518739b4364524b1e41fde"
+   },
+   "page": "https://github.com/eden-0721/test_reports/releases/tag/testreport-v2.27.4",
+   "source": "https://github.com/eden-0721/test_reports"
+  },
+  {
    "app": "testreport-field",
    "name": "시험성적서 현장",
    "description": "휴대폰·태블릿에서 작업 보기·현장 사진·메모·측정값 올리기 (PC 시험성적서 워크벤치와 같은 구글 계정)",
@@ -203,23 +220,6 @@
    "install": {
     "file": "install.bat"
    }
-  },
-  {
-   "app": "testreport",
-   "name": "시험성적서 워크벤치",
-   "description": "시험성적서 작성·발행 (비공개)",
-   "icon": "icon-64.png",
-   "private": true,
-   "version": "2.27.4",
-   "date": "2026-11-10",
-   "setup": {
-    "file": "TestReport_Setup_v2.27.4.exe",
-    "url": "https://github.com/login?return_to=/eden-0721/test_reports/releases/download/testreport-v2.27.4/TestReport_Setup_v2.27.4.exe",
-    "size": 4009271,
-    "sha256": "6e9e7c01e3ecb31745259095e0a8372230281de827518739b4364524b1e41fde"
-   },
-   "page": "https://github.com/eden-0721/test_reports/releases/tag/testreport-v2.27.4",
-   "source": "https://github.com/eden-0721/test_reports"
   }
  ],
  "shared": [

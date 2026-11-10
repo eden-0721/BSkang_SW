@@ -1,23 +1,43 @@
 {
  "app": "micromeasurepro",
  "name": "MicroMeasure Pro",
- "version": "2.5.81",
+ "version": "2.5.83",
  "date": "2026-11-10",
  "channel": "release",
- "tag": "micromeasurepro-v2.5.81",
+ "tag": "micromeasurepro-v2.5.83",
  "setup": {
-  "file": "MicroMeasurePro_Setup_v2.5.81.exe",
-  "url": "https://github.com/eden-0721/MicroMeasurePro/releases/download/micromeasurepro-v2.5.81/MicroMeasurePro_Setup_v2.5.81.exe",
-  "sha256": "a86b2b4f9e0073e0553e4c45a558397e70b2902c9749bb2f3404e85e509b6acd",
-  "size": 16365938
+  "file": "MicroMeasurePro_Setup_v2.5.83.exe",
+  "url": "https://github.com/eden-0721/MicroMeasurePro/releases/download/micromeasurepro-v2.5.83/MicroMeasurePro_Setup_v2.5.83.exe",
+  "sha256": "53aa27ae192f6c90128a030049b2649a28573fa2d036a289c354421072b739fe",
+  "size": 16376213
  },
  "zip": {
-  "file": "MicroMeasurePro_v2.5.81.zip",
-  "url": "https://github.com/eden-0721/MicroMeasurePro/releases/download/micromeasurepro-v2.5.81/MicroMeasurePro_v2.5.81.zip",
-  "sha256": "4323f8d737e1da5524799fd93722ab3c092dfc70588e3cbd128283758db9af70",
-  "size": 18344674
+  "file": "MicroMeasurePro_v2.5.83.zip",
+  "url": "https://github.com/eden-0721/MicroMeasurePro/releases/download/micromeasurepro-v2.5.83/MicroMeasurePro_v2.5.83.zip",
+  "sha256": "67d24b868417e2d19b6aaf5377344332547e9f37ccb517118b6c4a982867e3fb",
+  "size": 18355207
  },
  "notes": [
+  {
+   "v": "2.5.83",
+   "date": "2026-11-10",
+   "title": "Claude 가 켜 둔 앱 창에 바로 씁니다",
+   "items": [
+    "Claude 연결이 **켜 둔 앱 창**을 직접 조작합니다 (시험성적서 앱과 같은 방식). 시트·측정·영상 학습이 눈앞에서 생기고 자동 저장도 평소처럼 됩니다. 전에는 보이지 않는 앱을 따로 띄워 거기에 써서, 끄면 작업이 사라졌습니다",
+    "앱이 꺼져 있으면 Claude 가 앱을 켜고(바탕화면 아이콘처럼) 그 창에 씁니다. 일하는 동안 아래 상태 줄에 \"🤖 Claude 가 작업 중\" 이 보입니다",
+    "Claude 가 일할 때는 같은 화면을 함께 만지지 말고 지켜봐 주세요 (서로 덮어쓸 수 있음). 창을 최소화하면 느려질 수 있습니다",
+    "프로그램을 켤 때 **검은 CMD 창이 더 이상 뜨지 않습니다** — 바탕화면·시작 메뉴 아이콘이 창 없는 파이썬으로 바로 켭니다 (업데이트하면 아이콘이 저절로 바뀜, 로그를 보려면 run.bat console)"
+   ]
+  },
+  {
+   "v": "2.5.82",
+   "date": "2026-11-10",
+   "title": "Claude Code 연결 — claude 명령이 없는 PC 에서도",
+   "items": [
+    "Claude 데스크톱 앱만 설치한 PC(claude 명령이 없음)에서도 도구 → 환경 설정 → AI → **[Claude Code 에 연결]** 이 됩니다. 전에는 \"claude 명령을 찾지 못했습니다\" 로 끝나 예전 이름(micromeasure-video)이 그대로 남았습니다",
+    "이제 설정 파일(사용자 폴더의 .claude.json)을 직접 고쳐 예전 이름을 지우고 새 이름(micromeasure)을 넣습니다. 다른 설정은 그대로, 바꾸기 전 .bak 사본"
+   ]
+  },
   {
    "v": "2.5.81",
    "date": "2026-11-10",
@@ -50,47 +70,21 @@
     "**확대·축소**: Ctrl+휠 또는 시트 아래 − 100% + (시트마다 저장). 채우기 점으로 **월 → 화 → 수**, **11월 → 12월 → 1월** · 1분기 → 2분기",
     "시트 탭 오른쪽 클릭: **이름 바꾸기 · 복사 · 왼쪽/오른쪽으로 옮기기** · 삭제. **Ctrl+5** 취소선 (도구 막대 도움말이 Ctrl+U 로 잘못 적혀 있던 것), 메뉴에서 엑셀에 없는 '내보내기 허용·편집 잠금' 을 뺐습니다"
    ]
-  },
-  {
-   "v": "2.5.78",
-   "date": "2026-11-09",
-   "title": "통계 스튜디오 — 엑셀을 거치지 않게",
-   "items": [
-    "**처음엔 시트가 넓게**: 차트는 오른쪽 좁은 띠에 **미리보기**(런 차트 · 히스토그램 · 박스플롯 · 누적분포 · Q-Q)로만 보입니다. 미리보기를 누르면 그 차트로 **펼치고**, [크게] 는 차트만 화면 가득(**Esc** 로 돌아옴). 리본의 차트 탭 단추를 눌러도 펼쳐지고, 저장한 파일은 저장할 때 모습으로 열립니다",
-    "**열 요약 줄**: 시트 도구 막대 바로 아래에 열마다 **개수 · 평균 · 최대 · 최소 · 표준편차**가 늘 떠 있습니다 (붙여넣는 순간 채워짐, 마스킹한 행은 뺌, 숫자를 누르면 복사)",
-    "**엑셀(.xlsx) · CSV 파일 열기**: 홈 → [파일 열기] 또는 창에 **끌어다 놓기**. 엑셀 시트가 여러 개면 시트마다 탭, 수식은 수식 그대로, 날짜 칸은 2026-10-28 로. 한국어 엑셀 CSV(cp949)도 글자가 깨지지 않습니다",
-    "**시편마다 열이 따로 있는 표**: 그래프 나누기 ▾ → [열마다 시편 → 나눠 그리기] 한 번으로 새 시트에 한 열로 쌓고 시편별 색·경계·평균선으로 나눠 그립니다 (엑셀에서 옮겨 붙이던 일)",
-    "쓰지 않던 **추천 줄**과 **차트 종류 추천**을 없앴습니다 (비전 화면의 추천 칩은 그대로)"
-   ]
-  },
-  {
-   "v": "2.5.77",
-   "date": "2026-11-09",
-   "title": "통계 시트 — 입력·수식을 엑셀처럼 (2)",
-   "items": [
-    "**셀을 클릭하고 바로 한글**을 쳐도 들어갑니다 (전에는 영어·숫자만 들어가고 한글은 사라졌습니다). 조합 중인 글자도 셀에 바로 보입니다",
-    "**수식 참조마다 색**이 다르고 시트 위에 같은 색 상자가 그려집니다 (수식 줄도 같은 색). 긴 수식은 편집 칸이 오른쪽으로 늘어나 끝까지 보입니다 (전에는 마지막 몇 글자만 보였습니다)",
-    "**함수 도움**: =AVE 처럼 치면 함수 목록(설명 포함), 괄호 안에서는 **인수 안내**(지금 인수를 굵게). Tab 으로 넣고 Enter 는 확정",
-    "수식 중 **화살표로 참조 고르기**(Shift = 범위) · **Alt+=** 자동 합계 · **Ctrl+Enter** 고른 칸 모두 입력 · 같은 열 **자동 완성** · **Alt+↓** 목록 · **Ctrl+;** 오늘 날짜 · 편집 중 F2 = 입력/편집 모드",
-    "빠졌던 함수: **MATCH · SUMIFS · COUNTIFS · AVERAGEIFS · MAXIFS · MINIFS · XLOOKUP · LOOKUP · CHOOSE · SWITCH · TEXTJOIN · SUBSTITUTE · UPPER · VALUE** (전에는 #NAME?). 2026-10-28 처럼 친 날짜는 수식이 날짜로 읽습니다 (=B2+1 · DATEDIF)",
-    "엑셀에서 **붙여넣으면 굵게·기울임·밑줄·글자색·채우기·맞춤이 따라옵니다**. 셀 안에 줄바꿈이나 따옴표가 든 칸도 깨지지 않습니다 (전에는 따옴표를 모두 지웠습니다)",
-    "편집 칸 테두리도 엑셀 초록으로 맞췄습니다"
-   ]
   }
  ],
- "page": "https://github.com/eden-0721/MicroMeasurePro/releases/tag/micromeasurepro-v2.5.81",
+ "page": "https://github.com/eden-0721/MicroMeasurePro/releases/tag/micromeasurepro-v2.5.83",
  "private": true,
  "filesRepo": "eden-0721/MicroMeasurePro",
  "source": "https://github.com/eden-0721/MicroMeasurePro",
  "previous": {
-  "version": "2.5.76",
+  "version": "2.5.81",
   "setup": {
-   "file": "MicroMeasurePro_Setup_v2.5.76.exe",
-   "url": "https://github.com/eden-0721/MicroMeasurePro/releases/download/micromeasurepro-v2.5.76/MicroMeasurePro_Setup_v2.5.76.exe",
-   "sha256": "e0d8ec31839ec4347f69939e308ac01289ec60bb180aa0cb33cd873f1d28c30b",
-   "size": 16324740
+   "file": "MicroMeasurePro_Setup_v2.5.81.exe",
+   "url": "https://github.com/eden-0721/MicroMeasurePro/releases/download/micromeasurepro-v2.5.81/MicroMeasurePro_Setup_v2.5.81.exe",
+   "sha256": "a86b2b4f9e0073e0553e4c45a558397e70b2902c9749bb2f3404e85e509b6acd",
+   "size": 16365938
   },
-  "tag": "micromeasurepro-v2.5.76",
+  "tag": "micromeasurepro-v2.5.81",
   "filesRepo": "eden-0721/MicroMeasurePro"
  }
 }
