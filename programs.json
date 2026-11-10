@@ -24,21 +24,21 @@
    "description": "현미경 단면 정밀 계측 + 공정 통계 분석",
    "icon": "icon-64.png",
    "channel": "release",
-   "version": "2.5.76",
-   "date": "2026-10-28",
+   "version": "2.5.81",
+   "date": "2026-11-10",
    "setup": {
-    "file": "MicroMeasurePro_Setup_v2.5.76.exe",
-    "url": "https://github.com/eden-0721/MicroMeasurePro/releases/download/micromeasurepro-v2.5.76/MicroMeasurePro_Setup_v2.5.76.exe",
-    "sha256": "e0d8ec31839ec4347f69939e308ac01289ec60bb180aa0cb33cd873f1d28c30b",
-    "size": 16324740
+    "file": "MicroMeasurePro_Setup_v2.5.81.exe",
+    "url": "https://github.com/eden-0721/MicroMeasurePro/releases/download/micromeasurepro-v2.5.81/MicroMeasurePro_Setup_v2.5.81.exe",
+    "sha256": "a86b2b4f9e0073e0553e4c45a558397e70b2902c9749bb2f3404e85e509b6acd",
+    "size": 16365938
    },
    "zip": {
-    "file": "MicroMeasurePro_v2.5.76.zip",
-    "url": "https://github.com/eden-0721/MicroMeasurePro/releases/download/micromeasurepro-v2.5.76/MicroMeasurePro_v2.5.76.zip",
-    "sha256": "5d31bc5c924106b4ef0da8fb75075077495d9f4e5b26ae01552a27fdee4e8c3c",
-    "size": 18277626
+    "file": "MicroMeasurePro_v2.5.81.zip",
+    "url": "https://github.com/eden-0721/MicroMeasurePro/releases/download/micromeasurepro-v2.5.81/MicroMeasurePro_v2.5.81.zip",
+    "sha256": "4323f8d737e1da5524799fd93722ab3c092dfc70588e3cbd128283758db9af70",
+    "size": 18344674
    },
-   "page": "https://github.com/eden-0721/MicroMeasurePro/releases/tag/micromeasurepro-v2.5.76",
+   "page": "https://github.com/eden-0721/MicroMeasurePro/releases/tag/micromeasurepro-v2.5.81",
    "private": true,
    "source": "https://github.com/eden-0721/MicroMeasurePro"
   },
@@ -136,6 +136,38 @@
    "source": "https://github.com/eden-0721/photo_organize"
   },
   {
+   "app": "testreport",
+   "name": "시험성적서 워크벤치",
+   "description": "시험성적서 작성·발행 (비공개)",
+   "icon": "icon-64.png",
+   "private": true,
+   "version": "2.27.2",
+   "date": "2026-11-04",
+   "setup": {
+    "file": "TestReport_Setup_v2.27.2.exe",
+    "url": "https://github.com/login?return_to=/eden-0721/test_reports/releases/download/testreport-v2.27.2/TestReport_Setup_v2.27.2.exe",
+    "size": 4004517,
+    "sha256": "42675e6fd7dcaf7872a1207a1efd0ce1bb88234b3e48867dee6e5a121a5b305a"
+   },
+   "page": "https://github.com/eden-0721/test_reports/releases/tag/testreport-v2.27.2",
+   "source": "https://github.com/eden-0721/test_reports"
+  },
+  {
+   "app": "testreport-field",
+   "name": "시험성적서 현장",
+   "description": "휴대폰·태블릿에서 작업 보기·현장 사진·메모·측정값 올리기 (PC 시험성적서 워크벤치와 같은 구글 계정)",
+   "icon": "icon-64.png",
+   "kind": "web",
+   "private": true,
+   "version": "2.27.0",
+   "date": "2026-10-30",
+   "web": {
+    "url": "https://testreport-field.pages.dev"
+   },
+   "source": "https://github.com/eden-0721/test_reports",
+   "notes": true
+  },
+  {
    "app": "learn-eng",
    "name": "영어 배우기",
    "description": "아이부터 어른까지, 하루 몇 분 만화와 이야기로 배우는 가족·반 영어 공부 앱",
@@ -188,38 +220,6 @@
    "install": {
     "file": "install.bat"
    }
-  },
-  {
-   "app": "testreport-field",
-   "name": "시험성적서 현장",
-   "description": "휴대폰·태블릿에서 작업 보기·현장 사진·메모·측정값 올리기 (PC 시험성적서 워크벤치와 같은 구글 계정)",
-   "icon": "icon-64.png",
-   "kind": "web",
-   "private": true,
-   "version": "2.27.0",
-   "date": "2026-10-30",
-   "web": {
-    "url": "https://testreport-field.pages.dev"
-   },
-   "source": "https://github.com/eden-0721/test_reports",
-   "notes": true
-  },
-  {
-   "app": "testreport",
-   "name": "시험성적서 워크벤치",
-   "description": "시험성적서 작성·발행 (비공개)",
-   "icon": "icon-64.png",
-   "private": true,
-   "version": "2.27.2",
-   "date": "2026-11-04",
-   "setup": {
-    "file": "TestReport_Setup_v2.27.2.exe",
-    "url": "https://github.com/login?return_to=/eden-0721/test_reports/releases/download/testreport-v2.27.2/TestReport_Setup_v2.27.2.exe",
-    "size": 4004517,
-    "sha256": "42675e6fd7dcaf7872a1207a1efd0ce1bb88234b3e48867dee6e5a121a5b305a"
-   },
-   "page": "https://github.com/eden-0721/test_reports/releases/tag/testreport-v2.27.2",
-   "source": "https://github.com/eden-0721/test_reports"
   }
  ],
  "shared": [
