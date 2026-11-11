@@ -1,19 +1,27 @@
 {
  "app": "testreport",
  "name": "시험성적서 워크벤치",
- "version": "2.27.4",
- "date": "2026-11-10",
+ "version": "2.28.0",
+ "date": "2026-11-11",
  "channel": "release",
- "tag": "testreport-v2.27.4",
+ "tag": "testreport-v2.28.0",
  "private": true,
  "filesRepo": "eden-0721/test_reports",
  "setup": {
-  "file": "TestReport_Setup_v2.27.4.exe",
-  "url": "https://github.com/eden-0721/test_reports/releases/download/testreport-v2.27.4/TestReport_Setup_v2.27.4.exe",
-  "sha256": "6e9e7c01e3ecb31745259095e0a8372230281de827518739b4364524b1e41fde",
-  "size": 4009271
+  "file": "TestReport_Setup_v2.28.0.exe",
+  "url": "https://github.com/eden-0721/test_reports/releases/download/testreport-v2.28.0/TestReport_Setup_v2.28.0.exe",
+  "sha256": "32e3b189ff5a54b8d83ed25314ca4f9b36e05ce4599e892991d93006ab46b54e",
+  "size": 4011166
  },
  "notes": [
+  {
+   "v": "2.28.0",
+   "date": "2026-11-11",
+   "items": [
+    "휴대폰(웹용)에서 의뢰서 불러오기 — [＋ 새 현장 기록]에서 의뢰서를 사진(최대 3장)·PDF 로 고르면 구글 Gemini 가 읽어 기관명·주소·대표자·의뢰자·연락처·사업자번호·시제품·용도·시험일자·시료 처리·시험항목(기준·의뢰서 평가방법)을 채웁니다. 확인하고 고쳐 저장. Gemini 키는 휴대폰 설정에 한 번 넣고 그 휴대폰에만 둡니다",
+    "휴대폰에서 의뢰서로 불러온 기록은 PC 가 동기화할 때 저절로 작업이 되어(1 접수 화면이 의뢰서 내용으로 채워짐) PC 에서 이어서 쓰고, 다른 PC·휴대폰 최근 작업에도 올라갑니다. 두 PC 가 같이 켜져 있어도 먼저 받은 PC 만 만듭니다"
+   ]
+  },
   {
    "v": "2.27.4",
    "date": "2026-11-10",
