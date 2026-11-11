@@ -1,19 +1,27 @@
 {
  "app": "testreport",
  "name": "시험성적서 워크벤치",
- "version": "2.29.1",
+ "version": "2.29.2",
  "date": "2026-11-11",
  "channel": "release",
- "tag": "testreport-v2.29.1",
+ "tag": "testreport-v2.29.2",
  "private": true,
  "filesRepo": "eden-0721/test_reports",
  "setup": {
-  "file": "TestReport_Setup_v2.29.1.exe",
-  "url": "https://github.com/eden-0721/test_reports/releases/download/testreport-v2.29.1/TestReport_Setup_v2.29.1.exe",
-  "sha256": "f9b4cf200d6c95c83792e727125ba4c976ba51d64cfd2e616a974b1f51b4884a",
-  "size": 4014193
+  "file": "TestReport_Setup_v2.29.2.exe",
+  "url": "https://github.com/eden-0721/test_reports/releases/download/testreport-v2.29.2/TestReport_Setup_v2.29.2.exe",
+  "sha256": "b5f867f764c9bc74ff11dfd78c58fb46352eb309b2665186a16d69633aefd98a",
+  "size": 4015728
  },
  "notes": [
+  {
+   "v": "2.29.2",
+   "date": "2026-11-11",
+   "items": [
+    "업데이트 전 프로그램이 받아 둔 휴대폰 기록을 업데이트 뒤 다시 읽습니다 — 예전엔 v2.27.4 로 받아 둔 의뢰서 기록이 의뢰자 정보 없이 남아 저절로 작업이 되지 않고, [작업으로 받기]를 하면 신청서(대표자·의뢰자·연락처·사업자번호 등)가 비었습니다. 이미 그렇게 받은 작업도 다음 동기화 때 빈 칸만 휴대폰 기록으로 채웁니다(직접 고친 칸은 그대로)",
+    "휴대폰에서 만든 새 기록 띠를 작성 탭에서 접수 탭으로 옮겼고, 받으면 접수 탭이 열립니다"
+   ]
+  },
   {
    "v": "2.29.1",
    "date": "2026-11-11",
