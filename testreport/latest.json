@@ -1,19 +1,26 @@
 {
  "app": "testreport",
  "name": "시험성적서 워크벤치",
- "version": "2.29.3",
+ "version": "2.29.4",
  "date": "2026-11-11",
  "channel": "release",
- "tag": "testreport-v2.29.3",
+ "tag": "testreport-v2.29.4",
  "private": true,
  "filesRepo": "eden-0721/test_reports",
  "setup": {
-  "file": "TestReport_Setup_v2.29.3.exe",
-  "url": "https://github.com/eden-0721/test_reports/releases/download/testreport-v2.29.3/TestReport_Setup_v2.29.3.exe",
-  "sha256": "90f335195be554f60ad05ab4edac09d2d1ddb9b04eff7ce5bcfbbeaa362f0cb7",
-  "size": 4015879
+  "file": "TestReport_Setup_v2.29.4.exe",
+  "url": "https://github.com/eden-0721/test_reports/releases/download/testreport-v2.29.4/TestReport_Setup_v2.29.4.exe",
+  "sha256": "cc2345605d32ecfc8a679cdf1f47c8b351aa2c3ede630c7ec865be4a0ea30aaa",
+  "size": 4016734
  },
  "notes": [
+  {
+   "v": "2.29.4",
+   "date": "2026-11-11",
+   "items": [
+    "차트는 기본으로 그림만 성적서에 들어가고, 차트마다 [표도 성적서에 넣기]를 켜면 차트 위에 데이터 표도 들어갑니다 — 조판 화면도 발행본과 같게: 넣지 않을 때는 데이터 표가 '▸ 차트 데이터 · 편집용' 칸에 접혀 있고, 넣을 때는 발행본 같은 표로 보입니다. 채팅 add_chart 에도 with_table"
+   ]
+  },
   {
    "v": "2.29.3",
    "date": "2026-11-11",
