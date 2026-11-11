@@ -1,19 +1,26 @@
 {
  "app": "testreport",
  "name": "시험성적서 워크벤치",
- "version": "2.29.4",
+ "version": "2.29.5",
  "date": "2026-11-11",
  "channel": "release",
- "tag": "testreport-v2.29.4",
+ "tag": "testreport-v2.29.5",
  "private": true,
  "filesRepo": "eden-0721/test_reports",
  "setup": {
-  "file": "TestReport_Setup_v2.29.4.exe",
-  "url": "https://github.com/eden-0721/test_reports/releases/download/testreport-v2.29.4/TestReport_Setup_v2.29.4.exe",
-  "sha256": "cc2345605d32ecfc8a679cdf1f47c8b351aa2c3ede630c7ec865be4a0ea30aaa",
-  "size": 4016734
+  "file": "TestReport_Setup_v2.29.5.exe",
+  "url": "https://github.com/eden-0721/test_reports/releases/download/testreport-v2.29.5/TestReport_Setup_v2.29.5.exe",
+  "sha256": "063b4d81f86d485b68d0e3ce39edc37a998b3a9720510ec2277b4d325969e8b7",
+  "size": 4016868
  },
  "notes": [
+  {
+   "v": "2.29.5",
+   "date": "2026-11-11",
+   "items": [
+    "조판 화면의 수식 글자를 본문과 같은 크기로, 수식 속 한글은 본문 글꼴로 (예전엔 수식을 1.12배로 그리고 한글을 수식 글꼴로 대신 그려 본문보다 커 보였다) — 발행본은 원래도 본문과 같은 10 pt, 휴대폰 웹 조판도 같게"
+   ]
+  },
   {
    "v": "2.29.4",
    "date": "2026-11-11",
