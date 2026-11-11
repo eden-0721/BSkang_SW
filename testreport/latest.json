@@ -1,19 +1,26 @@
 {
  "app": "testreport",
  "name": "시험성적서 워크벤치",
- "version": "2.29.5",
+ "version": "2.29.6",
  "date": "2026-11-11",
  "channel": "release",
- "tag": "testreport-v2.29.5",
+ "tag": "testreport-v2.29.6",
  "private": true,
  "filesRepo": "eden-0721/test_reports",
  "setup": {
-  "file": "TestReport_Setup_v2.29.5.exe",
-  "url": "https://github.com/eden-0721/test_reports/releases/download/testreport-v2.29.5/TestReport_Setup_v2.29.5.exe",
-  "sha256": "063b4d81f86d485b68d0e3ce39edc37a998b3a9720510ec2277b4d325969e8b7",
-  "size": 4016868
+  "file": "TestReport_Setup_v2.29.6.exe",
+  "url": "https://github.com/eden-0721/test_reports/releases/download/testreport-v2.29.6/TestReport_Setup_v2.29.6.exe",
+  "sha256": "fa8fbd68b664b278b8edd19eafad894e71c054e246e44e16d2705874250e0e06",
+  "size": 4017767
  },
  "notes": [
+  {
+   "v": "2.29.6",
+   "date": "2026-11-11",
+   "items": [
+    "표 칸 글이 열 폭을 조금 넘으면 두 줄로 꺾지 않고 한글 문단 모양 '한 줄로 입력'(자간을 줄여 한 줄)으로 발행하고, 조판 화면도 그 칸을 한 줄로 보여 줍니다. '열이 많아 두 줄로 꺾임' 경고는 없앴습니다. 열 폭의 1.5배를 넘는 긴 글(문장)은 너무 눌리므로 예전처럼 줄바꿈"
+   ]
+  },
   {
    "v": "2.29.5",
    "date": "2026-11-11",
