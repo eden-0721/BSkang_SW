@@ -1,19 +1,26 @@
 {
  "app": "testreport",
  "name": "시험성적서 워크벤치",
- "version": "2.29.0",
+ "version": "2.29.1",
  "date": "2026-11-11",
  "channel": "release",
- "tag": "testreport-v2.29.0",
+ "tag": "testreport-v2.29.1",
  "private": true,
  "filesRepo": "eden-0721/test_reports",
  "setup": {
-  "file": "TestReport_Setup_v2.29.0.exe",
-  "url": "https://github.com/eden-0721/test_reports/releases/download/testreport-v2.29.0/TestReport_Setup_v2.29.0.exe",
-  "sha256": "484cf28ddb612764f2e430d9bd02f9c47652b86842b3ab848b2e22deaaadee91",
-  "size": 4014012
+  "file": "TestReport_Setup_v2.29.1.exe",
+  "url": "https://github.com/eden-0721/test_reports/releases/download/testreport-v2.29.1/TestReport_Setup_v2.29.1.exe",
+  "sha256": "f9b4cf200d6c95c83792e727125ba4c976ba51d64cfd2e616a974b1f51b4884a",
+  "size": 4014193
  },
  "notes": [
+  {
+   "v": "2.29.1",
+   "date": "2026-11-11",
+   "items": [
+    "휴대폰에서 직접 적은 새 현장 기록이 작업 메뉴(맨 위 작업 이름 ▾)의 최근 작업 맨 위에도 '휴대폰에서 온 새 기록 N건'으로 보이고, 누르면 작업으로 받습니다 (예전엔 작성 화면 위 띠에만 있어 찾기 어려웠음)"
+   ]
+  },
   {
    "v": "2.29.0",
    "date": "2026-11-11",
