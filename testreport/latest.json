@@ -1,19 +1,27 @@
 {
  "app": "testreport",
  "name": "시험성적서 워크벤치",
- "version": "2.29.2",
+ "version": "2.29.3",
  "date": "2026-11-11",
  "channel": "release",
- "tag": "testreport-v2.29.2",
+ "tag": "testreport-v2.29.3",
  "private": true,
  "filesRepo": "eden-0721/test_reports",
  "setup": {
-  "file": "TestReport_Setup_v2.29.2.exe",
-  "url": "https://github.com/eden-0721/test_reports/releases/download/testreport-v2.29.2/TestReport_Setup_v2.29.2.exe",
-  "sha256": "b5f867f764c9bc74ff11dfd78c58fb46352eb309b2665186a16d69633aefd98a",
-  "size": 4015728
+  "file": "TestReport_Setup_v2.29.3.exe",
+  "url": "https://github.com/eden-0721/test_reports/releases/download/testreport-v2.29.3/TestReport_Setup_v2.29.3.exe",
+  "sha256": "90f335195be554f60ad05ab4edac09d2d1ddb9b04eff7ce5bcfbbeaa362f0cb7",
+  "size": 4015879
  },
  "notes": [
+  {
+   "v": "2.29.3",
+   "date": "2026-11-11",
+   "items": [
+    "작성 카드의 '현장 사진'·'현장 측정값 표'를 '조판에 넣은 그림'처럼 접어 둡니다 — 제목(현장 사진 N장 · 조판에 M장)을 누르면 펼치고 다시 누르면 접힘, 펼친 상태는 화면이 다시 그려져도 유지",
+    "휴대폰 항목 화면에서 같은 사진이 두 번 보이지 않게 — PC 가 넣은 기록은 '현장에서 올린 것'에 한 줄 요약만, PC 에 있는 사진(카드 현장 사진·조판 그림)은 빼고, PC 에서 지운 사진만 [다시 올리기]와 함께 보입니다"
+   ]
+  },
   {
    "v": "2.29.2",
    "date": "2026-11-11",
