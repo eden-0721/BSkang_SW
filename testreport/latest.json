@@ -1,19 +1,30 @@
 {
  "app": "testreport",
  "name": "시험성적서 워크벤치",
- "version": "2.29.8",
- "date": "2026-11-11",
+ "version": "2.30.0",
+ "date": "2026-11-13",
  "channel": "release",
- "tag": "testreport-v2.29.8",
+ "tag": "testreport-v2.30.0",
  "private": true,
  "filesRepo": "eden-0721/test_reports",
  "setup": {
-  "file": "TestReport_Setup_v2.29.8.exe",
-  "url": "https://github.com/eden-0721/test_reports/releases/download/testreport-v2.29.8/TestReport_Setup_v2.29.8.exe",
-  "sha256": "7b24b7f76c7eadfdb767f238e2f8cc0e41189e95de2281516fdb2c30ad4a1bf8",
-  "size": 4018320
+  "file": "TestReport_Setup_v2.30.0.exe",
+  "url": "https://github.com/eden-0721/test_reports/releases/download/testreport-v2.30.0/TestReport_Setup_v2.30.0.exe",
+  "sha256": "87e0c179e3d02fe49207e4654ae539188657b73d8527d158d50ccbe290bc81ab",
+  "size": 4024360
  },
  "notes": [
+  {
+   "v": "2.30.0",
+   "date": "2026-11-13",
+   "items": [
+    "조판에서 쪽 표시를 아래로 끌어 놓으면 '놓은 자리까지 앞 쪽에 넣기'로 맞춥니다 — 예: 2쪽 표시를 그림 아래로 내리면 그 그림까지 1쪽에 들어가도록 앞 내용(사이 빈 줄·표 행·그림)을 줄입니다. 보통 범위로 모자라면 그림 전체를 같은 비율로 60 %까지 줄입니다 (예전엔 넘어간 그림만 2쪽에 남고 놓은 자리가 3쪽이 됐습니다)",
+    "줄여도 들어가지 않으면 쪽을 새로 만들지 않고 원래대로 두고 이유를 알립니다. 위로 끌면 예전처럼 그 자리에서 새 쪽이 시작됩니다",
+    "초안을 발행하면 그 초안의 쪽 그림을 구글 드라이브에도 올려, 휴대폰 웹의 조판 탭에서 [초안 (발행본 그대로)]로 볼 수 있습니다 — 한글 결과와 쪽 나눔·표·글자가 완전히 같습니다 (초안을 낸 시점의 모습)",
+    "휴대폰 웹용 작은 그림(긴 변 900 px)을 작업 그림과 함께 올립니다 — 사진이 많은 성적서를 휴대폰에서 빨리 받습니다",
+    "쪽 표시가 '약 N쪽'(어림)일 때 아래로 끌어도 한 쪽 앞에 맞춥니다 (어림한 쪽 번호가 실제와 다르면 엉뚱한 쪽에 맞추려 할 수 있었습니다)"
+   ]
+  },
   {
    "v": "2.29.8",
    "date": "2026-11-11",
