@@ -1,19 +1,28 @@
 {
  "app": "testreport",
  "name": "시험성적서 워크벤치",
- "version": "2.30.1",
- "date": "2026-11-14",
+ "version": "2.30.2",
+ "date": "2026-11-24",
  "channel": "release",
- "tag": "testreport-v2.30.1",
+ "tag": "testreport-v2.30.2",
  "private": true,
  "filesRepo": "eden-0721/test_reports",
  "setup": {
-  "file": "TestReport_Setup_v2.30.1.exe",
-  "url": "https://github.com/eden-0721/test_reports/releases/download/testreport-v2.30.1/TestReport_Setup_v2.30.1.exe",
-  "sha256": "0e754b2c8180cce3154bc02581a76d8002d2ef8e58e42f595a7ae4e06a5f240d",
-  "size": 4027587
+  "file": "TestReport_Setup_v2.30.2.exe",
+  "url": "https://github.com/eden-0721/test_reports/releases/download/testreport-v2.30.2/TestReport_Setup_v2.30.2.exe",
+  "sha256": "aeb4e6b94b72225c7b8b1c423a0310df5c1fd9ccd9b98879e80584fba5e32940",
+  "size": 4031557
  },
  "notes": [
+  {
+   "v": "2.30.2",
+   "date": "2026-11-24",
+   "items": [
+    "[버그] 발행 완료 창의 [폴더 열기]가 저장한 곳이 아니라 문서 폴더를 열던 것을 고쳤습니다 — 폴더 이름에 빈칸이나 쉼표가 있으면 탐색기가 경로를 못 읽었습니다 (라이브러리 [파일 위치]도 같이)",
+    "조판 표에서 행·열을 중간에 넣고 지울 수 있습니다 — 칸에서 오른쪽 단추를 누르면 '위에 행 넣기 · 아래에 행 넣기 · 왼쪽에 열 넣기 · 오른쪽에 열 넣기 · 이 행 지우기 · 이 열 지우기'. 서식 창과 ＋행·＋열 단추도 마지막으로 누른 칸 자리에서 동작합니다",
+    "사진을 끌어 묶을 때 놓은 쪽으로 묶입니다 — 그림의 왼쪽 반에 놓으면 왼쪽, 오른쪽 반이면 오른쪽, 이미 묶인 줄이면 세로 선이 보이는 그림 사이에 들어갑니다 (예전엔 늘 오른쪽 끝)"
+   ]
+  },
   {
    "v": "2.30.1",
    "date": "2026-11-14",
